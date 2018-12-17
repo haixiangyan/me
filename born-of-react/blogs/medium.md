@@ -1,11 +1,10 @@
-
-## Why do we need React.js
+# Why do we need React.js
 
 ![](https://cdn-images-1.medium.com/max/3840/1*RYFi7xkOkKPwjnCJ6b2QzA.png)
 
 Last few months, I kept using React.js to develop an online shopping web app but never think of why they develop React.js like this. I didn’t even know why we need JSX until I read some blogs about its history. If you are using but keep ignoring the history of React.js, hope this article can help you.
 
-### Naive calculator
+## Naive calculator
 
 Let’s start with a simple calculator. Here are requirements we need to satisfy:
 
@@ -53,7 +52,7 @@ What we do here are:
 
 It seems pretty good and meet all the requirements. Unfortunately, this is what we call “**Spaghetti code**”. Once we have more requirements, it will be very hard to maintain our codes. To avoid writing Spaghetti codes, we have to abstract our codes in some way.
 
-### Idea
+## Idea
 
 For now, our idea is shown below.
 
@@ -67,7 +66,7 @@ Here is the new idea of React developers:
 
 * Render new DOM element to HTML page
 
-### Virtual DOM
+## Virtual DOM
 
 We hope that it will create DOM element with assigning attributes and appending children elements instead of calling document.createElement . A good example would be like this:
 
@@ -102,7 +101,7 @@ Click => Modify data => Re-render (No more getting previous value)
     
     render()
 
-### Born of JSX
+## Born of JSX
 
 For now, we have a blue print of React.js. But React.js developers think there are too much React.createElement in render. They are very annoying. So they do 3 things below:
 
@@ -131,7 +130,7 @@ Let’s have a look the result of compilation with Babel.
 
 ![Compilation with Babel](https://cdn-images-1.medium.com/max/3792/1*-bHHXu0h2jvuy6x2CI3pNg.png)
 
-### React.js
+## React.js
 
 Now we have the final version with using JSX syntax. This coding style is recommended by React.js.
 

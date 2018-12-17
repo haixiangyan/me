@@ -1,3 +1,4 @@
+# 为什么要有 React.js？
 ![](https://upload-images.jianshu.io/upload_images/2979799-082a124643e0c57d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 之前一直用 React.js 来写一个电影选购商城，对于刚上手的我来说感觉处处和 Vue.js 差不多呀，反正就是无脑使用数据绑定，然后 render 就收工了，一直没有去了解 React 诞生的原因。如果你也一直用着 React.js 但是不了解它的历史，那么希望这篇文章可以帮到你。
