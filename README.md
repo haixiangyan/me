@@ -7,6 +7,10 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/why-do-we-need-react-js-d158b95e1df3)
 * [简书](https://www.jianshu.com/p/55a55e271ebe)
 
+### React: Component Communication between Parent and Children
+* [Medium](https://medium.com/@haixiang6123/react-communication-between-parent-and-children-925a7bb0c517)
+* [简书](https://www.jianshu.com/p/f5b75a6e3105)
+
 ### 
 
 ## JavaScript
