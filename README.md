@@ -11,11 +11,9 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/react-communication-between-parent-and-children-925a7bb0c517)
 * [简书](https://www.jianshu.com/p/f5b75a6e3105)
 
-### 
-
 ## JavaScript
 
-### Do You Really Kow "new" in JS?
+### Do You Really Know "new" in JS?
 * [Medium](https://medium.com/@haixiang6123/do-you-really-know-new-in-js-6ce794874f44)
 * [简书](https://www.jianshu.com/p/0b31c965f9ce)
 
