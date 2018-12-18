@@ -15,7 +15,7 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 
 ## JavaScript
 
-### Do You Really Kow "new" in JS?
+### Do You Really Know "new" in JS?
 * [Medium](https://medium.com/@haixiang6123/do-you-really-know-new-in-js-6ce794874f44)
 * [简书](https://www.jianshu.com/p/0b31c965f9ce)
 
