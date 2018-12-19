@@ -25,9 +25,11 @@ function mapStateToProps(state) {
 }
 
 // 生成 action 相关操作
-const mapDispatchToProps =  {
-    add1: () => {
-        return { type: 'add', payload: 1 }
+function mapDispatchToProps(dispatch) {
+    return {
+        add1: () => {
+            dispatch({ type: 'add', payload: 1 })
+        }
     }
 }
 
