@@ -1,0 +1,19 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.parent {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.son {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}

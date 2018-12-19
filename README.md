@@ -11,6 +11,10 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/react-communication-between-parent-and-children-925a7bb0c517)
 * [简书](https://www.jianshu.com/p/f5b75a6e3105)
 
+### React: Component Communication between Sibling Components
+* [Medium](https://medium.com/@haixiang6123/react-js-component-communication-between-sibling-components-1fdd21328c64)
+* [简书](https://www.jianshu.com/p/c4d3e194a699)
+
 ## JavaScript
 
 ### Do You Really Know "new" in JS?
