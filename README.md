@@ -19,6 +19,10 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/intro-to-redux-c6a74c58c685)
 * [简书](https://www.jianshu.com/p/733f0f664ee3)
 
+### React: Intro to Context API
+* [Medium](https://medium.com/@haixiang6123/react-intro-to-context-api-15915735f257)
+* [简书](https://www.jianshu.com/p/4aa68108d7d0)
+
 ## JavaScript
 
 ### Do You Really Know "new" in JS?
