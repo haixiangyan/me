@@ -15,13 +15,17 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/react-js-component-communication-between-sibling-components-1fdd21328c64)
 * [简书](https://www.jianshu.com/p/c4d3e194a699)
 
+### Intro to Redux
+* [Medium](https://medium.com/@haixiang6123/intro-to-redux-c6a74c58c685)
+* [简书](https://www.jianshu.com/p/733f0f664ee3)
+
 ## JavaScript
 
 ### Do You Really Know "new" in JS?
 * [Medium](https://medium.com/@haixiang6123/do-you-really-know-new-in-js-6ce794874f44)
 * [简书](https://www.jianshu.com/p/0b31c965f9ce)
 
-### React.js: Functional Component and Class Component
+### React: Functional Component and Class Component
 * [Medium](https://medium.com/@haixiang6123/react-js-functional-component-and-class-component-6a6b04194b51)
 * [简书](https://www.jianshu.com/p/a6e70fd35674)
 
