@@ -37,6 +37,10 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/react-js-functional-component-and-class-component-6a6b04194b51)
 * [简书](https://www.jianshu.com/p/a6e70fd35674)
 
+### Understanding the Principle of React Router
+* [Medium](https://medium.com/@haixiang6123/understanding-the-principle-of-react-router-5c9cd62a7d60)
+* [简书](https://www.jianshu.com/p/53dc287a8020)
+
 ## ES 6
 
 ### "let" and "const"
