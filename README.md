@@ -21,7 +21,11 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 
 ### React: Intro to Context API
 * [Medium](https://medium.com/@haixiang6123/react-intro-to-context-api-15915735f257)
-* [简书](https://www.jianshu.com/p/4aa68108d7d0)
+* [简书](https://www.jianshu.com/p/4aa68108d7d0o)
+
+## 10 Mins to Learn Hooks API
+* [Medium](https://medium.com/@haixiang6123/10-mins-to-learn-hooks-api-d70ee7b01e11)
+* [简书](https://www.jianshu.com/p/9047d28218cd)
 
 ## JavaScript
 
