@@ -1,0 +1,11 @@
+{
+    "configurations": [{
+        "name": "ts-node",
+        "type": "node",
+        "request": "launch",
+        "program": "/usr/local/bin/ts-node",
+        "args": ["${relativeFile}"],
+        "cwd": "${workspaceRoot}",
+        "protocol": "inspector"
+    }]
+}
