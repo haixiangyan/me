@@ -41,6 +41,12 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/understanding-the-principle-of-react-router-5c9cd62a7d60)
 * [简书](https://www.jianshu.com/p/53dc287a8020)
 
+## Sass
+
+### Sass Tutorial
+* [Medium](https://medium.com/@haixiang6123/sass-tutorial-d25ecccc2132)
+* [简书](https://www.jianshu.com/p/da33dd1bdffd)
+
 ## ES 6
 
 ### "let" and "const"
