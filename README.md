@@ -1,5 +1,7 @@
 # blog
-This repo including all my blogs and codes that are used to demonstrate in blogs.
+This repo 📦 contains all my Front-end development blogs 📒. 
+They are mainly from [Medium](https://medium.com/@haixiang6123) and [简书](https://www.jianshu.com/u/0340be4082b5).
+If you like them, please give me a star 😘
 
 ## React.js
 
@@ -23,7 +25,7 @@ This repo including all my blogs and codes that are used to demonstrate in blogs
 * [Medium](https://medium.com/@haixiang6123/react-intro-to-context-api-15915735f257)
 * [简书](https://www.jianshu.com/p/4aa68108d7d0o)
 
-## 10 Mins to Learn Hooks API
+### 10 Mins to Learn Hooks API
 * [Medium](https://medium.com/@haixiang6123/10-mins-to-learn-hooks-api-d70ee7b01e11)
 * [简书](https://www.jianshu.com/p/9047d28218cd)
 
