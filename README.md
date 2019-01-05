@@ -3,6 +3,35 @@ This repo 📦 contains all my Front-end development blogs 📒.
 They are mainly from [Medium](https://medium.com/@haixiang6123) and [简书](https://www.jianshu.com/u/0340be4082b5).
 If you like them, please give me a star 😘
 
+## JavaScript
+
+### Do You Really Know "new" in JS?
+* [Medium](https://medium.com/@haixiang6123/do-you-really-know-new-in-js-6ce794874f44)
+* [简书](https://www.jianshu.com/p/0b31c965f9ce)
+
+### React: Functional Component and Class Component
+* [Medium](https://medium.com/@haixiang6123/react-js-functional-component-and-class-component-6a6b04194b51)
+* [简书](https://www.jianshu.com/p/a6e70fd35674)
+
+### Understanding the Principle of React Router
+* [Medium](https://medium.com/@haixiang6123/understanding-the-principle-of-react-router-5c9cd62a7d60)
+* [简书](https://www.jianshu.com/p/53dc287a8020)
+
+### "let" and "const"
+* [Medium](https://medium.com/@haixiang6123/let-and-const-b6fc0311d825)
+* [简书](https://www.jianshu.com/p/1a49138ddbc9)
+
+
+## CSS
+
+### Cover Styles with getComputedStyles
+* [Medium](https://medium.com/@haixiang6123/cover-styles-with-getcomputedstyle-1cf8f10a3144)
+* [简书](https://www.jianshu.com/p/fbb615099af9)
+
+### Sass Tutorial
+* [Medium](https://medium.com/@haixiang6123/sass-tutorial-d25ecccc2132)
+* [简书](https://www.jianshu.com/p/da33dd1bdffd)
+
 ## React.js
 
 ### Why Do We Need React.js?
@@ -28,29 +57,3 @@ If you like them, please give me a star 😘
 ### 10 Mins to Learn Hooks API
 * [Medium](https://medium.com/@haixiang6123/10-mins-to-learn-hooks-api-d70ee7b01e11)
 * [简书](https://www.jianshu.com/p/9047d28218cd)
-
-## JavaScript
-
-### Do You Really Know "new" in JS?
-* [Medium](https://medium.com/@haixiang6123/do-you-really-know-new-in-js-6ce794874f44)
-* [简书](https://www.jianshu.com/p/0b31c965f9ce)
-
-### React: Functional Component and Class Component
-* [Medium](https://medium.com/@haixiang6123/react-js-functional-component-and-class-component-6a6b04194b51)
-* [简书](https://www.jianshu.com/p/a6e70fd35674)
-
-### Understanding the Principle of React Router
-* [Medium](https://medium.com/@haixiang6123/understanding-the-principle-of-react-router-5c9cd62a7d60)
-* [简书](https://www.jianshu.com/p/53dc287a8020)
-
-## Sass
-
-### Sass Tutorial
-* [Medium](https://medium.com/@haixiang6123/sass-tutorial-d25ecccc2132)
-* [简书](https://www.jianshu.com/p/da33dd1bdffd)
-
-## ES 6
-
-### "let" and "const"
-* [Medium](https://medium.com/@haixiang6123/let-and-const-b6fc0311d825)
-* [简书](https://www.jianshu.com/p/1a49138ddbc9)
