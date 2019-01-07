@@ -56,7 +56,7 @@ If you like them, please give me a star 😘
 * [Sass: @mixin vs placeholder vs @function](https://www.jianshu.com/p/9e58f753781d)
 
 ## SVG
-* [秒懂<SVG/>里的viewbox](https://www.jianshu.com/p/4422c05ff0f2)
+* [秒懂SVG里的viewbox](https://www.jianshu.com/p/4422c05ff0f2)
 
 ## React.js
 * [为什么要有React.js?](https://www.jianshu.com/p/55a55e271ebe)
