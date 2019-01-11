@@ -1,7 +1,7 @@
 # blog
 This repo 📦 contains all my Front-end development blogs 📒. 
-They are mainly from [Medium](https://medium.com/@haixiang6123) and [](https://www.jianshu.com/u/0340be4082b5).
-If you like them, please give me a star 😘
+They are mainly from [Medium](https://medium.com/@haixiang6123) and [简书](https://www.jianshu.com/u/0340be4082b5).
+If you like them, please give me a star 😘.
 
 # Medium
 
