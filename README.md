@@ -41,6 +41,9 @@ If you like them, please give me a star 😘
 
 * [Understanding the Principle of React Router](https://medium.com/@haixiang6123/understanding-the-principle-of-react-router-5c9cd62a7d60)
 
+## Vue.js
+* [Vue: Filter](https://medium.com/@haixiang6123/vue-filter-3ee738565a67)
+
 # 简书
 
 ## JavaScript
@@ -74,3 +77,6 @@ If you like them, please give me a star 😘
 * [Redux 入门](https://www.jianshu.com/p/733f0f664ee3)
 
 * [深入了解 React Router 原理](https://www.jianshu.com/p/53dc287a8020)
+
+## Vue.js
+* [Vue: 过滤器](https://www.jianshu.com/p/f9b8df86e73f)
