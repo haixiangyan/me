@@ -44,6 +44,8 @@ If you like them, please give me a star 😘.
 ## Vue.js
 * [Vue: Filter](https://medium.com/@haixiang6123/vue-filter-3ee738565a67)
 
+* [Vue: Custom Directives](https://medium.com/@haixiang6123/vue-custom-directives-f32134353a73)
+
 ## Others
 * [A Way to Highlight Codes in Medium](https://medium.com/@haixiang6123/a-way-to-highlight-codes-in-medium-f1d59c0a8c08)
 
@@ -83,3 +85,5 @@ If you like them, please give me a star 😘.
 
 ## Vue.js
 * [Vue: 过滤器](https://www.jianshu.com/p/f9b8df86e73f)
+
+* [Vue: 自定义指令](https://www.jianshu.com/p/06c4f2005ddd)
