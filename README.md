@@ -91,3 +91,10 @@ If you like them, please give me a star 😘.
 * [Vue: 自定义指令](https://www.jianshu.com/p/06c4f2005ddd)
 
 * [Vue: 样式绑定](https://www.jianshu.com/p/1e0b974eb391)
+
+## 外文翻译
+
+* [为什么我不用 React-Router](https://www.jianshu.com/p/a1237203f9a7)
+
+## 其他
+* [嘿，我造了个代码高亮的插件](https://www.jianshu.com/p/087d1b044136)
