@@ -58,6 +58,8 @@ If you like them, please give me a star 😘.
 
 * ["let" 和 "const"](https://www.jianshu.com/p/1a49138ddbc9)
 
+* [自己实现 Ajax](https://www.jianshu.com/p/90a629ab0284)
+
 ## CSS
 * [Sass 入门实战](https://www.jianshu.com/p/da33dd1bdffd)
 
