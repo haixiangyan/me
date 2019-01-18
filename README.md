@@ -48,6 +48,8 @@ If you like them, please give me a star 😘.
 
 * [Vue: Class and Style Bindings](https://medium.com/@haixiang6123/vue-class-and-style-bindings-e380911a2374)
 
+* [Vue: Import Sass File Globally](https://medium.com/@haixiang6123/vue-import-sass-file-globally-6266b17319cf)
+
 ## Others
 * [A Way to Highlight Codes in Medium](https://medium.com/@haixiang6123/a-way-to-highlight-codes-in-medium-f1d59c0a8c08)
 
@@ -93,6 +95,8 @@ If you like them, please give me a star 😘.
 * [Vue: 自定义指令](https://www.jianshu.com/p/06c4f2005ddd)
 
 * [Vue: 样式绑定](https://www.jianshu.com/p/1e0b974eb391)
+
+* [Vue: 如何引用全局 Sass](https://www.jianshu.com/p/a0a19ae0c737)
 
 ## 外文翻译
 
