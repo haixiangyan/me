@@ -102,5 +102,9 @@ If you like them, please give me a star 😘.
 
 * [为什么我不用 React-Router](https://www.jianshu.com/p/a1237203f9a7)
 
+## 记错本
+
+* [记一次错：循环中调用 Promise 的 resolve 的问题](https://www.jianshu.com/p/350567545deb)
+
 ## 其他
 * [嘿，我造了个代码高亮的插件](https://www.jianshu.com/p/087d1b044136)
