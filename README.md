@@ -106,5 +106,7 @@ If you like them, please give me a star 😘.
 
 * [记一次错：循环中调用 Promise 的 resolve 的问题](https://www.jianshu.com/p/350567545deb)
 
+* [记一次错：Vue 构建项目后使用 npm link 失败](https://www.jianshu.com/p/ca252cd667df)
+
 ## 其他
 * [嘿，我造了个代码高亮的插件](https://www.jianshu.com/p/087d1b044136)
