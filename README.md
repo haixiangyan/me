@@ -52,6 +52,8 @@ If you like them, please give me a star 😘.
 
 * [Vue: Plugin](https://medium.com/@haixiang6123/vue-plugin-6df34742c44a)
 
+* [Vue: EventHub in Vue](https://medium.com/@haixiang6123/vue-eventhub-in-vue-64f5b913db8d)
+
 ## Others
 * [A Way to Highlight Codes in Medium](https://medium.com/@haixiang6123/a-way-to-highlight-codes-in-medium-f1d59c0a8c08)
 
@@ -101,6 +103,8 @@ If you like them, please give me a star 😘.
 * [Vue: 如何引用全局 Sass](https://www.jianshu.com/p/a0a19ae0c737)
 
 * [Vue: 插件](https://www.jianshu.com/p/0b415d28d5f5)
+
+* [Vue: EventHub 和 Vue 更配哦](https://www.jianshu.com/p/40127e3d9905)
 
 ## 外文翻译
 
