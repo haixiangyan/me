@@ -50,6 +50,8 @@ If you like them, please give me a star 😘.
 
 * [Vue: Import Sass File Globally](https://medium.com/@haixiang6123/vue-import-sass-file-globally-6266b17319cf)
 
+* [Vue: Plugin](https://medium.com/@haixiang6123/vue-plugin-6df34742c44a)
+
 ## Others
 * [A Way to Highlight Codes in Medium](https://medium.com/@haixiang6123/a-way-to-highlight-codes-in-medium-f1d59c0a8c08)
 
