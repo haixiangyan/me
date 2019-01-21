@@ -98,6 +98,8 @@ If you like them, please give me a star 😘.
 
 * [Vue: 如何引用全局 Sass](https://www.jianshu.com/p/a0a19ae0c737)
 
+* [Vue：插件](https://www.jianshu.com/p/0b415d28d5f5)
+
 ## 外文翻译
 
 * [为什么我不用 React-Router](https://www.jianshu.com/p/a1237203f9a7)
