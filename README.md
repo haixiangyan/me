@@ -66,6 +66,8 @@ If you like them, please give me a star 😘.
 
 * [自己实现 Ajax](https://www.jianshu.com/p/90a629ab0284)
 
+* [JS: 立即执行函数](https://www.jianshu.com/p/2664a5d9cca3)
+
 ## CSS
 * [Sass 入门实战](https://www.jianshu.com/p/da33dd1bdffd)
 
