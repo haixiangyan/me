@@ -120,6 +120,8 @@ If you like them, please give me a star 😘.
 
 * [为什么我不用 React-Router](https://www.jianshu.com/p/a1237203f9a7)
 
+* [JS: 事件托管](https://www.jianshu.com/p/223a14d6abca)
+
 ## 记错本
 
 * [记一次错：循环中调用 Promise 的 resolve 的问题](https://www.jianshu.com/p/350567545deb)
