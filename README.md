@@ -15,6 +15,8 @@ If you like them, please give me a star 😘.
 
 * [JS: Closure](https://medium.com/@haixiang6123/js-closure-767573410c3c)
 
+* [JS: Inheritance](https://medium.com/@haixiang6123/js-inheritance-ab684b5f85ea)
+
 ## CSS
 
 * [Sass Tutorial](https://medium.com/@haixiang6123/sass-tutorial-d25ecccc2132)
