@@ -11,6 +11,8 @@ If you like them, please give me a star 😘.
 
 * ["let" and "const"](https://medium.com/@haixiang6123/let-and-const-b6fc0311d825)
 
+* [JS: Using Promise to send Ajax](https://medium.com/@haixiang6123/js-using-promise-to-send-ajax-e03a48c8dc8)
+
 ## CSS
 
 * [Sass Tutorial](https://medium.com/@haixiang6123/sass-tutorial-d25ecccc2132)
