@@ -13,6 +13,8 @@ If you like them, please give me a star 😘.
 
 * [JS: Using Promise to send Ajax](https://medium.com/@haixiang6123/js-using-promise-to-send-ajax-e03a48c8dc8)
 
+* [JS: Closure](https://medium.com/@haixiang6123/js-closure-767573410c3c)
+
 ## CSS
 
 * [Sass Tutorial](https://medium.com/@haixiang6123/sass-tutorial-d25ecccc2132)
