@@ -134,5 +134,11 @@ If you like them, please give me a star 😘.
 
 * [记一次错：Vue 构建项目后使用 npm link 失败](https://www.jianshu.com/p/ca252cd667df)
 
+* [记一次错: 内联元素不能用 scale](https://www.jianshu.com/p/4d2e12a82f46)
+
+* [记一次错：小数 em 引起的文字抖动问题](https://www.jianshu.com/p/1f28bff68778)
+
+* [记一次错: 将 Vue 里异步请求封装得更优雅](https://www.jianshu.com/p/63f7417f56f7)
+
 ## 其他
 * [嘿，我造了个代码高亮的插件](https://www.jianshu.com/p/087d1b044136)
