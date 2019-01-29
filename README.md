@@ -60,6 +60,8 @@ If you like them, please give me a star 😘.
 
 * [Vue: EventHub in Vue](https://medium.com/@haixiang6123/vue-eventhub-in-vue-64f5b913db8d)
 
+* [Vue: Lifecycle Hooks](https://medium.com/@haixiang6123/vue-lifecycle-hooks-bcc3c71d9814)
+
 ## Others
 * [A Way to Highlight Codes in Medium](https://medium.com/@haixiang6123/a-way-to-highlight-codes-in-medium-f1d59c0a8c08)
 
