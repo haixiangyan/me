@@ -62,6 +62,8 @@ If you like them, please give me a star 😘.
 
 * [Vue: Lifecycle Hooks](https://medium.com/@haixiang6123/vue-lifecycle-hooks-bcc3c71d9814)
 
+* [Vue: Two-Way Binding](https://medium.com/@haixiang6123/vue-two-way-binding-7e83e0ff26f3)
+
 ## Others
 * [A Way to Highlight Codes in Medium](https://medium.com/@haixiang6123/a-way-to-highlight-codes-in-medium-f1d59c0a8c08)
 
