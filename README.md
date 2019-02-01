@@ -144,3 +144,5 @@ If you like them, please give me a star 😘.
 
 ## 其他
 * [嘿，我造了个代码高亮的插件](https://www.jianshu.com/p/087d1b044136)
+
+* [计算机网络: 入门](https://www.jianshu.com/p/4e5bcc05bae9)
