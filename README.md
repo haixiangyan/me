@@ -132,13 +132,13 @@ If you like them, please give me a star 😘.
 
 ## 记错本
 
-* [记一次错：循环中调用 Promise 的 resolve 的问题](https://www.jianshu.com/p/350567545deb)
+* [记一次错: 循环中调用 Promise 的 resolve 的问题](https://www.jianshu.com/p/350567545deb)
 
-* [记一次错：Vue 构建项目后使用 npm link 失败](https://www.jianshu.com/p/ca252cd667df)
+* [记一次错: Vue 构建项目后使用 npm link 失败](https://www.jianshu.com/p/ca252cd667df)
 
 * [记一次错: 内联元素不能用 scale](https://www.jianshu.com/p/4d2e12a82f46)
 
-* [记一次错：小数 em 引起的文字抖动问题](https://www.jianshu.com/p/1f28bff68778)
+* [记一次错: 小数 em 引起的文字抖动问题](https://www.jianshu.com/p/1f28bff68778)
 
 * [记一次错: 将 Vue 里异步请求封装得更优雅](https://www.jianshu.com/p/63f7417f56f7)
 
