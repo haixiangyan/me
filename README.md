@@ -78,6 +78,10 @@ If you like them, please give me a star 😘.
 
 * [JS: 立即执行函数](https://www.jianshu.com/p/2664a5d9cca3)
 
+* [JS: 数组去重](https://www.jianshu.com/p/9ad53ecbe102)
+
+* [JS: 用 Promise 写一个 axios](https://www.jianshu.com/u/0340be4082b5)
+
 ## CSS
 * [Sass 入门实战](https://www.jianshu.com/p/da33dd1bdffd)
 
@@ -147,6 +151,6 @@ If you like them, please give me a star 😘.
 
 * [计算机网络: 入门](https://www.jianshu.com/p/4e5bcc05bae9)
 
-* [计算机网络: 链路层](https://www.jianshu.com/p/0e2d800b1520)
+* [计算机网络: 链路层(入门)](https://www.jianshu.com/p/0e2d800b1520)
 
-* [计算机网络: 网络层](https://www.jianshu.com/p/b83f234c1077)
+* [计算机网络: 网络层(Data Plane)](https://www.jianshu.com/p/b83f234c1077)
