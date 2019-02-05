@@ -153,4 +153,6 @@ If you like them, please give me a star 😘.
 
 * [计算机网络: 链路层(入门)](https://www.jianshu.com/p/0e2d800b1520)
 
+* [计算机网络: 链路层里的 Switch/Bridge](https://www.jianshu.com/p/690b542d8884)
+
 * [计算机网络: 网络层(Data Plane)](https://www.jianshu.com/p/b83f234c1077)
