@@ -158,3 +158,7 @@ If you like them, please give me a star 😘.
 * [计算机网络: 网络层(Data Plane)](https://www.jianshu.com/p/b83f234c1077)
 
 * [HTTP: 跨域真的有这么难吗](https://www.jianshu.com/p/3d949918c4fd)
+
+* [算法: 搜索引擎里的排名算法](https://www.jianshu.com/p/380c8b098672)
+
+* [算法: 图的搜索算法](https://www.jianshu.com/p/5cdd02e976d6)
