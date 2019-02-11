@@ -162,3 +162,5 @@ If you like them, please give me a star 😘.
 * [算法: 搜索引擎里的排名算法](https://www.jianshu.com/p/380c8b098672)
 
 * [算法: 图的搜索算法](https://www.jianshu.com/p/5cdd02e976d6)
+
+* [算法: 寻找图里的强连通组件](https://www.jianshu.com/p/d931becbe61a)
