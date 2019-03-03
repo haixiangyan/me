@@ -146,6 +146,8 @@ If you like them, please give me a star 😘.
 
 * [记一次错: 将 Vue 里异步请求封装得更优雅](https://www.jianshu.com/p/63f7417f56f7)
 
+* [由守望先锋英雄血槽引发的思考](https://www.jianshu.com/p/2f1040a0ea16)
+
 ## 其他
 * [嘿，我造了个代码高亮的插件](https://www.jianshu.com/p/087d1b044136)
 
