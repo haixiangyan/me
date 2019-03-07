@@ -2,14 +2,12 @@
     <div>
         <div class="jianshu-item">
             <div class="jianshu-item-left">
-                <a class="jianshu-item-title">TS: 接口</a>
-                <p class="jianshu-item-desc">
-                    接口算是官方文档里的第一个知识点了，这篇文章会简单介绍 TypeScrip 里的接口。 类型 在说接口之前我们先来了解下 TypeScript ...
-                </p>
-                <p class="jianshu-item-date">03-21</p>
+                <a class="jianshu-item-title">{{item.title}}</a>
+                <p class="jianshu-item-desc">{{item.desc}}</p>
+                <p class="jianshu-item-date">{{item.date}}</p>
             </div>
             <div class="jianshu-item-right">
-                <img class="jianshu-item-img" src="https://upload-images.jianshu.io/upload_images/2979799-40a3d166d2178e96.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="">
+                <img class="jianshu-item-img" :src="item.avatar" alt="">
             </div>
         </div>
         <div></div>
@@ -19,7 +17,12 @@
 
 <script>
     export default {
-        name: "JianshuItem"
+        name: "JianshuItem",
+        props: {
+            item: {
+                type: Object
+            }
+        }
     }
 </script>
 

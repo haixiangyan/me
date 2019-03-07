@@ -19,7 +19,7 @@
 
         <Col
             :xs="{ span: 22, offset: 1 }"
-            :sm="{ span: 16, offset: 4 }"
+            :sm="{ span: 10, offset: 7 }"
             class="views">
             <router-view></router-view>
         </Col>
@@ -63,22 +63,15 @@
     color: #2c3e50;
     height: 100vh;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-    .bg {
+    .menu {
         position: fixed;
         top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: url("./assets/bg.jpg") no-repeat center;
-        background-size: cover;
-        z-index: -1;
-    }
-    .menu {
         display: flex;
+        width: 100%;
         justify-content: center;
     }
     .views {
-        margin-top: 10px;
+        margin-top: 60px;
         margin-bottom: 10px;
         padding: 30px;
         background: white;

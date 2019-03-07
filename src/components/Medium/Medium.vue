@@ -4,14 +4,20 @@
             <img src="../../assets/medium.jpeg" alt="medium">
         </a>
         <divider>All Posts</divider>
-        <medium-item></medium-item>
+        <medium-item v-for="item in db" :item="item"></medium-item>
     </div>
 </template>
 
 <script>
+    import db from './medium-db'
     import MediumItem from './MediumItem'
     export default {
         name: "Medium",
+        data() {
+            return {
+                db
+            }
+        },
         components: {
             MediumItem
         }

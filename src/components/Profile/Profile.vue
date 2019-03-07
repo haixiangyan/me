@@ -51,14 +51,14 @@
     border-radius: 10px;
     height: 85vh;
     &-h1 {
-        font-size: 4em;
+        font-size: 5em;
         font-weight: normal;
         letter-spacing: .1em;
         text-align: center;
     }
     &-h2 {
         margin: 20px 0;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: normal;
         letter-spacing: .1em;
         text-align: center;
@@ -66,7 +66,7 @@
 
     &-avatar {
         margin: 20px 0;
-        width: 100px;
+        width: 120px;
         border-radius: 50%;
     }
 

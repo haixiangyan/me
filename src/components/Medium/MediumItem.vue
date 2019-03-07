@@ -1,17 +1,22 @@
 <template>
-    <div class="medium-item">
-        <img class="medium-item-img" src="https://miro.medium.com/fit/c/1400/420/1*Ht8T-vqbqy5iG7FzNQGjFA.png" alt="">
-        <a class="medium-item-title" href="">Vue: Two-Way Binding</a>
-        <p class="medium-item-desc">
-            Two-way binding is so popular in Vue.js. Many developers love to use v-model
-            directive in their Web APP. Talking about how…
-        </p>
+    <div>
+        <div class="medium-item">
+            <img class="medium-item-img" :src="item.avatar" alt="avatar">
+            <a class="medium-item-title" href="">{{item.title}}</a>
+            <p class="medium-item-desc">{{item.desc}}</p>
+        </div>
+        <divider></divider>
     </div>
 </template>
 
 <script>
     export default {
-        name: "MediumItem"
+        name: "MediumItem",
+        props: {
+            item: {
+                type: Object
+            }
+        }
     }
 </script>
 

@@ -6,11 +6,12 @@
             </a>
         </div>
         <divider>中文博文</divider>
-        <jianshu-item></jianshu-item>
+        <jianshu-item v-for="item in db" :item="item"></jianshu-item>
     </div>
 </template>
 
 <script>
+    import db from './jianshu-db'
     import JianshuItem from './JianshuItem'
     export default {
         name: "Jianshu",
@@ -18,6 +19,11 @@
             isActive: {
                 type: Boolean,
                 default: false
+            }
+        },
+        data() {
+            return {
+                db
             }
         },
         components: {
