@@ -7,7 +7,8 @@ import {
     Divider,
     Tooltip,
     Row,
-    Col
+    Col,
+    BackTop
 }
 from 'iview';
 
@@ -18,3 +19,4 @@ Vue.component('Divider', Divider)
 Vue.component('Tooltip', Tooltip)
 Vue.component('Row', Row)
 Vue.component('Col', Col)
+Vue.component('BackTop', BackTop)

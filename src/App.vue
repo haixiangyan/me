@@ -19,10 +19,12 @@
 
         <Col
             :xs="{ span: 22, offset: 1 }"
-            :sm="{ span: 10, offset: 7 }"
+            :lg="{ span: 10, offset: 7 }"
             class="views">
             <router-view></router-view>
         </Col>
+
+        <back-top></back-top>
     </div>
 </template>
 
