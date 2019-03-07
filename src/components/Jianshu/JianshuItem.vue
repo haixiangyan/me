@@ -4,7 +4,6 @@
             <div class="jianshu-item-left">
                 <a class="jianshu-item-title">{{item.title}}</a>
                 <p class="jianshu-item-desc">{{item.desc}}</p>
-                <p class="jianshu-item-date">{{item.date}}</p>
             </div>
             <div class="jianshu-item-right">
                 <img class="jianshu-item-img" :src="item.avatar" alt="">
