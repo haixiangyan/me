@@ -51,20 +51,22 @@
     border-radius: 10px;
     height: 85vh;
     &-h1 {
-        font-size: 5em;
+        font-size: 4em;
         font-weight: normal;
         letter-spacing: .1em;
+        text-align: center;
     }
     &-h2 {
         margin: 20px 0;
         font-size: 2em;
         font-weight: normal;
         letter-spacing: .1em;
+        text-align: center;
     }
 
     &-avatar {
         margin: 20px 0;
-        width: 30%;
+        width: 100px;
         border-radius: 50%;
     }
 

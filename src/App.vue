@@ -15,9 +15,14 @@
             </MenuItem>
         </Menu>
 
-        <div class="views">
+        <div class="bg"></div>
+
+        <Col
+            :xs="{ span: 22, offset: 1 }"
+            :sm="{ span: 16, offset: 4 }"
+            class="views">
             <router-view></router-view>
-        </div>
+        </Col>
     </div>
 </template>
 
@@ -55,18 +60,26 @@
     box-sizing: border-box;
 }
 #app {
-    height: 100vh;
     color: #2c3e50;
+    height: 100vh;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-    background: url("./assets/bg.jpg") no-repeat center;
-    background-size: cover;
+    .bg {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url("./assets/bg.jpg") no-repeat center;
+        background-size: cover;
+        z-index: -1;
+    }
     .menu {
         display: flex;
         justify-content: center;
     }
     .views {
-        width: 50%;
-        margin: 10px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding: 30px;
         background: white;
         border-radius: 4px;

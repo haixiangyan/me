@@ -23,7 +23,6 @@
     &-link {
         display: inline-flex;
         vertical-align: top;
-        width: 100%;
         img {
             width: 100%;
         }

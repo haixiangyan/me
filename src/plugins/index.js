@@ -5,7 +5,9 @@ import {
     MenuItem,
     Icon,
     Divider,
-    Tooltip
+    Tooltip,
+    Row,
+    Col
 }
 from 'iview';
 
@@ -14,3 +16,5 @@ Vue.component('MenuItem', MenuItem);
 Vue.component('Icon', Icon);
 Vue.component('Divider', Divider)
 Vue.component('Tooltip', Tooltip)
+Vue.component('Row', Row)
+Vue.component('Col', Col)
