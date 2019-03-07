@@ -24,7 +24,7 @@
 .medium {
     position: fixed;
     bottom: -10vh;
-    right: 0vw;
+    right: 2vw;
     height: 110vh;
     width: 40vw;
     display: flex;

@@ -29,10 +29,10 @@
 <style scoped lang="scss">
 .jianshu {
     position: fixed;
-    bottom: -10vh;
-    left: 0vw;
+    bottom: -15vh;
+    left: 2vw;
     height: 110vh;
-    width: 40vw;
+    width: 45vw;
     display: flex;
     border-radius: 10px;
     box-shadow: 0px 0px 24px 0px #EA7058;

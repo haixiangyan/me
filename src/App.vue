@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <div class="bg"></div>
         <jianshu :is-active="isJianshuActive"></jianshu>
         <profile></profile>
         <medium></medium>
@@ -38,5 +39,12 @@
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     height: 100vh;
+    .bg {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: url("./assets/bg.jpg") no-repeat center;
+        background-size: cover;
+    }
 }
 </style>
