@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Menu class="menu" mode="horizontal" :theme="theme1" active-name="1">
+        <Menu @on-select="onSelect" class="menu" mode="horizontal" :theme="theme1" active-name="1">
             <MenuItem name="1">
                 <Icon type="logo-snapchat" />
                 Me
@@ -42,6 +42,12 @@
             Jianshu,
             Medium,
             Profile
+        },
+        methods: {
+            onSelect(name) {
+                const routes = [ '/', '/jianshu', '/medium', '/contact' ]
+                this.$router.push(routes[parseInt(name - 1)])
+            }
         }
     }
 </script>
@@ -53,11 +59,9 @@
     box-sizing: border-box;
 }
 #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
     height: 100vh;
+    color: #2c3e50;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     background: url("./assets/bg.jpg") no-repeat center;
     background-size: cover;
     .menu {

@@ -1,16 +1,15 @@
 <template>
-    <div class="medium">
-        Medium
+    <div class="contact">
+        Contact
     </div>
 </template>
 
 <script>
     export default {
-        name: "Medium"
+        name: "Contact"
     }
 </script>
 
 <style scoped lang="scss">
-.medium {
-}
+
 </style>

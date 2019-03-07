@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Profile from '../components/Profile'
 import Jianshu from '../components/Jianshu'
 import Medium from '../components/Medium'
+import Contact from '../components/Contact'
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,10 @@ const routes = [
     {
         path: '/medium',
         component: Medium
+    },
+    {
+        path: '/contact',
+        component: Contact
     }
 ]
 
