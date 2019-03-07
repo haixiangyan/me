@@ -1,6 +1,23 @@
 <template>
     <div id="app">
-        <div class="bg"></div>
+        <Menu class="menu" mode="horizontal" :theme="theme1" active-name="1">
+            <MenuItem name="1">
+                <Icon type="logo-snapchat" />
+                Me
+            </MenuItem>
+            <MenuItem class="nav-jianshu" name="2">
+                <Icon type="ios-leaf" />
+                简书
+            </MenuItem>
+            <MenuItem name="3">
+                <Icon type="md-print" />
+                Medium
+            </MenuItem>
+            <MenuItem name="4">
+                <Icon type="md-game-controller-b" />
+                Contact
+            </MenuItem>
+        </Menu>
         <jianshu :is-active="isJianshuActive"></jianshu>
         <profile></profile>
         <medium></medium>
@@ -16,7 +33,8 @@
         name: 'app',
         data() {
             return {
-                isJianshuActive: false
+                isJianshuActive: false,
+                theme1: 'light'
             }
         },
         components: {
@@ -39,12 +57,11 @@
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     height: 100vh;
-    .bg {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background: url("./assets/bg.jpg") no-repeat center;
-        background-size: cover;
+    background: url("./assets/bg.jpg") no-repeat center;
+    background-size: cover;
+    .menu {
+        display: flex;
+        justify-content: center;
     }
 }
 </style>
