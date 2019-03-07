@@ -2,7 +2,7 @@
     <div class="profile">
         <h1 class="profile-h1">Hey, I'm Haixiang</h1>
         <h2 class="profile-h2">A fun guy and a front-end engineer</h2>
-        <img class="profile-avatar" src="../assets/avatar.jpg" alt="avatar">
+        <img class="profile-avatar" src="../../assets/avatar.jpg" alt="avatar">
     </div>
 </template>
 

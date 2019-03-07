@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Profile from '../components/Profile'
-import Jianshu from '../components/Jianshu'
-import Medium from '../components/Medium'
-import Contact from '../components/Contact'
+import Profile from '../components/Profile/Profile'
+import Jianshu from '../components/Jianshu/Jianshu'
+import Medium from '../components/Medium/Medium'
+import Contact from '../components/Contact/Contact'
 
 Vue.use(VueRouter)
 

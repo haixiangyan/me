@@ -26,9 +26,9 @@
 </template>
 
 <script>
-    import Profile from './components/Profile'
-    import Jianshu from './components/Jianshu'
-    import Medium from './components/Medium'
+    import Profile from './components/Profile/Profile'
+    import Jianshu from './components/Jianshu/Jianshu'
+    import Medium from './components/Medium/Medium'
 
     export default {
         name: 'app',
