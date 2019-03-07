@@ -71,7 +71,7 @@
     .views {
         width: 50%;
         margin: 10px auto;
-        padding: 10px;
+        padding: 30px;
         background: white;
         border-radius: 4px;
     }
