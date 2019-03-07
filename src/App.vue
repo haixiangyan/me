@@ -18,9 +18,10 @@
                 Contact
             </MenuItem>
         </Menu>
-        <jianshu :is-active="isJianshuActive"></jianshu>
-        <profile></profile>
-        <medium></medium>
+
+        <div class="views">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
@@ -62,6 +63,13 @@
     .menu {
         display: flex;
         justify-content: center;
+    }
+    .views {
+        width: 50%;
+        margin: 10px auto;
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
     }
 }
 </style>
