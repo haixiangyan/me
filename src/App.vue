@@ -13,10 +13,6 @@
                 <Icon type="md-print" />
                 Medium
             </MenuItem>
-            <MenuItem name="4">
-                <Icon type="md-game-controller-b" />
-                Contact
-            </MenuItem>
         </Menu>
 
         <div class="views">
@@ -45,7 +41,7 @@
         },
         methods: {
             onSelect(name) {
-                const routes = [ '/', '/jianshu', '/medium', '/contact' ]
+                const routes = [ '/', '/jianshu', '/medium']
                 this.$router.push(routes[parseInt(name - 1)])
             }
         }
