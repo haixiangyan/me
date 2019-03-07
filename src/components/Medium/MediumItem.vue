@@ -23,9 +23,7 @@
 <style scoped lang="scss">
 .medium-item {
     padding: 30px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     &-img {
         width: 100%;
     }
