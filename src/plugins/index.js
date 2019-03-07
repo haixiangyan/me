@@ -4,7 +4,8 @@ import {
     Menu,
     MenuItem,
     Icon,
-    Divider
+    Divider,
+    Tooltip
 }
 from 'iview';
 
@@ -12,3 +13,4 @@ Vue.component('Menu', Menu);
 Vue.component('MenuItem', MenuItem);
 Vue.component('Icon', Icon);
 Vue.component('Divider', Divider)
+Vue.component('Tooltip', Tooltip)
