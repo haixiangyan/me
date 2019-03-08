@@ -5,7 +5,7 @@
                 <img src="../../assets/jianshu.png" alt="jianshu">
             </a>
         </div>
-        <divider>中文博文</divider>
+        <divider>所有博文</divider>
         <jianshu-item v-for="item in db" :item="item" :key="item.title"></jianshu-item>
     </div>
 </template>

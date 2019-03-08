@@ -6,7 +6,7 @@
                 <p class="jianshu-item-desc">{{item.desc}}</p>
             </div>
             <div class="jianshu-item-right">
-                <img class="jianshu-item-img" :src="item.avatar" alt="">
+                <img  class="jianshu-item-img" :src="item.avatar" alt="avatar">
             </div>
         </div>
         <div></div>
@@ -32,6 +32,10 @@
 
     &-left {
         margin-right: 30px;
+    }
+
+    &-right {
+        height: 100px;
     }
 
     &-title {
