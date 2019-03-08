@@ -13,6 +13,10 @@
                 <Icon type="md-print" />
                 Medium
             </MenuItem>
+            <MenuItem name="4">
+                <Icon type="md-code" />
+                Portfolio
+            </MenuItem>
         </Menu>
 
         <div class="bg"></div>
@@ -47,7 +51,7 @@
         },
         methods: {
             onSelect(name) {
-                const routes = [ '/', '/jianshu', '/medium']
+                const routes = [ '/', '/jianshu', '/medium', '/portfolio']
                 this.$router.push(routes[parseInt(name - 1)])
             }
         }

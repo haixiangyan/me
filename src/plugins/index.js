@@ -8,7 +8,7 @@ import {
     Tooltip,
     Row,
     Col,
-    BackTop
+    BackTop,
 }
 from 'iview';
 
