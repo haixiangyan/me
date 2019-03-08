@@ -6,7 +6,7 @@
                 <p class="jianshu-item-desc">{{item.desc}}</p>
             </div>
             <div class="jianshu-item-right">
-                <img  class="jianshu-item-img" :src="item.avatar" alt="avatar">
+                <img v-if="item.avatar" class="jianshu-item-img" :src="item.avatar" alt="avatar">
             </div>
         </div>
         <div></div>
