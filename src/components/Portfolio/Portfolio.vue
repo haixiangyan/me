@@ -1,5 +1,7 @@
 <template>
     <div class="portfolio">
+        <img class="portfolio-img" src="../../assets/portfolio.png" alt="portfolio">
+        <divider>My Portfolio</divider>
         <medium-item v-for="item in portfolio" :item="item"></medium-item>
     </div>
 </template>
@@ -47,6 +49,9 @@
 
 <style scoped lang="scss">
 .portfolio {
+    &-img {
+        width: 100%;
+    }
     &-item {
         width: 100%;
         img {

@@ -27,7 +27,7 @@
 <style scoped lang="scss">
 .medium {
     &-link {
-        display: inline-flex;
+        display: inline-block;
         vertical-align: top;
         img {
             width: 100%;

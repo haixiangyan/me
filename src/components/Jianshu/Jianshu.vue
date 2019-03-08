@@ -37,7 +37,7 @@
     &-banner {
         text-align: center;
         &-link {
-            display: inline-flex;
+            display: inline-block;
             vertical-align: top;
         }
     }
