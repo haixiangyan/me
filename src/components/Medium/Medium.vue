@@ -4,7 +4,7 @@
             <img src="../../assets/medium.jpeg" alt="medium">
         </a>
         <divider>All Posts</divider>
-        <medium-item v-for="item in db" :item="item"></medium-item>
+        <medium-item v-for="item in db" :item="item" :key="item.title"></medium-item>
     </div>
 </template>
 
