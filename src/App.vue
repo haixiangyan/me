@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Menu @on-select="onSelect" class="menu" mode="horizontal" :theme="theme1" active-name="1">
+        <Menu @on-select="onSelect" class="menu" mode="horizontal" active-name="1">
             <MenuItem name="1">
                 <Icon type="logo-snapchat" />
                 Me
@@ -38,7 +38,6 @@
         data() {
             return {
                 isJianshuActive: false,
-                theme1: 'light'
             }
         },
         components: {
@@ -72,7 +71,7 @@
         left: 0;
         right: 0;
         height: 100vh;
-        background: url("./assets/bg.jpg") no-repeat;
+        background: url("./assets/bg.jpg") no-repeat center;
         background-size: cover;
     }
     .menu {
