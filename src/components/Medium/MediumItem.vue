@@ -30,14 +30,18 @@
         width: 100%;
     }
     &-title {
+        width: 100%;
         display: inline-flex;
         vertical-align: top;
         margin-top: 24.8px;
         color: rgba(0, 0, 0, 0.84);
-        font-size: 34px;
+        font-size: 3em;
         font-weight: 600;
         line-height: 1.12;
         letter-spacing: -0.022em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
         &:hover {
             text-decoration: underline;
         }
@@ -46,7 +50,7 @@
         margin-top: 18px;
         letter-spacing: -0.004em;
         line-height: 1.58;
-        font-size: 18px;
+        font-size: 1.3em;
         color: rgba(0, 0, 0, 0.84);
         font-weight: 400;
     }

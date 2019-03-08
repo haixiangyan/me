@@ -3,19 +3,19 @@
         <Menu @on-select="onSelect" class="menu" mode="horizontal" active-name="1">
             <MenuItem name="1">
                 <Icon type="logo-snapchat" />
-                Me
+                <span class="menu-item">Profile</span>
             </MenuItem>
             <MenuItem class="nav-jianshu" name="2">
                 <Icon type="ios-leaf" />
-                简书
+                <span class="menu-item">我的简书</span>
             </MenuItem>
             <MenuItem name="3">
-                <Icon type="md-print" />
-                Medium
+                <Icon type="ios-print" />
+                <span class="menu-item">Medium</span>
             </MenuItem>
             <MenuItem name="4">
                 <Icon type="md-code" />
-                Portfolio
+                <span class="menu-item">Portfolio</span>
             </MenuItem>
         </Menu>
 
@@ -84,6 +84,11 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        @media (max-width:480px) {
+            .menu-item {
+                display: none;
+            }
+        }
     }
     .views {
         margin-top: 70px;
