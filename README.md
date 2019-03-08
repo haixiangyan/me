@@ -6,4 +6,4 @@ This repo is for building my personal website. It contains some blogs about fron
 
 ## Screenshot
 
-![]()
+![](./screenshot/screenshot.PNG)
