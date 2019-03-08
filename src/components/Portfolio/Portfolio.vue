@@ -2,7 +2,7 @@
     <div class="portfolio">
         <img class="portfolio-img" src="../../assets/portfolio.png" alt="portfolio">
         <divider>My Portfolio</divider>
-        <medium-item v-for="item in portfolio" :item="item"></medium-item>
+        <medium-item v-for="item in portfolio" :item="item" :key="item.title"></medium-item>
     </div>
 </template>
 
