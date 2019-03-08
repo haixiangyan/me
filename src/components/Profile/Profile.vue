@@ -12,6 +12,13 @@
                 </a>
             </span>
             <span class="profile-social-item">
+                <tooltip max-width="200" content="Main: haixiang6123@gmail.com Campus: haixiany@uci.edu">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-mail"></use>
+                    </svg>
+                </tooltip>
+            </span>
+            <span class="profile-social-item">
                 <a href="https://www.jianshu.com/u/0340be4082b5">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-jianshu"></use>
@@ -26,7 +33,7 @@
                 </a>
             </span>
             <span class="profile-social-item">
-                <tooltip content="haixiang6123@gmail.com">
+                <tooltip content="Monster#14255">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-overwatch"></use>
                     </svg>
