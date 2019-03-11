@@ -54,5 +54,8 @@
             width: 100%;
         }
     }
+    footer {
+        text-align: right;
+    }
 }
 </style>
