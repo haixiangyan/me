@@ -4,7 +4,10 @@
             <img src="../../assets/medium.jpeg" alt="medium">
         </a>
         <divider>All Posts</divider>
-        <medium-item v-for="item in db" :item="item" :key="item.title"></medium-item>
+        <medium-item v-for="item in displayBlogs" :item="item" :key="item.title"></medium-item>
+        <footer>
+            <Page @on-change="onPageChange" size="small" :total="blogsTotal"></Page>
+        </footer>
     </div>
 </template>
 
@@ -15,11 +18,29 @@
         name: "Medium",
         data() {
             return {
-                db
+                db,
+                currentPage: 1
+            }
+        },
+        computed: {
+            displayBlogs() {
+                const begin = (this.currentPage - 1) * 10
+                const end = (begin + 10 > this.db.length) ? this.db.length : begin + 10
+                return this.db.slice(begin, end)
+            },
+            blogsTotal() {
+                console.log(this.db.length)
+                return this.db.length
             }
         },
         components: {
             MediumItem
+        },
+        methods: {
+            onPageChange(page) {
+                console.log(page)
+                this.currentPage = page
+            }
         }
     }
 </script>

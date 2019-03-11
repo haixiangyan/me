@@ -9,6 +9,7 @@ import {
     Row,
     Col,
     BackTop,
+    Page
 }
 from 'iview';
 
@@ -20,3 +21,4 @@ Vue.component('Tooltip', Tooltip)
 Vue.component('Row', Row)
 Vue.component('Col', Col)
 Vue.component('BackTop', BackTop)
+Vue.component('Page', Page)
