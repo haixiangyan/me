@@ -1,4 +1,19 @@
 export default [{
+    "title": "TS: 类",
+    "avatar": "//upload-images.jianshu.io/upload_images/2979799-40a3d166d2178e96.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "desc": "TS 的类其实和 ES6 里的类差不多，只不过 TS 加多了一些功能。这篇文章会介绍 TS 类的常用功能与接口的对比，以及抽象类。 入门 还是先...",
+    "url": "https://www.jianshu.com/p/0b54dc837570"
+}, {
+    "title": "JS 里的函数",
+    "avatar": "//upload-images.jianshu.io/upload_images/2979799-8c3e345279dad2f6.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "desc": "五种声明 具名函数 匿名函数 两边都有名字 和上面的方法有不一致性 window.Function 函数对象 箭头函数 函数的name属性 体系...",
+    "url": "https://www.jianshu.com/p/380420e736f3"
+}, {
+    "title": "脚本",
+    "avatar": "",
+    "desc": "Path 在 .zshrc 里添加路径，命令行就会自动在那个路径下找文件，如 一共要找三个路径 macvim的路径 ~/local 下的路径 系...",
+    "url": "https://www.jianshu.com/p/200d26d7b80f"
+}, {
     "title": "TS: 接口",
     "avatar": "https://upload-images.jianshu.io/upload_images/2979799-40a3d166d2178e96.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
     "desc": "接口算是官方文档里的第一个知识点了，这篇文章会简单介绍 TypeScrip 里的接口。 类型 在说接口之前我们先来了解下 TypeScript ...",
