@@ -1,4 +1,9 @@
 export default [{
+    "title": "TS: 函数",
+    "avatar": "//upload-images.jianshu.io/upload_images/2979799-5e3d652a96c7b5b2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "desc": "函数是一种特殊的对象，可以被调用。TS 里的函数和原生，ES 6 里的函数差不太多，只是多了一些其他功能。 基础 先来看一个简单的函数例子。 函...",
+    "url": "https://www.jianshu.com/p/ca91e1805a6a"
+},{
     "title": "计算机网络: FAQ",
     "avatar": "//upload-images.jianshu.io/upload_images/2979799-6c3d19dc2faac4be.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
     "desc": "计算网络 IP Address 问 写出下面给定 IP 168.56.128.0/18 的 Lowest, Highest 以及 Broadca...",
