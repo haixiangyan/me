@@ -17,7 +17,7 @@
                     {
                         title: 'Overwatch UI',
                         desc: 'A UI library of game Overwatch, built with Vue.js',
-                        avatar: 'https://i.loli.net/2019/03/08/5c821091ca93a.jpg',
+                        avatar: 'https://i.loli.net/2019/03/14/5c89a6bdd9efc.jpg',
                         url: 'https://haixiang6123.github.io/overwatch-ui-doc/#/'
                     },
                     {
