@@ -1,4 +1,9 @@
 export default [{
+    "title": "对象扩展运算符的 7 种技巧",
+    "avatar": "//upload-images.jianshu.io/upload_images/2979799-fbe8d78ed0e89436.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "desc": "翻译 7 Tricks with Resting and Spreading JavaScript Objects 扩展运算符不仅仅是用来解构参...",
+    "url": "https://www.jianshu.com/p/8ec8ca63c12b"
+},{
     "title": "TS: 函数",
     "avatar": "//upload-images.jianshu.io/upload_images/2979799-5e3d652a96c7b5b2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
     "desc": "函数是一种特殊的对象，可以被调用。TS 里的函数和原生，ES 6 里的函数差不太多，只是多了一些其他功能。 基础 先来看一个简单的函数例子。 函...",
