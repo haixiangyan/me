@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Menu @on-select="onSelect" class="menu" mode="horizontal" active-name="1">
+        <Menu @on-select="onSelect" class="menu" mode="horizontal" :active-name="activeName">
             <MenuItem name="1">
                 <Icon type="logo-snapchat" />
                 <span class="menu-item">Profile</span>
@@ -42,6 +42,17 @@
         data() {
             return {
                 isJianshuActive: false,
+            }
+        },
+        computed: {
+            activeName() {
+                const routes = {
+                    '/': 1,
+                    '/jianshu': 2,
+                    '/medium': 3,
+                    '/portfolio': 4
+                }
+                return routes[this.$route.path].toString()
             }
         },
         components: {

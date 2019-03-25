@@ -34,7 +34,6 @@
             displayBlogs() {
                 const begin = (this.currentPage - 1) * 10
                 const end = (begin + 10 > this.db.length) ? this.db.length : begin + 10
-                console.log(begin, end)
                 return this.db.slice(begin, end)
             },
             blogsTotal() {
