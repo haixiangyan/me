@@ -27,8 +27,9 @@
 
 <style scoped lang="scss">
 .jianshu-item {
-    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
     display: flex;
+    justify-content: space-between;
+    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 
     &-left {
         margin-right: 30px;
