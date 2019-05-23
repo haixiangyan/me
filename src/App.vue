@@ -17,6 +17,10 @@
                 <Icon type="md-code" />
                 <span class="menu-item">Portfolio</span>
             </MenuItem>
+            <MenuItem name="5">
+                <Icon type="ios-bookmark" />
+                <span class="menu-item">Bucket List</span>
+            </MenuItem>
         </Menu>
 
         <div class="bg"></div>
@@ -50,7 +54,8 @@
                     '/': 1,
                     '/jianshu': 2,
                     '/medium': 3,
-                    '/portfolio': 4
+                    '/portfolio': 4,
+                    '/bucket-list': 5
                 }
                 return routes[this.$route.path].toString()
             }
@@ -62,7 +67,7 @@
         },
         methods: {
             onSelect(name) {
-                const routes = [ '/', '/jianshu', '/medium', '/portfolio']
+                const routes = [ '/', '/jianshu', '/medium', '/portfolio', '/bucket-list']
                 this.$router.push(routes[parseInt(name - 1)])
             }
         }
