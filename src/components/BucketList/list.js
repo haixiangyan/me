@@ -1,6 +1,6 @@
 export default [
     {
-        name: '跳伞',
+        name: '跳伞 -> San Diego',
         status: 'done'
     },
     {
@@ -20,16 +20,20 @@ export default [
         status: 'todo'
     },
     {
-        name: '爬美国最高峰',
+        name: '打枪 -> Los Angeles gun club',
         status: 'done'
     },
     {
-        name: '在荒漠大公路上急速飙车',
-        status: 'todo'
+        name: '爬美国最高峰 -> Whitney Mountain',
+        status: 'done'
     },
     {
-        name: '玩一次短骑行',
-        status: 'todo'
+        name: '在双向单道公路上逆行超车 -> 美国 1 号公路',
+        status: 'done'
+    },
+    {
+        name: '玩一次短骑行 -> Newport Beach',
+        status: 'done'
     },
     {
         name: '玩一次长骑行',
@@ -49,7 +53,7 @@ export default [
     },
     {
         name: '尝试做个 Vlog',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '在沙漠过夜',
@@ -90,5 +94,13 @@ export default [
     {
         name: '去滑雪',
         status: 'todo'
-    }
+    },
+    {
+        name: '开 1 号公路',
+        status: 'done'
+    },
+    {
+        name: '开 66 号公路',
+        status: 'todo'
+    },
 ]

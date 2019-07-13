@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import bucketList from './bucketList'
+    import bucketList from './list'
     export default {
         name: "BucketList",
         data() {
