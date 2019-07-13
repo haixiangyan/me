@@ -5,7 +5,6 @@ import Profile from '../components/Profile/Profile'
 import Jianshu from '../components/Jianshu/Jianshu'
 import Medium from '../components/Medium/Medium'
 import Portfolio from '../components/Portfolio/Portfolio'
-import BucketList from '../components/BucketList/BucketList'
 
 Vue.use(VueRouter)
 
@@ -25,10 +24,6 @@ const routes = [
     {
         path: '/portfolio',
         component: Portfolio
-    },
-    {
-        path: '/bucket-list',
-        component: BucketList
     }
 ]
 
