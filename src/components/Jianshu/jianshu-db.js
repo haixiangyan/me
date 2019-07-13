@@ -1,4 +1,15 @@
 export default [{
+    "title": "配一个好用的终端",
+    "avatar": "https://upload-images.jianshu.io/upload_images/2979799-43ebfa217420f851.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "desc": "其实网上有很多文章教怎么去配一个好看的终端，但是大部分我觉得只是教你怎么装个 oh-my-zsh 而已，再加点丑陋的配色，而且说一堆用都用不到的...",
+    "url": "https://www.jianshu.com/p/13a2328e7c5e"
+},{
+    "title": "Vim 真的那么难吗？",
+    "avatar": "https://upload-images.jianshu.io/upload_images/2979799-d30777d221e20c9f.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "desc": "如果玩过知乎都会被那些大 V 洗脑说 Vim 好用，Vim 牛逼，也是因为这个原因才开始用 Vim 的，也想着总有一天会变成 Vim 高级玩家。...",
+    "url": "https://www.jianshu.com/p/919c4c3f70dc"
+}
+,{
     "title": "你们这些阿猫🐱阿狗🐶，做只猫🐱做只狗🐶不要做情人啊",
     "avatar": "//upload-images.jianshu.io/upload_images/2979799-786bc806f4741190.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
     "desc": "缘起 考完 Final 又是一个 Spring Break，10 天很无聊啊，人一无聊就想写代码，但是前面写守望 UI  CSS 的时候写伤了，...",
