@@ -1,7 +1,7 @@
 <template>
     <div class="profile">
         <h1 class="profile-h1">Hey, I'm Haixiang</h1>
-        <h2 class="profile-h2">A fun guy and a front-end engineer</h2>
+        <h2 class="profile-h2">Making awesome things for awesome people!</h2>
         <img class="profile-avatar" src="../../assets/avatar.jpg" alt="avatar">
         <div class="profile-social">
             <span class="profile-social-item">
