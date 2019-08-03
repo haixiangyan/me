@@ -23,7 +23,10 @@
             </MenuItem>
         </Menu>
 
-        <div class="bg"></div>
+        <div class="bg">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
 
         <Col
             :xs="{ span: 22, offset: 1 }"
@@ -90,9 +93,19 @@
         bottom: 0;
         left: 0;
         right: 0;
+        display: flex;
         height: 100vh;
-        background: url("./assets/bg.jpg") no-repeat center;
         background-size: cover;
+        .left {
+            height: 100%;
+            flex: 1;
+            background: #F9BCB9;
+        }
+        .right {
+            height: 100%;
+            flex: 1;
+            background: #C4E4DF;
+        }
     }
     .menu {
         position: fixed;
