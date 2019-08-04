@@ -15,6 +15,18 @@
                 selected: 0,
                 portfolio: [
                     {
+                        title: 'Awesome Terminal Tools',
+                        desc: 'Collection of all terminal tools developed by myself.',
+                        avatar: 'https://i.loli.net/2019/08/04/vpfyceuRg3msqlN.jpg',
+                        url: 'https://github.com/Haixiang6123/awesome-cli'
+                    },
+                    {
+                        title: 'Tinder for Cats & Dogs',
+                        desc: 'A project shows cats and dogs. Feel free to thump up and upload your pretty cats and dogs!',
+                        avatar: 'https://i.loli.net/2019/08/04/3ysBefloxGChKjD.jpg',
+                        url: 'https://github.com/Haixiang6123/awesome-a-cat-a-dog'
+                    },
+                    {
                         title: 'Overwatch UI',
                         desc: 'A UI library of game Overwatch, built with Vue.js',
                         avatar: 'https://i.loli.net/2019/03/14/5c89a6bdd9efc.jpg',
