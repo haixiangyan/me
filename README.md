@@ -1,9 +1,6 @@
-# blog
+# 我的个人网站
 
-This repo is for building my personal website. It contains some blogs about front-end tech. I also post them on [简书](https://www.jianshu.com/u/0340be4082b5) and [Medium](https://medium.com/@haixiang6123).
+![](screenshot/welcome.jpeg)
 
-[Click here to view my website](https://haixiang6123.github.io/blog/)
-
-## Screenshot
-
-![](./screenshot/screenshot.PNG)
+欢迎来到我的个人网站 [https://yanhaixiang.com](https://yanhaixiang.com)！这里主要收集了我在[简书](https://www.jianshu.com/u/0340be4082b5) 和 [Medium](https://medium.com/@haixiang6123)
+写的一些技术博客，还有收集了一些我的个人项目和 Bucket List！下面是我的个人网站：
