@@ -1,7 +1,7 @@
 <template>
     <div class="medium">
         <a class="medium-link" href="https://medium.com/@haixiang6123">
-            <img src="../../assets/medium.jpeg" alt="medium">
+            <img src="../../assets/medium.png" alt="medium">
         </a>
         <divider>All Posts</divider>
         <medium-item v-for="item in displayBlogs" :item="item" :key="item.title"></medium-item>
@@ -50,8 +50,9 @@
     &-link {
         display: inline-block;
         vertical-align: top;
+        text-align: center;
         img {
-            width: 100%;
+            width: 50%;
         }
     }
     footer {
