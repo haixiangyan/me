@@ -1,7 +1,8 @@
 <template>
     <div class="bucket-list">
-        <h1>Bucket List</h1>
-        <p>拒绝肥宅从我做起！</p>
+        <div class="bucket-list-image">
+            <img src="../../assets/bucketlist.jpg" alt="bucketlist">
+        </div>
         <ul class="bucket-list-content">
             <li v-for="item in bucketList" :class="['bucket-list-content-item', item.status]">
                 {{item.name}}
@@ -24,6 +25,9 @@
 
 <style scoped lang="scss">
     .bucket-list {
+        &-image {
+            text-align: center;
+        }
         &-content {
             margin-top: 12px;
             padding: 0 24px;
