@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import db from './medium-db'
+    import db from '../../../db/medium.js'
     import MediumItem from './MediumItem'
     export default {
         name: "Medium",

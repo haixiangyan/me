@@ -14,7 +14,7 @@
 </template>
 
 <script>
-    import db from './jianshu-db'
+    import db from '../../../db/jianshu-db.json'
     import JianshuItem from './JianshuItem'
     export default {
         name: "Jianshu",
