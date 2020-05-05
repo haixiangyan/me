@@ -32,7 +32,7 @@ const getArticles = async (page: number = 1): Promise<TArticle[]> => {
 
     const title = $el.find('.title').text().trim()
     const desc = $el.find('.abstract').text().trim()
-    const avatar = $el.find('img').length > 0 ? `https:${$el.find('img').attr('src')}` : ''
+    const avatar = $el.find('img').length > 0 ? $el.find('img').attr('src') : ''
     const url = `https://www.jianshu.com${$el.find('.title').attr('href')}`
 
     return {title, desc, avatar, url}
