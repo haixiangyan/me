@@ -7,7 +7,7 @@
 
                 <Tag :color="item.status === 'todo' ? 'error' : 'success'">{{item.status}}</Tag>
             </h1>
-            <Carousel v-if="item.imgs" height="400px" dots="never">
+            <Carousel v-if="item.imgs" :height="400" dots="none">
                 <CarouselItem class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
                     <img class="list-item-img" :src="img" alt="img">
                 </CarouselItem>
