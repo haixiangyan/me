@@ -10,7 +10,9 @@ import {
     Col,
     BackTop,
     Page,
-    Tag
+    Tag,
+    Carousel,
+    CarouselItem
 }
 from 'iview';
 
@@ -24,3 +26,5 @@ Vue.component('Col', Col)
 Vue.component('BackTop', BackTop)
 Vue.component('Page', Page)
 Vue.component('Tag', Tag)
+Vue.component('Carousel', Carousel)
+Vue.component('CarouselItem', CarouselItem)

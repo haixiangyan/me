@@ -1,14 +1,20 @@
 <template>
-    <div>
+    <li>
         <div class="list-item">
             <h1 class="list-item-title">
-                <a :href="item.url">{{item.name}}</a>
+                <span v-if="item.status === 'todo'">{{item.name}}</span>
+                <a v-else :href="item.url">{{item.name}}</a>
+
                 <Tag :color="item.status === 'todo' ? 'error' : 'success'">{{item.status}}</Tag>
             </h1>
-            <img class="list-item-img" :src="item.avatar" alt="avatar">
+            <Carousel v-if="item.imgs" loop>
+                <CarouselItem :key="img" v-for="img in item.imgs">
+                    <img :src="img" alt="img">
+                </CarouselItem>
+            </Carousel>
         </div>
         <divider></divider>
-    </div>
+    </li>
 </template>
 
 <script>
@@ -27,7 +33,7 @@
     &-title {
         display: flex;
         align-items: center;
-        a {
+        a, span {
             margin-right: 8px;
         }
     }

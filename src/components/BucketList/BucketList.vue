@@ -32,8 +32,8 @@
             text-align: center;
         }
         &-content {
+            list-style: none;
             margin-top: 12px;
-            padding: 0 24px;
         }
     }
 </style>
