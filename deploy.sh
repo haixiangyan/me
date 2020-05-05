@@ -10,13 +10,13 @@ npm run build
 cd dist
 
 # 部署到自定义域域名
- echo 'yanhaixiang.com' > CNAME
+echo 'yanhaixiang.com' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 部署到 https://<USERNAME>.github.io
- git push -f git@github.com:Haixiang6123/Haixiang6123.github.io.git master
+git push -f git@github.com:Haixiang6123/Haixiang6123.github.io.git master
 
 cd -
