@@ -82,15 +82,6 @@
     color: #2c3e50;
     height: 100vh;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-    .bg {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        height: 100vh;
-    }
     .menu {
         position: fixed;
         top: 0;
