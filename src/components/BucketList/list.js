@@ -360,9 +360,9 @@ export default [
     name: '玩一次长骑行',
     status: 'done',
     imgs: [
-      getImageUrl('长骑1.png'),
-      getImageUrl('长骑2.png'),
-      getImageUrl('长骑3.png'),
+      getImageUrl('长骑1.jpeg'),
+      getImageUrl('长骑2.jpeg'),
+      getImageUrl('长骑3.jpeg'),
     ]
   },
   {
