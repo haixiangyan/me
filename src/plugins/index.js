@@ -9,7 +9,8 @@ import {
     Row,
     Col,
     BackTop,
-    Page
+    Page,
+    Tag
 }
 from 'iview';
 
@@ -22,3 +23,4 @@ Vue.component('Row', Row)
 Vue.component('Col', Col)
 Vue.component('BackTop', BackTop)
 Vue.component('Page', Page)
+Vue.component('Tag', Tag)
