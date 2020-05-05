@@ -48,6 +48,7 @@
 <style scoped lang="scss">
 .medium {
     &-link {
+        width: 100%;
         display: inline-block;
         vertical-align: top;
         text-align: center;
