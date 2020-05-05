@@ -7,9 +7,9 @@
 
                 <Tag :color="item.status === 'todo' ? 'error' : 'success'">{{item.status}}</Tag>
             </h1>
-            <Carousel v-if="item.imgs" loop>
-                <CarouselItem :key="img" v-for="img in item.imgs">
-                    <img :src="img" alt="img">
+            <Carousel v-if="item.imgs" height="400px" dots="never">
+                <CarouselItem class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
+                    <img class="list-item-img" :src="img" alt="img">
                 </CarouselItem>
             </Carousel>
         </div>
@@ -36,6 +36,13 @@
         a, span {
             margin-right: 8px;
         }
+    }
+    &-img {
+        &-wrapper {
+            text-align: center;
+        }
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 </style>
