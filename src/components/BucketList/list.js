@@ -5,7 +5,7 @@ export default [
     },
     {
         name: '考持枪证',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '考飞行员证',
@@ -17,7 +17,7 @@ export default [
     },
     {
         name: '去 Apple Park 参观',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '打枪 -> Los Angeles gun club',
@@ -37,7 +37,7 @@ export default [
     },
     {
         name: '玩一次长骑行',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '冲个浪',
@@ -49,7 +49,7 @@ export default [
     },
     {
         name: '在山顶做个倒立',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '尝试做个 Vlog',
@@ -61,7 +61,7 @@ export default [
     },
     {
         name: '用无人机拍加州',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '坐纽约的破地铁',
@@ -77,7 +77,7 @@ export default [
     },
     {
         name: '划橡皮艇',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '钓一条大鱼',
@@ -93,7 +93,7 @@ export default [
     },
     {
         name: '去滑雪',
-        status: 'todo'
+        status: 'done'
     },
     {
         name: '开 1 号公路',
@@ -101,6 +101,18 @@ export default [
     },
     {
         name: '开 66 号公路',
+        status: 'todo'
+    },
+    {
+        name: '出一篇前端教程',
+        status: 'todo'
+    },
+    {
+        name: '学一下平面设计，sketch, ps',
+        status: 'todo'
+    },
+    {
+        name: '学一下摄影',
         status: 'todo'
     },
 ]
