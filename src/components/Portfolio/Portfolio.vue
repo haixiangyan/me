@@ -1,6 +1,8 @@
 <template>
     <div class="portfolio">
-        <img class="portfolio-img" src="../../assets/portfolio.png" alt="portfolio">
+        <a class="portfolio-link" href="https://github.com/Haixiang6123" target="_blank">
+            <img src="../../assets/portfolio.png" alt="portfolio">
+        </a>
         <divider>My Portfolio</divider>
         <medium-item v-for="item in portfolio" :item="item" :key="item.title"></medium-item>
     </div>
@@ -61,8 +63,14 @@
 
 <style scoped lang="scss">
 .portfolio {
-    &-img {
+    &-link {
         width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        img {
+            width: 45%;
+        }
     }
     &-item {
         width: 100%;
