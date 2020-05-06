@@ -49,6 +49,7 @@
         line-height: 1.5;
         color: black;
         margin-bottom: 4px;
+        text-decoration: none;
         &:hover {
             text-decoration: underline;
         }
