@@ -1,8 +1,8 @@
 <template>
     <div class="profile">
+        <img class="profile-avatar" src="../../assets/avatar.jpg" alt="avatar">
         <h1 class="profile-h1">Hey, I'm Haixiang</h1>
         <h2 class="profile-h2">Making awesome things for awesome people!</h2>
-        <img class="profile-avatar" src="../../assets/avatar.jpg" alt="avatar">
         <div class="profile-social">
             <span class="profile-social-item">
                 <a href="https://github.com/Haixiang6123">
@@ -51,6 +51,7 @@
 
 <style scoped lang="scss">
 .profile {
+    margin-top: -70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +74,7 @@
 
     &-avatar {
         margin: 20px 0;
-        width: 120px;
+        width: 180px;
         border-radius: 50%;
     }
 
