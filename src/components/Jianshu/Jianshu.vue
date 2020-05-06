@@ -12,11 +12,12 @@
                       :is-last="index === displayBlogs.length - 1"/>
         <footer>
             <el-pagination @current-change="onPageChange"
+                           hide-on-single-page
                            background
-                           :pager-count="3"
                            :page-size="10"
+                           :pager-count="5"
                            :total="blogsTotal"
-                           layout="prev, pager, next"/>
+                           layout="pager"/>
         </footer>
     </div>
 </template>
