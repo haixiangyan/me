@@ -13,7 +13,6 @@
                 </CarouselItem>
             </Carousel>
         </div>
-        <divider></divider>
     </li>
 </template>
 
@@ -35,6 +34,7 @@
 
 <style scoped lang="scss">
 .list-item {
+    margin: 12px 0;
     &-title {
         display: flex;
         align-items: center;
