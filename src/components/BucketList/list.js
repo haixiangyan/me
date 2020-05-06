@@ -366,6 +366,14 @@ export default [
     ]
   },
   {
+    name: '去听 Taylor Swift 演唱会',
+    status: 'todo'
+  },
+  {
+    name: '环台湾岛骑行',
+    status: 'todo'
+  },
+  {
     name: '考飞行员证',
     status: 'todo'
   },
