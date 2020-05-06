@@ -1,8 +1,8 @@
 <template>
     <div class="profile">
         <img class="profile-avatar" src="../../assets/avatar.jpg" alt="avatar">
-        <h1 class="profile-h1">Hey, I'm Haixiang</h1>
-        <h2 class="profile-h2">Making awesome things for awesome people!</h2>
+        <h1 class="profile-h1">哈啰！我是海翔</h1>
+        <h2 class="profile-h2">年轻人不要熬夜 :)</h2>
         <div class="profile-social">
             <span class="profile-social-item">
                 <a href="https://github.com/Haixiang6123" target="_blank">
@@ -59,7 +59,7 @@
     border-radius: 10px;
     height: 85vh;
     &-h1 {
-        font-size: 4.5em;
+        font-size: 3.5em;
         font-weight: normal;
         letter-spacing: .1em;
         text-align: center;
@@ -90,8 +90,8 @@
             }
         }
         svg {
-            height: 20px;
-            width: 20px;
+            height: 24px;
+            width: 24px;
         }
     }
 }

@@ -3,7 +3,7 @@
         <a class="medium-link" href="https://medium.com/@haixiang6123">
             <img src="../../assets/medium.jpg" alt="medium">
         </a>
-        <el-divider>All Posts</el-divider>
+        <el-divider>所有博文</el-divider>
         <medium-item v-for="(item, index) in displayBlogs"
                      :item="item"
                      :key="item.title"
