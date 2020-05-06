@@ -3,11 +3,11 @@
         <Menu @on-select="onSelect" class="menu" mode="horizontal" :active-name="activeName">
             <MenuItem name="/">
                 <Icon type="logo-snapchat"/>
-                <span class="menu-item">Profile</span>
+                <span class="menu-item">我</span>
             </MenuItem>
             <MenuItem class="nav-jianshu" name="/jianshu">
                 <Icon type="ios-leaf"/>
-                <span class="menu-item">我的简书</span>
+                <span class="menu-item">简书</span>
             </MenuItem>
             <MenuItem name="/medium">
                 <Icon type="ios-print"/>
@@ -15,12 +15,12 @@
             </MenuItem>
             <MenuItem name="/portfolio">
                 <Icon type="md-code"/>
-                <span class="menu-item">Portfolio</span>
+                <span class="menu-item">项目</span>
             </MenuItem>
             <Submenu name="/bucket-list">
                 <template slot="title">
                     <Icon type="ios-bookmark"/>
-                    <span class="menu-item">Bucket List</span>
+                    <span class="menu-item">人生清单</span>
                 </template>
                 <MenuItem name="/bucket-list/done" style="color: #19be6b">Done</MenuItem>
                 <MenuItem name="/bucket-list/todo" style="color: #ed4014">Todo</MenuItem>

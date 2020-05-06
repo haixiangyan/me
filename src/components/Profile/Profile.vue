@@ -5,7 +5,7 @@
         <h2 class="profile-h2">Making awesome things for awesome people!</h2>
         <div class="profile-social">
             <span class="profile-social-item">
-                <a href="https://github.com/Haixiang6123">
+                <a href="https://github.com/Haixiang6123" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
                     </svg>
@@ -19,14 +19,14 @@
                 </tooltip>
             </span>
             <span class="profile-social-item">
-                <a href="https://www.jianshu.com/u/0340be4082b5">
+                <a href="https://www.jianshu.com/u/0340be4082b5" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-jianshu"></use>
                     </svg>
                 </a>
             </span>
             <span class="profile-social-item">
-                <a href="https://medium.com/@haixiang6123">
+                <a href="https://medium.com/@haixiang6123" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-medium"></use>
                     </svg>

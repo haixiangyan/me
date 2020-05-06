@@ -61,6 +61,9 @@
         &-link {
             display: inline-block;
             vertical-align: top;
+            img {
+                max-width: 100%;
+            }
         }
     }
     footer {
