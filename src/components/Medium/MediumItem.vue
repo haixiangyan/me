@@ -5,7 +5,7 @@
             <a class="medium-item-title" :href="item.url">{{item.title}}</a>
             <p class="medium-item-desc">{{item.desc}}</p>
         </div>
-        <divider></divider>
+        <divider v-if="!isLast"></divider>
     </div>
 </template>
 
@@ -15,6 +15,10 @@
         props: {
             item: {
                 type: Object
+            },
+            isLast: {
+              type: Boolean,
+              default: false
             }
         }
     }

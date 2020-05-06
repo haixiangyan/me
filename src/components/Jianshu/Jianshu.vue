@@ -6,9 +6,12 @@
             </a>
         </div>
         <divider>所有博文</divider>
-        <jianshu-item v-for="item in displayBlogs" :item="item" :key="item.title"></jianshu-item>
+        <jianshu-item v-for="(item, index) in displayBlogs"
+                      :item="item"
+                      :key="item.title"
+                      :is-last="index === displayBlogs.length - 1"/>
         <footer>
-            <Page @on-change="onPageChange" size="small" :total="blogsTotal"></Page>
+            <Page simple @on-change="onPageChange" :total="blogsTotal"></Page>
         </footer>
     </div>
 </template>
@@ -61,7 +64,8 @@
         }
     }
     footer {
-        text-align: right;
+        margin-top: 36px;
+        text-align: center;
     }
 }
 </style>

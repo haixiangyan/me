@@ -10,7 +10,7 @@
             </div>
         </div>
         <div></div>
-        <divider></divider>
+        <divider v-if="!isLast"></divider>
     </div>
 </template>
 
@@ -20,6 +20,10 @@
         props: {
             item: {
                 type: Object
+            },
+            isLast: {
+              type: Boolean,
+              default: false
             }
         }
     }

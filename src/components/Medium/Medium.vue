@@ -4,9 +4,12 @@
             <img src="../../assets/medium.png" alt="medium">
         </a>
         <divider>All Posts</divider>
-        <medium-item v-for="item in displayBlogs" :item="item" :key="item.title"></medium-item>
+        <medium-item v-for="(item, index) in displayBlogs"
+                     :item="item"
+                     :key="item.title"
+                     :is-last="index === displayBlogs.length - 1"/>
         <footer>
-            <Page @on-change="onPageChange" size="small" :total="blogsTotal"></Page>
+            <Page @on-change="onPageChange" simple :total="blogsTotal"></Page>
         </footer>
     </div>
 </template>
@@ -55,7 +58,8 @@
         }
     }
     footer {
-        text-align: right;
+        margin-top: 36px;
+        text-align: center;
     }
 }
 </style>
