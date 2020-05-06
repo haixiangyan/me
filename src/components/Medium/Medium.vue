@@ -29,7 +29,6 @@
                 return this.db.slice(begin, end)
             },
             blogsTotal() {
-                console.log(this.db.length)
                 return this.db.length
             }
         },
@@ -38,7 +37,6 @@
         },
         methods: {
             onPageChange(page) {
-                console.log(page)
                 this.currentPage = page
             }
         }
