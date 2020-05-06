@@ -1,13 +1,14 @@
 <template>
     <li>
         <div class="list-item">
-            <h2 class="list-item-title">
-                <span v-if="item.status === 'todo'">{{item.name}}</span>
-                <a v-else @click="show = !show">{{item.name}}</a>
+            <section class="list-item-header">
+                <i :class="item.status === 'done' ? 'el-icon-check' : 'el-icon-s-flag'"/>
 
-                <el-tag :color="item.status === 'todo' ? 'danger' : 'success'">{{item.status}}</el-tag>
-            </h2>
-            <el-carousel v-if="show && item.imgs" :height="400" dots="none">
+                <span class="title" :class="{done: item.status === 'done'}" @click="showImages">
+                    {{item.name}}
+                </span>
+            </section>
+            <el-carousel v-if="show && item.imgs" :height="400" indicator-position="none">
                 <el-carousel-item class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
                     <img class="list-item-img" :src="img" alt="img">
                 </el-carousel-item>
@@ -17,35 +18,64 @@
 </template>
 
 <script>
-    export default {
-        name: "MediumItem",
-        props: {
-            item: {
-                type: Object
-            }
-        },
-        data() {
-          return {
-            show: false
-          }
+  export default {
+    name: "MediumItem",
+    props: {
+      item: {
+        type: Object
+      }
+    },
+    data() {
+      return {
+        show: false
+      }
+    },
+    methods: {
+      showImages() {
+        if (this.item.status === 'done') {
+          this.show = !this.show
         }
+      }
     }
+  }
 </script>
 
 <style scoped lang="scss">
 .list-item {
     margin: 12px 0;
-    &-title {
+
+    &-header {
         display: flex;
         align-items: center;
-        a, span {
-            margin-right: 8px;
+        margin-bottom: 16px;
+        > i {
+            font-weight: bold;
+            margin-right: 16px;
+            &.el-icon-check {
+                color: #67C23A;
+            }
+            &.el-icon-s-flag {
+                color: #F56C6C;
+            }
+        }
+
+        > .title {
+            font-size: 1.2em;
+            &.done {
+                color: #409EFF;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
+
     &-img {
         &-wrapper {
             text-align: center;
         }
+
         max-width: 100%;
         max-height: 100%;
     }
