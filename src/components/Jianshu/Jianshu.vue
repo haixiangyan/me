@@ -5,13 +5,16 @@
                 <img src="../../assets/jianshu.png" alt="jianshu">
             </a>
         </div>
-        <divider>所有博文</divider>
+        <el-divider>所有博文</el-divider>
         <jianshu-item v-for="(item, index) in displayBlogs"
                       :item="item"
                       :key="item.title"
                       :is-last="index === displayBlogs.length - 1"/>
         <footer>
-            <Page simple @on-change="onPageChange" :total="blogsTotal"></Page>
+            <el-pagination @on-change="onPageChange"
+                           :page-size="10"
+                           :total="blogsTotal"
+                           layout="prev, pager, next"/>
         </footer>
     </div>
 </template>

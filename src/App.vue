@@ -1,40 +1,38 @@
 <template>
     <div id="app">
-        <Menu @on-select="onSelect" class="menu" mode="horizontal" :active-name="activeName">
-            <MenuItem name="/">
-                <Icon type="logo-snapchat"/>
+        <el-menu class="menu" router mode="horizontal">
+            <el-menu-item index="/">
+               <i class="el-icon-user"></i>
                 <span class="menu-item">我</span>
-            </MenuItem>
-            <MenuItem class="nav-jianshu" name="/jianshu">
-                <Icon type="ios-leaf"/>
+            </el-menu-item>
+            <el-menu-item index="/jianshu">
+                <i class="el-icon-s-order"></i>
                 <span class="menu-item">简书</span>
-            </MenuItem>
-            <MenuItem name="/medium">
-                <Icon type="ios-print"/>
+            </el-menu-item>
+            <el-menu-item index="/medium">
+                <i class="el-icon-printer"></i>
                 <span class="menu-item">Medium</span>
-            </MenuItem>
-            <MenuItem name="/portfolio">
-                <Icon type="md-code"/>
+            </el-menu-item>
+            <el-menu-item index="/portfolio">
+                <i class="el-icon-suitcase"></i>
                 <span class="menu-item">项目</span>
-            </MenuItem>
-            <Submenu name="/bucket-list">
+            </el-menu-item>
+            <el-submenu index="/bucket-list/done">
                 <template slot="title">
-                    <Icon type="ios-bookmark"/>
+                    <i class="el-icon-s-order"></i>
                     <span class="menu-item">人生清单</span>
                 </template>
-                <MenuItem name="/bucket-list/done" style="color: #19be6b">Done</MenuItem>
-                <MenuItem name="/bucket-list/todo" style="color: #ed4014">Todo</MenuItem>
-            </Submenu>
-        </Menu>
+                <el-menu-item index="/bucket-list/done" style="color: #67C23A">Done</el-menu-item>
+                <el-menu-item index="/bucket-list/todo" style="color: #F56C6C">Todo</el-menu-item>
+            </el-submenu>
+        </el-menu>
 
-        <Col
+        <el-col
             :xs="{ span: 22, offset: 1 }"
             :lg="{ span: 10, offset: 7 }"
             class="views">
             <router-view></router-view>
-        </Col>
-
-        <back-top></back-top>
+        </el-col>
     </div>
 </template>
 

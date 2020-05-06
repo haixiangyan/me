@@ -5,13 +5,13 @@
                 <span v-if="item.status === 'todo'">{{item.name}}</span>
                 <a v-else @click="show = !show">{{item.name}}</a>
 
-                <Tag :color="item.status === 'todo' ? 'error' : 'success'">{{item.status}}</Tag>
+                <el-tag :color="item.status === 'todo' ? 'danger' : 'success'">{{item.status}}</el-tag>
             </h2>
-            <Carousel v-if="show && item.imgs" :height="400" dots="none">
-                <CarouselItem class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
+            <el-carousel v-if="show && item.imgs" :height="400" dots="none">
+                <el-carousel-item class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
                     <img class="list-item-img" :src="img" alt="img">
-                </CarouselItem>
-            </Carousel>
+                </el-carousel-item>
+            </el-carousel>
         </div>
     </li>
 </template>

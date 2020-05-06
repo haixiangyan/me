@@ -3,13 +3,16 @@
         <a class="medium-link" href="https://medium.com/@haixiang6123">
             <img src="../../assets/medium.jpg" alt="medium">
         </a>
-        <divider>All Posts</divider>
+        <el-divider>All Posts</el-divider>
         <medium-item v-for="(item, index) in displayBlogs"
                      :item="item"
                      :key="item.title"
                      :is-last="index === displayBlogs.length - 1"/>
         <footer>
-            <Page @on-change="onPageChange" simple :total="blogsTotal"></Page>
+            <el-pagination @on-change="onPageChange"
+                           :page-size="10"
+                           :total="blogsTotal"
+                           layout="prev, pager, next"/>
         </footer>
     </div>
 </template>

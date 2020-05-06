@@ -3,7 +3,7 @@
         <a class="portfolio-link" href="https://github.com/Haixiang6123" target="_blank">
             <img src="../../assets/portfolio.png" alt="portfolio">
         </a>
-        <divider>My Portfolio</divider>
+        <el-divider>My Portfolio</el-divider>
         <medium-item v-for="item in portfolio" :item="item" :key="item.title"></medium-item>
     </div>
 </template>

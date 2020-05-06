@@ -5,7 +5,7 @@
             <a class="medium-item-title" :href="item.url">{{item.title}}</a>
             <p class="medium-item-desc">{{item.desc}}</p>
         </div>
-        <divider v-if="!isLast"></divider>
+        <el-divider v-if="!isLast"></el-divider>
     </div>
 </template>
 

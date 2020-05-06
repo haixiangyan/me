@@ -3,7 +3,7 @@
         <div class="bucket-list-image">
             <img src="../../assets/bucketlist.jpg" alt="bucketlist">
         </div>
-        <divider>My Bucket List</divider>
+        <el-divider>My Bucket List</el-divider>
         <ul class="bucket-list-content">
             <list-item v-for="item in filterBucketList" :item="item" :key="item.title"></list-item>
         </ul>

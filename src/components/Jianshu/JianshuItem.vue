@@ -10,7 +10,7 @@
             </div>
         </div>
         <div></div>
-        <divider v-if="!isLast"></divider>
+        <el-divider v-if="!isLast"></el-divider>
     </div>
 </template>
 
