@@ -1,26 +1,30 @@
 <template>
     <div id="app">
         <Menu @on-select="onSelect" class="menu" mode="horizontal" :active-name="activeName">
-            <MenuItem name="1">
-                <Icon type="logo-snapchat" />
+            <MenuItem name="/">
+                <Icon type="logo-snapchat"/>
                 <span class="menu-item">Profile</span>
             </MenuItem>
-            <MenuItem class="nav-jianshu" name="2">
-                <Icon type="ios-leaf" />
+            <MenuItem class="nav-jianshu" name="/jianshu">
+                <Icon type="ios-leaf"/>
                 <span class="menu-item">我的简书</span>
             </MenuItem>
-            <MenuItem name="3">
-                <Icon type="ios-print" />
+            <MenuItem name="/medium">
+                <Icon type="ios-print"/>
                 <span class="menu-item">Medium</span>
             </MenuItem>
-            <MenuItem name="4">
-                <Icon type="md-code" />
+            <MenuItem name="/portfolio">
+                <Icon type="md-code"/>
                 <span class="menu-item">Portfolio</span>
             </MenuItem>
-            <MenuItem name="5">
-                <Icon type="ios-bookmark" />
-                <span class="menu-item">Bucket List</span>
-            </MenuItem>
+            <Submenu name="/bucket-list">
+                <template slot="title">
+                    <Icon type="ios-bookmark"/>
+                    <span class="menu-item">Bucket List</span>
+                </template>
+                <MenuItem name="/bucket-list/done" style="color: #19be6b">Done</MenuItem>
+                <MenuItem name="/bucket-list/todo" style="color: #ed4014">Todo</MenuItem>
+            </Submenu>
         </Menu>
 
         <Col
@@ -44,18 +48,7 @@
         data() {
             return {
                 isJianshuActive: false,
-            }
-        },
-        computed: {
-            activeName() {
-                const routes = {
-                    '/': 1,
-                    '/jianshu': 2,
-                    '/medium': 3,
-                    '/portfolio': 4,
-                    '/bucket-list': 5
-                }
-                return routes[this.$route.path].toString()
+                activeName: '/'
             }
         },
         components: {
@@ -64,9 +57,8 @@
             Profile
         },
         methods: {
-            onSelect(name) {
-                const routes = [ '/', '/jianshu', '/medium', '/portfolio', '/bucket-list']
-                this.$router.push(routes[parseInt(name - 1)])
+            onSelect(route) {
+                this.$router.push(route)
             }
         }
     }

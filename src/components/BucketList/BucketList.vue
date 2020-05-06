@@ -5,7 +5,7 @@
         </div>
         <divider>My Bucket List</divider>
         <ul class="bucket-list-content">
-            <list-item v-for="item in bucketList" :item="item" :key="item.title"></list-item>
+            <list-item v-for="item in filterBucketList" :item="item" :key="item.title"></list-item>
         </ul>
     </div>
 </template>
@@ -22,6 +22,12 @@
         },
         components: {
           ListItem
+        },
+        computed: {
+            filterBucketList() {
+              const type = this.$route.params.type || 'done'
+              return bucketList.filter(item => item.status === type)
+            }
         }
     }
 </script>

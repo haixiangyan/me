@@ -2,6 +2,7 @@ import Vue from 'vue'
 import 'iview/dist/styles/iview.css';
 import {
     Menu,
+    Submenu,
     MenuItem,
     Icon,
     Divider,
@@ -17,6 +18,7 @@ import {
 from 'iview';
 
 Vue.component('Menu', Menu);
+Vue.component('Submenu', Submenu);
 Vue.component('MenuItem', MenuItem);
 Vue.component('Icon', Icon);
 Vue.component('Divider', Divider)

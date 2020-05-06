@@ -12,22 +12,31 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
+        name: 'profile',
         component: Profile
     },
     {
         path: '/jianshu',
+        name: 'jianshu',
         component: Jianshu
     },
     {
         path: '/medium',
+        name: 'medium',
         component: Medium
     },
     {
         path: '/portfolio',
+        name: 'portfolio',
         component: Portfolio
     },
     {
-        path: '/bucket-list',
+        path: '/bucket-list/',
+        redirect: '/bucket-list/done'
+    },
+    {
+        path: '/bucket-list/:type',
+        name: 'bucket-list',
         component: BucketList
     }
 ]
