@@ -2,7 +2,7 @@
     <div class="jianshu">
         <div class="jianshu-banner">
             <a class="jianshu-banner-link" href="https://www.jianshu.com/u/0340be4082b5">
-                <img src="../../assets/jianshu.png" alt="jianshu">
+                <img :src="bannerImage" alt="jianshu">
             </a>
         </div>
         <el-divider>所有博文</el-divider>
@@ -25,6 +25,7 @@
 <script>
     import db from '../../../db/jianshu-db.json'
     import JianshuItem from './JianshuItem'
+    import {getImageUrl} from "../BucketList/list"
     export default {
         name: "Jianshu",
         props: {
@@ -36,7 +37,8 @@
         data() {
             return {
                 db,
-                currentPage: 1
+                currentPage: 1,
+                bannerImage: getImageUrl('jianshu.png')
             }
         },
         computed: {

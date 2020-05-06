@@ -1,4 +1,4 @@
-const getImageUrl = (fileName) => `https://raw.githubusercontent.com/Haixiang6123/pic-bed/master/blog/${fileName}`
+export const getImageUrl = (fileName) => `https://raw.githubusercontent.com/Haixiang6123/pic-bed/master/blog/${fileName}`
 
 export default [
   {

@@ -1,7 +1,7 @@
 <template>
     <div class="portfolio">
         <a class="portfolio-link" href="https://github.com/Haixiang6123" target="_blank">
-            <img src="../../assets/portfolio.png" alt="portfolio">
+            <img :src="bannerImage" alt="portfolio">
         </a>
         <el-divider>所有项目</el-divider>
         <medium-item v-for="item in portfolio" :item="item" :key="item.title"></medium-item>
@@ -10,11 +10,13 @@
 
 <script>
     import MediumItem from '../Medium/MediumItem'
+    import {getImageUrl} from "../BucketList/list"
     export default {
         name: "Portfolio",
         data() {
             return {
                 selected: 0,
+                bannerImage: getImageUrl('portfolio.png'),
                 portfolio: [
                     {
                         title: 'Awesome Terminal Tools',

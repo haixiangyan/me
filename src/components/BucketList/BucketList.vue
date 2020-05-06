@@ -1,7 +1,7 @@
 <template>
     <div class="bucket-list">
         <div class="bucket-list-image">
-            <img src="../../assets/bucketlist.jpg" alt="bucketlist">
+            <img :src="bannerImage" alt="bucketlist">
         </div>
         <el-divider>My Bucket List</el-divider>
         <ul class="bucket-list-content">
@@ -11,13 +11,14 @@
 </template>
 
 <script>
-    import bucketList from './list'
+  import bucketList, {getImageUrl} from './list'
     import ListItem from './ListItem'
     export default {
         name: "BucketList",
         data() {
             return {
-                bucketList
+                bucketList,
+                bannerImage: getImageUrl('bucketlist.jpg')
             }
         },
         components: {

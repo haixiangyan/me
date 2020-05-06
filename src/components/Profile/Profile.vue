@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        <img class="profile-avatar" src="../../assets/avatar.jpg" alt="avatar">
+        <img class="profile-avatar" :src="avatar" alt="avatar">
         <h1 class="profile-h1">哈啰！我是海翔</h1>
         <h2 class="profile-h2">年轻人不要熬夜 :)</h2>
         <div class="profile-social">
@@ -44,8 +44,15 @@
 </template>
 
 <script>
+    import {getImageUrl} from "../BucketList/list"
+
     export default {
-        name: "Profile"
+        name: "Profile",
+        data() {
+          return {
+            avatar: getImageUrl('avatar.jpg')
+          }
+        }
     }
 </script>
 

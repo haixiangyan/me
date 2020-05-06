@@ -1,7 +1,7 @@
 <template>
     <div class="medium">
         <a class="medium-link" href="https://medium.com/@haixiang6123">
-            <img src="../../assets/medium.jpg" alt="medium">
+            <img :src="bannerImage" alt="medium">
         </a>
         <el-divider>所有博文</el-divider>
         <medium-item v-for="(item, index) in displayBlogs"
@@ -22,12 +22,14 @@
 <script>
     import db from '../../../db/medium.js'
     import MediumItem from './MediumItem'
+    import {getImageUrl} from "../BucketList/list"
     export default {
         name: "Medium",
         data() {
             return {
                 db,
-                currentPage: 1
+                currentPage: 1,
+                bannerImage: getImageUrl('medium.jpg')
             }
         },
         computed: {
