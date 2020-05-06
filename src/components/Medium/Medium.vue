@@ -1,7 +1,7 @@
 <template>
     <div class="medium">
         <a class="medium-link" href="https://medium.com/@haixiang6123">
-            <img src="../../assets/medium.png" alt="medium">
+            <img src="../../assets/medium.jpg" alt="medium">
         </a>
         <divider>All Posts</divider>
         <medium-item v-for="(item, index) in displayBlogs"
