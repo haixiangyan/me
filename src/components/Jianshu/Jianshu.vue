@@ -11,7 +11,8 @@
                       :key="item.title"
                       :is-last="index === displayBlogs.length - 1"/>
         <footer>
-            <el-pagination @on-change="onPageChange"
+            <el-pagination @current-change="onPageChange"
+                           background
                            :page-size="10"
                            :total="blogsTotal"
                            layout="prev, pager, next"/>
