@@ -68,9 +68,6 @@
         display: inline-block;
         vertical-align: top;
         text-align: center;
-        img {
-            width: 45%;
-        }
     }
     &-item {
         width: 100%;

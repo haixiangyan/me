@@ -53,7 +53,7 @@
         vertical-align: top;
         text-align: center;
         img {
-            width: 50%;
+            max-width: 100%;
         }
     }
     footer {
