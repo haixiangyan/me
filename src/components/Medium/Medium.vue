@@ -11,6 +11,7 @@
         <footer>
             <el-pagination @current-change="onPageChange"
                            background
+                           :pager-count="3"
                            :page-size="10"
                            :total="blogsTotal"
                            layout="prev, pager, next"/>

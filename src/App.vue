@@ -22,8 +22,8 @@
                     <i class="el-icon-s-order"></i>
                     <span class="menu-item">人生清单</span>
                 </template>
-                <el-menu-item index="/bucket-list/done" style="color: #67C23A">Done</el-menu-item>
-                <el-menu-item index="/bucket-list/todo" style="color: #F56C6C">Todo</el-menu-item>
+                <el-menu-item index="/bucket-list/done" style="color: #67C23A">已完成</el-menu-item>
+                <el-menu-item index="/bucket-list/todo" style="color: #F56C6C">还在立Flag</el-menu-item>
             </el-submenu>
         </el-menu>
 
