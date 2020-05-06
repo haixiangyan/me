@@ -44,20 +44,12 @@
     export default {
         name: 'app',
         data() {
-            return {
-                isJianshuActive: false,
-                activeName: '/'
-            }
+            return {}
         },
         components: {
             Jianshu,
             Medium,
             Profile
-        },
-        methods: {
-            onSelect(route) {
-                this.$router.push(route)
-            }
         }
     }
 </script>
@@ -67,17 +59,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 #app {
     color: #2c3e50;
     height: 100vh;
-    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     .menu {
         position: fixed;
         top: 0;
         display: flex;
         width: 100%;
         justify-content: center;
+        z-index: 3;
         @media (max-width:480px) {
             .menu-item {
                 display: none;
