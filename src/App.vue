@@ -6,11 +6,11 @@
                 <span class="menu-item">我</span>
             </el-menu-item>
             <el-menu-item index="/jianshu">
-                <i class="el-icon-s-order"></i>
+                <i class="el-icon-notebook-1"></i>
                 <span class="menu-item">简书</span>
             </el-menu-item>
             <el-menu-item index="/medium">
-                <i class="el-icon-printer"></i>
+                <i class="el-icon-notebook-2"></i>
                 <span class="menu-item">Medium</span>
             </el-menu-item>
             <el-menu-item index="/portfolio">
@@ -22,8 +22,14 @@
                     <i class="el-icon-s-order"></i>
                     <span class="menu-item">人生清单</span>
                 </template>
-                <el-menu-item index="/bucket-list/done" style="color: #67C23A">已完成</el-menu-item>
-                <el-menu-item index="/bucket-list/todo" style="color: #F56C6C">还在立Flag</el-menu-item>
+                <el-menu-item index="/bucket-list/done" style="color: #67C23A">
+                    <i class="el-icon-check" style="color: #67C23A"></i>
+                    已完成
+                </el-menu-item>
+                <el-menu-item index="/bucket-list/todo" style="color: #F56C6C">
+                    <i class="el-icon-s-flag" style="color: #F56C6C"></i>
+                    还在立Flag
+                </el-menu-item>
             </el-submenu>
         </el-menu>
 
