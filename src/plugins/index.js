@@ -7,7 +7,9 @@ import {
   Divider,
   Col,
   Tooltip,
-  Pagination
+  Pagination,
+  Carousel,
+  CarouselItem
 } from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css';
@@ -20,3 +22,5 @@ Vue.component(Divider.name, Divider);
 Vue.component(Col.name, Col);
 Vue.component(Tooltip.name, Tooltip);
 Vue.component(Pagination.name, Pagination);
+Vue.component(Carousel.name, Carousel);
+Vue.component(CarouselItem.name, CarouselItem);

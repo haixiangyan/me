@@ -8,7 +8,7 @@
                     {{item.name}}
                 </span>
             </section>
-            <el-carousel v-if="show && item.imgs" :height="400" indicator-position="none">
+            <el-carousel v-if="show && item.imgs" height="500px">
                 <el-carousel-item class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
                     <img class="list-item-img" :src="img" alt="img">
                 </el-carousel-item>
