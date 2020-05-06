@@ -59,7 +59,7 @@
     border-radius: 10px;
     height: 85vh;
     &-h1 {
-        font-size: 5em;
+        font-size: 4.5em;
         font-weight: normal;
         letter-spacing: .1em;
         text-align: center;
