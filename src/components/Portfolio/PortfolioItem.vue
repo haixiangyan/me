@@ -10,8 +10,11 @@
                     <lang-tag v-for="lang in item.languages" :lang="lang" :key="lang"/>
                 </ul>
             </el-col>
-            <el-col :span="4">
-                <el-button size="small">Github</el-button>
+            <el-col class="action" :span="4">
+                <github-button>
+                    <i class="el-icon-star-on"></i>
+                    <span>Github</span>
+                </github-button>
             </el-col>
         </el-row>
         <el-divider v-if="!isLast"></el-divider>
@@ -70,6 +73,14 @@
             display: flex;
             margin-top: 8px;
             list-style: none;
+        }
+
+        .action {
+            text-align: right;
+            .el-icon-star-on {
+                margin-right: 4px;
+                transform: scale(1.2);
+            }
         }
     }
 </style>
