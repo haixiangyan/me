@@ -3,7 +3,7 @@
         <el-row>
             <el-col :span="20">
                 <h3 class="title">
-                    <a :href="item.url">{{item.title}}</a>
+                    <a :href="item.url" target="_blank">{{item.title}}</a>
                 </h3>
                 <p class="desc">{{item.desc}}</p>
                 <ul class="languages">

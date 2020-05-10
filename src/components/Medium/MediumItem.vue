@@ -2,7 +2,7 @@
     <div>
         <div class="medium-item">
             <img class="medium-item-img" :src="item.avatar" alt="avatar">
-            <a class="medium-item-title" :href="item.url">{{item.title}}</a>
+            <a class="medium-item-title" :href="item.url" target="_blank">{{item.title}}</a>
             <p class="medium-item-desc">{{item.desc}}</p>
         </div>
         <el-divider v-if="!isLast"></el-divider>

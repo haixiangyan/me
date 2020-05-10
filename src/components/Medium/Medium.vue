@@ -1,6 +1,6 @@
 <template>
     <div class="medium">
-        <a class="medium-link" href="https://medium.com/@haixiang6123">
+        <a class="medium-link" href="https://medium.com/@haixiang6123" target="_blank">
             <img :src="bannerImage" alt="medium">
         </a>
         <el-divider>所有博文</el-divider>

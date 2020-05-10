@@ -1,7 +1,7 @@
 <template>
     <div class="jianshu">
         <div class="jianshu-banner">
-            <a class="jianshu-banner-link" href="https://www.jianshu.com/u/0340be4082b5">
+            <a class="jianshu-banner-link" href="https://www.jianshu.com/u/0340be4082b5" target="_blank">
                 <img :src="bannerImage" alt="jianshu">
             </a>
         </div>
