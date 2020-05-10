@@ -8,7 +8,7 @@
             <portfolio-item v-for="(item, index) in portfolio"
                             :item="item"
                             :key="item.title"
-                            :is-last="index === portfolio.length"/>
+                            :is-last="index === portfolio.length - 1"/>
         </ul>
     </div>
 </template>
