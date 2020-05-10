@@ -5,7 +5,10 @@
         </a>
         <el-divider>所有项目</el-divider>
         <ul class="portfolio-list">
-            <portfolio-item v-for="item in portfolio" :item="item" :key="item.title"></portfolio-item>
+            <portfolio-item v-for="(item, index) in portfolio"
+                            :item="item"
+                            :key="item.title"
+                            :is-last="index === portfolio.length"/>
         </ul>
     </div>
 </template>

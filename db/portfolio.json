@@ -1,38 +1,44 @@
 [
   {
-    "title": "Awesome Terminal Tools",
-    "desc": "Collection of all terminal tools developed by myself.",
-    "avatar": "https://i.loli.net/2019/08/04/vpfyceuRg3msqlN.jpg",
-    "url": "https://github.com/Haixiang6123/awesome-cli"
-  },
-  {
-    "title": "Tinder for Cats & Dogs",
-    "desc": "A project shows cats and dogs. Feel free to thump up and upload your pretty cats and dogs!",
-    "avatar": "https://i.loli.net/2019/08/04/3ysBefloxGChKjD.jpg",
-    "url": "https://github.com/Haixiang6123/awesome-a-cat-a-dog"
-  },
-  {
     "title": "Overwatch UI",
-    "desc": "A UI library of game Overwatch, built with Vue.js",
-    "avatar": "https://i.loli.net/2019/03/14/5c89a6bdd9efc.jpg",
-    "url": "https://haixiang6123.github.io/overwatch-ui-doc/#/"
+    "desc": "使用 Vue.js 开发的守望先锋 UI 组件库",
+    "url": "https://haixiang6123.github.io/overwatch-ui-doc/#/",
+    "languages": ["Vue"],
+    "stars": 344
   },
   {
     "title": "Code Block Beautifier",
-    "desc": "A chrome extension for beautifying code blocks in any websites",
-    "avatar": "https://i.loli.net/2019/03/08/5c821092432d4.jpg",
-    "url": "https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn"
+    "desc": "一个可以一键美化网页中的代码块的 Chrome 插件",
+    "url": "https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn",
+    "languages": ["Chrome"],
+    "stars": 101
   },
   {
     "title": "Guitar Tabs Editor",
-    "desc": "A portable guitar editor is coded based on react.js, inspired by Markdown and LaTex",
-    "avatar": "https://i.loli.net/2019/03/08/5c82109281f5c.jpg",
-    "url": "https://haixiang6123.github.io/guitar-editor/#/"
+    "desc": "使用 React.js 开发的在线吉他谱编辑器",
+    "url": "https://haixiang6123.github.io/guitar-editor/#/",
+    "languages": ["React"],
+    "stars": 47
+  },
+  {
+    "title": "wtf-cli",
+    "desc": "查询英文缩写的命令行工具",
+    "url": "https://github.com/Haixiang6123/awesome-cli",
+    "languages": ["JavaScript"],
+    "stars": 24
+  },
+  {
+    "title": "Tinder for Cats & Dogs",
+    "desc": "一个显示宠物图片的小 App React.js, Vue.js 和 Angular 实现",
+    "url": "https://github.com/Haixiang6123/awesome-a-cat-a-dog",
+    "languages": ["Vue", "React", "Angular"],
+    "stars": 8
   },
   {
     "title": "Sketch Book",
-    "desc": "An online sketch book for drawing and writing notes",
-    "avatar": "https://i.loli.net/2019/03/08/5c8210930b274.jpg",
-    "url": "https://haixiang6123.github.io/sketch-book/"
+    "desc": "一个在线画图 App",
+    "url": "https://haixiang6123.github.io/sketch-book/",
+    "languages": ["JavaScript"],
+    "stars": 2
   }
 ]
