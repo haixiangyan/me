@@ -1,8 +1,8 @@
 <template>
     <div class="profile">
         <img class="profile-avatar" :src="avatar" alt="avatar">
-        <h1 class="profile-h1">哈啰！我是海翔</h1>
-        <h2 class="profile-h2">年轻人不要熬夜 :)</h2>
+        <h1 class="profile-title">哈啰！我是海翔</h1>
+        <h2 class="profile-subtitle">年轻人不要熬夜 :)</h2>
         <div class="profile-social">
             <span class="profile-social-item">
                 <a href="https://github.com/Haixiang6123" target="_blank">
@@ -65,28 +65,29 @@
     align-items: center;
     border-radius: 10px;
     height: 85vh;
-    &-h1 {
-        font-size: 3.5em;
-        font-weight: normal;
-        letter-spacing: .1em;
-        text-align: center;
-    }
-    &-h2 {
-        margin: 20px 0;
-        font-size: 1.5em;
-        font-weight: normal;
-        letter-spacing: .1em;
-        text-align: center;
-    }
 
     &-avatar {
         margin: 20px 0;
-        width: 180px;
+        width: 200px;
         border-radius: 50%;
     }
 
+    &-title {
+        font-size: 3.4em;
+        font-weight: normal;
+        letter-spacing: .1em;
+        text-align: center;
+    }
+    &-subtitle {
+        margin: 20px 0;
+        font-size: 1.3em;
+        font-weight: normal;
+        letter-spacing: .1em;
+        text-align: center;
+    }
+
     &-social {
-        margin-top: 40px;
+        margin-top: 12px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -97,8 +98,8 @@
             }
         }
         svg {
-            height: 24px;
-            width: 24px;
+            height: 20px;
+            width: 20px;
         }
     }
 }
