@@ -12,11 +12,11 @@
                 </a>
             </span>
             <span class="profile-social-item">
-                <el-tooltip content="haixiang6123@gmail.com" effect="dark" placement="bottom">
+                <a href="mailto:haixiang6123@gmail.com" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-mail"></use>
                     </svg>
-                </el-tooltip>
+                </a>
             </span>
             <span class="profile-social-item">
                 <a href="https://www.jianshu.com/u/0340be4082b5" target="_blank">
@@ -33,11 +33,11 @@
                 </a>
             </span>
             <span class="profile-social-item">
-                <el-tooltip content="Monster#14255" effect="dark" placement="bottom">
+                <a href="https://playoverwatch.com/en-us/career/pc/Monster-14255" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-overwatch"></use>
                     </svg>
-                </el-tooltip>
+                </a>
             </span>
         </div>
     </div>
