@@ -17,7 +17,7 @@
     import PortfolioItem from "./PortfolioItem"
     import {getImageUrl} from "../BucketList/list"
 
-    const portfolio = require('../../../db/portfolio.json')
+    const portfolio = require('../../../db/portfolio-db.json')
     export default {
         name: "Portfolio",
         data() {

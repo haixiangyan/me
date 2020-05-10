@@ -24,6 +24,7 @@
     border-radius: .25em;
     cursor: pointer;
     font-weight: 500;
+    outline: none;
 
     &:hover {
         background-color: #e6ebf1;

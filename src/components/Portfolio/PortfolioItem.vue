@@ -8,13 +8,16 @@
                 <p class="desc">{{item.desc}}</p>
                 <ul class="languages">
                     <lang-tag v-for="lang in item.languages" :lang="lang" :key="lang"/>
+                    <star-tag :stars="item.stars"></star-tag>
                 </ul>
             </el-col>
             <el-col class="action" :span="4">
-                <github-button>
-                    <i class="el-icon-star-on"></i>
-                    <span>Github</span>
-                </github-button>
+                <a :href="item.github" style="text-decoration: none" target="_blank">
+                    <github-button>
+                        <i class="el-icon-star-on"></i>
+                        <span>Github</span>
+                    </github-button>
+                </a>
             </el-col>
         </el-row>
         <el-divider v-if="!isLast"></el-divider>
@@ -23,6 +26,7 @@
 
 <script lang="ts">
   import LangTag from './LangTag.vue'
+  import StarTag from './StarTag.vue'
   import GithubButton from './GithubButton.vue'
   export default {
     name: 'PortfolioItem',
@@ -32,6 +36,7 @@
     },
     components: {
       LangTag,
+      StarTag,
       GithubButton
     }
   }

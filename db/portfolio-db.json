@@ -3,6 +3,7 @@
     "title": "Overwatch UI",
     "desc": "使用 Vue.js 开发的守望先锋 UI 组件库",
     "url": "https://haixiang6123.github.io/overwatch-ui-doc/#/",
+    "github": "https://github.com/Haixiang6123/overwatch-ui",
     "languages": ["Vue"],
     "stars": 344
   },
@@ -10,6 +11,7 @@
     "title": "Code Block Beautifier",
     "desc": "一个可以一键美化网页中的代码块的 Chrome 插件",
     "url": "https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn",
+    "github": "https://github.com/Haixiang6123/codeblock-beautifier",
     "languages": ["Chrome"],
     "stars": 101
   },
@@ -17,20 +19,23 @@
     "title": "Guitar Tabs Editor",
     "desc": "使用 React.js 开发的在线吉他谱编辑器",
     "url": "https://haixiang6123.github.io/guitar-editor/#/",
+    "github": "https://github.com/Haixiang6123/guitar-editor",
     "languages": ["React"],
     "stars": 47
   },
   {
     "title": "wtf-cli",
     "desc": "查询英文缩写的命令行工具",
-    "url": "https://github.com/Haixiang6123/awesome-cli",
+    "url": "https://www.npmjs.com/package/wtf-cli",
+    "github": "https://github.com/Haixiang6123/wtf-cli",
     "languages": ["JavaScript"],
     "stars": 24
   },
   {
     "title": "Tinder for Cats & Dogs",
     "desc": "一个显示宠物图片的小 App React.js, Vue.js 和 Angular 实现",
-    "url": "https://github.com/Haixiang6123/awesome-a-cat-a-dog",
+    "url": "https://yanhaixiang.com/awesome-a-cat-a-dog/",
+    "github": "https://github.com/Haixiang6123/awesome-a-cat-a-dog",
     "languages": ["Vue", "React", "Angular"],
     "stars": 8
   },
@@ -38,6 +43,7 @@
     "title": "Sketch Book",
     "desc": "一个在线画图 App",
     "url": "https://haixiang6123.github.io/sketch-book/",
+    "github": "https://github.com/Haixiang6123/sketch-book",
     "languages": ["JavaScript"],
     "stars": 2
   }
