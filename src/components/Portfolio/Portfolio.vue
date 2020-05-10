@@ -4,12 +4,14 @@
             <img :src="bannerImage" alt="portfolio">
         </a>
         <el-divider>所有项目</el-divider>
-        <medium-item v-for="item in portfolio" :item="item" :key="item.title"></medium-item>
+        <ul class="portfolio-list">
+            <portfolio-item v-for="item in portfolio" :item="item" :key="item.title"></portfolio-item>
+        </ul>
     </div>
 </template>
 
 <script>
-    import MediumItem from '../Medium/MediumItem'
+    import PortfolioItem from "./PortfolioItem"
     import {getImageUrl} from "../BucketList/list"
 
     const portfolio = require('../../../db/portfolio.json')
@@ -23,7 +25,7 @@
             }
         },
         components: {
-            MediumItem
+          PortfolioItem
         }
     }
 </script>
@@ -39,11 +41,8 @@
             max-width: 100%;
         }
     }
-    &-item {
-        width: 100%;
-        img {
-            width: 100%;
-        }
+    &-list {
+        list-style: none;
     }
 }
 </style>
