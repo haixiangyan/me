@@ -24,6 +24,13 @@
     "stars": 47
   },
   {
+    "title": "仿微信记账本",
+    "desc": "仿微信记账小程序的 React App",
+    "url": "https://haixiang6123.gitee.io/weixin-cash/",
+    "github": "https://github.com/Haixiang6123/weixin-cash",
+    "languages": ["React", "TypeScript"]
+  },
+  {
     "title": "wtf-cli",
     "desc": "查询英文缩写的命令行工具",
     "url": "https://www.npmjs.com/package/wtf-cli",
