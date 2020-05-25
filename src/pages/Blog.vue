@@ -77,24 +77,19 @@
         h1 {
             display: flex;
             justify-content: space-between;
+
             span {
                 display: flex;
                 align-items: center;
             }
         }
-        ul {
-            padding: 0;
-            list-style: none;
 
-            li {
-                a {
-                    margin-left: 8px;
-                    color: #2c3e50;
+        a {
+            margin-left: 8px;
+            color: #2c3e50;
 
-                    &:hover {
-                        color: #409EFF;
-                    }
-                }
+            &:hover {
+                color: #409EFF;
             }
         }
 

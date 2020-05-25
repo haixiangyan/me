@@ -15,36 +15,30 @@
 </template>
 
 <script>
-    import {getImageUrl} from "../../db/bucket-list"
+  import {getImageUrl} from "../../db/bucket-list"
 
-    const portfolio = require('../../db/portfolio-db.json')
-    export default {
-        name: "Portfolio",
-        data() {
-            return {
-                selected: 0,
-                bannerImage: getImageUrl('portfolio.png'),
-                portfolio
-            }
-        }
+  const portfolio = require('../../db/portfolio-db.json')
+  export default {
+    name: "Portfolio",
+    data() {
+      return {
+        selected: 0,
+        bannerImage: getImageUrl('portfolio.png'),
+        portfolio
+      }
     }
+  }
 </script>
 
 <style scoped lang="scss">
-.portfolio {
-    ul {
-        li {
-            a {
-                font-size: 1.2em;
-                color: #409EFF;
-                &:hover {
+    .portfolio {
+        a {
+            font-size: 1.2em;
+            color: #409EFF;
+        }
 
-                }
-            }
-            .desc {
-                margin-top: 4px;
-            }
+        .desc {
+            margin-top: 4px;
         }
     }
-}
 </style>

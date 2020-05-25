@@ -43,18 +43,15 @@
         h1 {
             display: flex;
             justify-content: space-between;
+
             span {
                 display: flex;
                 align-items: center;
             }
         }
+
         &-image {
             text-align: center;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
         }
     }
 </style>
