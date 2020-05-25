@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts">
-  import {getImageUrl} from "../BucketList/list"
-  import Menu from '../Menu/Menu.vue'
+  import {getImageUrl} from "../pages/BucketList/list"
+  import Menu from './Menu.vue'
 
   export default {
     name: 'Banner',
@@ -31,7 +31,7 @@
         display: flex;
         flex-direction: column;
         height: 400px;
-        background-image: url("../../assets/banner.jpeg");
+        background-image: url("../assets/banner.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

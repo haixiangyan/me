@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Profile from '../components/Profile/Profile'
-import Jianshu from '../components/Jianshu/Jianshu'
-import Medium from '../components/Medium/Medium'
-import Portfolio from '../components/Portfolio/Portfolio'
-import BucketList from '../components/BucketList/BucketList'
+import Profile from '../pages/Profile'
+import Jianshu from '../pages/Jianshu'
+import Medium from '../pages/Medium'
+import Portfolio from '../pages/Portfolio/Portfolio'
+import BucketList from '../pages/BucketList/BucketList'
 
 Vue.use(VueRouter)
 

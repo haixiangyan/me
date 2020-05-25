@@ -1,6 +1,7 @@
 <template>
-    <div class="jianshu">
-        <h1>简书</h1>
+    <div class="medium">
+        <h1>Medium</h1>
+
         <ul>
             <li v-for="item in displayBlogs" :key="item.url">
                 <a :href="item.url">{{item.title}}</a>
@@ -9,10 +10,9 @@
 
         <footer>
             <el-pagination @current-change="onPageChange"
-                           hide-on-single-page
                            background
-                           :page-size="10"
                            :pager-count="5"
+                           :page-size="10"
                            :total="blogsTotal"
                            layout="pager"/>
         </footer>
@@ -20,21 +20,15 @@
 </template>
 
 <script>
-    import db from '../../../db/jianshu-db.json'
-    import {getImageUrl} from "../BucketList/list"
+    import db from '../../db/medium.js'
+    import {getImageUrl} from "./BucketList/list"
     export default {
-        name: "Jianshu",
-        props: {
-            isActive: {
-                type: Boolean,
-                default: false
-            }
-        },
+        name: "Medium",
         data() {
             return {
                 db,
                 currentPage: 1,
-                bannerImage: getImageUrl('jianshu.png')
+                bannerImage: getImageUrl('medium.jpg')
             }
         },
         computed: {
@@ -56,7 +50,7 @@
 </script>
 
 <style scoped lang="scss">
-.jianshu {
+.medium {
     a {
         color: #2c3e50;
         &:hover {

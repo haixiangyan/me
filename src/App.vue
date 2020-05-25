@@ -8,11 +8,11 @@
 </template>
 
 <script>
-  import Menu from './components/Menu/Menu'
-  import Banner from "./components/Banner/Banner"
-  import Profile from './components/Profile/Profile'
-  import Jianshu from './components/Jianshu/Jianshu'
-  import Medium from './components/Medium/Medium'
+  import Menu from './components/Menu'
+  import Banner from "./components/Banner"
+  import Profile from './pages/Profile'
+  import Jianshu from './pages/Jianshu'
+  import Medium from './pages/Medium'
 
   export default {
     name: 'app',

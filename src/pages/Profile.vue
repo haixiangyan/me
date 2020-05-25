@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import Social from "./Social"
+  import Social from "../components/Social"
 
   export default {
     name: "Profile",
