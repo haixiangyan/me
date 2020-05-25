@@ -13,7 +13,7 @@
   import Vue from 'vue'
   import {Component} from 'vue-property-decorator'
 
-  import Menu from './Menu.vue'
+  import Menu from './Menu/Menu.vue'
   import {getImageUrl} from '@/lib/constants'
 
   @Component({

@@ -13,7 +13,7 @@
   import Vue from 'vue'
   import {Component} from 'vue-property-decorator'
 
-  import Menu from './components/Menu.vue'
+  import Menu from './components/Menu/Menu.vue'
   import Banner from './components/Banner.vue'
   import Footer from './components/Footer.vue'
 

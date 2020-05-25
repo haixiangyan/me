@@ -21,3 +21,9 @@ type TPortfolioItem = {
   languages: string[]
   stars: number
 }
+
+type TMenuItem = {
+  route: string
+  label: string
+  icon: string
+}
