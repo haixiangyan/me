@@ -18,22 +18,20 @@
 </template>
 
 <script lang="ts">
-  export default {
-    name: 'Menu',
-    data() {
-      return {
-        menu: [
-          {route: '/', label: '主页', icon: 'el-icon-user'},
-          {route: '/blog', label: '文章', icon: 'el-icon-notebook-1'},
-          {route: '/portfolio', label: '项目', icon: 'el-icon-suitcase'},
-          {route: '/bucket-list', label: '人生清单', icon: 'el-icon-s-order'},
-        ]
-      }
-    },
-    methods: {
-      selected(route) {
-        return route === this.$route.path ? 'selected' : ''
-      }
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
+
+  @Component
+  export default class Menu extends Vue {
+    menu = [
+      {route: '/', label: '主页', icon: 'el-icon-user'},
+      {route: '/blog', label: '文章', icon: 'el-icon-notebook-1'},
+      {route: '/portfolio', label: '项目', icon: 'el-icon-suitcase'},
+      {route: '/bucket-list', label: '人生清单', icon: 'el-icon-s-order'},
+    ]
+
+    selected(route: string) {
+      return route === this.$route.path ? 'selected' : ''
     }
   }
 </script>
@@ -43,10 +41,12 @@
         color: white;
         border-bottom: 2px solid transparent;
         font-weight: bold;
+
         &:hover {
             border-color: white;
         }
     }
+
     .nav {
         &-wrapper {
             display: flex;
@@ -58,14 +58,17 @@
             .menu {
                 display: flex;
                 align-items: center;
+
                 &-item {
                     margin-right: 16px;
                     margin-bottom: 0;
+
                     &.selected {
                         a {
                             border-color: white;
                         }
                     }
+
                     &:last-child {
                         margin-right: 0;
                     }
