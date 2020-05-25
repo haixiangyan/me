@@ -8,9 +8,7 @@ import {
   Radio,
   Avatar,
   Image,
-  Dropdown,
-  DropdownMenu,
-  DropdownItem
+  Drawer,
 } from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css'
@@ -24,6 +22,4 @@ Vue.component(Radio.name, Radio)
 Vue.component(Radio.name, Radio)
 Vue.component(Avatar.name, Avatar)
 Vue.component(Image.name, Image)
-Vue.component(DropdownMenu.name, DropdownMenu)
-Vue.component(DropdownItem.name, DropdownItem)
-Vue.component(Dropdown.name, Dropdown)
+Vue.component(Drawer.name, Drawer)

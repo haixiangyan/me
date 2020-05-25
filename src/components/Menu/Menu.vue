@@ -34,12 +34,12 @@
         display: none;
     }
     .pc-menu {
-        display: block;
+        display: flex;
     }
     // 手机情况
     @media only screen and (max-width: 600px) {
         .mobile-menu {
-            display: block;
+            display: flex;
         }
         .pc-menu {
             display: none;
