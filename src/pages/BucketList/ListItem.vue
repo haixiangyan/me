@@ -90,6 +90,7 @@
                 }
             }
             .date {
+                text-align: right;
                 min-width: 30%;
             }
         }
