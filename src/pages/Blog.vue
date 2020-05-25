@@ -15,7 +15,7 @@
                     </svg>
                     <a :href="item.url">{{item.title}}</a>
                 </span>
-                <span>{{item.date}}</span>
+                <span>{{getDate(item.date)}}</span>
             </li>
         </ul>
 
@@ -35,6 +35,8 @@
   import jianshuDB from '../../db/jianshu-db.json'
   import mediumDB from '../../db/medium.js'
   import {getImageUrl} from "../../db/bucket-list"
+  import dayjs from "dayjs"
+  import {DATE} from "../../lib/date"
 
   export default {
     name: "Blog",
@@ -70,6 +72,9 @@
     methods: {
       onPageChange(page) {
         this.currentPage = page
+      },
+      getDate(rawDate) {
+        return dayjs(rawDate).format(DATE)
       }
     }
   }

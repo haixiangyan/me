@@ -8,6 +8,7 @@
     "auto-jianshu": "ts-node scripts/autoJianshu.ts"
   },
   "dependencies": {
+    "dayjs": "^1.8.27",
     "element-ui": "^2.13.1",
     "vue": "^2.6.6",
     "vue-router": "^3.0.2"

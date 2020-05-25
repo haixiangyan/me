@@ -10,7 +10,7 @@
                     </span>
                 </span>
 
-                <span>{{item.date}}</span>
+                <span>{{getDate(item.date)}}</span>
             </section>
             <el-carousel v-if="show && item.imgs" height="500px">
                 <el-carousel-item class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
@@ -22,6 +22,9 @@
 </template>
 
 <script>
+  import dayjs from "dayjs"
+  import {DATE} from "../../../lib/date"
+
   export default {
     name: "MediumItem",
     props: {
@@ -39,6 +42,9 @@
         if (this.item.status === 'done') {
           this.show = !this.show
         }
+      },
+      getDate(rawDate) {
+        return dayjs(rawDate).format(DATE)
       }
     }
   }
