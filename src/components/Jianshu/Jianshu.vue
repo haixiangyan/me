@@ -21,7 +21,6 @@
 
 <script>
     import db from '../../../db/jianshu-db.json'
-    import JianshuItem from './JianshuItem'
     import {getImageUrl} from "../BucketList/list"
     export default {
         name: "Jianshu",
@@ -47,9 +46,6 @@
             blogsTotal() {
                 return this.db.length
             }
-        },
-        components: {
-            JianshuItem
         },
         methods: {
             onPageChange(page) {
