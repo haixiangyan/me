@@ -1,7 +1,7 @@
 <template>
     <li>
         <div class="list-item">
-            <section class="list-item-header">
+            <section class="header">
                 <span>
                     <i :class="item.status === 'done' ? 'el-icon-check' : 'el-icon-s-flag'"/>
 
@@ -13,8 +13,15 @@
                 <span>{{getDate(item.date)}}</span>
             </section>
             <el-carousel v-if="show && item.imgs" height="500px">
-                <el-carousel-item class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
-                    <img class="list-item-img" :src="img" alt="img">
+                <el-carousel-item class="img-wrapper" :key="img" v-for="img in item.imgs">
+                    <el-image class="img" :src="img" fit="contain" alt="img">
+                        <div slot="placeholder" class="img-slot">
+                            <i class="el-icon-loading"></i>
+                        </div>
+                        <div slot="error" class="img-slot">
+                            加载失败，可能没有翻墙？
+                        </div>
+                    </el-image>
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -51,7 +58,7 @@
     .list-item {
         margin: 12px 0;
 
-        &-header {
+        .header {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -70,7 +77,7 @@
                 }
             }
 
-            > .title {
+            .title {
                 font-size: 1.2em;
 
                 &.done {
@@ -84,13 +91,23 @@
             }
         }
 
-        &-img {
+        .img {
+            &-slot {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             &-wrapper {
                 text-align: center;
             }
 
-            max-width: 100%;
-            max-height: 100%;
+            i {
+                font-size: 2em;
+            }
+
+            width: 100%;
+            height: 100%;
         }
     }
 </style>

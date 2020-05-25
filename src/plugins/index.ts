@@ -6,7 +6,8 @@ import {
   CarouselItem,
   Button,
   Radio,
-  Avatar
+  Avatar,
+  Image
 } from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css'
@@ -19,3 +20,4 @@ Vue.component(Button.name, Button)
 Vue.component(Radio.name, Radio)
 Vue.component(Radio.name, Radio)
 Vue.component(Avatar.name, Avatar)
+Vue.component(Image.name, Image)
