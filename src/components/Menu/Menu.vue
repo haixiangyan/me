@@ -6,7 +6,7 @@
             </router-link>
 
             <ul class="menu">
-                <li class="menu-item" v-for="menuItem in menu">
+                <li class="menu-item" v-for="menuItem in menu" :class="selected(menuItem.route)">
                     <router-link :key="menuItem.route" :to="menuItem.route">
                         {{menuItem.label}}
                     </router-link>
@@ -29,6 +29,11 @@
           {route: '/portfolio', label: '项目', icon: 'el-icon-suitcase'},
           {route: '/bucket-list/done', label: '人生清单', icon: 'el-icon-s-order'},
         ]
+      }
+    },
+    methods: {
+      selected(route) {
+        return route === this.$route.path ? 'selected' : ''
       }
     }
   }
@@ -57,6 +62,11 @@
                 list-style-type: none;
                 &-item {
                     margin-right: 16px;
+                    &.selected {
+                        a {
+                            border-color: white;
+                        }
+                    }
                     &:last-child {
                         margin-right: 0;
                     }
