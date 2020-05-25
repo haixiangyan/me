@@ -2,7 +2,11 @@
     <div class="banner">
         <Menu/>
         <div class="intro">
-            <img class="avatar" :src="avatar" alt="avatar">
+            <el-avatar :src="avatar"
+                       alt="avatar"
+                       icon="el-icon-user-solid"
+                       :size="120">
+            </el-avatar>
 
             <p class="title">前端工人 / 守望先锋鱼塘霸主 / 拼图狂魔</p>
         </div>
@@ -43,7 +47,6 @@
             color: white;
 
             .avatar {
-                width: 120px;
                 border-radius: 50%;
                 border: 1px solid white;
             }
