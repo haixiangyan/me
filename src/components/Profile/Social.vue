@@ -1,6 +1,6 @@
 <template>
     <div class="social">
-        <h1 style="margin-top: 32px">找到我</h1>
+        <h1 style="margin-top: 32px">找我</h1>
         <ul>
             <li v-for="item in social" :key="item.link">
                 <svg class="icon" aria-hidden="true">
@@ -31,13 +31,12 @@
 
 <style scoped lang="scss">
     .social {
-        h1 {
-            margin-bottom: 16px;
-        }
         ul {
             padding-left: 2em;
+
             > li {
                 margin-bottom: 16px;
+
                 > a {
                     margin-left: 8px;
                     color: #409EFF;

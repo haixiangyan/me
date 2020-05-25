@@ -4,7 +4,7 @@
         <div class="intro">
             <img class="avatar" :src="avatar" alt="avatar">
 
-            <p class="title">抱最大的希望，为最大的努力，做最坏的打算</p>
+            <p class="title">前端工人 / 守望先锋鱼塘霸主 / 拼图狂魔</p>
         </div>
     </div>
 </template>

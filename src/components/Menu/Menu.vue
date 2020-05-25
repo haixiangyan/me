@@ -38,6 +38,7 @@
     a {
         color: white;
         border-bottom: 2px solid transparent;
+        font-weight: bold;
         &:hover {
             border-color: white;
         }
@@ -48,7 +49,7 @@
             justify-content: space-between;
             margin: 0 auto;
             max-width: 1200px;
-            padding: 16px 0;
+            padding: 24px 0;
 
             .menu {
                 display: flex;
