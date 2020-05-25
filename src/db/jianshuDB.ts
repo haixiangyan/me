@@ -1,4 +1,4 @@
-[
+const jianshuDB: TBlogItem[] = [
   {
     "title": "React Hooks 用法",
     "desc": "刚学了一下 React Hooks 的用法，就写篇博客记录一下。因为学得也比较浅，所以这篇博客只讲怎么用。 useState 普通用法 就是用来...",
@@ -892,6 +892,9 @@
     "title": "Markdown的一些心得（适合初学者）",
     "avatar": "https://upload-images.jianshu.io/upload_images/2979799-d7b67243f6547db6.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
     "desc": "孰能生巧 写在前面 简洁，是普罗大众所追求的一种精神。当我在编写文档的时候，当时还是用Windows系统，用Word编写文字觉得很不简洁。而现在...",
-    "url": "https://www.jianshu.com/p/27886010fda0"
+    "url": "https://www.jianshu.com/p/27886010fda0",
+    "date": "2018-02-07"
   }
 ]
+
+export default jianshuDB

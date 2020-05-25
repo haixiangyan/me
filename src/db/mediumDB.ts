@@ -1,4 +1,4 @@
-export default [
+const mediumDB: TBlogItem[] = [
   {
     title: 'Overwatch UI Lib',
     avatar: 'https://miro.medium.com/fit/c/1400/420/1*ybsYecev7HFgRQJ-uCeI9A.jpeg',
@@ -217,3 +217,5 @@ export default [
     date: '2019-12-16'
   }
 ]
+
+export default mediumDB

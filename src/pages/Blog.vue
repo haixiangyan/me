@@ -35,11 +35,10 @@
   import Vue from 'vue'
   import {Component, Prop} from 'vue-property-decorator'
 
-  import mediumDB from '../db/medium'
+  import jianshuDB from '@/db/jianshuDB'
+  import mediumDB from '@/db/mediumDB'
   import dayjs from 'dayjs'
   import {DATE} from '@/lib/date'
-
-  const jianshuDB = require('../db/jianshu-db.json')
 
   @Component
   export default class Blog extends Vue {

@@ -2,7 +2,7 @@
     <div class="portfolio">
         <h1>个人项目</h1>
         <ul>
-            <li v-for="item in portfolio" :key="item.github">
+            <li v-for="item in portfolioDB" :key="item.github">
                 <p>
                     <a class="title" :href="item.github">{{item.title}}</a>
                     <span>
@@ -20,11 +20,11 @@
   import Vue from 'vue'
   import {Component} from 'vue-property-decorator'
 
-  const portfolio = require('../db/portfolio-db.json')
+  import portfolioDB from '@/db/portfolioDB'
 
   @Component
   export default class Portfolio extends Vue {
-    portfolio = portfolio
+    portfolioDB = portfolioDB
   }
 </script>
 

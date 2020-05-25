@@ -19,7 +19,7 @@
   import Vue from 'vue'
   import {Component} from 'vue-property-decorator'
 
-  import bucketList from '../../db/bucket-list'
+  import bucketList from '../../db/bucketList'
   import ListItem from './ListItem.vue'
 
   @Component({
