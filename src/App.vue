@@ -41,8 +41,6 @@
     color: #2c3e50;
     height: 100vh;
     .views {
-        margin-top: 70px;
-        margin-bottom: 10px;
         padding: 30px;
         background: white;
         border-radius: 4px;

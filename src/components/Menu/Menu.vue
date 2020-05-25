@@ -42,11 +42,7 @@
 
 <style scoped lang="scss">
     .menu {
-        position: fixed;
-        top: 0;
         display: flex;
-        width: 100%;
-        justify-content: center;
         z-index: 3;
         @media (max-width:480px) {
             .menu-item {
