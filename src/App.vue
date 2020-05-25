@@ -4,12 +4,15 @@
         <div class="views">
             <router-view></router-view>
         </div>
+
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
   import Menu from './components/Menu'
   import Banner from "./components/Banner"
+  import Footer from "./components/Footer"
 
   export default {
     name: 'app',
@@ -19,6 +22,7 @@
     components: {
       Menu,
       Banner,
+      Footer
     }
   }
 </script>
