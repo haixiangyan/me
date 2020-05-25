@@ -2,8 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Profile from '../pages/Profile'
-import Jianshu from '../pages/Jianshu'
-import Medium from '../pages/Medium'
+import Blog from '../pages/Blog'
 import Portfolio from '../pages/Portfolio'
 import BucketList from '../pages/BucketList/BucketList'
 
@@ -16,14 +15,9 @@ const routes = [
     component: Profile
   },
   {
-    path: '/jianshu',
-    name: 'jianshu',
-    component: Jianshu
-  },
-  {
-    path: '/medium',
-    name: 'medium',
-    component: Medium
+    path: '/blog',
+    name: 'blog',
+    component: Blog
   },
   {
     path: '/portfolio',

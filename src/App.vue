@@ -10,9 +10,6 @@
 <script>
   import Menu from './components/Menu'
   import Banner from "./components/Banner"
-  import Profile from './pages/Profile'
-  import Jianshu from './pages/Jianshu'
-  import Medium from './pages/Medium'
 
   export default {
     name: 'app',
@@ -22,9 +19,6 @@
     components: {
       Menu,
       Banner,
-      Jianshu,
-      Medium,
-      Profile
     }
   }
 </script>
