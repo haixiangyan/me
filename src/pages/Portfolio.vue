@@ -3,14 +3,14 @@
         <h1>个人项目</h1>
         <ul>
             <li v-for="item in portfolioDB" :key="item.github">
-                <p>
+                <div>
                     <a class="title" :href="item.github">{{item.title}}</a>
-                    <span>
-                        <el-button type="success" size="mini" round plain>源码</el-button>
-                        <el-button type="primary" size="mini" round plain>项目</el-button>
-                    </span>
-                </p>
-                <p class="desc">{{item.desc}}</p>
+                    <p class="desc">{{item.desc}}</p>
+                </div>
+                <div class="buttons">
+                    <el-button type="success" size="mini" round plain>源码</el-button>
+                    <el-button type="primary" size="mini" round plain>项目</el-button>
+                </div>
             </li>
         </ul>
     </div>
@@ -31,14 +31,22 @@
 <style scoped lang="scss">
     .portfolio {
         li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            min-height: 86px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             a.title {
                 font-size: 1.2em;
                 color: #409EFF;
             }
-
-            p {
-                display: flex;
-                justify-content: space-between;
+            .buttons {
+                width: 30%;
+                text-align: right;
             }
         }
 
