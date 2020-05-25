@@ -21,7 +21,6 @@
 
 <script>
     import db from '../../../db/medium.js'
-    import MediumItem from './MediumItem'
     import {getImageUrl} from "../BucketList/list"
     export default {
         name: "Medium",
@@ -41,9 +40,6 @@
             blogsTotal() {
                 return this.db.length
             }
-        },
-        components: {
-            MediumItem
         },
         methods: {
             onPageChange(page) {
