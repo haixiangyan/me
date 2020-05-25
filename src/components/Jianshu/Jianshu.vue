@@ -1,15 +1,12 @@
 <template>
     <div class="jianshu">
-        <div class="jianshu-banner">
-            <a class="jianshu-banner-link" href="https://www.jianshu.com/u/0340be4082b5" target="_blank">
-                <img :src="bannerImage" alt="jianshu">
-            </a>
-        </div>
-        <el-divider>所有博文</el-divider>
-        <jianshu-item v-for="(item, index) in displayBlogs"
-                      :item="item"
-                      :key="item.title"
-                      :is-last="index === displayBlogs.length - 1"/>
+        <h1>简书</h1>
+        <ul>
+            <li v-for="item in displayBlogs" :key="item.title">
+                <a :href="item.url">{{item.title}}</a>
+            </li>
+        </ul>
+
         <footer>
             <el-pagination @current-change="onPageChange"
                            hide-on-single-page
@@ -64,14 +61,10 @@
 
 <style scoped lang="scss">
 .jianshu {
-    &-banner {
-        text-align: center;
-        &-link {
-            display: inline-block;
-            vertical-align: top;
-            img {
-                max-width: 100%;
-            }
+    a {
+        color: #2c3e50;
+        &:hover {
+            color: #409EFF;
         }
     }
     footer {

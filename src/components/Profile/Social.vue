@@ -31,17 +31,9 @@
 
 <style scoped lang="scss">
     .social {
-        ul {
-            padding-left: 2em;
-
-            > li {
-                margin-bottom: 16px;
-
-                > a {
-                    margin-left: 8px;
-                    color: #409EFF;
-                }
-            }
+        a {
+            margin-left: 8px;
+            color: #409EFF;
         }
     }
 </style>

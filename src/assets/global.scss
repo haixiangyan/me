@@ -13,3 +13,13 @@ a {
 h1 {
   margin-bottom: 16px;
 }
+
+ul {
+  padding-left: 2em;
+  > li {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
