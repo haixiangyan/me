@@ -4,9 +4,11 @@
         <ul>
             <li v-for="item in portfolio" :key="item.github">
                 <p>
-                    <a :href="item.github">{{item.title}}</a>
-                    <el-divider direction="vertical"/>
-                    <a :href="item.url">Demo</a>
+                    <a class="title" :href="item.github">{{item.title}}</a>
+                    <span>
+                        <el-button type="success" size="mini" round plain>源码</el-button>
+                        <el-button type="primary" size="mini" round plain>项目</el-button>
+                    </span>
                 </p>
                 <p class="desc">{{item.desc}}</p>
             </li>
@@ -32,9 +34,15 @@
 
 <style scoped lang="scss">
     .portfolio {
-        a {
-            font-size: 1.2em;
-            color: #409EFF;
+        li {
+            a.title {
+                font-size: 1.2em;
+                color: #409EFF;
+            }
+            p {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         .desc {
