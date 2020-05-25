@@ -2,11 +2,15 @@
     <li>
         <div class="list-item">
             <section class="list-item-header">
-                <i :class="item.status === 'done' ? 'el-icon-check' : 'el-icon-s-flag'"/>
+                <span>
+                    <i :class="item.status === 'done' ? 'el-icon-check' : 'el-icon-s-flag'"/>
 
-                <span class="title" :class="{done: item.status === 'done'}" @click="showImages">
-                    {{item.name}}
+                    <span class="title" :class="{done: item.status === 'done'}" @click="showImages">
+                        {{item.name}}
+                    </span>
                 </span>
+
+                <span>{{item.date}}</span>
             </section>
             <el-carousel v-if="show && item.imgs" height="500px">
                 <el-carousel-item class="list-item-img-wrapper" :key="img" v-for="img in item.imgs">
@@ -47,8 +51,9 @@
     &-header {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-bottom: 16px;
-        > i {
+        i {
             font-weight: bold;
             margin-right: 16px;
             &.el-icon-check {

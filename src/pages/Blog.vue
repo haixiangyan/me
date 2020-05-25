@@ -9,10 +9,13 @@
         </h1>
         <ul>
             <li v-for="item in displayBlogs" :key="item.url">
-                <svg class="icon" aria-hidden="true">
-                    <use :xlink:href="listIcon"></use>
-                </svg>
-                <a :href="item.url">{{item.title}}</a>
+                <span>
+                    <svg class="icon" aria-hidden="true">
+                        <use :xlink:href="listIcon"></use>
+                    </svg>
+                    <a :href="item.url">{{item.title}}</a>
+                </span>
+                <span>{{item.date}}</span>
             </li>
         </ul>
 
@@ -84,8 +87,12 @@
             }
         }
 
-        a {
-            margin-left: 8px;
+        li {
+            display: flex;
+            justify-content: space-between;
+            a {
+                margin-left: 8px;
+            }
         }
 
         footer {
