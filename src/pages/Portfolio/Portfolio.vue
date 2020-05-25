@@ -1,14 +1,15 @@
 <template>
     <div class="portfolio">
-        <a class="portfolio-link" href="https://github.com/Haixiang6123" target="_blank">
-            <img :src="bannerImage" alt="portfolio">
-        </a>
-        <el-divider>所有项目</el-divider>
-        <ul class="portfolio-list">
-            <portfolio-item v-for="(item, index) in portfolio"
-                            :item="item"
-                            :key="item.title"
-                            :is-last="index === portfolio.length - 1"/>
+        <h1>个人项目</h1>
+        <ul>
+            <li v-for="item in portfolio" :key="item.github">
+                <p>
+                    <a :href="item.github">{{item.title}}</a>
+                    <el-divider direction="vertical"/>
+                    <a :href="item.url">Demo</a>
+                </p>
+                <p class="desc">{{item.desc}}</p>
+            </li>
         </ul>
     </div>
 </template>
@@ -35,17 +36,19 @@
 
 <style scoped lang="scss">
 .portfolio {
-    &-link {
-        width: 100%;
-        display: inline-block;
-        vertical-align: top;
-        text-align: center;
-        img {
-            max-width: 100%;
+    ul {
+        li {
+            a {
+                font-size: 1.2em;
+                color: #409EFF;
+                &:hover {
+
+                }
+            }
+            .desc {
+                margin-top: 4px;
+            }
         }
-    }
-    &-list {
-        list-style: none;
     }
 }
 </style>
