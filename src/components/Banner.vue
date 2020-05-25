@@ -13,8 +13,8 @@
   import Vue from 'vue'
   import {Component} from 'vue-property-decorator'
 
-  import {getImageUrl} from '../db/bucket-list'
   import Menu from './Menu.vue'
+  import {getImageUrl} from '@/lib/constants'
 
   @Component({
     components: {Menu}

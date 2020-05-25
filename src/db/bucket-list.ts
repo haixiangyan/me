@@ -1,12 +1,4 @@
-export const getImageUrl = (fileName: string) => `https://raw.githubusercontent.com/Haixiang6123/pic-bed/master/blog/${fileName}`
-
-type TBucketItem = {
-  name: string
-  status: 'done' | 'todo'
-  imgs?: string[]
-  date?: string
-}
-
+import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {

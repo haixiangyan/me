@@ -37,7 +37,7 @@
 
   import mediumDB from '../db/medium'
   import dayjs from 'dayjs'
-  import {DATE} from '../../lib/date'
+  import {DATE} from '@/lib/date'
 
   const jianshuDB = require('../db/jianshu-db.json')
 

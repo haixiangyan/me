@@ -26,14 +26,7 @@
   import {Component, Prop} from 'vue-property-decorator'
 
   import dayjs from 'dayjs'
-  import {DATE} from '../../../lib/date'
-
-  type TBucketItem = {
-    name: string
-    status: 'done' | 'todo'
-    imgs: string[]
-    date: string
-  }
+  import {DATE} from '@/lib/date'
 
   @Component
   export default class ListItem extends Vue {
