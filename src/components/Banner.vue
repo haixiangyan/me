@@ -30,7 +30,7 @@
     .banner {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 340px;
         background-image: url("../assets/banner.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
