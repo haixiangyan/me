@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Profile from '../pages/Profile'
-import Blog from '../pages/Blog'
-import Portfolio from '../pages/Portfolio'
-import BucketList from '../pages/BucketList/BucketList'
+import Profile from '../pages/Profile.vue'
+import Blog from '../pages/Blog.vue'
+import Portfolio from '../pages/Portfolio.vue'
+import BucketList from '../pages/BucketList/BucketList.vue'
 
 Vue.use(VueRouter)
 

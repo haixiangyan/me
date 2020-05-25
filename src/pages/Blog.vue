@@ -31,51 +31,48 @@
     </div>
 </template>
 
-<script>
-  import jianshuDB from '../../db/jianshu-db.json'
-  import mediumDB from '../../db/medium.js'
-  import {getImageUrl} from "../../db/bucket-list"
-  import dayjs from "dayjs"
-  import {DATE} from "../../lib/date"
+<script lang="ts">
+  import Vue from 'vue'
+  import {Component, Prop} from 'vue-property-decorator'
 
-  export default {
-    name: "Blog",
-    props: {
-      isActive: {
-        type: Boolean,
-        default: false
-      }
-    },
-    data() {
-      return {
-        title: '简书',
-        currentPage: 1,
-        bannerImage: getImageUrl('jianshu.png')
-      }
-    },
-    computed: {
-      db() {
-        return this.title === '简书' ? jianshuDB : mediumDB
-      },
-      listIcon() {
-        return this.title === '简书' ? '#icon-jianshu' : '#icon-medium'
-      },
-      displayBlogs() {
-        const begin = (this.currentPage - 1) * 10
-        const end = (begin + 10 > this.db.length) ? this.db.length : begin + 10
-        return this.db.slice(begin, end)
-      },
-      blogsTotal() {
-        return this.db.length
-      }
-    },
-    methods: {
-      onPageChange(page) {
-        this.currentPage = page
-      },
-      getDate(rawDate) {
-        return dayjs(rawDate).format(DATE)
-      }
+  import mediumDB from '../db/medium'
+  import dayjs from 'dayjs'
+  import {DATE} from '@/lib/date'
+
+  const jianshuDB = require('../db/jianshu-db.json')
+
+  @Component
+  export default class Blog extends Vue {
+    @Prop({type: Boolean, default: false})
+    isActive!: boolean
+
+    title = '简书'
+    currentPage = 1
+
+    get db() {
+      return this.title === '简书' ? jianshuDB : mediumDB
+    }
+
+    get listIcon() {
+      return this.title === '简书' ? '#icon-jianshu' : '#icon-medium'
+    }
+
+    get displayBlogs() {
+      const begin = (this.currentPage - 1) * 10
+      const end = (begin + 10 > this.db.length) ? this.db.length : begin + 10
+      return this.db.slice(begin, end)
+    }
+
+    get blogsTotal() {
+      return this.db.length
+    }
+
+    onPageChange(page: number) {
+      this.currentPage = page
+    }
+
+    getDate(rawDate: string) {
+      return dayjs(rawDate).format(DATE)
     }
   }
 </script>
@@ -95,6 +92,7 @@
         li {
             display: flex;
             justify-content: space-between;
+
             a {
                 margin-left: 8px;
             }

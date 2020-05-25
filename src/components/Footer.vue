@@ -1,13 +1,15 @@
 <template>
     <footer>
-        © 2018 - 2020  严海翔
+        © 2018 - 2020 严海翔
     </footer>
 </template>
 
 <script lang="ts">
-  export default {
-    name: 'Footer'
-  }
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
+
+  @Component
+  export default class Footer extends Vue {}
 </script>
 
 <style scoped lang="scss">

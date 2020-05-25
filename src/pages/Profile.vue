@@ -9,19 +9,16 @@
     </div>
 </template>
 
-<script>
-  import Social from "../components/Social"
+<script lang="ts">
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
 
-  export default {
-    name: "Profile",
-    data() {
-      return {
-      }
-    },
-    components: {
-      Social
-    }
-  }
+  import Social from '../components/Social.vue'
+
+  @Component({
+    components: {Social}
+  })
+  export default class Profile extends Vue {}
 </script>
 
 <style scoped lang="scss">

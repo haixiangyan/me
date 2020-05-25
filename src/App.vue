@@ -9,22 +9,20 @@
     </div>
 </template>
 
-<script>
-  import Menu from './components/Menu'
-  import Banner from "./components/Banner"
-  import Footer from "./components/Footer"
+<script lang="ts">
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
 
-  export default {
-    name: 'app',
-    data() {
-      return {}
-    },
+  import Menu from './components/Menu.vue'
+  import Banner from './components/Banner.vue'
+  import Footer from './components/Footer.vue'
+
+  @Component({
     components: {
-      Menu,
-      Banner,
-      Footer
+      Menu, Banner, Footer
     }
-  }
+  })
+  export default class App extends Vue {}
 </script>
 
 <style lang="scss">
