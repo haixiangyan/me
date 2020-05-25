@@ -39,6 +39,14 @@
 }
 #app {
     color: #2c3e50;
+    a {
+        text-decoration: none;
+        color: #2c3e50;
+        transition: color 300ms;
+        &:hover {
+            color: #409EFF;
+        }
+    }
     height: 100vh;
     .views {
         padding: 30px;

@@ -1,52 +1,60 @@
 <template>
-    <el-menu class="menu" router mode="horizontal">
-        <el-menu-item index="/">
-            <i class="el-icon-user"></i>
-            <span class="menu-item">我</span>
-        </el-menu-item>
-        <el-menu-item index="/jianshu">
-            <i class="el-icon-notebook-1"></i>
-            <span class="menu-item">简书</span>
-        </el-menu-item>
-        <el-menu-item index="/medium">
-            <i class="el-icon-notebook-2"></i>
-            <span class="menu-item">Medium</span>
-        </el-menu-item>
-        <el-menu-item index="/portfolio">
-            <i class="el-icon-suitcase"></i>
-            <span class="menu-item">项目</span>
-        </el-menu-item>
-        <el-submenu index="/bucket-list/done">
-            <template slot="title">
-                <i class="el-icon-s-order"></i>
-                <span class="menu-item">人生清单</span>
-            </template>
-            <el-menu-item index="/bucket-list/done" style="color: #67C23A">
-                <i class="el-icon-check" style="color: #67C23A"></i>
-                已完成
-            </el-menu-item>
-            <el-menu-item index="/bucket-list/todo" style="color: #F56C6C">
-                <i class="el-icon-s-flag" style="color: #F56C6C"></i>
-                还在立Flag
-            </el-menu-item>
-        </el-submenu>
-    </el-menu>
+    <nav class="nav">
+        <div class="nav-wrapper">
+            <router-link to="/">
+                严海翔的人个主页
+            </router-link>
+
+            <ul class="menu">
+                <li class="menu-item" v-for="menuItem in menu">
+                    <router-link :key="menuItem.route" :to="menuItem.route">
+                        {{menuItem.label}}
+                    </router-link>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 </template>
 
 <script lang="ts">
   export default {
-    name: 'Menu'
+    name: 'Menu',
+    data() {
+      return {
+        menu: [
+          {route: '/', label: '主页', icon: 'el-icon-user'},
+          {route: '/jianshu', label: '中文博客', icon: 'el-icon-notebook-1'},
+          {route: '/medium', label: '英文博客', icon: 'el-icon-notebook-2'},
+          {route: '/portfolio', label: '项目', icon: 'el-icon-suitcase'},
+          {route: '/bucket-list/done', label: '人生清单', icon: 'el-icon-s-order'},
+        ]
+      }
+    }
   }
 </script>
 
 <style scoped lang="scss">
-    .menu {
-        display: flex;
-        z-index: 3;
-        @media (max-width:480px) {
-            .menu-item {
-                display: none;
+    .nav {
+        border-bottom: 1px solid #eee;
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 16px 0;
+
+            .menu {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                &-item {
+                    margin-right: 16px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
