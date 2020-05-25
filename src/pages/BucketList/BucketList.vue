@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import bucketList, {getImageUrl} from './list'
+  import bucketList, {getImageUrl} from '../../../db/bucket-list'
     import ListItem from './ListItem'
     export default {
         name: "BucketList",

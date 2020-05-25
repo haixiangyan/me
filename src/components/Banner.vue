@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-  import {getImageUrl} from "../pages/BucketList/list"
+  import {getImageUrl} from "../../db/bucket-list"
   import Menu from './Menu.vue'
 
   export default {

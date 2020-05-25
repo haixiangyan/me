@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import {getImageUrl} from "./BucketList/list"
+    import {getImageUrl} from "../../db/bucket-list"
 
     const portfolio = require('../../db/portfolio-db.json')
     export default {

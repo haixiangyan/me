@@ -21,7 +21,7 @@
 
 <script>
     import db from '../../db/jianshu-db.json'
-    import {getImageUrl} from "./BucketList/list"
+    import {getImageUrl} from "../../db/bucket-list"
     export default {
         name: "Jianshu",
         props: {
