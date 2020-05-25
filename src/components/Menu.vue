@@ -52,8 +52,8 @@
             display: flex;
             justify-content: space-between;
             margin: 0 auto;
-            max-width: 1200px;
-            padding: 24px 0;
+            max-width: 1248px;
+            padding: 24px 24px;
 
             .menu {
                 display: flex;
