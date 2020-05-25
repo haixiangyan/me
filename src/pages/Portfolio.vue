@@ -15,10 +15,9 @@
 </template>
 
 <script>
-    import PortfolioItem from "./PortfolioItem"
-    import {getImageUrl} from "../BucketList/list"
+    import {getImageUrl} from "./BucketList/list"
 
-    const portfolio = require('../../../db/portfolio-db.json')
+    const portfolio = require('../../db/portfolio-db.json')
     export default {
         name: "Portfolio",
         data() {
@@ -27,9 +26,6 @@
                 bannerImage: getImageUrl('portfolio.png'),
                 portfolio
             }
-        },
-        components: {
-          PortfolioItem
         }
     }
 </script>
