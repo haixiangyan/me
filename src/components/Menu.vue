@@ -27,7 +27,7 @@
           {route: '/jianshu', label: '中文博客', icon: 'el-icon-notebook-1'},
           {route: '/medium', label: '英文博客', icon: 'el-icon-notebook-2'},
           {route: '/portfolio', label: '项目', icon: 'el-icon-suitcase'},
-          {route: '/bucket-list/done', label: '人生清单', icon: 'el-icon-s-order'},
+          {route: '/bucket-list', label: '人生清单', icon: 'el-icon-s-order'},
         ]
       }
     },
