@@ -1,13 +1,13 @@
 <template>
     <div class="medium">
-        <a class="medium-link" href="https://medium.com/@haixiang6123" target="_blank">
-            <img :src="bannerImage" alt="medium">
-        </a>
-        <el-divider>所有博文</el-divider>
-        <medium-item v-for="(item, index) in displayBlogs"
-                     :item="item"
-                     :key="item.title"
-                     :is-last="index === displayBlogs.length - 1"/>
+        <h1>Medium</h1>
+
+        <ul>
+            <li v-for="item in displayBlogs" :key="item.url">
+                <a :href="item.url">{{item.title}}</a>
+            </li>
+        </ul>
+
         <footer>
             <el-pagination @current-change="onPageChange"
                            background
@@ -55,13 +55,10 @@
 
 <style scoped lang="scss">
 .medium {
-    &-link {
-        width: 100%;
-        display: inline-block;
-        vertical-align: top;
-        text-align: center;
-        img {
-            max-width: 100%;
+    a {
+        color: #2c3e50;
+        &:hover {
+            color: #409EFF;
         }
     }
     footer {

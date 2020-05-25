@@ -2,7 +2,7 @@
     <div class="jianshu">
         <h1>简书</h1>
         <ul>
-            <li v-for="item in displayBlogs" :key="item.title">
+            <li v-for="item in displayBlogs" :key="item.url">
                 <a :href="item.url">{{item.title}}</a>
             </li>
         </ul>
