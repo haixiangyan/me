@@ -4,6 +4,9 @@
 
         <ul>
             <li v-for="item in displayBlogs" :key="item.url">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-medium"></use>
+                </svg>
                 <a :href="item.url">{{item.title}}</a>
             </li>
         </ul>
@@ -51,10 +54,17 @@
 
 <style scoped lang="scss">
 .medium {
-    a {
-        color: #2c3e50;
-        &:hover {
-            color: #409EFF;
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            a {
+                margin-left: 8px;
+                color: #2c3e50;
+                &:hover {
+                    color: #409EFF;
+                }
+            }
         }
     }
     footer {
