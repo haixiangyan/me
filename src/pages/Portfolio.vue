@@ -16,19 +16,15 @@
     </div>
 </template>
 
-<script>
-  import {getImageUrl} from "../../db/bucket-list"
+<script lang="ts">
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
 
-  const portfolio = require('../../db/portfolio-db.json')
-  export default {
-    name: "Portfolio",
-    data() {
-      return {
-        selected: 0,
-        bannerImage: getImageUrl('portfolio.png'),
-        portfolio
-      }
-    }
+  const portfolio = require('../db/portfolio-db.json')
+
+  @Component
+  export default class Portfolio extends Vue {
+    portfolio = portfolio
   }
 </script>
 
@@ -39,6 +35,7 @@
                 font-size: 1.2em;
                 color: #409EFF;
             }
+
             p {
                 display: flex;
                 justify-content: space-between;

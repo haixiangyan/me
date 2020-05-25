@@ -1,6 +1,14 @@
-export const getImageUrl = (fileName) => `https://raw.githubusercontent.com/Haixiang6123/pic-bed/master/blog/${fileName}`
+export const getImageUrl = (fileName: string) => `https://raw.githubusercontent.com/Haixiang6123/pic-bed/master/blog/${fileName}`
 
-export default [
+type TBucketItem = {
+  name: string
+  status: 'done' | 'todo'
+  imgs?: string[]
+  date?: string
+}
+
+
+const bucketList: TBucketItem[] = [
   {
     name: '爬加州最高峰',
     status: 'done',
@@ -33,13 +41,14 @@ export default [
   },
   {
     name: '爬Mt. Powell',
-    status: '2020-2-14',
+    status: 'done',
     imgs: [
       getImageUrl('powell1.jpeg'),
       getImageUrl('powell2.jpeg'),
       getImageUrl('powell3.jpeg'),
       getImageUrl('powell4.jpeg'),
     ],
+    date: '2020-2-14'
   },
   {
     name: '去看San Diego的航母',
@@ -482,3 +491,5 @@ export default [
     status: 'todo'
   },
 ]
+
+export default bucketList

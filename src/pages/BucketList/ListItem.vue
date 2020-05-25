@@ -21,74 +21,83 @@
     </li>
 </template>
 
-<script>
-  import dayjs from "dayjs"
-  import {DATE} from "../../../lib/date"
+<script lang="ts">
+  import Vue from 'vue'
+  import {Component, Prop} from 'vue-property-decorator'
 
-  export default {
-    name: "MediumItem",
-    props: {
-      item: {
-        type: Object
+  import dayjs from 'dayjs'
+  import {DATE} from '../../../lib/date'
+
+  type TBucketItem = {
+    name: string
+    status: 'done' | 'todo'
+    imgs: string[]
+    date: string
+  }
+
+  @Component
+  export default class ListItem extends Vue {
+    @Prop({type: Object, required: true})
+    item!: TBucketItem
+
+    show = false
+
+    showImages() {
+      if (this.item.status === 'done') {
+        this.show = !this.show
       }
-    },
-    data() {
-      return {
-        show: false
-      }
-    },
-    methods: {
-      showImages() {
-        if (this.item.status === 'done') {
-          this.show = !this.show
-        }
-      },
-      getDate(rawDate) {
-        return dayjs(rawDate).format(DATE)
-      }
+    }
+
+    getDate(rawDate: string) {
+      return dayjs(rawDate).format(DATE)
     }
   }
 </script>
 
 <style scoped lang="scss">
-.list-item {
-    margin: 12px 0;
+    .list-item {
+        margin: 12px 0;
 
-    &-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 16px;
-        i {
-            font-weight: bold;
-            margin-right: 16px;
-            &.el-icon-check {
-                color: #67C23A;
-            }
-            &.el-icon-s-flag {
-                color: #F56C6C;
-            }
-        }
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
 
-        > .title {
-            font-size: 1.2em;
-            &.done {
-                color: #409EFF;
-                cursor: pointer;
-                &:hover {
-                    text-decoration: underline;
+            i {
+                font-weight: bold;
+                margin-right: 16px;
+
+                &.el-icon-check {
+                    color: #67C23A;
+                }
+
+                &.el-icon-s-flag {
+                    color: #F56C6C;
+                }
+            }
+
+            > .title {
+                font-size: 1.2em;
+
+                &.done {
+                    color: #409EFF;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
-    }
 
-    &-img {
-        &-wrapper {
-            text-align: center;
+        &-img {
+            &-wrapper {
+                text-align: center;
+            }
+
+            max-width: 100%;
+            max-height: 100%;
         }
-
-        max-width: 100%;
-        max-height: 100%;
     }
-}
 </style>

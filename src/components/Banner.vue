@@ -10,19 +10,17 @@
 </template>
 
 <script lang="ts">
-  import {getImageUrl} from "../../db/bucket-list"
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
+
+  import {getImageUrl} from '../db/bucket-list'
   import Menu from './Menu.vue'
 
-  export default {
-    name: 'Banner',
-    data() {
-      return {
-        avatar: getImageUrl('avatar.jpg')
-      }
-    },
-    components: {
-      Menu
-    }
+  @Component({
+    components: {Menu}
+  })
+  export default class Banner extends Vue {
+    avatar = getImageUrl('avatar.jpg')
   }
 </script>
 
@@ -35,6 +33,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+
         .intro {
             display: flex;
             flex-direction: column;
@@ -42,11 +41,13 @@
             justify-content: center;
             flex-grow: 1;
             color: white;
+
             .avatar {
                 width: 120px;
                 border-radius: 50%;
                 border: 1px solid white;
             }
+
             .title {
                 margin-top: 24px;
                 font-size: 1.1em;

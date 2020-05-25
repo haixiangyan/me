@@ -15,25 +15,21 @@
     </div>
 </template>
 
-<script>
-  import bucketList from '../../../db/bucket-list'
-  import ListItem from './ListItem'
+<script lang="ts">
+  import Vue from 'vue'
+  import {Component} from 'vue-property-decorator'
 
-  export default {
-    name: "BucketList",
-    data() {
-      return {
-        type: 'done',
-        bucketList
-      }
-    },
-    components: {
-      ListItem
-    },
-    computed: {
-      filterBucketList() {
-        return bucketList.filter(item => item.status === this.type)
-      }
+  import bucketList from '../../db/bucket-list'
+  import ListItem from './ListItem.vue'
+
+  @Component({
+    components: {ListItem}
+  })
+  export default class BucketList extends Vue {
+    type = 'done'
+
+    get filterBucketList() {
+      return bucketList.filter(item => item.status === this.type)
     }
   }
 </script>
