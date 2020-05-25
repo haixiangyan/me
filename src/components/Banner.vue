@@ -2,11 +2,7 @@
     <div class="banner">
         <Menu/>
         <div class="intro">
-            <el-avatar :src="avatar"
-                       alt="avatar"
-                       icon="el-icon-user-solid"
-                       :size="120">
-            </el-avatar>
+            <el-avatar :src="avatar" alt="avatar" icon="el-icon-user-solid" :size="120"/>
 
             <p class="title">前端工人 / 守望先锋鱼塘霸主 / 拼图狂魔</p>
         </div>
