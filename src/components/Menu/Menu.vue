@@ -62,6 +62,7 @@
                 list-style-type: none;
                 &-item {
                     margin-right: 16px;
+                    margin-bottom: 0;
                     &.selected {
                         a {
                             border-color: white;
