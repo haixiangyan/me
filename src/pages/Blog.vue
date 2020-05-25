@@ -13,9 +13,9 @@
                     <svg class="icon" aria-hidden="true">
                         <use :xlink:href="listIcon"></use>
                     </svg>
-                    <a :href="item.url">{{item.title}}</a>
+                    <a class="title" :href="item.url">{{item.title}}</a>
                 </span>
-                <span>{{getDate(item.date)}}</span>
+                <span class="date">{{getDate(item.date)}}</span>
             </li>
         </ul>
 
@@ -92,8 +92,12 @@
             display: flex;
             justify-content: space-between;
 
-            a {
+            .title {
                 margin-left: 8px;
+            }
+            .date {
+                min-width: 30%;
+                text-align: right;
             }
         }
 

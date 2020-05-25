@@ -10,7 +10,7 @@
                     </span>
                 </span>
 
-                <span>{{getDate(item.date)}}</span>
+                <span class="date">{{getDate(item.date)}}</span>
             </section>
             <el-carousel v-if="show && item.imgs" height="500px">
                 <el-carousel-item class="img-wrapper" :key="img" v-for="img in item.imgs">
@@ -88,6 +88,9 @@
                         text-decoration: underline;
                     }
                 }
+            }
+            .date {
+                min-width: 30%;
             }
         }
 

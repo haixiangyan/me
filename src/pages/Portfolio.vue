@@ -45,7 +45,7 @@
                 color: #409EFF;
             }
             .buttons {
-                width: 30%;
+                min-width: 40%;
                 text-align: right;
             }
         }

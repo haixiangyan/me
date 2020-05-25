@@ -37,9 +37,9 @@
         color: #2c3e50;
 
         .views {
-            max-width: 720px;
+            max-width: 780px;
             margin: 0 auto;
-            padding: 50px 0;
+            padding: 50px 30px;
             background: white;
             border-radius: 4px;
         }
