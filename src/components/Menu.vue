@@ -2,7 +2,7 @@
     <nav class="nav">
         <div class="nav-wrapper">
             <router-link to="/">
-                严海翔的人个主页
+                严海翔的个人主页
             </router-link>
 
             <ul class="menu">
