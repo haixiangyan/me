@@ -1,63 +1,48 @@
 <template>
     <div class="social">
-        <span class="social-item">
-            <a href="https://github.com/Haixiang6123" target="_blank">
+        <h1 style="margin-top: 32px">找到我</h1>
+        <ul>
+            <li v-for="item in social" :key="item.link">
                 <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-github"></use>
+                    <use :xlink:href="item.icon"></use>
                 </svg>
-            </a>
-        </span>
-        <span class="social-item">
-            <a href="mailto:haixiang6123@gmail.com" target="_blank">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-mail"></use>
-                </svg>
-            </a>
-        </span>
-        <span class="social-item">
-            <a href="https://www.jianshu.com/u/0340be4082b5" target="_blank">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-jianshu"></use>
-                </svg>
-            </a>
-        </span>
-        <span class="social-item">
-            <a href="https://medium.com/@haixiang6123" target="_blank">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-medium"></use>
-                </svg>
-            </a>
-        </span>
-        <span class="social-item">
-            <a href="https://playoverwatch.com/en-us/career/pc/Monster-14255" target="_blank">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-overwatch"></use>
-                </svg>
-            </a>
-        </span>
+                <a :href="item.link" target="_blank">{{item.link}}</a>
+            </li>
+        </ul>
     </div>
 </template>
 
 <script lang="ts">
-  export default {}
+  export default {
+    name: 'Social',
+    data() {
+      return {
+        social: [
+          {label: 'Github', icon: '#icon-github', link: 'https://github.com/Haixiang6123'},
+          {label: '邮箱', icon: '#icon-mail', link: 'mailto:haixiang6123@gmail.com'},
+          {label: '简书', icon: '#icon-jianshu', link: 'https://www.jianshu.com/u/0340be4082b5'},
+          {label: 'Medium', icon: '#icon-medium', link: 'https://medium.com/@haixiang6123'},
+          {label: '守望先锋', icon: '#icon-overwatch', link: 'https://playoverwatch.com/en-us/career/pc/Monster-14255'},
+        ]
+      }
+    }
+  }
 </script>
 
 <style scoped lang="scss">
     .social {
-        margin-top: 12px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-
-        &-item {
-            & + & {
-                margin-left: 40px;
-            }
+        h1 {
+            margin-bottom: 16px;
         }
-
-        svg {
-            height: 20px;
-            width: 20px;
+        ul {
+            padding-left: 2em;
+            > li {
+                margin-bottom: 16px;
+                > a {
+                    margin-left: 8px;
+                    color: #409EFF;
+                }
+            }
         }
     }
 </style>

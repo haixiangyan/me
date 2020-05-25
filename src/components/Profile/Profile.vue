@@ -1,6 +1,5 @@
 <template>
     <div class="profile">
-        <h1 style="margin-top: 32px">找到我</h1>
         <Social/>
     </div>
 </template>
