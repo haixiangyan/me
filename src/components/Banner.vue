@@ -2,7 +2,7 @@
     <div class="banner">
         <Menu/>
         <div class="intro">
-            <el-avatar :src="avatar" alt="avatar" icon="el-icon-user-solid" :size="120"/>
+            <el-avatar class="avatar" :src="avatar" alt="avatar" icon="el-icon-user-solid" :size="120"/>
 
             <p class="title">前端工人 / 守望先锋鱼塘霸主 / 拼图狂魔</p>
         </div>
@@ -43,8 +43,7 @@
             color: white;
 
             .avatar {
-                border-radius: 50%;
-                border: 1px solid white;
+                box-shadow: 0 0 55px -6px rgba(255,255,255,1);
             }
 
             .title {

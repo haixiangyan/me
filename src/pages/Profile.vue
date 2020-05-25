@@ -30,7 +30,7 @@
 
         .intro {
             padding-bottom: 24px;
-            border-bottom: 1px dashed #eee;
+            border-bottom: 1px dashed #DCDFE6;
         }
     }
 </style>
