@@ -35,9 +35,14 @@
 </script>
 
 <style scoped lang="scss">
+    a {
+        color: white;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-color: white;
+        }
+    }
     .nav {
-        border-bottom: 1px solid #eee;
-
         &-wrapper {
             display: flex;
             justify-content: space-between;
