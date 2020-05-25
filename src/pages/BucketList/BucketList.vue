@@ -1,9 +1,14 @@
 <template>
     <div class="bucket-list">
-        <div class="bucket-list-image">
-            <img :src="bannerImage" alt="bucketlist">
-        </div>
-        <el-divider>My Bucket List</el-divider>
+        <h1>
+            <span>已完成</span>
+
+            <span>
+              <el-radio v-model="type" label="done">已完成</el-radio>
+              <el-radio v-model="type" label="todo">还在立Flag</el-radio>
+            </span>
+        </h1>
+
         <ul class="bucket-list-content">
             <list-item v-for="item in filterBucketList" :item="item" :key="item.title"></list-item>
         </ul>
@@ -11,36 +16,45 @@
 </template>
 
 <script>
-  import bucketList, {getImageUrl} from '../../../db/bucket-list'
-    import ListItem from './ListItem'
-    export default {
-        name: "BucketList",
-        data() {
-            return {
-                bucketList,
-                bannerImage: getImageUrl('bucketlist.jpg')
-            }
-        },
-        components: {
-          ListItem
-        },
-        computed: {
-            filterBucketList() {
-              const type = this.$route.params.type || 'done'
-              return bucketList.filter(item => item.status === type)
-            }
-        }
+  import bucketList from '../../../db/bucket-list'
+  import ListItem from './ListItem'
+
+  export default {
+    name: "BucketList",
+    data() {
+      return {
+        type: 'done',
+        bucketList
+      }
+    },
+    components: {
+      ListItem
+    },
+    computed: {
+      filterBucketList() {
+        return bucketList.filter(item => item.status === this.type)
+      }
     }
+  }
 </script>
 
 <style scoped lang="scss">
     .bucket-list {
+        h1 {
+            display: flex;
+            justify-content: space-between;
+            span {
+                display: flex;
+                align-items: center;
+            }
+        }
         &-image {
             text-align: center;
         }
-        &-content {
+
+        ul {
             list-style: none;
-            margin-top: 12px;
+            padding: 0;
         }
     }
 </style>
