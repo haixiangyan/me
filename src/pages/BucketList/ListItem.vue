@@ -2,7 +2,7 @@
     <li>
         <div class="list-item">
             <section class="header">
-                <span>
+                <span class="text-overflow">
                     <i :class="item.status === 'done' ? 'el-icon-check' : 'el-icon-s-flag'"/>
 
                     <span class="title" :class="{done: item.status === 'done'}" @click="showImages">

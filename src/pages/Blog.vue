@@ -9,7 +9,7 @@
         </h1>
         <ul>
             <li v-for="item in displayBlogs" :key="item.url">
-                <span>
+                <span class="text-overflow">
                     <svg class="icon" aria-hidden="true">
                         <use :xlink:href="listIcon"></use>
                     </svg>
