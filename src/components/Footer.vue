@@ -1,6 +1,6 @@
 <template>
     <footer>
-        © 2018 - 2020 严海翔
+        &copy; 2018 - 2020 &#10084; Made By 海翔
     </footer>
 </template>
 
