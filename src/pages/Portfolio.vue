@@ -8,8 +8,8 @@
                     <p class="desc">{{item.desc}}</p>
                 </div>
                 <div class="buttons">
-                    <el-button type="success" size="mini" round plain>源码</el-button>
-                    <el-button type="primary" size="mini" round plain>项目</el-button>
+                    <el-button type="success" size="mini" round plain @click="goto(item.github)">源码</el-button>
+                    <el-button type="primary" size="mini" round plain @click="goto(item.url)">项目</el-button>
                 </div>
             </li>
         </ul>
@@ -25,6 +25,9 @@
   @Component
   export default class Portfolio extends Vue {
     portfolioDB = portfolioDB
+    goto(website: string) {
+      window.open(website, '_blank');
+    }
   }
 </script>
 

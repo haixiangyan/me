@@ -26,7 +26,7 @@ const portfolioDB: TPortfolioItem[] = [
   {
     'title': '守望先锋 UI 库',
     'desc': '一个基于 Vue.js 开发的守望先锋主题 UI 库。纪念当年通宵打守望先锋的大学时光。',
-    'url': 'https://haixiang6123.github.io/overwatch-ui-doc/#/',
+    'url': 'https://yanhaixiang.com/overwatch-ui-doc/#/',
     'github': 'https://github.com/Haixiang6123/overwatch-ui',
     'languages': ['Vue'],
     'stars': 344
@@ -42,7 +42,7 @@ const portfolioDB: TPortfolioItem[] = [
   {
     'title': '在线吉他谱编辑器',
     'desc': '一个基于 React.js 开发的在线吉他谱编辑器。',
-    'url': 'https://haixiang6123.github.io/guitar-editor/#/',
+    'url': 'https://yanhaixiang.com/guitar-editor/#/',
     'github': 'https://github.com/Haixiang6123/guitar-editor',
     'languages': ['React'],
     'stars': 47
@@ -99,7 +99,7 @@ const portfolioDB: TPortfolioItem[] = [
   {
     'title': '在线画图工具',
     'desc': '一个在线画图 App。使用原生 JavaScript 来实现画图功能。',
-    'url': 'https://haixiang6123.github.io/sketch-book/',
+    'url': 'https://yanhaixiang.com/sketch-book/',
     'github': 'https://github.com/Haixiang6123/sketch-book',
     'languages': ['JavaScript'],
     'stars': 2
