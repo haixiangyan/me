@@ -1,6 +1,6 @@
-export const getImageUrl = (fileName) => `https://raw.githubusercontent.com/Haixiang6123/pic-bed/master/blog/${fileName}`
+import {getImageUrl} from '@/lib/constants'
 
-export default [
+const bucketList: TBucketItem[] = [
   {
     name: '爬加州最高峰',
     status: 'done',
@@ -10,6 +10,15 @@ export default [
       getImageUrl('LA最高峰3.jpeg'),
       getImageUrl('LA最高峰4.jpeg'),
     ],
+    date: '2020-5-4'
+  },
+  {
+    name: '窥探富二代',
+    status: 'done',
+    imgs: [
+      getImageUrl('富二代.jpeg')
+    ],
+    date: '2020-3-24'
   },
   {
     name: '读CS硕士',
@@ -19,14 +28,8 @@ export default [
       getImageUrl('硕士2.jpeg'),
       getImageUrl('硕士3.jpeg'),
       getImageUrl('硕士4.jpeg'),
-    ]
-  },
-  {
-    name: '窥探富二代',
-    status: 'done',
-    imgs: [
-      getImageUrl('富二代.jpeg')
-    ]
+    ],
+    date: '2020-3-21'
   },
   {
     name: '爬Mt. Powell',
@@ -37,6 +40,7 @@ export default [
       getImageUrl('powell3.jpeg'),
       getImageUrl('powell4.jpeg'),
     ],
+    date: '2020-2-14'
   },
   {
     name: '去看San Diego的航母',
@@ -45,6 +49,7 @@ export default [
       getImageUrl('SD航母1.jpeg'),
       getImageUrl('SD航母3.jpeg'),
     ],
+    date: '2020-1-25'
   },
   {
     name: '和东方明珠合影',
@@ -54,6 +59,7 @@ export default [
       getImageUrl('东明2.jpeg'),
       getImageUrl('东明3.jpeg'),
     ],
+    date: '2020-1-4'
   },
   {
     name: '去Las Vegas豪赌一把',
@@ -63,6 +69,7 @@ export default [
       getImageUrl('LV2.jpeg'),
       getImageUrl('LV3.jpeg'),
     ],
+    date: '2019-12-22'
   },
   {
     name: '做大哥',
@@ -70,6 +77,7 @@ export default [
     imgs: [
       getImageUrl('大哥.jpeg'),
     ],
+    date: '2019-12-20'
   },
   {
     name: '去大峡谷',
@@ -78,6 +86,7 @@ export default [
       getImageUrl('大峡谷1.jpeg'),
       getImageUrl('大峡谷2.jpeg'),
     ],
+    date: '2019-12-21'
   },
   {
     name: '开66号公路',
@@ -86,6 +95,7 @@ export default [
       getImageUrl('66号公路2.jpeg'),
       getImageUrl('66号公路1.jpeg'),
     ],
+    date: '2019-12-19'
   },
   {
     name: '开一场美东拉力赛',
@@ -96,6 +106,7 @@ export default [
       getImageUrl('东部接力赛3.jpeg'),
       getImageUrl('东部接力赛4.jpeg'),
     ],
+    date: '2019-11-29'
   },
   {
     name: '去西雅图',
@@ -106,6 +117,7 @@ export default [
       getImageUrl('seattle1.jpeg'),
       getImageUrl('seattle4.jpeg'),
     ],
+    date: '2019-11-30'
   },
   {
     name: '去优胜美地',
@@ -116,6 +128,7 @@ export default [
       getImageUrl('yo1.jpeg'),
       getImageUrl('yo4.jpeg'),
     ],
+    date: '2019-11-28'
   },
   {
     name: '去滑雪',
@@ -125,6 +138,7 @@ export default [
       getImageUrl('滑雪2.jpeg'),
       getImageUrl('滑雪3.jpeg'),
     ],
+    date: '2019-11-23'
   },
   {
     name: '去死亡谷',
@@ -137,6 +151,7 @@ export default [
       getImageUrl('死谷5.jpeg'),
       getImageUrl('死谷6.jpeg'),
     ],
+    date: '2019-11-10'
   },
   {
     name: '开房车',
@@ -148,6 +163,7 @@ export default [
       getImageUrl('rv4.jpeg'),
       getImageUrl('rv5.jpeg'),
     ],
+    date: '2019-11-8'
   },
   {
     name: '去六旗坐过山车',
@@ -158,6 +174,16 @@ export default [
       getImageUrl('6flags3.jpeg'),
       getImageUrl('6flags4.jpeg'),
     ],
+    date: '2019-10-21'
+  },
+  {
+    name: '考持枪证',
+    status: 'done',
+    imgs: [
+      getImageUrl('考持枪证.jpeg'),
+      getImageUrl('考持枪证2.jpeg')
+    ],
+    date: '2019-8-18'
   },
   {
     name: '用无人机拍加州',
@@ -167,14 +193,17 @@ export default [
       getImageUrl('drone2.jpeg'),
       getImageUrl('drone3.jpeg'),
     ],
+    date: '2019-8-1'
   },
   {
-    name: '考持枪证',
+    name: '逛斯坦福',
     status: 'done',
     imgs: [
-      getImageUrl('考持枪证.jpeg'),
-      getImageUrl('考持枪证2.jpeg')
-    ]
+      getImageUrl('standford1.jpeg'),
+      getImageUrl('standford2.jpeg'),
+      getImageUrl('standford3.jpeg'),
+    ],
+    date: '2019-6-25'
   },
   {
     name: '开始人生第一份实习',
@@ -187,15 +216,33 @@ export default [
       getImageUrl('dji5.jpeg'),
       getImageUrl('dji6.jpeg'),
     ],
+    date: '2019-6-24'
   },
   {
-    name: '逛斯坦福',
+    name: '去三番',
     status: 'done',
     imgs: [
-      getImageUrl('standford1.jpeg'),
-      getImageUrl('standford2.jpeg'),
-      getImageUrl('standford3.jpeg'),
+      getImageUrl('sf1.jpeg'),
+      getImageUrl('sf2.jpeg'),
+      getImageUrl('sf3.jpeg'),
+      getImageUrl('sf4.jpeg'),
+      getImageUrl('sf5.jpeg'),
+      getImageUrl('sf6.jpeg'),
+      getImageUrl('sf7.jpeg'),
     ],
+    date: '2019-6-22'
+  },
+  {
+    name: '去丹麦小镇',
+    status: 'done',
+    imgs: [
+      getImageUrl('丹麦小镇1.jpeg'),
+      getImageUrl('丹麦小镇2.jpeg'),
+      getImageUrl('丹麦小镇3.jpeg'),
+      getImageUrl('丹麦小镇4.jpeg'),
+      getImageUrl('丹麦小镇5.jpeg'),
+    ],
+    date: '2019-6-20'
   },
   {
     name: '开1号公路',
@@ -208,30 +255,7 @@ export default [
       getImageUrl('1号公路6.jpeg'),
       getImageUrl('1号公路4.jpeg'),
     ],
-  },
-  {
-    name: '去湾区',
-    status: 'done',
-    imgs: [
-      getImageUrl('sf1.jpeg'),
-      getImageUrl('sf2.jpeg'),
-      getImageUrl('sf3.jpeg'),
-      getImageUrl('sf4.jpeg'),
-      getImageUrl('sf5.jpeg'),
-      getImageUrl('sf6.jpeg'),
-      getImageUrl('sf7.jpeg'),
-    ],
-  },
-  {
-    name: '去丹麦小镇',
-    status: 'done',
-    imgs: [
-      getImageUrl('丹麦小镇1.jpeg'),
-      getImageUrl('丹麦小镇2.jpeg'),
-      getImageUrl('丹麦小镇3.jpeg'),
-      getImageUrl('丹麦小镇4.jpeg'),
-      getImageUrl('丹麦小镇5.jpeg'),
-    ],
+    date: '2019-6-20'
   },
   {
     name: '打枪',
@@ -242,7 +266,8 @@ export default [
       getImageUrl('打枪3.jpeg'),
       getImageUrl('打枪4.jpeg'),
       getImageUrl('打枪5.jpeg'),
-    ]
+    ],
+    date: '2019-6-17'
   },
   {
     name: '去LA刷网红点',
@@ -257,6 +282,7 @@ export default [
       getImageUrl('la7.jpeg'),
       getImageUrl('la8.jpeg'),
     ],
+    date: '2019-6-17'
   },
   {
     name: '开UHAUL',
@@ -266,6 +292,7 @@ export default [
       getImageUrl('uhaul2.jpeg'),
       getImageUrl('uhaul3.jpeg'),
     ],
+    date: '2019-5-29'
   },
   {
     name: '爬Mt. Whitney',
@@ -278,6 +305,7 @@ export default [
       getImageUrl('whitney5.jpeg'),
       getImageUrl('whitney6.jpeg'),
     ],
+    date: '2019-5-20'
   },
   {
     name: 'Hiking in Crystal Cove',
@@ -289,6 +317,7 @@ export default [
       getImageUrl('CrystalCove4.jpeg'),
       getImageUrl('CrystalCove5.jpeg'),
     ],
+    date: '2019-4-26'
   },
   {
     name: 'Hiking in Lake Perris',
@@ -300,6 +329,7 @@ export default [
       getImageUrl('Lake Perris4.jpeg'),
       getImageUrl('Lake Perris5.jpeg'),
     ],
+    date: '2019-4-12'
   },
   {
     name: '去UCLA',
@@ -311,6 +341,7 @@ export default [
       getImageUrl('ucla4.jpeg'),
       getImageUrl('ucla5.jpeg'),
     ],
+    date: '2019-3-27'
   },
   {
     name: '玩猪',
@@ -319,6 +350,7 @@ export default [
       getImageUrl('pig1.jpeg'),
       getImageUrl('pig2.jpeg'),
     ],
+    date: '2018-12-28'
   },
   {
     name: '去巴哈马',
@@ -330,6 +362,7 @@ export default [
       getImageUrl('bahamas4.jpeg'),
       getImageUrl('bahamas5.jpeg'),
     ],
+    date: '2018-12-26'
   },
   {
     name: '狂吃一顿自助寿司',
@@ -338,6 +371,7 @@ export default [
       getImageUrl('sushi1.jpeg'),
       getImageUrl('sushi2.jpeg'),
     ],
+    date: '2018-4-21'
   },
   {
     name: '玩一次短骑行',
@@ -346,6 +380,7 @@ export default [
       getImageUrl('短骑1.jpeg'),
       getImageUrl('短骑2.jpeg'),
     ],
+    date: '2018-4-1'
   },
   {
     name: '跳伞',
@@ -354,7 +389,8 @@ export default [
       getImageUrl('跳伞3.png'),
       getImageUrl('跳伞1.jpeg'),
       getImageUrl('跳伞2.jpeg'),
-    ]
+    ],
+    date: '2018-3-30'
   },
   {
     name: '玩一次长骑行',
@@ -363,7 +399,8 @@ export default [
       getImageUrl('长骑1.jpeg'),
       getImageUrl('长骑2.jpeg'),
       getImageUrl('长骑3.jpeg'),
-    ]
+    ],
+    date: '2018-3-3'
   },
   {
     name: '去听 Taylor Swift 演唱会',
@@ -446,3 +483,5 @@ export default [
     status: 'todo'
   },
 ]
+
+export default bucketList

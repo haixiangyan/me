@@ -1,0 +1,36 @@
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: all 300ms;
+  color: #409EFF;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-color: #409EFF;
+  }
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  > li {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
