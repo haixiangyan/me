@@ -4,6 +4,8 @@
         <div class="intro">
             <el-avatar class="avatar" :src="avatar" alt="avatar" icon="el-icon-user-solid" :size="120"/>
 
+            <p class="name">我是海怪</p>
+
             <p class="title">前端工人 / 守望先锋鱼塘霸主 / 拼图狂魔</p>
         </div>
     </div>
@@ -28,7 +30,7 @@
     .banner {
         display: flex;
         flex-direction: column;
-        height: 340px;
+        height: 400px;
         background-image: url("../assets/banner.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -46,8 +48,12 @@
                 box-shadow: 0 0 55px -6px rgba(255,255,255,1);
             }
 
+            .name {
+                margin: 12px 0;
+                font-size: 1.6em;
+            }
+
             .title {
-                margin-top: 24px;
                 font-size: 1.1em;
             }
         }

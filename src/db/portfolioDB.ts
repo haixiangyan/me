@@ -1,7 +1,7 @@
 const portfolioDB: TPortfolioItem[] = [
   {
-    title: '傻屌的《爱与诚》',
-    desc: '一个测试你应该做猫还是狗还是做情人的傻屌网站。使用原生 JavaScript 实现。',
+    title: '沙雕的《爱与诚》',
+    desc: '一个测试你应该做猫还是狗还是做情人的沙雕网站。使用原生 JavaScript 实现。',
     url: 'https://yanhaixiang.com/cat-dog-lover/',
     github: 'https://github.com/Haixiang6123/cat-dog-lover',
     languages: ['JavaScript'],
