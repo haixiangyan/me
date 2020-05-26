@@ -1,5 +1,12 @@
 const jianshuDB: TBlogItem[] = [
   {
+    title: 'Vue 热更新成功，但浏览器不刷新',
+    desc: '',
+    avatar: '',
+    url: '',
+    date: '2020-5-26'
+  },
+  {
     "title": "React Hooks 用法",
     "desc": "刚学了一下 React Hooks 的用法，就写篇博客记录一下。因为学得也比较浅，所以这篇博客只讲怎么用。 useState 普通用法 就是用来...",
     "avatar": "https://upload-images.jianshu.io/upload_images/2979799-af0c75ef1b34472f.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
