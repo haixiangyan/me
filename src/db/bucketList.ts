@@ -21,7 +21,7 @@ const bucketList: TBucketItem[] = [
     date: '2020-3-24'
   },
   {
-    name: '读CS硕士',
+    name: 'CS硕士毕业',
     status: 'done',
     imgs: [
       getImageUrl('硕士1.jpeg'),
