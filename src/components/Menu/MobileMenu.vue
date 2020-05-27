@@ -8,7 +8,7 @@
             size="56%"
             direction="ltr">
             <ul class="menu">
-                <li class="menu-item" v-for="menuItem in menu" :class="selected(menuItem.route)">
+                <li class="menu-item" v-for="menuItem in menu" :class="selected(menuItem.route)" @click="showDrawer = false">
                     <router-link :key="menuItem.route" :to="menuItem.route">
                         {{menuItem.label}}
                     </router-link>
