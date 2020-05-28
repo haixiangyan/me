@@ -6,7 +6,8 @@
                 在
                 <a href="https://www.tencent.com/zh-cn/about.html" target="_blank">腾讯</a>
                 做前端开发，坐标深圳。本科和研究生分别毕业于
-                <a href="https://www.neu.edu.cn/" target="_blank">东北大学</a>，
+                <a href="https://www.neu.edu.cn/" target="_blank">东北大学</a>
+                &
                 <a href="https://uci.edu/" target="_blank">加州大学尔湾分校</a>
                 ，CS专业。
             </p>
@@ -50,7 +51,7 @@
     components: {SocialList, DetailsList, ToolList, TechList}
   })
   export default class Profile extends Vue {
-    showMore = true
+    showMore = false
 
     get showMoreText() {
       return this.showMore ? '收起' : '了解更多'
