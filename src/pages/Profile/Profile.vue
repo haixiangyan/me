@@ -10,11 +10,19 @@
                 <a href="https://uci.edu/" target="_blank">加州大学尔湾分校</a>
                 ，CS专业。
             </p>
+            <el-button @click="showMore = !showMore" type="text">
+                {{showMoreText}}<i :class="showMore ? 'el-icon-caret-top' : 'el-icon-caret-bottom'"/>
+            </el-button>
         </div>
 
-        <div class="item">
+        <div v-show="showMore" class="item">
             <h1>更多</h1>
             <DetailsList/>
+        </div>
+
+        <div v-show="showMore" class="item">
+            <h1>工具</h1>
+            <ToolList/>
         </div>
 
         <div class="item">
@@ -29,12 +37,19 @@
   import {Component} from 'vue-property-decorator'
 
   import DetailsList from '@/pages/Profile/DetailsList.vue'
-  import SocialList from './SocialList.vue'
+  import SocialList from '@/pages/Profile/SocialList.vue'
+  import ToolList from '@/pages/Profile/ToolList.vue'
 
   @Component({
-    components: {SocialList, DetailsList}
+    components: {SocialList, DetailsList, ToolList}
   })
-  export default class Profile extends Vue {}
+  export default class Profile extends Vue {
+    showMore = true
+
+    get showMoreText() {
+      return this.showMore ? '收起' : '了解更多'
+    }
+  }
 </script>
 
 <style scoped lang="scss">

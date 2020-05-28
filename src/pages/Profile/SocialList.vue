@@ -14,7 +14,7 @@
   import {Component} from 'vue-property-decorator'
 
   @Component
-  export default class Social extends Vue {
+  export default class SocialList extends Vue {
     social = [
       {label: 'Github', icon: '#icon-github', link: 'https://github.com/Haixiang6123'},
       {label: '邮箱', icon: '#icon-mail', link: 'mailto:haixiang6123@gmail.com'},
