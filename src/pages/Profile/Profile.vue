@@ -21,6 +21,11 @@
         </div>
 
         <div v-show="showMore" class="item">
+            <h1>技术</h1>
+            <TechList/>
+        </div>
+
+        <div v-show="showMore" class="item">
             <h1>工具</h1>
             <ToolList/>
         </div>
@@ -39,9 +44,10 @@
   import DetailsList from '@/pages/Profile/DetailsList.vue'
   import SocialList from '@/pages/Profile/SocialList.vue'
   import ToolList from '@/pages/Profile/ToolList.vue'
+  import TechList from '@/pages/Profile/TechList.vue'
 
   @Component({
-    components: {SocialList, DetailsList, ToolList}
+    components: {SocialList, DetailsList, ToolList, TechList}
   })
   export default class Profile extends Vue {
     showMore = true
