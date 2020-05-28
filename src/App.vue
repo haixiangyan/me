@@ -42,7 +42,6 @@
             margin: 0 auto;
             padding: 50px 30px;
             background: white;
-            border-radius: 4px;
         }
     }
 </style>

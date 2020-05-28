@@ -61,11 +61,6 @@
 
 <style scoped lang="scss">
     .profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 10px;
-
         .item {
             padding-bottom: 24px;
             margin-bottom: 32px;
