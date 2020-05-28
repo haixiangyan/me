@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Profile from '../pages/Profile.vue'
+import Profile from '../pages/Profile/Profile.vue'
 import Blog from '../pages/Blog.vue'
 import Portfolio from '../pages/Portfolio.vue'
 import BucketList from '../pages/BucketList/BucketList.vue'

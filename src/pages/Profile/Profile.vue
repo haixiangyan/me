@@ -2,12 +2,24 @@
     <div class="profile">
         <div class="item">
             <h1>我</h1>
-            <p>本科毕业于东北大学，研究生毕业于加州大学尔湾分校，所学专业皆为计算机。即将去腾讯担任前端工程师。</p>
+            <p>
+                在
+                <a href="https://www.tencent.com/zh-cn/about.html" target="_blank">腾讯</a>
+                做前端开发，坐标深圳。本科和研究生分别毕业于
+                <a href="https://www.neu.edu.cn/" target="_blank">东北大学</a>，
+                <a href="https://uci.edu/" target="_blank">加州大学尔湾分校</a>
+                ，CS专业。
+            </p>
+        </div>
+
+        <div class="item">
+            <h1>更多</h1>
+            <DetailsList/>
         </div>
 
         <div class="item">
             <h1>找我</h1>
-            <Social/>
+            <SocialList/>
         </div>
     </div>
 </template>
@@ -16,10 +28,11 @@
   import Vue from 'vue'
   import {Component} from 'vue-property-decorator'
 
-  import Social from '../components/SocialList.vue'
+  import DetailsList from '@/pages/Profile/DetailsList.vue'
+  import SocialList from './SocialList.vue'
 
   @Component({
-    components: {Social}
+    components: {SocialList, DetailsList}
   })
   export default class Profile extends Vue {}
 </script>
