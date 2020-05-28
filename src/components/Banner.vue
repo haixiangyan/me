@@ -2,7 +2,11 @@
     <div class="banner">
         <Menu/>
         <div class="intro">
-            <el-avatar class="avatar" :src="avatar" alt="avatar" icon="el-icon-user-solid" :size="120"/>
+            <el-avatar class="avatar"
+                       :src="avatar"
+                       alt="avatar"
+                       icon="el-icon-user-solid"
+                       :size="120"/>
 
             <p class="name">我是海怪</p>
 
@@ -16,13 +20,12 @@
   import {Component} from 'vue-property-decorator'
 
   import Menu from './Menu/Menu.vue'
-  import {getImageUrl} from '@/lib/constants'
 
   @Component({
     components: {Menu}
   })
   export default class Banner extends Vue {
-    avatar = getImageUrl('avatar.jpg')
+    avatar = require('../assets/avatar.jpg')
   }
 </script>
 
@@ -45,7 +48,7 @@
             color: white;
 
             .avatar {
-                box-shadow: 0 0 55px -6px rgba(255,255,255,1);
+                box-shadow: 0 0 55px -6px rgba(255, 255, 255, 1);
             }
 
             .name {
