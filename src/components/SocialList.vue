@@ -1,15 +1,12 @@
 <template>
-    <div class="social">
-        <h1 style="margin-top: 32px">找我</h1>
-        <ul>
-            <li v-for="item in social" :key="item.link">
-                <svg class="icon" aria-hidden="true">
-                    <use :xlink:href="item.icon"></use>
-                </svg>
-                <a :href="item.link" target="_blank">{{item.link}}</a>
-            </li>
-        </ul>
-    </div>
+    <ul class="social-list">
+        <li v-for="item in social" :key="item.link">
+            <svg class="icon" aria-hidden="true">
+                <use :xlink:href="item.icon"></use>
+            </svg>
+            <a :href="item.link" target="_blank">{{item.link}}</a>
+        </li>
+    </ul>
 </template>
 
 <script lang="ts">
@@ -29,7 +26,7 @@
 </script>
 
 <style scoped lang="scss">
-    .social {
+    .social-list {
         a {
             margin-left: 8px;
             color: #409EFF;
