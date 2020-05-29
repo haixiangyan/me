@@ -1,9 +1,9 @@
 const jianshuDB: TBlogItem[] = [
   {
     title: 'Vue 热更新成功，但浏览器不刷新',
-    desc: '',
-    avatar: '',
-    url: '',
+    desc: 'Vue 热更新成功，但浏览器不刷新',
+    avatar: 'https://upload-images.jianshu.io/upload_images/2979799-511444bc77a14a95.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+    url: 'https://www.jianshu.com/p/13c442392cd5',
     date: '2020-5-26'
   },
   {
