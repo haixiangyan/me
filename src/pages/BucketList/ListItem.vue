@@ -5,7 +5,7 @@
                 <span class="text-overflow">
                     <i :class="item.status === 'done' ? 'el-icon-check' : 'el-icon-s-flag'"/>
 
-                    <span class="title" :class="{done: item.status === 'done'}" @click="showImages">
+                    <span class="title" :class="{done: item.status === 'done', selected: show}" @click="showImages">
                         {{item.name}}
                     </span>
                 </span>
@@ -66,7 +66,7 @@
 
             i {
                 font-weight: bold;
-                margin-right: 16px;
+                margin-right: 8px;
 
                 &.el-icon-check {
                     color: #67C23A;
@@ -78,7 +78,10 @@
             }
 
             .title {
-                font-size: 1.2em;
+                transition: all .3s;
+                &.selected {
+                    font-size: 1.2em;
+                }
 
                 &.done {
                     color: #409EFF;
