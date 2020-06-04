@@ -2,6 +2,27 @@ import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {
+    name: '挑战1000片《纯白地狱》',
+    status: 'done',
+    imgs: [
+      getImageUrl('纯白地狱1.jpeg'),
+      getImageUrl('纯白地狱2.jpeg'),
+      getImageUrl('纯白地狱3.jpeg'),
+    ],
+    date: '2020-6-2'
+  },
+  {
+    name: '挑战1000片《彩色地狱》',
+    status: 'done',
+    imgs: [
+      getImageUrl('彩色地狱1.jpeg'),
+      getImageUrl('彩色地狱2.jpeg'),
+      getImageUrl('彩色地狱3.jpeg'),
+      getImageUrl('彩色地狱4.jpeg'),
+    ],
+    date: '2020-5-22'
+  },
+  {
     name: '爬加州最高峰',
     status: 'done',
     imgs: [
