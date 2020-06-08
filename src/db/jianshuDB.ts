@@ -1,7 +1,14 @@
 const jianshuDB: TBlogItem[] = [
   {
+    title: 'Maven 包管理',
+    desc: 'Maven 包管理和前端的 Webpack 差不多，都有下面的特点： 从中央仓库下载第三方包 自动化构建 历史 以前使用手动编译 Jar 包，然...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/fd9a24448ae3',
+    date: '2020-6-8'
+  },
+  {
     title: 'Vue 热更新成功，但浏览器不刷新',
-    desc: 'Vue 热更新成功，但浏览器不刷新',
+    desc: '最近在更新个人主页，这个主题看够了，就想换另一个。但是今天突然发现我的 Vue 不能热更新？费了一会劲才搞明白怎么回事。下面就分享一下我的入坑，...',
     avatar: 'https://upload-images.jianshu.io/upload_images/2979799-511444bc77a14a95.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
     url: 'https://www.jianshu.com/p/13c442392cd5',
     date: '2020-5-26'
