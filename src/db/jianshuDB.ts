@@ -1,5 +1,12 @@
 const jianshuDB: TBlogItem[] = [
   {
+    title: 'Java Collections 初探',
+    desc: '以前学了很多 ArrayList, List, Set 啥的，他们的爹都是 Collection，Collection 是一个接口，里面提供了很...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/005336ab4e3c',
+    date: '2020-6-9'
+  },
+  {
     title: 'Maven 包管理',
     desc: 'Maven 包管理和前端的 Webpack 差不多，都有下面的特点： 从中央仓库下载第三方包 自动化构建 历史 以前使用手动编译 Jar 包，然...',
     avatar: '',
