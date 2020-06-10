@@ -4,4 +4,4 @@ export const giteeImgBaseUrl = 'https://gitee.com/Haixiang6123/pic-bed/raw/maste
 export const getImageUrl = (fileName: string) =>
   `${isChina() ? giteeImgBaseUrl : githubImgBaseUrl}/${fileName}`
 
-export const isChina = () => window.location.href === 'https://www.yanhaixiang.cn'
+export const isChina = () => window.location.href.includes('.cn')
