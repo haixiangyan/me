@@ -16,7 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 部署到 https://<USERNAME>.github.io
-git push -f git@e.coding.net:hai_guai/hai_guai.coding.io.git master
+git push -f git@e.coding.net:hai_guai/hai_guai.coding.me.git master
 
 cd -
