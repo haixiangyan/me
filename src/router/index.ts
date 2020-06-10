@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Profile from '../pages/Profile/Profile.vue'
-import Blog from '../pages/Blog.vue'
-import Portfolio from '../pages/Portfolio.vue'
-import BucketList from '../pages/BucketList/BucketList.vue'
-
-Vue.use(VueRouter)
+const Profile = () => import('../pages/Profile/Profile.vue')
+const Blog = () => import('../pages/Blog.vue')
+const Portfolio = () => import('../pages/Portfolio.vue')
+const BucketList = () => import('../pages/BucketList/BucketList.vue')
 
 const routes = [
   {
@@ -30,6 +28,8 @@ const routes = [
     component: BucketList
   }
 ]
+
+Vue.use(VueRouter)
 
 export default new VueRouter({
   routes
