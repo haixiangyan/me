@@ -5,8 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "github-deploy": "sh github-deploy.sh",
-    "coding-deploy": "sh coding-deploy.sh"
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "dayjs": "^1.8.27",
