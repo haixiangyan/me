@@ -36,7 +36,6 @@
 <style scoped lang="scss">
     .mobile-menu {
         display: flex;
-        justify-content: flex-end;;
         padding: 14px 14px 0;
         i {
             font-size: 2.4em;
