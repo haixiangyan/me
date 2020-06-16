@@ -13,7 +13,7 @@
                     <svg class="icon" aria-hidden="true">
                         <use :xlink:href="listIcon"></use>
                     </svg>
-                    <a class="title" :href="item.url">{{item.title}}</a>
+                    <a class="title" :href="item.url" target="_blank">{{item.title}}</a>
                 </span>
                 <span class="date">{{getDate(item.date)}}</span>
             </li>
