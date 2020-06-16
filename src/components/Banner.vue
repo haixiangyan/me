@@ -10,7 +10,7 @@
 
             <p class="name">我是海怪</p>
 
-            <p class="title">前端海驴 / 守望先锋鱼塘霸主 / 登山爱好者</p>
+            <p class="title">前端海驴 / 守望先锋鱼塘潜水员 / 拼图小白</p>
         </div>
     </div>
 </template>
