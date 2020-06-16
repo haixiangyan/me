@@ -1,6 +1,13 @@
 const jianshuDB: TBlogItem[] = [
   {
-    title: 'Java Collections 初探',
+    title: '初探多线程',
+    desc: '为什么需要多线程 对于一些密集型的 IO 操作如，网络 IO，文件 IO，我们很想当他们做 IO 操作的时候让 CPU 处理别的事情。这就需要多..',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/5bd65af984d0',
+    date: '2020-6-16'
+  },
+  {
+    title: '初探 Java Collections',
     desc: '以前学了很多 ArrayList, List, Set 啥的，他们的爹都是 Collection，Collection 是一个接口，里面提供了很...',
     avatar: '',
     url: 'https://www.jianshu.com/p/005336ab4e3c',
