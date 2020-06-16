@@ -4,7 +4,7 @@
         <ul>
             <li v-for="item in portfolioDB" :key="item.github">
                 <div>
-                    <a class="title" :href="item.github" target="_blank">{{item.title}}</a>
+                    <a class="title" :href="item.url" target="_blank">{{item.title}}</a>
                     <p class="desc">{{item.desc}}</p>
                 </div>
                 <div class="buttons">
