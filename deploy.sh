@@ -10,17 +10,21 @@ yarn build
 cd dist
 
 git init
-git add -A
-git commit -m 'deploy'
 
 # 部署到自定义域域名
 echo 'yanhaixiang.com' > CNAME
+
+git add -A
+git commit -m 'deploy'
 
 # 部署到 Github
 git push -f git@github.com:Haixiang6123/Haixiang6123.github.io.git master
 
 # 部署到自定义域域名
 echo 'yanhaixiang.cn' > CNAME
+
+git add -A
+git commit -m 'deploy'
 
 # 部署到 Coding
 git push -f git@e.coding.net:hai_guai/hai_guai.coding.me.git master
