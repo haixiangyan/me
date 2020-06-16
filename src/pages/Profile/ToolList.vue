@@ -1,6 +1,5 @@
 <template>
     <ul class="tool-list">
-        <li>⌨️ Mac OS + HHKB + Razer Basilisk Ultimate</li>
         <li>
             🔨 开发喜欢 WebStorm + IdeaVim 的搭配，已经放弃
             <span class="deprecated">Sublime、Atom、VsCode</span>
