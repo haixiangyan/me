@@ -34,6 +34,7 @@
         display: flex;
         flex-direction: column;
         height: 400px;
+        background-color: #2c3e50;
         background-image: url("../assets/banner.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
