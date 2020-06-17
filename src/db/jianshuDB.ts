@@ -1,5 +1,12 @@
 const jianshuDB: TBlogItem[] = [
   {
+    title: '生产者/消费者模型',
+    desc: '需求 当容器没有东西的时候，生产者生产一个东西；当容器有东西的时候，消费者去消费这个东西。 synchronized 版 ReentrantLo...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/03d5fdba155c',
+    date: '2020-6-17'
+  },
+  {
     title: '初探多线程',
     desc: '为什么需要多线程 对于一些密集型的 IO 操作如，网络 IO，文件 IO，我们很想当他们做 IO 操作的时候让 CPU 处理别的事情。这就需要多..',
     avatar: '',
