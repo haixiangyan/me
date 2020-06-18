@@ -10,4 +10,4 @@ export const getImageUrl = (fileName: string) =>
 export const getRepoUrl = (repo: string) =>
   `${isChina() ? giteeResBaseUrl : githubResBaseUrl}/${repo}`
 
-export const isChina = () => !window.location.href.includes('.cn')
+export const isChina = () => window.location.href.includes('.cn')
