@@ -1,5 +1,26 @@
 const jianshuDB: TBlogItem[] = [
   {
+    title: '面向切面编程',
+    desc: '听到这个名字的时候，我真的一头雾水。其实面向切面编程（AOP）是相对面向对象编程（OOP）来说的。Emmm，还是不懂。下面就用一个事例来说明面向...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/f0ce3ef48dec',
+    date: '2020-7-1'
+  },
+  {
+    title: '注解',
+    desc: '在写 Java 的时候，一看到注解就另我很兴奋，因为这代表可以让我少写很多代码，如 @Select()，那就不用在 Mapper.xml 去配 ...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/f0ce3ef48dec',
+    date: '2020-7-1'
+  },
+  {
+    title: '类型与反射',
+    desc: '对于类型与反射，我的理解是在运行时可以动态地对类进行一些操作。 比如：XXX x = new XXX() 这个 XXX 我是可以外部输入的，输入...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/c9135f570e60',
+    date: '2020-7-1'
+  },
+  {
     title: '生产者/消费者模型',
     desc: '需求 当容器没有东西的时候，生产者生产一个东西；当容器有东西的时候，消费者去消费这个东西。 synchronized 版 ReentrantLo...',
     avatar: '',
