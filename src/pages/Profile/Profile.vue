@@ -7,9 +7,9 @@
                 <a href="https://www.tencent.com/zh-cn/about.html" target="_blank">腾讯</a>
                 做前端开发，坐标深圳。本科和研究生分别毕业于
                 <a href="https://www.neu.edu.cn/" target="_blank">东北大学</a>
-                &
+                &amp;
                 <a href="https://uci.edu/" target="_blank">加州大学尔湾分校</a>
-                ，CS专业。
+                ，都为计算机专业。
             </p>
             <el-button @click="showMore = !showMore" type="text">
                 {{showMoreText}}<i :class="showMore ? 'el-icon-caret-top' : 'el-icon-caret-bottom'"/>
