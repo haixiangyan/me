@@ -8,8 +8,9 @@
                     <p class="desc">{{item.desc}}</p>
                 </div>
                 <div class="buttons">
-                    <el-button type="success" size="mini" round plain @click="goto(item.github)">源码</el-button>
-                    <el-button type="primary" size="mini" round plain @click="goto(item.url)">项目</el-button>
+                    <el-button type="success" size="mini" @click="goto(item.github)">
+                        源码
+                    </el-button>
                 </div>
             </li>
         </ul>
@@ -48,7 +49,7 @@
                 color: #409EFF;
             }
             .buttons {
-                min-width: 40%;
+                min-width: 20%;
                 text-align: right;
             }
         }
