@@ -2,7 +2,15 @@ import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {
-    name: '做个社会哥（人生只做这一次了~）',
+    name: '打一次豪华车',
+    status: 'done',
+    imgs: [
+      getImageUrl('didi1.jpeg'),
+      getImageUrl('didi2.jpeg')
+    ]
+  },
+  {
+    name: '做一次抽烟喝酒烫头',
     status: 'done',
     imgs: [
       getImageUrl('cht.jpeg'),
