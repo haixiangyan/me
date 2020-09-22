@@ -2,6 +2,14 @@ import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {
+    name: '尝试一次女装？！',
+    status: 'done',
+    imgs: [
+      getImageUrl('girl.jpeg'),
+    ],
+    date: '2020-9-19'
+  },
+  {
     name: '开一次卡丁车',
     status: 'done',
     imgs: [
