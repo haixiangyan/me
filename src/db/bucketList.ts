@@ -2,12 +2,44 @@ import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {
+    name: '开一次卡丁车',
+    status: 'done',
+    imgs: [
+      getImageUrl('karting1.jpeg'),
+      getImageUrl('karting2.jpeg'),
+      getImageUrl('karting3.jpeg'),
+    ],
+    date: '2020-9-19'
+  },
+  {
+    name: '玩一次唱吧',
+    status: 'done',
+    imgs: [
+      getImageUrl('sing.jpeg'),
+    ],
+    date: '2020-9-13'
+  },
+  {
+    name: '参加一次技术大会',
+    status: 'done',
+    imgs: [
+      getImageUrl('tlc1.jpeg'),
+      getImageUrl('tlc2.jpeg'),
+      getImageUrl('tlc3.jpeg'),
+      getImageUrl('tlc4.jpeg'),
+      getImageUrl('tlc5.jpeg'),
+      getImageUrl('tlc6.jpeg'),
+    ],
+    date: '2020-9-5'
+  },
+  {
     name: '打一次豪华车',
     status: 'done',
     imgs: [
       getImageUrl('didi1.jpeg'),
       getImageUrl('didi2.jpeg')
-    ]
+    ],
+    date: '2020-8-21',
   },
   {
     name: '做一次抽烟喝酒烫头',
