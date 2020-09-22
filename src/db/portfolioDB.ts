@@ -2,12 +2,20 @@ import {getRepoUrl} from '@/lib/constants'
 
 const portfolioDB: TPortfolioItem[] = [
   {
+    title: 'tenet',
+    desc: '一个用来"逆向思维"写代码的 VsCode 插件',
+    url: 'https://marketplace.visualstudio.com/items?itemName=HaixiangYan.tenet',
+    github: 'https://github.com/Haixiang6123/tenet',
+    languages: ['TypeScript'],
+    stars: 4
+  },
+  {
     title: '沙雕的《爱与诚》',
     desc: '一个测试你应该做猫还是狗还是做情人的沙雕网站。使用原生 JavaScript 实现。',
     url: getRepoUrl('cat-dog-lover'),
     github: 'https://github.com/Haixiang6123/cat-dog-lover',
     languages: ['JavaScript'],
-    stars: 0
+    stars: 12
   },
   {
     title: '仿微信记账本',
@@ -23,7 +31,7 @@ const portfolioDB: TPortfolioItem[] = [
     url: 'https://easy-refer.com',
     github: 'https://github.com/Haixiang6123/easy-refer',
     languages: ['React', 'TypeScript'],
-    stars: 0
+    stars: 5
   },
   {
     title: '守望先锋 UI 库',
@@ -31,7 +39,7 @@ const portfolioDB: TPortfolioItem[] = [
     url: getRepoUrl('overwatch-ui-doc'),
     github: 'https://github.com/Haixiang6123/overwatch-ui',
     languages: ['Vue'],
-    stars: 344
+    stars: 361
   },
   {
     title: '代码美化 Chrome 插件',
@@ -39,7 +47,7 @@ const portfolioDB: TPortfolioItem[] = [
     url: 'https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn',
     github: 'https://github.com/Haixiang6123/codeblock-beautifier',
     languages: ['Chrome'],
-    stars: 101
+    stars: 108
   },
   {
     title: '在线吉他谱编辑器',
@@ -47,7 +55,7 @@ const portfolioDB: TPortfolioItem[] = [
     url: getRepoUrl('guitar-editor'),
     github: 'https://github.com/Haixiang6123/guitar-editor',
     languages: ['React'],
-    stars: 47
+    stars: 66
   },
   {
     title: 'Leetcode Python版本',
@@ -71,7 +79,7 @@ const portfolioDB: TPortfolioItem[] = [
     url: 'https://www.npmjs.com/package/wtf-cli',
     github: 'https://github.com/Haixiang6123/wtf-cli',
     languages: ['JavaScript'],
-    stars: 24
+    stars: 25
   },
 
   {
@@ -80,7 +88,7 @@ const portfolioDB: TPortfolioItem[] = [
     url: 'https://github.com/Haixiang6123/react-chord-generator',
     github: 'https://github.com/Haixiang6123/react-chord-generator',
     languages: ['React'],
-    stars: 9
+    stars: 13
   },
   {
     title: '灭霸',
