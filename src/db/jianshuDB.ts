@@ -1,5 +1,26 @@
 const jianshuDB: TBlogItem[] = [
   {
+    title: '以前我没得选，现在只想用 Array.reduce',
+    desc: '代码仓库：https://github.com/Haixiang6123/learn-reduce 前言 第一眼看 Array.reduce 这...',
+    avatar: 'https://upload-images.jianshu.io/upload_images/2979799-b9aac0219bbc719c.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+    url: 'https://www.jianshu.com/p/9a168b12eac6',
+    date: '2020-9-13'
+  },
+  {
+    title: 'redux 文档到底说了什么（下）',
+    desc: '完整代码请看这里 上一篇文章主要介绍了 redux 文档里所用到的基本优化方案，但是很多都是手工实现的，不够自动化。这篇文章主要讲的是怎么用 r...',
+    avatar: '',
+    url: 'https://www.jianshu.com/p/dacd871843d4',
+    date: '2020-8-31'
+  },
+  {
+    title: 'redux 文档到底说了什么（上）',
+    desc: '前言 最近又认真重读了一遍 redux 的文档，不出意料，还是一样的晦涩难懂。 虽然文档写得不怎么样，但是里面确实给了很多比较好的代码组织方式...',
+    avatar: 'https://upload-images.jianshu.io/upload_images/2979799-6b300202646ebdf9.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240',
+    url: 'https://www.jianshu.com/p/49aa25353c2e',
+    date: '2020-8-30'
+  },
+  {
     title: 'IoC 控制反转',
     desc: '第一次听到这个名词的时候，我就在想到底是哪个“天才”想出来这么丑陋的名字的？当时看了一些博客知道是解决依赖关系的，但是“控制”和“反转”一直没有...',
     avatar: '',
