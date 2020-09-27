@@ -493,6 +493,54 @@ const bucketList: TBucketItem[] = [
     date: '2018-3-3'
   },
   {
+    name: '考过 CFA',
+    status: 'todo',
+  },
+  {
+    name: '体验一次滑翔伞',
+    status: 'todo'
+  },
+  {
+    name: '玩一次射箭',
+    status: 'todo'
+  },
+  {
+    name: '学一次木工雕刻',
+    status: 'todo'
+  },
+  {
+    name: '体验一次模拟飞行',
+    status: 'todo'
+  },
+  {
+    name: '玩一次蹦床',
+    status: 'todo'
+  },
+  {
+    name: '开一次游艇，出一次海',
+    status: 'todo'
+  },
+  {
+    name: '听一次演奏会',
+    status: 'todo'
+  },
+  {
+    name: '看一次话剧',
+    status: 'todo'
+  },
+  {
+    name: '打场高尔夫',
+    status: 'todo'
+  },
+  {
+    name: '开一次摩托',
+    status: 'todo'
+  },
+  {
+    name: '去一次平安中心最高层',
+    status: 'todo'
+  },
+  {
     name: '去听 Taylor Swift 演唱会',
     status: 'todo'
   },
