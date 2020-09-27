@@ -2,6 +2,14 @@ import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {
+    name: '去一次按摩店',
+    status: 'done',
+    imgs: [
+      getImageUrl('massage.jpeg')
+    ],
+    date: '2020-9-20'
+  },
+  {
     name: '尝试一次女装？！',
     status: 'done',
     imgs: [
@@ -465,6 +473,9 @@ const bucketList: TBucketItem[] = [
     name: '跳伞',
     status: 'done',
     imgs: [
+      getImageUrl('跳伞4.png'),
+      getImageUrl('跳伞5.jpeg'),
+      getImageUrl('跳伞6.jpeg'),
       getImageUrl('跳伞3.png'),
       getImageUrl('跳伞1.jpeg'),
       getImageUrl('跳伞2.jpeg'),
