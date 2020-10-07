@@ -2,6 +2,26 @@ import {getImageUrl} from '@/lib/constants'
 
 const bucketList: TBucketItem[] = [
   {
+    name: '玩一次射箭',
+    status: 'done',
+    date: '2020-10-7',
+    imgs: [
+      getImageUrl('arrow1.jpeg'),
+      getImageUrl('arrow2.jpeg'),
+    ]
+  },
+  {
+    name: '打个保龄球',
+    status: 'done',
+    date: '2020-10-7',
+    imgs: [
+      getImageUrl('baolingqiu1.jpeg'),
+      getImageUrl('baolingqiu3.jpeg'),
+      getImageUrl('baolingqiu2.jpeg'),
+      getImageUrl('baolingqiu4.jpeg')
+    ]
+  },
+  {
     name: '去一次按摩店',
     status: 'done',
     imgs: [
@@ -501,10 +521,6 @@ const bucketList: TBucketItem[] = [
     status: 'todo'
   },
   {
-    name: '玩一次射箭',
-    status: 'todo'
-  },
-  {
     name: '学一次木工雕刻',
     status: 'todo'
   },
@@ -602,10 +618,6 @@ const bucketList: TBucketItem[] = [
   },
   {
     name: '打场高尔夫',
-    status: 'todo'
-  },
-  {
-    name: '打个保龄球',
     status: 'todo'
   },
   {
