@@ -1,5 +1,6 @@
 import {FC} from "react";
 import styles from './styles.module.scss'
+import handDownSvg from './hand-down.svg'
 
 const Home: FC = () => {
   return (
@@ -18,6 +19,8 @@ const Home: FC = () => {
           </div>
         </figure>
       </div>
+
+      <img className={styles.handDown} src={handDownSvg} alt="向下"/>
     </section>
   )
 }
