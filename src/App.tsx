@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
-import Header from "./components/Header/Header";
+import Nav from "./components/Nav";
 
 const App: FC = () => {
   return (
     <div>
-      <Header />
+      <Nav />
     </div>
   );
 }
