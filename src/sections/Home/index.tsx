@@ -1,6 +1,6 @@
 import {FC} from "react";
 import styles from './styles.module.scss'
-import handDownSvg from './hand-down.svg'
+import handDownSvg from '../../assets/images/hand-down.svg'
 
 const Home: FC = () => {
   return (

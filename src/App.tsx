@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import About from "./components/About";
+import Nav from "./sections/Nav";
+import Home from "./sections/Home";
+import About from "./sections/About";
 
 const App: FC = () => {
   return (

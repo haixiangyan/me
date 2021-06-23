@@ -1,9 +1,9 @@
 import styles from './styles.module.scss'
-import avatar from './avatar.jpg'
-import symbol from './symbol.png'
-import Timeline from "./Timeline";
-import TimelineHeader from "./Timeline/Header";
-import TimelineItem from "./Timeline/Item";
+import avatar from '../../assets/images/avatar.jpg'
+import symbol from '../../assets/images/symbol.png'
+import Timeline from "../../components/Timeline";
+import TimelineHeader from "../../components/Timeline/Header";
+import TimelineItem from "../../components/Timeline/Item";
 
 const About = () => {
   return (
