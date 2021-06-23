@@ -1,6 +1,9 @@
 import styles from './styles.module.scss'
 import avatar from './avatar.jpg'
 import symbol from './symbol.png'
+import Timeline from "./Timeline";
+import TimelineHeader from "./Timeline/Header";
+import TimelineItem from "./Timeline/Item";
 
 const About = () => {
   return (
@@ -40,6 +43,50 @@ const About = () => {
             <p>怪</p>
           </div>
         </div>
+
+        <Timeline>
+          <TimelineHeader>1993</TimelineHeader>
+          <TimelineItem time="7月" header="👶🏻" />
+          <TimelineHeader>...</TimelineHeader>
+          <TimelineItem direction="left" header="Livin' life..." />
+          <TimelineHeader>2015</TimelineHeader>
+          <TimelineItem
+            time="3月"
+            header="🎓 Colgate University 🎉"
+            content={[
+              'Hamilton, NY',
+              'Double Major: Computer Science, Japanese',
+              'Summa Cum Laude, Phi Beta Kappa (ΦΒΚ) Honor Society',
+            ]}
+          />
+          <TimelineItem
+            direction="left"
+            time="7月"
+            header={["✈️ Move to Japan.", 'English Teacher @ Komatsu Meihou High School (JET Program). 👨‍🏫']}
+            content={['Komatsu, Ishikawa Prefecture']}
+          />
+          <TimelineHeader>2016</TimelineHeader>
+          <TimelineItem
+            time="8月"
+            header={["⛩️ Move to Kyoto.", 'Software & Web Engineer @ Weblio. 💻']}
+            content={['Kyoto, Kyoto Prefecture']}
+          />
+          <TimelineHeader>...</TimelineHeader>
+          <TimelineItem
+            direction="left"
+            time="8月"
+            header={['???']}
+          />
+          <TimelineHeader>💀 ⚰️</TimelineHeader>
+        </Timeline>
+
+        <p className={styles.goal}>
+          Being a proactive software engineer allows me to make a difference,
+          <br/>
+          as the onus is upon us as engineers to help shape our cosmos for the better.
+        </p>
+
+        <p className={styles.check}>Check me out!</p>
       </div>
     </section>
   )
