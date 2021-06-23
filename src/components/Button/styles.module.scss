@@ -1,0 +1,28 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.button {
+  position: relative;
+  margin: 10px;
+  padding: 8px 18px;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+  background: black;
+  transition: all .3s;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background: white;
+  }
+}

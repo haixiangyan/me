@@ -3,6 +3,7 @@ import Profile from "./Profile";
 import Life from "./Life";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
+import Button from "../../components/Button";
 
 const About = () => {
   return (
@@ -22,6 +23,8 @@ const About = () => {
         </Paragraph>
 
         <Paragraph className={styles.check}>Check me out!</Paragraph>
+
+        <Button>Github</Button>
       </div>
     </section>
   )

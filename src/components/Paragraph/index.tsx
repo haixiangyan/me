@@ -6,7 +6,7 @@ const Paragraph: FC<AllHTMLAttributes<HTMLParagraphElement>> = (props) => {
   const {children, className, ...restProps} = props
 
   return (
-    <p className={classNames(className, styles.paragraph)} {...restProps}>{children}</p>
+    <p {...restProps} className={classNames(className, styles.paragraph)}>{children}</p>
   )
 }
 
