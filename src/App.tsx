@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import Nav from "./components/Nav";
 import Home from "./components/Home";
+import About from "./components/About";
 
 const App: FC = () => {
   return (
@@ -9,6 +10,7 @@ const App: FC = () => {
 
       <main>
         <Home/>
+        <About/>
       </main>
     </div>
   );
