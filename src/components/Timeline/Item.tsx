@@ -1,6 +1,7 @@
 import {FC, useMemo} from "react";
 import styles from './styles.module.scss';
 import classNames from "classnames";
+import Paragraph from "../Paragraph";
 
 interface Props {
   direction?: 'left' | 'right';
@@ -21,9 +22,9 @@ const TimelineItem: FC<Props> = (props) => {
       <div className={styles.node}/>
 
       <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
-        {times && times.map(t => <p className={styles.time}>{t}</p>)}
-        {headers && headers.map(h => <p>{h}</p>)}
-        {contents && contents.map(c => <p key={c} className={styles.subtext}>{c}</p>)}
+        {times && times.map(t => <Paragraph className={styles.time}>{t}</Paragraph>)}
+        {headers && headers.map(h => <Paragraph className={styles.header}>{h}</Paragraph>)}
+        {contents && contents.map(c => <Paragraph key={c} className={styles.subtext}>{c}</Paragraph>)}
       </div>
     </div>
   )

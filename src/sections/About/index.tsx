@@ -1,25 +1,27 @@
 import styles from './styles.module.scss'
 import Profile from "./Profile";
-import Life from "./Life/Life";
+import Life from "./Life";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
 
 const About = () => {
   return (
     <section className={styles.about}>
       <div className={styles.container}>
-        <h2>关于</h2>
-        <h3>哈喽，我是海怪<br/>聊聊我自己</h3>
+        <Title tag="h2">关于</Title>
+        <Title tag="h3">哈喽，我是海怪<br/>聊聊我自己</Title>
 
         <Profile/>
 
         <Life/>
 
-        <p className={styles.goal}>
+        <Paragraph className={styles.goal}>
           Being a proactive software engineer allows me to make a difference,
           <br/>
           as the onus is upon us as engineers to help shape our cosmos for the better.
-        </p>
+        </Paragraph>
 
-        <p className={styles.check}>Check me out!</p>
+        <Paragraph className={styles.check}>Check me out!</Paragraph>
       </div>
     </section>
   )

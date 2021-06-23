@@ -58,20 +58,17 @@
   }
 
   .content {
-    p {
-      color: white;
-      text-shadow: 0 1.5px 4px #000;
+    .time {
+      display: block;
+      font-size: .9em;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+    .header {
       font-size: 1.1em;
-
-      &.time {
-        display: block;
-        font-size: .9em;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-      }
-      &.subtext {
-        font-size: 0.95em;
-      }
+    }
+    .subtext {
+      font-size: 0.95em;
     }
   }
 
