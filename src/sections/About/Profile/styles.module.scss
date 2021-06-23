@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .details {
+    padding: 30px;
+    text-align: center;
+    p {
+      padding: 8px 0;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      line-height: 23px;
+      text-shadow: 0 1.5px 4px #000;
+      text-rendering: optimizeLegibility;
+    }
+    img {
+      width: 130px;
+    }
+  }
+
+  .avatar {
+    padding: 30px;
+    img {
+      border-radius: 50%;
+      width: 320px;
+      box-shadow: 0 7px 17px 2px rgb(0 0 0 / 50%);
+    }
+  }
+
+  .name {
+    padding: 30px;
+    p {
+      font-size: 10em;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
