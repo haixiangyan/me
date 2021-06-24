@@ -24,7 +24,7 @@ const Item: FC<Props> = (props) => {
     <li className={styles.item}>
       {logo && <img src={logo} alt="logo"/>}
 
-      <h4>{title}</h4>
+      <h4 className={styles.title}>{title}</h4>
 
       <div className={styles.content}>{content}</div>
 
@@ -39,8 +39,6 @@ const Item: FC<Props> = (props) => {
           </li>
         ))}
       </ul>
-
-      <div className={styles.divider}/>
 
       <div className={styles.techUsed}>
         <h4>技术栈</h4>

@@ -8,4 +8,50 @@
   &:hover {
     transform: scale(1.2);
   }
+
+  .title {
+    font-size: 1.5em;
+    line-height: 1.125;
+    color: #002245;
+    text-shadow: 0 1px 1px rgb(0 34 69 / 32%);
+    font-family: Raleway, serif;
+    font-weight: 700;
+  }
+
+  .content {
+    img {
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+      cursor: zoom-in;
+    }
+  }
+
+  .description {
+    margin: 15px 0 25px 0;
+    font-size: 15px;
+    display: inline-block;
+    color: #151515;
+    text-shadow: 0 1px 1px #e0e0e0;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+  }
+
+  .techUsed {
+    h4 {
+      font-weight: 700;
+      padding-top: 20px;
+      border-top: 1px solid #cacaca;
+      font-size: 24px;
+      display: inline-block;
+      width: 80%;
+      color: #151515;
+    }
+  }
 }

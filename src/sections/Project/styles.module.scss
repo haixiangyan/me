@@ -3,7 +3,10 @@
   background-color: black;
   background-image: url("../../assets/svgs/project.svg");
 
-  .container {
-
+  .more {
+    margin-top: 60px;
+    h3 {
+      margin-bottom: 0 !important;
+    }
   }
 }
