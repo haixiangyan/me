@@ -1,10 +1,11 @@
 import {FC} from "react";
 import styles from './styles.module.scss'
 import handDownSvg from '../../assets/svgs/hand-down.svg'
+import Section from "../../components/Section"
 
 const Home: FC = () => {
   return (
-    <section className={styles.home}>
+    <Section className={styles.home}>
       <div className={styles.content}>
         <div className={styles.intro}>
           <p>一只会写代码的海怪</p>
@@ -21,7 +22,7 @@ const Home: FC = () => {
       </div>
 
       <img className={styles.handDown} src={handDownSvg} alt="向下"/>
-    </section>
+    </Section>
   )
 }
 

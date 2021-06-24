@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import Nav from "./sections/Nav";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Project from "./sections/Project"
 
 const App: FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: FC = () => {
       <main>
         <Home/>
         <About/>
+        <Project/>
       </main>
     </div>
   );
