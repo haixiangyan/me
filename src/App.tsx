@@ -8,7 +8,7 @@ import Footer from "./sections/Footer";
 
 const App: FC = () => {
   return (
-    <div>
+    <div id="home">
       <Nav />
 
       <main>

@@ -9,7 +9,7 @@ import Section from "../../components/Section"
 
 const About = () => {
   return (
-    <Section className={styles.about}>
+    <Section id="about" className={styles.about}>
       <Background className={styles.background}/>
 
       <div className={styles.content}>

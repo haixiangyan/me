@@ -21,7 +21,7 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <Section className={styles.contact}>
+    <Section id="contact" className={styles.contact}>
       <ul className={styles.contactList}>
         {contacts.map(c => (
           <li key={c.image}>

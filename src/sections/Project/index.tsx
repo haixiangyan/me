@@ -6,7 +6,7 @@ import Item from "./Item"
 
 const Project = () => {
   return (
-    <Section className={styles.project}>
+    <Section id="project" className={styles.project}>
       <Title tag="h2">个人项目</Title>
       <Title tag="h3">超多好玩、沙雕的项目</Title>
 

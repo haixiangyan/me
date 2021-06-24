@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 20px 3px 25px;;
+  padding: 6px 20px 6px 25px;;
 
   .title {
     flex: 1;
     span {
       padding: 2px 4px;
       font-size: 1.5em;
-      background: red;
-      color: white;
+      font-weight: bold;
+      color: red;
     }
   }
 
@@ -26,12 +26,12 @@
       cursor: pointer;
       font-size: 1.2em;
 
-      .active {
-        color: #bd0000;
-      }
-
       &:hover {
         color: red;
+      }
+
+      &.active {
+        color: #bd0000;
       }
     }
   }
