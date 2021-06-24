@@ -4,6 +4,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Project from "./sections/Project"
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 const App: FC = () => {
   return (
@@ -16,6 +17,8 @@ const App: FC = () => {
         <Project/>
         <Contact/>
       </main>
+
+      <Footer/>
     </div>
   );
 }
