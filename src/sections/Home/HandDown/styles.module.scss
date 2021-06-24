@@ -1,0 +1,56 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.handDown {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  left: 50%;
+  bottom: 8vh;
+  transform: translateX(-50%);
+  color: #ff771e;
+  animation: bounce 3s infinite;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all .3s;
+  }
+
+  &:hover {
+    color: red;
+
+    &:after {
+      background-color: rgba(255,0,198,.11);
+      transform: scale(2);
+    }
+  }
+}

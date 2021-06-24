@@ -1,7 +1,7 @@
 import {FC, useEffect, useRef} from "react";
 import Typed from 'typed.js'
 import styles from './styles.module.scss'
-import handDownSvg from '../../assets/svgs/hand-down.svg'
+import HandDown from "./HandDown";
 
 const strings = [
   '哈喽，我是帅哥',
@@ -39,7 +39,7 @@ const Home: FC = () => {
         </figure>
       </div>
 
-      <img className={styles.handDown} src={handDownSvg} alt="向下"/>
+      <HandDown/>
     </section>
   )
 }
