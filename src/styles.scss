@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "Josefin";
-  src: url("./assets/fonts/JosefinSans-Regular.ttf") format("truetype");
+  font-family: "Josefin Sans";
+  src: url("./assets/fonts/JosefinSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SiYuanHeiTi";
+  src: url("./assets/fonts/SiYuanHeiTi.otf") format("OpenType");
 }
 
 html, body, div, span, applet, object, iframe,
@@ -29,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1.5;
+  line-height: 1;
 }
 ol, ul {
   list-style: none;
@@ -45,4 +49,9 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+// 自定义
+p {
+  font-family: Josefin Sans, serif;
 }

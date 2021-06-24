@@ -1,17 +1,25 @@
 import {FC} from "react";
 import styles from './styles.module.scss'
 import handDownSvg from '../../assets/svgs/hand-down.svg'
-import Section from "../../components/Section"
 
 const Home: FC = () => {
   return (
-    <Section className={styles.home}>
+    <section className={styles.home}>
       <div className={styles.content}>
         <div className={styles.intro}>
-          <p>一只会写代码的海怪</p>
-          <p>偶尔聊聊技术‍</p>
-          <p>也会分享生活</p>
-          <p>拒绝996和内卷，认真地活着</p>
+          <p>
+            我是海怪，
+          </p>
+          <p>
+            偶尔聊聊技术和分享生活。
+          </p>
+          <p>
+            拒绝996和内卷，
+          </p>
+          <p>
+            一个热爱生活的奋斗人。
+            <span className={styles.cursor}/>
+          </p>
         </div>
 
         <figure className={styles.ballWrapper}>
@@ -22,7 +30,7 @@ const Home: FC = () => {
       </div>
 
       <img className={styles.handDown} src={handDownSvg} alt="向下"/>
-    </Section>
+    </section>
   )
 }
 

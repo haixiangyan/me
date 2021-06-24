@@ -1,15 +1,17 @@
-@keyframes fadeOut {
+@keyframes blink {
   0% {
-    transform: scale(0.8);
-    opacity: 100%;
+    opacity: 0;
   }
-  100% {
-    transform: scale(1.2);
+  50% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
 }
 
 .home {
+  padding: 0 24px 48px;
   position: relative;
   height: 94vh;
   background-color: #ffffff;
@@ -21,20 +23,27 @@
     height: 100%;
 
     .intro {
-      margin-right: 200px;
+      flex: 1;
+      padding-left: 28px;
+      padding-top: 20px;
       p {
-        &:first-child {
-          margin-top: 40px;
-        }
-
-        font-size: 4em;
-        line-height: 1.5;
+        letter-spacing: 2px;
+        font-family: 'SiYuanHeiTi', serif;
+        text-align: left;
+        font-size: 62px;
+        font-weight: 600;
         text-shadow: 0 1px 2px rgb(0 34 69 / 70%);
         color: #002245;
+        line-height: 1.5;
+        .cursor {
+          border-left: 6px solid #002245;
+          animation: blink 1s infinite;
+        }
       }
     }
 
     .ballWrapper {
+      padding: 12px 12px 12px 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
