@@ -3,8 +3,18 @@ import TimelineHeader from "../../../components/Timeline/Header";
 import TimelineItem from "../../../components/Timeline/Item";
 import styles from './styles.module.scss'
 import HighLight from "../../../components/HighLight";
+import useTyped from "../../../hooks/useTyped";
+
+const strings = [
+  '码农',
+  '做题家',
+  '大佬',
+  '前端工程师'
+]
 
 const Life = () => {
+  const el = useTyped(strings)
+
   return (
     <Timeline>
       <TimelineHeader>1996</TimelineHeader>
@@ -57,7 +67,7 @@ const Life = () => {
         time="7月"
         header={[
           '深圳，广东',
-          <span>入职 <HighLight>腾讯</HighLight> @ 前端工程师 🐧</span>
+          <span>入职 <HighLight>腾讯</HighLight> @ <span className={styles.position} ref={el}/> 🐧</span>
         ]}
       />
       <TimelineHeader>...</TimelineHeader>

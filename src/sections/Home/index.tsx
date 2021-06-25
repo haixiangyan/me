@@ -1,7 +1,7 @@
-import {FC, useEffect, useRef} from "react";
-import Typed from 'typed.js'
+import {FC} from "react";
 import styles from './styles.module.scss'
 import HandDown from "./HandDown";
+import useTyped from "../../hooks/useTyped";
 
 const strings = [
   '哈喽，我是帅哥',
@@ -10,20 +10,7 @@ const strings = [
 ]
 
 const Home: FC = () => {
-  const el = useRef<HTMLParagraphElement | null>(null)
-  const typed = useRef<Typed | null>(null)
-
-  useEffect(() => {
-    const options = {
-      strings,
-      typeSpeed: 100,
-      backSpeed: 60,
-    }
-
-    typed.current = new Typed(el.current || '', options);
-
-    return () => typed.current?.destroy()
-  }, [])
+  const el = useTyped(strings)
 
   return (
     <section className={styles.home}>
