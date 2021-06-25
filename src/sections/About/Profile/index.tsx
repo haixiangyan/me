@@ -14,11 +14,11 @@ const Profile = () => {
           广东佛山人，本科在东北大学上了4年学，又去了加州大学(@Irvine)读了2年硕。
           看了不少书、刷了不少题、去了不少地方，感叹过世界之大。
         </Paragraph>
+        <img src={symbol} alt="symbol"/>
         <Paragraph>
           平常喜欢写代码 👨‍💻，偶尔会弹一下吉他 🎸，或者打打守望先锋的鱼塘 🎮。
           个人喜欢好看，酷炫的东西，可能这就是喜欢前端的原因吧 @_@。
         </Paragraph>
-        <img src={symbol} alt="symbol"/>
         <Paragraph>
           以前爱折腾，折腾过 Vim、五笔、终端、爬高峰、魔方、...... 现在累了，还是躺着舒服。
         </Paragraph>

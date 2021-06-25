@@ -45,29 +45,32 @@
   }
 
   .node {
-    background-color: #12ffdc;
-    border-color: #12ffdc;
     position: absolute;
-    border-radius: 100%;
     content: "";
     display: block;
-    height: 12px;
     transform: translateX(-50%);
     top: 1.2rem;
-    width: 12px;
+
+    .defaultNode {
+      background-color: #12ffdc;
+      border-color: #12ffdc;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+    }
   }
 
   .content {
     .time {
       display: block;
-      font-size: .9em;
+      font-size: 12px;
       margin-bottom: 5px;
     }
     .header {
-      font-size: 1.1em;
+      font-size: 1em;
     }
     .subtext {
-      font-size: 0.95em;
+      font-size: 12px;
     }
   }
 

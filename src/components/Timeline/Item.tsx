@@ -1,4 +1,4 @@
-import {FC, useMemo} from "react";
+import {FC, ReactChild, useMemo} from "react";
 import styles from './styles.module.scss';
 import classNames from "classnames";
 import Paragraph from "../Paragraph";
@@ -8,10 +8,11 @@ interface Props {
   time?: string | string[];
   header?: string | string[];
   content?: string | string[];
+  node?: ReactChild;
 }
 
 const TimelineItem: FC<Props> = (props) => {
-  const {direction = 'right', time, header, content} = props;
+  const {direction = 'left', time, header, content, node} = props;
 
   const times = useMemo(() => Array.isArray(time) ? time : [time], [time]);
   const headers = useMemo(() => Array.isArray(header) ? header : [header], [header])
@@ -19,7 +20,9 @@ const TimelineItem: FC<Props> = (props) => {
 
   return (
     <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
-      <div className={styles.node}/>
+      <div className={styles.node}>
+        {node || <div className={styles.defaultNode}/>}
+      </div>
 
       <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
         {times && times.map(t => <Paragraph className={styles.time}>{t}</Paragraph>)}
