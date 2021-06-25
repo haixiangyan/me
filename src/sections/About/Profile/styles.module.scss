@@ -7,6 +7,10 @@
     padding: 30px;
     text-align: center;
 
+    p {
+      margin-bottom: 16px;
+    }
+
     img {
       width: 130px;
     }
@@ -24,10 +28,12 @@
   .name {
     padding: 30px;
     p {
-      font-size: 10em;
+      margin-bottom: 48px;
+      font-size: 11em;
       color: black;
       text-align: center;
       font-weight: bold;
+      font-family: HoneLei, SiYuanHeiTi, serif;
     }
   }
 }

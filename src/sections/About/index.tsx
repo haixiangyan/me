@@ -14,7 +14,7 @@ const About = () => {
 
       <div className={styles.content}>
         <Title tag="h2">关于</Title>
-        <Title tag="h3">哈喽，我是海怪<br/>聊聊我自己</Title>
+        <Title tag="h3">哈喽，我是海怪 👻<br/>聊聊我自己</Title>
 
         <Profile/>
 
