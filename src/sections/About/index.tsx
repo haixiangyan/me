@@ -27,9 +27,9 @@ const About = () => {
           有时候写代码并不是为了做一个 <HighLight>🐂 🍺</HighLight> 的项目，而是把心中的想法实现出来。
         </Paragraph>
 
-        <Paragraph className={styles.check}>Check me out!</Paragraph>
-
-        <Button>Github</Button>
+        <div>
+          <Button className={styles.pulse} background="#15a000">Résumé</Button>
+        </div>
       </div>
     </Section>
   )

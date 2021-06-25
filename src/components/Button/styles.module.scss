@@ -1,16 +1,6 @@
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
-}
-
 .button {
   position: relative;
-  margin: 10px;
-  padding: 8px 18px;
+  padding: 8px 30px 14px;
   border: 1px solid black;
   outline: none;
   color: white;
@@ -20,6 +10,9 @@
   line-height: 1.5;
   cursor: pointer;
   border-radius: 4px;
+  text-shadow: 0 1.5px 4px #000;
+  font-family: K2D,Helvetica,Arial,sans-serif;
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 50%);
 
   &:hover {
     background: white;
