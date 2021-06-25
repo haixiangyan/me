@@ -55,7 +55,7 @@ const Life = () => {
       <TimelineHeader>...</TimelineHeader>
       <TimelineItem
         direction="right"
-        header={['???']}
+        header={['？？？']}
       />
       <TimelineHeader>💀 ⚰️</TimelineHeader>
     </Timeline>
