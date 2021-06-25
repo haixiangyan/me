@@ -34,7 +34,7 @@ const Home: FC = () => {
 
         <figure className={styles.ballWrapper}>
           <div className={styles.ball}>
-            Monster
+            M
           </div>
         </figure>
       </div>
