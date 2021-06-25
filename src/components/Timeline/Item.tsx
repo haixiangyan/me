@@ -6,8 +6,8 @@ import Paragraph from "../Paragraph";
 interface Props {
   direction?: 'left' | 'right';
   time?: string | string[];
-  header?: string | string[];
-  content?: string | string[];
+  header?: string | (string | ReactChild)[];
+  content?: string | (string | ReactChild)[];
   node?: ReactChild;
 }
 
@@ -25,9 +25,9 @@ const TimelineItem: FC<Props> = (props) => {
       </div>
 
       <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
-        {times && times.map(t => <Paragraph className={styles.time}>{t}</Paragraph>)}
-        {headers && headers.map(h => <Paragraph className={styles.header}>{h}</Paragraph>)}
-        {contents && contents.map(c => <Paragraph key={c} className={styles.subtext}>{c}</Paragraph>)}
+        {times && times.map(t => <Paragraph key={t} className={styles.time}>{t}</Paragraph>)}
+        {headers && headers.map((h, i) => <Paragraph key={i} className={styles.header}>{h}</Paragraph>)}
+        {contents && contents.map((c, i) => <Paragraph key={i} className={styles.subtext}>{c}</Paragraph>)}
       </div>
     </div>
   )

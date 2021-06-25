@@ -1,0 +1,11 @@
+.highlight {
+  background-image: linear-gradient(0deg ,#000bd2 5%,#70f 95%);
+  background-repeat: no-repeat;
+  background-size: 100% .35em;
+  background-position: 0 92%;
+  transition: background-size .2s ease-in-out;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
