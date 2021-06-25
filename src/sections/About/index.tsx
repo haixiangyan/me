@@ -6,6 +6,7 @@ import Title from "../../components/Title";
 import Button from "../../components/Button";
 import Background from "./Background"
 import Section from "../../components/Section"
+import HighLight from "../../components/HighLight";
 
 const About = () => {
   return (
@@ -21,9 +22,9 @@ const About = () => {
         <Life/>
 
         <Paragraph className={styles.goal}>
-          Being a proactive software engineer allows me to make a difference,
+          对于我来说，<HighLight>前端工程师</HighLight> 更多像是画家，HTML、CSS、JavaScript 就像画笔。
           <br/>
-          as the onus is upon us as engineers to help shape our cosmos for the better.
+          有时候写代码并不是为了做一个 <HighLight>🐂 🍺</HighLight> 的项目，而是把心中的想法实现出来。
         </Paragraph>
 
         <Paragraph className={styles.check}>Check me out!</Paragraph>
