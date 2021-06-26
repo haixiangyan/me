@@ -31,6 +31,9 @@ import tenet from '../../assets/icons/tenet.webp'
 import vscode from '../../assets/icons/vscode.webp';
 import tenetScreenshot from '../../assets/screenshots/tenet.gif';
 
+// node-autodoc
+import nodeAutodoc from '../../assets/screenshots/node-autodoc.png'
+
 // 技术栈
 import vue from '../../assets/icons/vue.png';
 import react from '../../assets/icons/react.png';
@@ -44,6 +47,11 @@ import python from '../../assets/icons/python.png';
 import styledComponents from '../../assets/icons/styled-components.png'
 import babel from '../../assets/icons/babel.png'
 import webpack from '../../assets/icons/webpack.png'
+import karma from '../../assets/icons/karma.png'
+import mocha from '../../assets/icons/mocha.png'
+import sinon from '../../assets/icons/sinon.png'
+import travis from '../../assets/icons/travis.webp'
+import jest from '../../assets/icons/jest.png'
 
 // links
 import link from "../../assets/svgs/link.svg";
@@ -65,6 +73,7 @@ const projects: ItemProps[] = [
     ],
     techUsed: [
       {content: 'NPM', image: npm},
+      {content: 'TypeScript', image: ts},
       {content: 'JavaScript', image: js},
       {content: 'React.js', image: react},
     ]
@@ -85,6 +94,10 @@ const projects: ItemProps[] = [
       {content: 'NPM', image: npm},
       {content: 'Babel', image: babel},
       {content: 'Webpack', image: webpack},
+      {content: 'Karma', image: karma},
+      {content: 'Sinon', image: sinon},
+      {content: 'Mocha', image: mocha},
+      {content: 'Travis CI', image: travis},
     ]
   },
   {
@@ -161,6 +174,21 @@ const projects: ItemProps[] = [
     ],
     techUsed: [
       {content: 'TypeScript', image: ts},
+    ]
+  },
+  {
+    logo: jest,
+    title: 'node-autodoc',
+    content: <Image src={nodeAutodoc}/>,
+    description: <p>一个测试驱动文档的生成器。灵感来源于 autodoc 和 supertest.</p>,
+    links: [
+      {content: 'https://www.npmjs.com/package/node-autodoc', image: npm},
+      {content: 'https://github.com/Haixiang6123/node-autodoc', image: github},
+    ],
+    techUsed: [
+      {content: 'JavaScript', image: js},
+      {content: 'Jest', image: jest},
+      {content: 'Travis CI', image: travis},
     ]
   },
 ]
