@@ -52,6 +52,7 @@ import mocha from '../../assets/icons/mocha.png'
 import sinon from '../../assets/icons/sinon.png'
 import travis from '../../assets/icons/travis.webp'
 import jest from '../../assets/icons/jest.png'
+import eslint from '../../assets/icons/eslint.png'
 
 // links
 import link from "../../assets/svgs/link.svg";
@@ -60,7 +61,7 @@ import github from "../../assets/svgs/github.svg";
 import juejin from '../../assets/svgs/juejin.svg';
 import zhihu from '../../assets/svgs/zhihu.svg';
 
-const projects: ItemProps[] = [
+export const projects: ItemProps[] = [
   {
     logo: npm,
     title: '一天学习一个 npm 轮子，十天后变成轮子哥',
@@ -185,6 +186,7 @@ const projects: ItemProps[] = [
       {content: 'https://github.com/Haixiang6123/node-autodoc', image: github},
     ],
     techUsed: [
+      {content: 'Eslint', image: eslint},
       {content: 'JavaScript', image: js},
       {content: 'Jest', image: jest},
       {content: 'Travis CI', image: travis},
@@ -192,4 +194,21 @@ const projects: ItemProps[] = [
   },
 ]
 
-export default projects
+export const moreProjects = [
+  {
+    title: '香蕉',
+    url: 'https://yanhaixiang.com/banana/',
+  },
+  {
+    title: '皮卡丘',
+    url: 'https://yanhaixiang.com/pikachu/',
+  },
+  {
+    title: '立方体',
+    url: 'https://yanhaixiang.com/cube/',
+  },
+  {
+    title: '小画板',
+    url: 'https://yanhaixiang.com/sketch-book/',
+  },
+]

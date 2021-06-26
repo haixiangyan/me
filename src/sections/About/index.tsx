@@ -28,7 +28,7 @@ const About = () => {
         </Paragraph>
 
         <div>
-          <Button className={styles.pulse} background="#15a000">Résumé</Button>
+          <Button className={styles.pulse} bg="#15a000">Résumé</Button>
         </div>
       </div>
     </Section>

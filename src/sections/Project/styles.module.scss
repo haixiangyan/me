@@ -17,9 +17,17 @@
   }
 
   .more {
+    padding: 24px;
+    .moreBtn {
+      font-size: 2em;
+      width: 100%;
+    }
+  }
+
+  .footerTitle {
     margin-top: 60px;
-    h3 {
-      margin-bottom: 0 !important;
+    i {
+      font-style: italic
     }
   }
 }

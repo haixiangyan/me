@@ -5,24 +5,24 @@ import styles from './styles.module.scss'
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   pulse?: boolean;
   iconSrc?: string;
-  background?: string;
+  bg?: string;
 }
 
 const Button: FC<Props> = (props) => {
-  const {pulse, background, iconSrc, children, className, ...restProps} = props;
+  const {pulse, bg, iconSrc, children, className, ...restProps} = props;
 
   const [buttonStyle, setButtonStyle] = useState<CSSProperties>({
-    background,
-    borderColor: background,
+    background: bg,
+    borderColor: bg,
   })
 
   const onMouseEnter = useCallback(() => {
-    setButtonStyle({...buttonStyle, background: 'white', color: background || 'black', textShadow: 'none'})
-  }, [background, buttonStyle]);
+    setButtonStyle({...buttonStyle, background: 'white', color: bg || 'black', textShadow: 'none'})
+  }, [bg, buttonStyle]);
 
   const onMouseLeave = useCallback(() => {
-    setButtonStyle({background, borderColor: background, color: 'white'})
-  }, [background]);
+    setButtonStyle({background: bg, borderColor: bg, color: 'white'})
+  }, [bg]);
 
   return (
     <button
