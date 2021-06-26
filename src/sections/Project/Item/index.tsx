@@ -11,6 +11,7 @@ interface Image {
 export interface ItemProps {
   logo?: string;
   title?: string | ReactChild;
+  badges?: string[];
   content?: string | ReactChild;
   description?: string | ReactChild;
   links?: Image[];
@@ -18,7 +19,7 @@ export interface ItemProps {
 }
 
 const Item: FC<ItemProps> = (props) => {
-  const {logo, title, content, description, links, techUsed} = props
+  const {logo, title, badges, content, description, links, techUsed} = props
 
   return (
     <div className={styles.item}>
@@ -26,6 +27,12 @@ const Item: FC<ItemProps> = (props) => {
         {logo && <img className={styles.logo} src={logo} alt="logo"/>}
 
         {title && <h4 className={styles.title}>{title}</h4>}
+
+        {badges && (
+          <div className={styles.badges}>
+            {badges.map(badge => <img key={badge} src={badge} alt="badge"/>)}
+          </div>
+        )}
 
         {content && <div className={styles.content}>{content}</div>}
 

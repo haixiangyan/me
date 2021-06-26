@@ -64,13 +64,14 @@ import zhihu from '../../assets/svgs/zhihu.svg';
 export const projects: ItemProps[] = [
   {
     logo: npm,
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/one-day-one-npm-lib?style=flat-square'
+    ],
     title: '一天学习一个 npm 轮子，十天后变成轮子哥',
     content: <Image src={npmWheelScreenshot}/>,
     description: (
       <div>
-        <p>
-          这本小书会带你造 10 个非常实用的 <HighLight isDark>npm 库 📦</HighLight>。
-        </p>
+        <p>这本小书会带你造 10 个非常实用的 <HighLight isDark>npm 库 📦</HighLight>。</p>
         <p>
           每篇文章里的对每个轮子都会从简单的需求开始，首先做一个最 Low 的解决方法出来，
           然后慢慢优化它，最后推导成 <HighLight isDark>源码</HighLight> 的样子。整个从 0 到 1 的设计与思考过程会完整地呈现给读者。
@@ -91,6 +92,10 @@ export const projects: ItemProps[] = [
   },
   {
     logo: overwatchLogo,
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/overwatch-ui?style=flat-square',
+      'https://img.shields.io/npm/dm/overwatch-ui?style=flat-square'
+    ],
     title: 'Overwatch UI',
     content: <Image src={overwatchUI}/>,
     description: <p>一个基于 <HighLight isDark>守望先锋</HighLight> 样式的 UI 库，通过 Vue.js 开发。</p>,
@@ -113,6 +118,12 @@ export const projects: ItemProps[] = [
   },
   {
     logo: beautifierLogo,
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/codeblock-beautifier?style=flat-square',
+      'https://img.shields.io/chrome-web-store/stars/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
+      'https://img.shields.io/chrome-web-store/users/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
+      'https://img.shields.io/chrome-web-store/stars/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
+    ],
     title: '代码高亮 - Chrome 插件',
     content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1" scrolling="no" frameBorder="no" allowFullScreen/>,
     description: (
@@ -133,6 +144,9 @@ export const projects: ItemProps[] = [
   {
     logo: guitarLogo,
     title: '吉他谱编辑器',
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/guitar-editor?style=flat-square'
+    ],
     content: <Image src={guitarEditor}/>,
     description: (
       <div>
@@ -155,6 +169,9 @@ export const projects: ItemProps[] = [
   {
     logo: leetcode,
     title: 'LeetCode/LintCode 题解',
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/leetcode-python?style=flat-square'
+    ],
     content: <Image src={lintcodeScreenShot}/>,
     description: <p>难受一批的 <HighLight isDark>LeetCode/LintCode 题解</HighLight>，使用 Python 解题。</p>,
     links: [
@@ -169,6 +186,9 @@ export const projects: ItemProps[] = [
   {
     logo: weixin,
     title: '仿微信记账本',
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/weixin-cash?style=flat-square'
+    ],
     content: <Image src={weixinCash}/>,
     description: (
       <div>
@@ -191,6 +211,11 @@ export const projects: ItemProps[] = [
   {
     logo: tenet,
     title: 'Tenet',
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/tenet?style=flat-square',
+      'https://img.shields.io/visual-studio-marketplace/i/HaixiangYan.tenet?style=flat-square',
+      'https://img.shields.io/visual-studio-marketplace/stars/HaixiangYan.tenet'
+    ],
     content: <Image src={tenetScreenshot}/>,
     description: (
       <div>
@@ -212,6 +237,11 @@ export const projects: ItemProps[] = [
   {
     logo: jest,
     title: 'node-autodoc',
+    badges: [
+      'https://img.shields.io/github/stars/Haixiang6123/node-autodoc?style=flat-square',
+      'https://img.shields.io/coveralls/github/Haixiang6123/node-autodoc?style=flat-square',
+      'https://img.shields.io/npm/dm/node-autodoc?style=flat-square'
+    ],
     content: <Image src={nodeAutodoc}/>,
     description: (
       <div>
