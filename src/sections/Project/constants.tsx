@@ -4,21 +4,29 @@ import {ItemProps} from "./Item";
 import HighLight from "../../components/HighLight";
 
 // Overwatch UI
-import overwatchLogo from '../../assets/icons/overwatchLogo.png'
+import overwatchLogo from '../../assets/icons/overwatch-logo.png'
 import overwatchUI from '../../assets/screenshots/overwatch-ui.png'
 
+// Code Block Beautifier
+import beautifierLogo from '../../assets/icons/beautifier.jpg'
+
 // Guitar Editor
-import guitarLogo from '../../assets/icons/guitarLogo.jpg'
+import guitarLogo from '../../assets/icons/guitar-logo.jpg'
 import guitarEditor from '../../assets/screenshots/guitar-editor.png'
 
 // links
 import link from "../../assets/svgs/link.svg";
+import chromeExt from '../../assets/icons/chrome-ext.png'
 import github from "../../assets/svgs/github.svg";
 
 // 技术栈
 import vue from '../../assets/icons/vue.png';
 import react from '../../assets/icons/react.png';
+import scss from '../../assets/icons/sass.png';
+import css from '../../assets/icons/css.png';
 import js from "../../assets/icons/js.png";
+import npm from "../../assets/icons/npm.png";
+import hljs from "../../assets/icons/hljs.png";
 
 const projects: ItemProps[] = [
   {
@@ -32,7 +40,24 @@ const projects: ItemProps[] = [
     ],
     techUsed: [
       {content: 'Vue.js', image: vue},
+      {content: 'Sass', image: scss},
       {content: 'JavaScript', image: js},
+      {content: 'NPM', image: npm},
+    ]
+  },
+  {
+    logo: beautifierLogo,
+    title: '代码高亮 - Chrome 插件',
+    content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1"
+  scrolling="no" frameBorder="no" allowFullScreen/>,
+    description: <p>本插件主要用于 <HighLight>高亮</HighLight> Medium 里文章的代码块，现在已经可以高亮所有带有 pre 元素的网站，如简书, 知乎等。</p>,
+    links: [
+      {content: 'https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn', image: chromeExt},
+      {content: 'https://github.com/Haixiang6123/codeblock-beautifier', image: github},
+    ],
+    techUsed: [
+      {content: 'JavaScript', image: js},
+      {content: 'Highlight.js', image: hljs},
     ]
   },
   {
@@ -46,6 +71,7 @@ const projects: ItemProps[] = [
     ],
     techUsed: [
       {content: 'React.js', image: react},
+      {content: 'CSS', image: css},
       {content: 'JavaScript', image: js},
     ]
   }
