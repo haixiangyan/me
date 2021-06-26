@@ -5,8 +5,8 @@ import useTyped from "../../hooks/useTyped";
 
 const strings = [
   '哈喽，我是帅哥',
-  '等一下，让我想想',
-  `我是海怪，<br>一个热爱生活的奋斗人。<br/>拒绝996和内卷，<br/>偶尔聊聊技术和分享生活。`
+  '不对不对，让我想想',
+  `我是海怪，<br>一个热爱生活的前端工程师。<br/>拒绝996和内卷，<br/>偶尔聊聊技术或分享生活。`
 ]
 
 const Home: FC = () => {
@@ -21,7 +21,7 @@ const Home: FC = () => {
 
         <figure className={styles.ballWrapper}>
           <div className={styles.ball}>
-            M
+            H
           </div>
         </figure>
       </div>

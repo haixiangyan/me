@@ -66,7 +66,17 @@ export const projects: ItemProps[] = [
     logo: npm,
     title: '一天学习一个 npm 轮子，十天后变成轮子哥',
     content: <Image src={npmWheelScreenshot}/>,
-    description: <p>这本小书会带你造 10 个非常实用的 npm 库 📦</p>,
+    description: (
+      <div>
+        <p>
+          这本小书会带你造 10 个非常实用的 <HighLight isDark>npm 库 📦</HighLight>。
+        </p>
+        <p>
+          每篇文章里的对每个轮子都会从简单的需求开始，首先做一个最 Low 的解决方法出来，
+          然后慢慢优化它，最后推导成 <HighLight isDark>源码</HighLight> 的样子。整个从 0 到 1 的设计与思考过程会完整地呈现给读者。
+        </p>
+      </div>
+    ),
     links: [
       {content: 'https://www.zhihu.com/column/c_1371023921513472000', image: zhihu},
       {content: 'https://juejin.cn/column/6965512526624718856', image: juejin},
@@ -83,7 +93,7 @@ export const projects: ItemProps[] = [
     logo: overwatchLogo,
     title: 'Overwatch UI',
     content: <Image src={overwatchUI}/>,
-    description: <p>一个基于 <HighLight>守望先锋</HighLight> 样式的 UI 库，通过 Vue.js 开发。</p>,
+    description: <p>一个基于 <HighLight isDark>守望先锋</HighLight> 样式的 UI 库，通过 Vue.js 开发。</p>,
     links: [
       {content: 'https://yanhaixiang.com/overwatch-ui-doc/#/', image: link},
       {content: 'https://github.com/Haixiang6123/overwatch-ui', image: github},
@@ -105,7 +115,12 @@ export const projects: ItemProps[] = [
     logo: beautifierLogo,
     title: '代码高亮 - Chrome 插件',
     content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1" scrolling="no" frameBorder="no" allowFullScreen/>,
-    description: <p>本插件主要用于 <HighLight>高亮</HighLight> Medium 里文章的代码块，现在已经可以高亮所有带有 pre 元素的网站，如简书, 知乎等。</p>,
+    description: (
+      <p>
+        一个 <HighLight isDark>Chrome 插件</HighLight>。主要用于高亮 Medium 里文章的代码块，
+        现在已经可以高亮所有带有 pre 元素的网站，如简书, 知乎等。
+      </p>
+    ),
     links: [
       {content: 'https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn', image: chromeExt},
       {content: 'https://github.com/Haixiang6123/codeblock-beautifier', image: github},
@@ -119,7 +134,12 @@ export const projects: ItemProps[] = [
     logo: guitarLogo,
     title: '吉他谱编辑器',
     content: <Image src={guitarEditor}/>,
-    description: (<p>使用 React.js 开发的吉他谱编辑器，在线编辑和生成吉他谱。</p>),
+    description: (
+      <div>
+        <p>使用 React.js 开发的 <HighLight isDark>吉他谱编辑器</HighLight>，在线编辑和生成吉他谱。</p>
+        <p>还能提供自动生成和弦的 <HighLight isDark>React 组件</HighLight>，一键生成和弦 SVG。</p>
+      </div>
+    ),
     links: [
       {content: 'https://yanhaixiang.com/guitar-editor/#/', image: link},
       {content: 'https://github.com/Haixiang6123/guitar-editor', image: github},
@@ -136,7 +156,7 @@ export const projects: ItemProps[] = [
     logo: leetcode,
     title: 'LeetCode/LintCode 题解',
     content: <Image src={lintcodeScreenShot}/>,
-    description: (<p>难受一批的 LeetCode/LintCode 题解，使用 Python 解题。</p>),
+    description: <p>难受一批的 <HighLight isDark>LeetCode/LintCode 题解</HighLight>，使用 Python 解题。</p>,
     links: [
       {content: 'https://www.lintcode.com/user/Haixiang', image: lintcode},
       {content: 'https://leetcode.com/HaixiangYan/', image: leetcode},
@@ -150,7 +170,12 @@ export const projects: ItemProps[] = [
     logo: weixin,
     title: '仿微信记账本',
     content: <Image src={weixinCash}/>,
-    description: (<p>用 React.js + TypeScript 写的一个仿微信记账本。</p>),
+    description: (
+      <div>
+        <p>用 <HighLight isDark>React.js + TypeScript + ECharts </HighLight> 写的一个仿微信记账本。</p>
+        <p>没有花里胡哨的操作，仅仅是一个记账本 😋。</p>
+      </div>
+    ),
     links: [
       {content: 'https://yanhaixiang.com/weixin-cash/#/', image: link},
       {content: 'https://github.com/Haixiang6123/weixin-cash', image: github},
@@ -167,7 +192,15 @@ export const projects: ItemProps[] = [
     logo: tenet,
     title: 'Tenet',
     content: <Image src={tenetScreenshot}/>,
-    description: (<p>最近看《信条》没怎么看懂，到是觉得里面“逆向思维”的有点意思，想试试用“逆向思维”来写代码会怎么样，哈哈哈哈，然后造了一个沙雕 VsCode 插件 - tenet。</p>),
+    description: (
+      <div>
+        <p>
+          最近看《信条》没怎么看懂，到是觉得里面“逆向思维”的有点意思，
+          想试试用 <HighLight isDark>“逆向思维”</HighLight> 来写代码会怎么样
+        </p>
+        <p>哈哈哈哈，然后造了一个沙雕 <HighLight isDark> VsCode 插件 - tenet</HighLight>。</p>
+      </div>
+    ),
     links: [
       {content: 'https://marketplace.visualstudio.com/items?itemName=HaixiangYan.tenet', image: vscode},
       {content: 'https://github.com/Haixiang6123/tenet', image: github},
@@ -180,7 +213,12 @@ export const projects: ItemProps[] = [
     logo: jest,
     title: 'node-autodoc',
     content: <Image src={nodeAutodoc}/>,
-    description: <p>一个测试驱动文档的生成器。灵感来源于 autodoc 和 supertest.</p>,
+    description: (
+      <div>
+        <p>一个 <HighLight isDark>测试驱动文档</HighLight> 的生成器。灵感来源于 Ruby 的 autodoc 和 JavaScript 社区的 supertest。</p>
+        <p>希望通过测试来保证 API 文档的正确性。</p>
+      </div>
+    ),
     links: [
       {content: 'https://www.npmjs.com/package/node-autodoc', image: npm},
       {content: 'https://github.com/Haixiang6123/node-autodoc', image: github},

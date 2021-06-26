@@ -67,8 +67,16 @@
       font-size: 15px;
       display: inline-block;
       color: #151515;
+      letter-spacing: 1px;
       text-shadow: 0 1px 1px #e0e0e0;
       line-height: 1.5;
+      text-align: left;
+      p {
+        margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     .links {
