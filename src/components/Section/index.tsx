@@ -1,10 +1,9 @@
-import * as React from "react"
-import {AllHTMLAttributes, FC} from "react"
-import classNames from "classnames"
-import styles from './styles.module.scss'
+import React, { AllHTMLAttributes, FC } from 'react';
+import classNames from 'classnames';
+import styles from './styles.module.scss';
 
 const Section: FC<AllHTMLAttributes<HTMLElement>> = (props) => {
-  const {className, children, ...restProps} = props;
+  const { className, children, ...restProps } = props;
 
   return (
     <section {...restProps} className={classNames(className, styles.section)}>
@@ -12,7 +11,7 @@ const Section: FC<AllHTMLAttributes<HTMLElement>> = (props) => {
         {children}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

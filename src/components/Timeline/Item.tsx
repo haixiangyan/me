@@ -1,7 +1,7 @@
-import {FC, ReactChild, useMemo} from "react";
+import React, { FC, ReactChild, useMemo } from 'react';
+import classNames from 'classnames';
 import styles from './styles.module.scss';
-import classNames from "classnames";
-import Paragraph from "../Paragraph";
+import Paragraph from '../Paragraph';
 
 interface Props {
   direction?: 'left' | 'right';
@@ -12,25 +12,39 @@ interface Props {
 }
 
 const TimelineItem: FC<Props> = (props) => {
-  const {direction = 'left', time, header, content, node} = props;
+  const {
+    direction = 'left', time, header, content, node,
+  } = props;
 
-  const times = useMemo(() => Array.isArray(time) ? time : [time], [time]);
-  const headers = useMemo(() => Array.isArray(header) ? header : [header], [header])
-  const contents = useMemo(() => Array.isArray(content) ? content : [content], [content]);
+  const times = useMemo(() => (Array.isArray(time) ? time : [time]), [time]);
+  const headers = useMemo(() => (Array.isArray(header) ? header : [header]), [header]);
+  const contents = useMemo(() => (Array.isArray(content) ? content : [content]), [content]);
 
   return (
     <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
       <div className={styles.node}>
-        {node || <div className={styles.defaultNode}/>}
+        {node || <div className={styles.defaultNode} />}
       </div>
 
       <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
-        {times && times.map((t, i) => <Paragraph key={i} className={styles.time}>{t}</Paragraph>)}
-        {headers && headers.map((h, i) => <Paragraph key={i} className={styles.header}>{h}</Paragraph>)}
-        {contents && contents.map((c, i) => <Paragraph key={i} className={styles.subtext}>{c}</Paragraph>)}
+        {times && times.map((timeItem) => (
+          <Paragraph key={timeItem ? timeItem.toString() : 0} className={styles.time}>
+            {timeItem}
+          </Paragraph>
+        ))}
+        {headers && headers.map((headerItem) => (
+          <Paragraph key={headerItem ? headerItem.toString() : 0} className={styles.header}>
+            {headerItem}
+          </Paragraph>
+        ))}
+        {contents && contents.map((contentItem) => (
+          <Paragraph key={contentItem ? contentItem.toString() : 0} className={styles.subtext}>
+            {contentItem}
+          </Paragraph>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TimelineItem
+export default TimelineItem;
