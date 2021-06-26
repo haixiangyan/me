@@ -14,22 +14,27 @@
 }
 
 .item {
-  flex: 1;
-  padding: 12px 28px;
+  padding: 24px;
   transition: transform 0.3s;
 
   &:hover {
     transform: scale(1.1);
   }
+
   .container {
     padding: 20px;
     border-radius: 6px;
     background: white;
     text-align: center;
 
+    &:hover {
+      z-index: 3;
+      box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+    }
+
     .logo {
       margin-bottom: 12px;
-      width: 80px;
+      height: 80px;
     }
 
     .title {

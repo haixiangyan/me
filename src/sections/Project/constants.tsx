@@ -23,6 +23,11 @@ import link from "../../assets/svgs/link.svg";
 import chromeExt from '../../assets/icons/chrome-ext.png'
 import github from "../../assets/svgs/github.svg";
 
+// lintcode
+import leetcode from '../../assets/icons/leetcode.png';
+import lintcode from '../../assets/svgs/lintcode.svg'
+import lintcodeScreenShot from '../../assets/screenshots/lintcode.png'
+
 // 技术栈
 import vue from '../../assets/icons/vue.png';
 import react from '../../assets/icons/react.png';
@@ -31,6 +36,7 @@ import css from '../../assets/icons/css.png';
 import js from "../../assets/icons/js.png";
 import npm from "../../assets/icons/npm.png";
 import hljs from "../../assets/icons/hljs.png";
+import python from '../../assets/icons/python.png';
 import styledComponents from '../../assets/icons/styled-components.png'
 
 const projects: ItemProps[] = [
@@ -94,7 +100,21 @@ const projects: ItemProps[] = [
       {content: 'Styled-Components', image: styledComponents},
       {content: 'Type', image: js},
     ]
-  }
+  },
+  {
+    logo: leetcode,
+    title: 'LeetCode/LintCode 题解',
+    content: <Image src={lintcodeScreenShot}/>,
+    description: (<p>难受一批的 LeetCode/LintCode 题解，使用 Python 解题。</p>),
+    links: [
+      {content: 'https://www.lintcode.com/user/Haixiang', image: lintcode},
+      {content: 'https://leetcode.com/HaixiangYan/', image: leetcode},
+      {content: 'https://github.com/Haixiang6123/leetcode-python', image: github},
+    ],
+    techUsed: [
+      {content: 'Python', image: python},
+    ]
+  },
 ]
 
 export default projects
