@@ -3,6 +3,10 @@
   background-color: black;
   background-image: url("../../assets/svgs/project.svg");
 
+  .projectList {
+    display: flex;
+  }
+
   .more {
     margin-top: 60px;
     h3 {

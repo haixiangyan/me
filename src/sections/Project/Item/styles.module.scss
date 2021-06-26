@@ -1,57 +1,118 @@
+@keyframes energy {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.2, 0.8);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
 .item {
-  padding: 20px;
-  border-radius: 6px;
-  background: white;
-  text-align: center;
+  padding: 12px 28px;
   transition: transform 0.3s;
-  
+
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
+  .container {
+    padding: 20px;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
 
-  .title {
-    font-size: 1.5em;
-    line-height: 1.125;
-    color: #002245;
-    text-shadow: 0 1px 1px rgb(0 34 69 / 32%);
-    font-family: Raleway, serif;
-    font-weight: 700;
-  }
-
-  .content {
-    img {
-      height: auto;
-      max-width: 100%;
-      max-height: 100%;
-      box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
-      cursor: zoom-in;
+    .logo {
+      margin-bottom: 12px;
+      width: 80px;
     }
-  }
 
-  .description {
-    margin: 15px 0 25px 0;
-    font-size: 15px;
-    display: inline-block;
-    color: #151515;
-    text-shadow: 0 1px 1px #e0e0e0;
-  }
-
-  .links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-  }
-
-  .techUsed {
-    h4 {
+    .title {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      line-height: 1.125;
+      color: #002245;
+      text-shadow: 0 1px 1px rgb(0 34 69 / 32%);
+      font-family: SiYuanHeiTi, serif;
       font-weight: 700;
-      padding-top: 20px;
-      border-top: 1px solid #cacaca;
-      font-size: 24px;
+    }
+
+    .content {
+      margin-bottom: 20px;
+      img {
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
+        cursor: zoom-in;
+      }
+    }
+
+    .description {
+      margin: 15px 0 25px 0;
+      font-size: 15px;
       display: inline-block;
-      width: 80%;
       color: #151515;
+      text-shadow: 0 1px 1px #e0e0e0;
+      line-height: 1.5;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      height: 48px;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 8px;
+        height: 48px;
+
+        &:hover {
+          animation: energy .5s;
+        }
+
+        img {
+          height: 80%;
+        }
+      }
+    }
+
+    .techUsed {
+      line-height: 1.5;
+      h4 {
+        font-weight: 700;
+        padding-top: 16px;
+        padding-bottom: 12px;
+        border-top: 1px solid #cacaca;
+        font-size: 24px;
+        display: inline-block;
+        width: 80%;
+        color: #151515;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          margin: 3px 0;
+          padding: 0 10px;
+          img {
+            height: 32px;
+          }
+        }
+      }
     }
   }
+}
+
+.tooltip {
+  border: 1px solid red;
+  border-radius: 50%;
 }
