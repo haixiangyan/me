@@ -20,7 +20,9 @@
   .content {
     display: flex;
     justify-content: center;
+    max-width: 1400px;
     height: 100%;
+    margin: 0 auto;
 
     .intro {
       flex: 1;
@@ -43,7 +45,7 @@
     }
 
     .ballWrapper {
-      padding: 12px 50px 12px 12px;
+      padding: 12px 12x 12px 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
