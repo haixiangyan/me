@@ -4,4 +4,15 @@
   width: 100%;
   background-color: #2f0000;
   text-align: center;
+
+  .techList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      padding: 8px;
+      height: 40px;
+    }
+  }
 }
