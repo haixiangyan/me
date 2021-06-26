@@ -103,8 +103,7 @@ const projects: ItemProps[] = [
   {
     logo: beautifierLogo,
     title: '代码高亮 - Chrome 插件',
-    content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1"
-  scrolling="no" frameBorder="no" allowFullScreen/>,
+    content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1" scrolling="no" frameBorder="no" allowFullScreen/>,
     description: <p>本插件主要用于 <HighLight>高亮</HighLight> Medium 里文章的代码块，现在已经可以高亮所有带有 pre 元素的网站，如简书, 知乎等。</p>,
     links: [
       {content: 'https://chrome.google.com/webstore/detail/code-block-beautifier/gpcjjddhdnilcbddlonlfgdbejfboonn', image: chromeExt},
@@ -133,6 +132,20 @@ const projects: ItemProps[] = [
     ]
   },
   {
+    logo: leetcode,
+    title: 'LeetCode/LintCode 题解',
+    content: <Image src={lintcodeScreenShot}/>,
+    description: (<p>难受一批的 LeetCode/LintCode 题解，使用 Python 解题。</p>),
+    links: [
+      {content: 'https://www.lintcode.com/user/Haixiang', image: lintcode},
+      {content: 'https://leetcode.com/HaixiangYan/', image: leetcode},
+      {content: 'https://github.com/Haixiang6123/leetcode-python', image: github},
+    ],
+    techUsed: [
+      {content: 'Python', image: python},
+    ]
+  },
+  {
     logo: weixin,
     title: '仿微信记账本',
     content: <Image src={weixinCash}/>,
@@ -147,20 +160,6 @@ const projects: ItemProps[] = [
       {content: 'TypeScript', image: ts},
       {content: 'Babel', image: babel},
       {content: 'Webpack', image: webpack},
-    ]
-  },
-  {
-    logo: leetcode,
-    title: 'LeetCode/LintCode 题解',
-    content: <Image src={lintcodeScreenShot}/>,
-    description: (<p>难受一批的 LeetCode/LintCode 题解，使用 Python 解题。</p>),
-    links: [
-      {content: 'https://www.lintcode.com/user/Haixiang', image: lintcode},
-      {content: 'https://leetcode.com/HaixiangYan/', image: leetcode},
-      {content: 'https://github.com/Haixiang6123/leetcode-python', image: github},
-    ],
-    techUsed: [
-      {content: 'Python', image: python},
     ]
   },
   {
