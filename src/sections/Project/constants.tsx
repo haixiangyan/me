@@ -122,7 +122,6 @@ export const projects: ItemProps[] = [
       'https://img.shields.io/github/stars/Haixiang6123/codeblock-beautifier?style=flat-square',
       'https://img.shields.io/chrome-web-store/stars/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
       'https://img.shields.io/chrome-web-store/users/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
-      'https://img.shields.io/chrome-web-store/stars/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
     ],
     title: '代码高亮 - Chrome 插件',
     content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1" scrolling="no" frameBorder="no" allowFullScreen/>,

@@ -25,7 +25,7 @@ const TimelineItem: FC<Props> = (props) => {
       </div>
 
       <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
-        {times && times.map(t => <Paragraph key={t} className={styles.time}>{t}</Paragraph>)}
+        {times && times.map((t, i) => <Paragraph key={i} className={styles.time}>{t}</Paragraph>)}
         {headers && headers.map((h, i) => <Paragraph key={i} className={styles.header}>{h}</Paragraph>)}
         {contents && contents.map((c, i) => <Paragraph key={i} className={styles.subtext}>{c}</Paragraph>)}
       </div>

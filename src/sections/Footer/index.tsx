@@ -38,7 +38,7 @@ const Footer = () => {
       <Paragraph>第三次重改个人主页成功 🙌， 使用了:</Paragraph>
       <div className={styles.techList}>
         {techs.map(tech => (
-          <Tooltip placement="top" title={tech.content} color="black">
+          <Tooltip key={tech.content} placement="top" title={tech.content} color="black">
             <img src={tech.image} alt="tech"/>
           </Tooltip>
         ))}

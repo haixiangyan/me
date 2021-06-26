@@ -53,7 +53,7 @@ const Item: FC<ItemProps> = (props) => {
             <h4>技术栈</h4>
             <ul>
               {techUsed.map(tech => (
-                <li>
+                <li key={tech.content}>
                   <Tooltip placement="bottom" title={tech.content} color="black">
                     <img src={tech.image} alt="techUsed"/>
                   </Tooltip>
