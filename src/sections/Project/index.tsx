@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 import Title from "../../components/Title"
 import Section from "../../components/Section"
 import Item from "./Item"
+import projects from "./constants";
 
 const Project = () => {
   return (
@@ -11,9 +12,7 @@ const Project = () => {
       <Title tag="h3">超多好玩、沙雕的项目</Title>
 
       <ul className={styles.projectList}>
-        <Item/>
-        <Item/>
-        <Item/>
+        {projects.map(project => (<Item {...project}/>))}
       </ul>
 
       <Title className={styles.more} tag="h3">More projects (and a blog) Coming Soon™ 🕑</Title>

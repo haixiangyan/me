@@ -1,67 +1,54 @@
 import * as React from "react"
-import {AllHTMLAttributes, FC} from "react"
-import { Image, Tooltip } from "antd";
+import {FC, ReactChild} from "react"
+import {Image, Tooltip} from "antd";
 import styles from './styles.module.scss'
-
-import link from '../../../assets/svgs/link.svg'
-import github from '../../../assets/svgs/github.svg'
-import js from '../../../assets/icons/js.png'
-import hljs from '../../../assets/icons/hljs.png'
 
 interface Image {
   image: string;
   content: string;
 }
 
-interface Props extends AllHTMLAttributes<HTMLDivElement> {
-  title: string;
+export interface ItemProps {
+  logo: string;
+  title: string | ReactChild;
+  content: string | ReactChild;
+  description: string | ReactChild;
   links: Image[];
   techUsed: Image[];
-  logo?: string;
-  content?: string;
-  description?: string;
 }
 
-const Item: FC = (props) => {
+const Item: FC<ItemProps> = (props) => {
+  const {logo, title, content, description, links, techUsed} = props
+
   return (
     <li className={styles.item}>
       <div className={styles.container}>
-        <img className={styles.logo} src="https://www.macbaler.me/img/webrtclogocropW.b95e2850.png" alt="logo"/>
+        <img className={styles.logo} src={logo} alt="logo"/>
 
-        <h4 className={styles.title}>WebRtc Checker</h4>
+        <h4 className={styles.title}>{title}</h4>
 
-        <div className={styles.content}>
-          <Image src="https://www.macbaler.me/img/ss.d7961b29.png"/>
-        </div>
+        <div className={styles.content}>{content}</div>
 
-        <div className={styles.description}>
-          <p>
-            Created while working at Weblio in Japan. Helps users test & troubleshoot their video/audio devices, as well as video/audio bandwidth settings. Allowed preemptive test of setup before entering online lesson room. Utilized a fork of PeerJS and manipulated the MediaStream API to create a WebRTC video call with oneself.
-          </p>
-        </div>
+        <div className={styles.description}>{description}</div>
 
         <div className={styles.links}>
-          <a href="#" target="_blank">
-            <img src={link} alt=""/>
-          </a>
-          <a href="#" target="_blank">
-            <img src={github} alt=""/>
-          </a>
+          {links.map(link => (
+            <a key={link.content} href={link.content} target="_blank">
+              <img src={link.image} alt=""/>
+            </a>
+          ))}
         </div>
 
         <div className={styles.techUsed}>
           <h4>技术栈</h4>
           <ul>
-            <li>
-              <Tooltip placement="bottom" title="JavaScript" color="black">
-                <img src={js} alt="techUsed"/>
-              </Tooltip>
-            </li>
-            <li>
-              <Tooltip placement="bottom" title="highlight.js" color="black">
-                <img src={hljs} alt="techUsed"/>
-              </Tooltip>
-            </li>
+            {techUsed.map(tech => (
+              <li>
+                <Tooltip placement="bottom" title={tech.content} color="black">
+                  <img src={tech.image} alt="techUsed"/>
+                </Tooltip>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
