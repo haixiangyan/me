@@ -38,10 +38,9 @@
     content: "";
     background-color: #c1004f;
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
     position: absolute;
-    top: 0;
   }
 
   .node {
@@ -78,7 +77,7 @@
     text-align: left;
     align-self: flex-end;
     &:before {
-      left: 0;
+      left: -1px;
     }
 
     .content {
@@ -91,7 +90,7 @@
     text-align: right;
     align-self: flex-start;
     &:before {
-      right: 0;
+      right: -1px;
     }
 
     .content {
