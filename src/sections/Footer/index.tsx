@@ -35,7 +35,7 @@ const techs = [
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Paragraph>本人亲自手写 🙌， 使用了:</Paragraph>
+      <Paragraph>第三次重改个人主页成功 🙌， 使用了:</Paragraph>
       <div className={styles.techList}>
         {techs.map(tech => (
           <Tooltip placement="top" title={tech.content} color="black">
