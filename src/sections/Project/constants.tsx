@@ -14,6 +14,10 @@ import beautifierLogo from '../../assets/icons/beautifier.jpg'
 import guitarLogo from '../../assets/icons/guitar-logo.jpg'
 import guitarEditor from '../../assets/screenshots/guitar-editor.png'
 
+// 仿微信记账本
+import weixin from '../../assets/svgs/weixin.svg';
+import weixinCash from '../../assets/screenshots/weixin-cash.png'
+
 // links
 import link from "../../assets/svgs/link.svg";
 import chromeExt from '../../assets/icons/chrome-ext.png'
@@ -27,6 +31,7 @@ import css from '../../assets/icons/css.png';
 import js from "../../assets/icons/js.png";
 import npm from "../../assets/icons/npm.png";
 import hljs from "../../assets/icons/hljs.png";
+import styledComponents from '../../assets/icons/styled-components.png'
 
 const projects: ItemProps[] = [
   {
@@ -73,6 +78,21 @@ const projects: ItemProps[] = [
       {content: 'React.js', image: react},
       {content: 'CSS', image: css},
       {content: 'JavaScript', image: js},
+    ]
+  },
+  {
+    logo: weixin,
+    title: '仿微信记账本',
+    content: <Image src={weixinCash}/>,
+    description: (<p>用 React.js + TypeScript 写的一个仿微信记账本。</p>),
+    links: [
+      {content: 'https://yanhaixiang.com/weixin-cash/#/', image: link},
+      {content: 'https://github.com/Haixiang6123/weixin-cash', image: github},
+    ],
+    techUsed: [
+      {content: 'React.js', image: react},
+      {content: 'Styled-Components', image: styledComponents},
+      {content: 'Type', image: js},
     ]
   }
 ]
