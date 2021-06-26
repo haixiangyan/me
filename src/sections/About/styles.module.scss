@@ -13,6 +13,9 @@
 .about {
   padding: 48px 24px;
   position: relative;
+  background-image: url("../../assets/svgs/about-bg.svg");
+  background-position: center center;
+  background-size: cover;
 
   .background {
     position: absolute;

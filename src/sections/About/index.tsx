@@ -4,14 +4,13 @@ import Life from "./Life";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Button from "../../components/Button";
-import Background from "./Background"
 import Section from "../../components/Section"
 import HighLight from "../../components/HighLight";
 
 const About = () => {
   return (
     <Section id="about" className={styles.about}>
-      <Background className={styles.background}/>
+      {/*<Background className={styles.background}/>*/}
 
       <div className={styles.content}>
         <Title tag="h2">关于</Title>
