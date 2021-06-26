@@ -11,7 +11,6 @@ const navItems: NavItem[] = [
   {text: '首页', toEl: '#home'},
   {text: '关于', toEl: '#about'},
   {text: '项目', toEl: '#project'},
-  {text: '文章', toEl: '#article'},
   {text: '找我', toEl: '#contact'},
 ]
 
@@ -42,7 +41,9 @@ const Nav: FC = () => {
             {n.text}
           </li>
         ))}
-        <li>简历</li>
+        <li>
+          <a href="https://yanhaixiang.com/resume-generator/" target="_blank">简历</a>
+        </li>
       </ul>
     </nav>
   )

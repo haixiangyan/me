@@ -24,19 +24,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    li {
+    li, a {
       color: #4a4a4a;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    li {
       line-height: 1.5;
       padding: 8px 12px;
       font-weight: 500;
       cursor: pointer;
       font-size: 1.2em;
 
-      &:hover {
-        color: red;
-      }
-
-      &.active {
+      &.active, &.active a {
         color: #bd0000;
       }
     }
