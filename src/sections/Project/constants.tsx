@@ -28,6 +28,11 @@ import leetcode from '../../assets/icons/leetcode.png';
 import lintcode from '../../assets/svgs/lintcode.svg'
 import lintcodeScreenShot from '../../assets/screenshots/lintcode.png'
 
+// tenet
+import tenet from '../../assets/icons/tenet.webp'
+import vscode from '../../assets/icons/vscode.webp';
+import tenetScreenshot from '../../assets/screenshots/tenet.gif';
+
 // 技术栈
 import vue from '../../assets/icons/vue.png';
 import react from '../../assets/icons/react.png';
@@ -113,6 +118,19 @@ const projects: ItemProps[] = [
     ],
     techUsed: [
       {content: 'Python', image: python},
+    ]
+  },
+  {
+    logo: tenet,
+    title: 'Tenet',
+    content: <Image src={tenetScreenshot}/>,
+    description: (<p>最近看《信条》没怎么看懂，到是觉得里面“逆向思维”的有点意思，想试试用“逆向思维”来写代码会怎么样，哈哈哈哈，然后造了一个沙雕 VsCode 插件 - tenet。</p>),
+    links: [
+      {content: 'https://marketplace.visualstudio.com/items?itemName=HaixiangYan.tenet', image: vscode},
+      {content: 'https://github.com/Haixiang6123/tenet', image: github},
+    ],
+    techUsed: [
+      {content: 'JavaScript', image: js},
     ]
   },
 ]
