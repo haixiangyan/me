@@ -3,6 +3,9 @@ import { Image } from "antd";
 import {ItemProps} from "./Item";
 import HighLight from "../../components/HighLight";
 
+// 造轮子
+import npmWheelScreenshot from '../../assets/screenshots/npm-wheel.png';
+
 // Overwatch UI
 import overwatchLogo from '../../assets/icons/overwatch-logo.png'
 import overwatchUI from '../../assets/screenshots/overwatch-ui.png'
@@ -17,11 +20,6 @@ import guitarEditor from '../../assets/screenshots/guitar-editor.png'
 // 仿微信记账本
 import weixin from '../../assets/svgs/weixin.svg';
 import weixinCash from '../../assets/screenshots/weixin-cash.png'
-
-// links
-import link from "../../assets/svgs/link.svg";
-import chromeExt from '../../assets/icons/chrome-ext.png'
-import github from "../../assets/svgs/github.svg";
 
 // lintcode
 import leetcode from '../../assets/icons/leetcode.png';
@@ -39,12 +37,38 @@ import react from '../../assets/icons/react.png';
 import scss from '../../assets/icons/sass.png';
 import css from '../../assets/icons/css.png';
 import js from "../../assets/icons/js.png";
+import ts from "../../assets/icons/ts.png";
 import npm from "../../assets/icons/npm.png";
 import hljs from "../../assets/icons/hljs.png";
 import python from '../../assets/icons/python.png';
 import styledComponents from '../../assets/icons/styled-components.png'
+import babel from '../../assets/icons/babel.png'
+import webpack from '../../assets/icons/webpack.png'
+
+// links
+import link from "../../assets/svgs/link.svg";
+import chromeExt from '../../assets/icons/chrome-ext.png'
+import github from "../../assets/svgs/github.svg";
+import juejin from '../../assets/svgs/juejin.svg';
+import zhihu from '../../assets/svgs/zhihu.svg';
 
 const projects: ItemProps[] = [
+  {
+    logo: npm,
+    title: '一天学习一个 npm 轮子，十天后变成轮子哥',
+    content: <Image src={npmWheelScreenshot}/>,
+    description: <p>这本小书会带你造 10 个非常实用的 npm 库 📦</p>,
+    links: [
+      {content: 'https://www.zhihu.com/column/c_1371023921513472000', image: zhihu},
+      {content: 'https://juejin.cn/column/6965512526624718856', image: juejin},
+      {content: 'https://github.com/Haixiang6123/one-day-one-npm-lib', image: github},
+    ],
+    techUsed: [
+      {content: 'NPM', image: npm},
+      {content: 'JavaScript', image: js},
+      {content: 'React.js', image: react},
+    ]
+  },
   {
     logo: overwatchLogo,
     title: 'Overwatch UI',
@@ -59,6 +83,8 @@ const projects: ItemProps[] = [
       {content: 'Sass', image: scss},
       {content: 'JavaScript', image: js},
       {content: 'NPM', image: npm},
+      {content: 'Babel', image: babel},
+      {content: 'Webpack', image: webpack},
     ]
   },
   {
@@ -89,6 +115,8 @@ const projects: ItemProps[] = [
       {content: 'React.js', image: react},
       {content: 'CSS', image: css},
       {content: 'JavaScript', image: js},
+      {content: 'Babel', image: babel},
+      {content: 'Webpack', image: webpack},
     ]
   },
   {
@@ -103,7 +131,9 @@ const projects: ItemProps[] = [
     techUsed: [
       {content: 'React.js', image: react},
       {content: 'Styled-Components', image: styledComponents},
-      {content: 'Type', image: js},
+      {content: 'TypeScript', image: ts},
+      {content: 'Babel', image: babel},
+      {content: 'Webpack', image: webpack},
     ]
   },
   {
@@ -130,7 +160,7 @@ const projects: ItemProps[] = [
       {content: 'https://github.com/Haixiang6123/tenet', image: github},
     ],
     techUsed: [
-      {content: 'JavaScript', image: js},
+      {content: 'TypeScript', image: ts},
     ]
   },
 ]
