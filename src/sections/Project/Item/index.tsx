@@ -1,6 +1,6 @@
 import * as React from "react"
 import {FC, ReactChild} from "react"
-import {Image, Tooltip} from "antd";
+import {Tooltip} from "antd";
 import styles from './styles.module.scss'
 
 interface Image {
@@ -41,8 +41,8 @@ const Item: FC<ItemProps> = (props) => {
         {links && (
           <div className={styles.links}>
             {links.map(link => (
-              <a key={link.content} href={link.content} target="_blank">
-                <img src={link.image} alt=""/>
+              <a key={link.content} href={link.content} target="_blank" rel="noreferrer">
+                <img src={link.image} alt="linkImage"/>
               </a>
             ))}
           </div>

@@ -124,7 +124,15 @@ export const projects: ItemProps[] = [
       'https://img.shields.io/chrome-web-store/users/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square',
     ],
     title: '代码高亮 - Chrome 插件',
-    content: <iframe src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1" scrolling="no" frameBorder="no" allowFullScreen/>,
+    content: (
+      <iframe
+        title="codeblock-beautifier"
+        src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1"
+        scrolling="no"
+        frameBorder="no"
+        allowFullScreen
+      />
+    ),
     description: (
       <p>
         一个 <HighLight isDark>Chrome 插件</HighLight>。主要用于高亮 Medium 里文章的代码块，

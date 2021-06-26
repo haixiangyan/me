@@ -38,7 +38,7 @@ const Project = () => {
         <Tabs>
           {moreProjects.map(project => (
             <TabPane key={project.title} tab={project.title}>
-              <iframe style={{ width: '100%', height: '50vh' }} src={project.url} frameBorder="0"/>
+              <iframe title={project.title} style={{ width: '100%', height: '50vh' }} src={project.url} frameBorder="0"/>
             </TabPane>
           ))}
         </Tabs>

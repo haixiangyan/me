@@ -13,8 +13,8 @@ const Contact = () => {
         <ul className={styles.contactList}>
           {contacts.map(contact => (
             <li key={contact.image}>
-              <a href={contact.url} target="_blank">
-                <img src={contact.image} alt="image"/>
+              <a href={contact.url} target="_blank" rel="noreferrer">
+                <img src={contact.image} alt="contactImage"/>
               </a>
             </li>
           ))}
