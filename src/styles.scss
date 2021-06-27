@@ -6,10 +6,6 @@
   font-family: "HongLei";
   src: url("./assets/fonts/HongLei.ttf") format("TrueType");
 }
-@font-face {
-  font-family: "K2D";
-  src: url("./assets/fonts/K2D.ttf") format("TrueType");
-}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,5 +53,5 @@ table {
 
 // 自定义
 p {
-  font-family: SiYuanHeiTi, serif;
+  font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
 }
