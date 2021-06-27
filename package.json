@@ -19,8 +19,9 @@
     "typescript": "^4.1.2"
   },
   "scripts": {
-    "start": "BROWSER=none react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "lint": "eslint --fix src --ext .js,.tsx,ts,jsx",
     "deploy": "sh deploy.sh"
   },
@@ -49,7 +50,6 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "react-app-rewired": "^2.1.8"
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
