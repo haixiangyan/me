@@ -1,23 +1,28 @@
-import React, { FC } from 'react';
+import React, { FC, Suspense } from 'react';
+
+import Loading from './components/Loading';
 import Nav from './sections/Nav';
-import Home from './sections/Home';
-import About from './sections/About';
-import Project from './sections/Project';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
+
+const Home = React.lazy(() => import('./sections/Home'));
+const About = React.lazy(() => import('./sections/About'));
+const Project = React.lazy(() => import('./sections/Project'));
+const Contact = React.lazy(() => import('./sections/Contact'));
+const Footer = React.lazy(() => import('./sections/Footer'));
 
 const App: FC = () => (
   <div id="app">
-    <Nav />
+    <Suspense fallback={<Loading />}>
+      <Nav />
 
-    <main>
-      <Home />
-      <About />
-      <Project />
-      <Contact />
-    </main>
+      <main>
+        <Home />
+        <About />
+        <Project />
+        <Contact />
+      </main>
 
-    <Footer />
+      <Footer />
+    </Suspense>
   </div>
 );
 

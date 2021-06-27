@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import Typed, { TypedOptions } from 'typed.js';
 
-function useTyped(strings: string[]) {
+function useTyped(strings: string[], extra?: TypedOptions) {
   const el = useRef<HTMLElement | null>(null);
   const typed = useRef<Typed | null>(null);
 
@@ -10,6 +10,7 @@ function useTyped(strings: string[]) {
       strings,
       typeSpeed: 100,
       backSpeed: 60,
+      ...extra,
     };
 
     typed.current = new Typed(el.current || '', options);

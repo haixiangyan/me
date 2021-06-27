@@ -8,13 +8,13 @@ import useTyped from '../../../hooks/useTyped';
 
 const strings = [
   '码农',
-  '做题家',
-  '大佬',
+  '社畜',
+  '打工人',
   '前端工程师',
 ];
 
 const Life = () => {
-  const el = useTyped(strings);
+  const el = useTyped(strings, { loop: true });
 
   return (
     <Timeline>
