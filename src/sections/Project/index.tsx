@@ -7,12 +7,24 @@ import Title from '../../components/Title';
 import Section from '../../components/Section';
 import Item from './Item';
 import Button from '../../components/Button';
-import { projects, moreProjects } from './constants';
+import {
+  projects, moreProjects, mdPx, lgPx,
+} from './constants';
 
 const { TabPane } = Tabs;
 
 const Project = () => {
   const [moreVisible, setMoreVisible] = useState<boolean>(false);
+  const [columns] = useState<number>(() => {
+    const { innerWidth } = window;
+    if (innerWidth < mdPx) {
+      return 1;
+    }
+    if (innerWidth < lgPx) {
+      return 2;
+    }
+    return 3;
+  });
 
   return (
     <Section id="project" className={styles.project}>
@@ -20,7 +32,7 @@ const Project = () => {
       <Title tag="h3">超多好玩、沙雕的项目</Title>
 
       <Masonry
-        breakpointCols={3}
+        breakpointCols={columns}
         className={styles.projectList}
         columnClassName={styles.projectListColumn}
       >

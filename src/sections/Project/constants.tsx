@@ -6,7 +6,7 @@ import HighLight from '../../components/HighLight';
 // 造轮子
 import npmWheelScreenshot from '../../assets/screenshots/npm-wheel.png';
 
-// Overwatch UI
+// OverWatch UI
 import overwatchLogo from '../../assets/icons/overwatch-logo.png';
 import overwatchUI from '../../assets/screenshots/overwatch-ui.png';
 
@@ -61,6 +61,7 @@ import github from '../../assets/svgs/github.svg';
 import juejin from '../../assets/svgs/juejin.svg';
 import zhihu from '../../assets/svgs/zhihu.svg';
 
+// 可视项目
 export const projects: ItemProps[] = [
   {
     logo: npm,
@@ -319,6 +320,7 @@ export const projects: ItemProps[] = [
   },
 ];
 
+// iframe 里的项目
 export const moreProjects = [
   {
     title: '香蕉',
@@ -337,3 +339,7 @@ export const moreProjects = [
     url: 'https://yanhaixiang.com/sketch-book/',
   },
 ];
+
+// 瀑布流的列数
+export const mdPx = 768;
+export const lgPx = 992;

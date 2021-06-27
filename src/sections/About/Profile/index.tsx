@@ -8,7 +8,7 @@ import HighLight from '../../../components/HighLight';
 
 const Profile = () => (
   <Row gutter={36} className={styles.profile}>
-    <Col lg={{ span: 11, order: 1 }} span={20} order={3} className={styles.details}>
+    <Col lg={{ span: 11, order: 1 }} span={24} order={3} className={styles.details}>
       <Paragraph>
         一名
         {' '}
