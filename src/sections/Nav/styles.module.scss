@@ -56,6 +56,9 @@
     &.active, &.active a {
       color: #bd0000;
     }
+    &.navBtn {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 1024px) {
@@ -64,6 +67,7 @@
         visibility: hidden;
 
         &.navBtn {
+          display: block;
           visibility: visible;
         }
       }
