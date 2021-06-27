@@ -4,7 +4,6 @@
   justify-content: center;
 
   .details {
-    padding: 30px;
     text-align: center;
 
     p {
@@ -17,16 +16,14 @@
   }
 
   .avatar {
-    padding: 30px;
     img {
       border-radius: 50%;
-      width: 320px;
+      max-width: 100%;
       box-shadow: 0 7px 17px 2px rgb(0 0 0 / 50%);
     }
   }
 
   .name {
-    padding: 30px;
     p {
       margin-bottom: 48px;
       font-size: 11em;

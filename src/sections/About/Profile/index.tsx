@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Row } from 'antd';
 import styles from './styles.module.scss';
 import symbol from '../../../assets/images/symbol.png';
 import avatar from '../../../assets/images/avatar.jpg';
@@ -6,8 +7,8 @@ import Paragraph from '../../../components/Paragraph';
 import HighLight from '../../../components/HighLight';
 
 const Profile = () => (
-  <div className={styles.profile}>
-    <div className={styles.details}>
+  <Row gutter={36} className={styles.profile}>
+    <Col span={11} className={styles.details}>
       <Paragraph>
         一名
         {' '}
@@ -44,16 +45,17 @@ const Profile = () => (
       <Paragraph>
         工作之后常常想写代码的意义是什么：混口饭吃？还是做一个优秀的项目？好像都不是，或许写代码可以做更多有意义的事。🤩
       </Paragraph>
-    </div>
+    </Col>
 
-    <div className={styles.avatar}>
+    <Col span={7} className={styles.avatar}>
       <img src={avatar} alt="头像" />
-    </div>
-    <div className={styles.name}>
+    </Col>
+
+    <Col span={5} className={styles.name}>
       <p>海</p>
       <p>怪</p>
-    </div>
-  </div>
+    </Col>
+  </Row>
 );
 
 export default Profile;
