@@ -10,17 +10,6 @@
   }
 }
 
-@keyframes goUp {
-  0% {
-    transform: translateY(120px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .home {
   padding: 56px 24px 48px;
   position: relative;
@@ -76,8 +65,12 @@
         transform: translateY(120px);
         opacity: 0;
         transition: all .3s;
-        animation: goUp 1.5s;
-        animation-fill-mode: forwards;
+        :global {
+          & {
+            animation: goUp 1.5s;
+            animation-fill-mode: forwards;
+          }
+        }
 
         &:before{
           content: "";

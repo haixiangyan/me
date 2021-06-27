@@ -51,7 +51,19 @@ table {
   border-spacing: 0;
 }
 
-// 自定义
+// 自定义样式
 p {
   font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
+}
+
+// 自定义动画
+@keyframes goUp {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
