@@ -2,7 +2,6 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://haixiang6123.github.io/Haixiang6123.github.io",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@types/node": "^12.0.0",
@@ -24,7 +23,7 @@
     "build": "react-scripts build",
     "lint": "eslint --fix src --ext .js,.tsx,ts,jsx",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "sh deploy.sh"
   },
   "config": {
     "commitizen": {
@@ -51,7 +50,6 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "gh-pages": "^3.2.3"
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
