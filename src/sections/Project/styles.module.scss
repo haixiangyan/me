@@ -26,4 +26,12 @@
       font-style: italic
     }
   }
+
+  @media screen and (max-width: 786px) {
+    & {
+      .more {
+        padding: 30px 0;
+      }
+    }
+  }
 }

@@ -33,7 +33,7 @@ const Project = () => {
       </Masonry>
 
       <Title className={styles.footerTitle} tag="h3">
-        😋 更多好玩、沙周的项目（和
+        😋 更多好玩，沙雕的项目（和
         {' '}
         <i>文章</i>
         {' '}
