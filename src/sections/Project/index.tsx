@@ -24,8 +24,8 @@ const Project = () => {
         className={styles.projectList}
         columnClassName={styles.projectListColumn}
       >
-        {projects.map((project, index) => (
-          <Item {...project} key={project.logo} style={{ animationDelay: `${index * 300}ms` }} />
+        {projects.map((project) => (
+          <Item {...project} key={project.logo} />
         ))}
         <div className={styles.more}>
           <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)}>更多</Button>

@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, ReactChild } from 'react';
+import React, { FC, ReactChild } from 'react';
 import { Tooltip } from 'antd';
 import styles from './styles.module.scss';
 
@@ -17,17 +17,13 @@ export type ProjectItem = {
   techUsed?: Image[];
 }
 
-export type ItemProps = ProjectItem & {
-  style: CSSProperties;
-}
-
-const Item: FC<ItemProps> = (props) => {
+const Item: FC<ProjectItem> = (props) => {
   const {
-    logo, title, badges, content, description, links, techUsed, ...restProps
+    logo, title, badges, content, description, links, techUsed,
   } = props;
 
   return (
-    <div {...restProps} className={styles.item}>
+    <div className={styles.item}>
       <div className={styles.container}>
         {logo && <img className={styles.logo} src={logo} alt="logo" />}
 

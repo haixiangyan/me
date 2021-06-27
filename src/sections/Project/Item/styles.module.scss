@@ -16,14 +16,6 @@
 .item {
   padding: 24px;
   transition: transform 0.3s;
-  transform: translateY(100px);
-  opacity: 0;
-  :global {
-    & {
-      animation: goUp 1s;
-      animation-fill-mode: forwards;
-    }
-  }
 
   @media screen and (max-width: 786px) {
     padding: 24px 0;
