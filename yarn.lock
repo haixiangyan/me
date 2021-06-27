@@ -16,8 +16,8 @@
 
 "@ant-design/icons@^4.6.2":
   version "4.6.2"
-  resolved "https://registry.nlark.com/@ant-design/icons/download/@ant-design/icons-4.6.2.tgz#290f2e8cde505ab081fda63e511e82d3c48be982"
-  integrity sha1-KQ8ujN5QWrCB/aY+UR6C08SL6YI=
+  resolved "http://mirrors.tencent.com/npm/@ant-design%2ficons/-/icons-4.6.2.tgz#290f2e8cde505ab081fda63e511e82d3c48be982"
+  integrity sha512-QsBG2BxBYU/rxr2eb8b2cZ4rPKAPBpzAR+0v6rrZLp/lnyvflLH3tw1vregK+M7aJauGWjIGNdFmUfpAOtw25A==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons-svg" "^4.0.0"

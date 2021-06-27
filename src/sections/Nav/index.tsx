@@ -1,21 +1,17 @@
 import React, { FC, useState } from 'react';
 import classNames from 'classnames';
+import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import styles from './styles.module.scss';
+import { navItems } from './constants';
 
-interface NavItem {
+export interface NavItem {
   text: string;
   toEl: string;
 }
 
-const navItems: NavItem[] = [
-  { text: '首页', toEl: '#home' },
-  { text: '关于', toEl: '#about' },
-  { text: '项目', toEl: '#project' },
-  { text: '找我', toEl: '#contact' },
-];
-
 const Nav: FC = () => {
-  const [activeItem, setActiveItem] = useState('#home');
+  const [activeItem, setActiveItem] = useState<string>('#home');
+  const [verticalVisible, setVerticalVisible] = useState<boolean>(true);
 
   const scroll = (toEl: string) => {
     const $toEl = document.querySelector(toEl);
@@ -31,20 +27,39 @@ const Nav: FC = () => {
         <span>海怪</span>
       </div>
 
-      <ul>
-        {navItems.map((n) => (
+      <ul className={styles.horizontal}>
+        {navItems.map((nav) => (
           <li
-            key={n.toEl}
-            className={classNames({ [styles.active]: n.toEl === activeItem })}
-            onClick={() => scroll(n.toEl)}
+            key={nav.toEl}
+            className={classNames({ [styles.active]: nav.toEl === activeItem })}
+            onClick={() => scroll(nav.toEl)}
           >
-            {n.text}
+            {nav.text}
           </li>
         ))}
         <li>
           <a href="https://yanhaixiang.com/resume-generator/" target="_blank" rel="noreferrer">简历</a>
         </li>
+
+        {/* 缩小版菜单栏 */}
+        <li className={styles.navBtn} onClick={() => setVerticalVisible(!verticalVisible)}>
+          {verticalVisible ? <CloseOutlined /> : <MenuOutlined /> }
+        </li>
       </ul>
+
+      {verticalVisible && (
+        <ul className={styles.vertical}>
+          {navItems.map((nav) => (
+            <li
+              key={nav.toEl}
+              className={classNames({ [styles.active]: nav.toEl === activeItem })}
+              onClick={() => scroll(nav.toEl)}
+            >
+              {nav.text}
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 };
