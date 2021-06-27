@@ -27,6 +27,7 @@
   height: 100vh;
   background-color: #ffffff;
   background-image: url('../../assets/svgs/home.svg');
+  transform: translateZ(0);
 
   .content {
     display: flex;

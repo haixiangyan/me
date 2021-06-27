@@ -7,7 +7,7 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
 const App: FC = () => (
-  <div id="home">
+  <div id="app">
     <Nav />
 
     <main>
