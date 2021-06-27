@@ -64,11 +64,10 @@
   @media screen and (max-width: 992px) {
     ul.horizontal {
       li {
-        visibility: hidden;
+        display: none;
 
         &.navBtn {
           display: block;
-          visibility: visible;
         }
       }
     }

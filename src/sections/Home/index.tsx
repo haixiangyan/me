@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Col, Row } from 'antd';
 import styles from './styles.module.scss';
 import HandDown from './HandDown';
 import useTyped from '../../hooks/useTyped';
@@ -14,19 +15,21 @@ const Home: FC = () => {
 
   return (
     <section className={styles.home}>
-      <div className={styles.content}>
-        <div className={styles.intro}>
+      <Row className={styles.content}>
+        <Col span={24} md={15} className={styles.intro}>
           <span ref={el} />
-        </div>
+        </Col>
 
-        <figure className={styles.ballWrapper}>
+        <Col span={24} md={9} className={styles.ballWrapper}>
           <div className={styles.ball}>
             H
           </div>
-        </figure>
-      </div>
+        </Col>
 
-      <HandDown />
+        <Col className={styles.next} span={24}>
+          <HandDown />
+        </Col>
+      </Row>
     </section>
   );
 };
