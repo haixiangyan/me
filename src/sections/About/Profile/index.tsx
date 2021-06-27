@@ -8,7 +8,7 @@ import HighLight from '../../../components/HighLight';
 
 const Profile = () => (
   <Row gutter={36} className={styles.profile}>
-    <Col span={11} className={styles.details}>
+    <Col lg={{ span: 11, order: 1 }} span={20} order={3} className={styles.details}>
       <Paragraph>
         一名
         {' '}
@@ -47,11 +47,11 @@ const Profile = () => (
       </Paragraph>
     </Col>
 
-    <Col span={7} className={styles.avatar}>
+    <Col lg={{ span: 7, order: 2 }} span={14} order={1} className={styles.avatar}>
       <img src={avatar} alt="头像" />
     </Col>
 
-    <Col span={5} className={styles.name}>
+    <Col lg={{ span: 5, order: 3 }} span={24} order={2} className={styles.name}>
       <p>海</p>
       <p>怪</p>
     </Col>
