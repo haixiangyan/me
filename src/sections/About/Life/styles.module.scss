@@ -3,6 +3,11 @@
 }
 
 .position {
-  font-style: italic;
-  color: #37ffe1;
+  white-space: nowrap;
+  overflow: visible;
+
+  .typed {
+    font-style: italic;
+    color: #37ffe1;
+  }
 }

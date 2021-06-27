@@ -78,12 +78,12 @@ const Life = () => {
         time="7月"
         header={[
           '深圳，广东',
-          <span>
+          <span className={styles.position}>
             入职
             <HighLight>腾讯</HighLight>
             {' '}
             @
-            <span className={styles.position} ref={el} />
+            <span className={styles.typed} ref={el} />
             {' '}
             🐧
           </span>,
