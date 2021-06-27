@@ -17,6 +17,10 @@
   padding: 24px;
   transition: transform 0.3s;
 
+  @media screen and (max-width: 786px) {
+    padding: 24px 0;
+  }
+
   &:hover {
     transform: scale(1.05);
   }
