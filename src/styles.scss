@@ -24,7 +24,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -43,17 +43,11 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-// 自定义样式
-p {
-  font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
 }
 
 // 自定义动画
