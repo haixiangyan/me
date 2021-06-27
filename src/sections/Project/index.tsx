@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-css';
 import { Modal, Tabs } from 'antd';
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import styles from './styles.module.scss';
 import Title from '../../components/Title';
 import Section from '../../components/Section';
@@ -13,18 +13,26 @@ import {
 
 const { TabPane } = Tabs;
 
+const getColumnNum = () => {
+  const { innerWidth } = window;
+  if (innerWidth < mdPx) {
+    return 1;
+  }
+  if (innerWidth < lgPx) {
+    return 2;
+  }
+  return 3;
+}
+
 const Project = () => {
   const [moreVisible, setMoreVisible] = useState<boolean>(false);
-  const [columns] = useState<number>(() => {
-    const { innerWidth } = window;
-    if (innerWidth < mdPx) {
-      return 1;
-    }
-    if (innerWidth < lgPx) {
-      return 2;
-    }
-    return 3;
-  });
+  const [columnNum, setColumnNum] = useState<number>(getColumnNum);
+
+  useEffect(() => {
+    const onSizeChanged = () => setColumnNum(getColumnNum())
+    window.addEventListener('resize', onSizeChanged);
+    return () => window.removeEventListener('resize', onSizeChanged)
+  }, [])
 
   return (
     <Section id="project" className={styles.project}>
@@ -32,7 +40,7 @@ const Project = () => {
       <Title tag="h3">超多好玩、沙雕的项目</Title>
 
       <Masonry
-        breakpointCols={columns}
+        breakpointCols={columnNum}
         className={styles.projectList}
         columnClassName={styles.projectListColumn}
       >
