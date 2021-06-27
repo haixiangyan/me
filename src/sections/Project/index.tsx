@@ -1,39 +1,18 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-css';
 import { Modal, Tabs } from 'antd';
-import { useEffect, useState } from 'react';
-import throttle from 'lodash/throttle';
+import { useState } from 'react';
 import styles from './styles.module.scss';
 import Title from '../../components/Title';
 import Section from '../../components/Section';
 import Item from './Item';
 import Button from '../../components/Button';
-import {
-  projects, moreProjects, mdPx, lgPx,
-} from './constants';
+import { projects, moreProjects } from './constants';
 
 const { TabPane } = Tabs;
 
-const getColumnNum = () => {
-  const { innerWidth } = window;
-  if (innerWidth < mdPx) {
-    return 1;
-  }
-  if (innerWidth < lgPx) {
-    return 2;
-  }
-  return 3;
-};
-
 const Project = () => {
   const [moreVisible, setMoreVisible] = useState<boolean>(false);
-  const [columnNum, setColumnNum] = useState<number>(getColumnNum);
-
-  useEffect(() => {
-    const onSizeChanged = throttle(() => setColumnNum(getColumnNum()), 200);
-    window.addEventListener('resize', onSizeChanged);
-    return () => window.removeEventListener('resize', onSizeChanged);
-  }, []);
 
   return (
     <Section id="project" className={styles.project}>
@@ -41,11 +20,13 @@ const Project = () => {
       <Title tag="h3">超多好玩、沙雕的项目</Title>
 
       <Masonry
-        breakpointCols={columnNum}
+        breakpointCols={{ default: 3, 992: 2, 786: 1 }}
         className={styles.projectList}
         columnClassName={styles.projectListColumn}
       >
-        {projects.map((project) => (<Item key={project.logo} {...project} />))}
+        {projects.map((project, index) => (
+          <Item {...project} key={project.logo} style={{ animationDelay: `${index * 300}ms` }} />
+        ))}
         <div className={styles.more}>
           <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)}>更多</Button>
         </div>

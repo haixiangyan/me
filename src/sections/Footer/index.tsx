@@ -9,7 +9,6 @@ import antd from '../../assets/icons/antd.png';
 import eslint from '../../assets/icons/eslint.png';
 import ts from '../../assets/icons/ts.png';
 import sass from '../../assets/icons/sass.png';
-import lodash from '../../assets/svgs/lodash.svg';
 
 const techs = [
   {
@@ -31,10 +30,6 @@ const techs = [
   {
     content: 'Sass',
     image: sass,
-  },
-  {
-    content: 'Lodash',
-    image: lodash,
   },
 ];
 

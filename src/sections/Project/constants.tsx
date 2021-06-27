@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image } from 'antd';
-import { ItemProps } from './Item';
+import { ProjectItem } from './Item';
 import HighLight from '../../components/HighLight';
 
 // 造轮子
@@ -62,7 +62,7 @@ import juejin from '../../assets/svgs/juejin.svg';
 import zhihu from '../../assets/svgs/zhihu.svg';
 
 // 可视项目
-export const projects: ItemProps[] = [
+export const projects: ProjectItem[] = [
   {
     logo: npm,
     badges: [

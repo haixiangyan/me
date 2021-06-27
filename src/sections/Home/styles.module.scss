@@ -73,8 +73,11 @@
         background: red;
         color: white;
         border-radius: 50%;
+        transform: translateY(120px);
+        opacity: 0;
         transition: all .3s;
         animation: goUp 1.5s;
+        animation-fill-mode: forwards;
 
         &:before{
           content: "";
