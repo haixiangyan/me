@@ -24,7 +24,7 @@ const Nav: FC = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.title}>
-        <span>海怪</span>
+        <span>Me</span>
       </div>
 
       <ul className={styles.horizontal}>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-css';
 import { Modal, Tabs } from 'antd';
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import throttle from 'lodash/throttle';
 import styles from './styles.module.scss';
 import Title from '../../components/Title';
@@ -23,17 +23,17 @@ const getColumnNum = () => {
     return 2;
   }
   return 3;
-}
+};
 
 const Project = () => {
   const [moreVisible, setMoreVisible] = useState<boolean>(false);
   const [columnNum, setColumnNum] = useState<number>(getColumnNum);
 
   useEffect(() => {
-    const onSizeChanged = throttle(() => setColumnNum(getColumnNum()), 200)
+    const onSizeChanged = throttle(() => setColumnNum(getColumnNum()), 200);
     window.addEventListener('resize', onSizeChanged);
-    return () => window.removeEventListener('resize', onSizeChanged)
-  }, [])
+    return () => window.removeEventListener('resize', onSizeChanged);
+  }, []);
 
   return (
     <Section id="project" className={styles.project}>
