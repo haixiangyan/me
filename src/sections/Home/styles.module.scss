@@ -10,6 +10,17 @@
   }
 }
 
+@keyframes goUp {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .home {
   padding: 56px 24px 48px;
   position: relative;
@@ -62,6 +73,7 @@
         color: white;
         border-radius: 50%;
         transition: all .3s;
+        animation: goUp 1.5s;
 
         &:before{
           content: "";

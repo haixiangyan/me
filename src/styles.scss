@@ -33,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   line-height: 1;
 }
 ol, ul {
