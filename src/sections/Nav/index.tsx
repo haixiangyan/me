@@ -11,7 +11,7 @@ export interface NavItem {
 
 const Nav: FC = () => {
   const [activeItem, setActiveItem] = useState<string>('#home');
-  const [verticalVisible, setVerticalVisible] = useState<boolean>(true);
+  const [verticalVisible, setVerticalVisible] = useState<boolean>(false);
 
   const scroll = (toEl: string) => {
     const $toEl = document.querySelector(toEl);

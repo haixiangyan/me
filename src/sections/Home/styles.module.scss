@@ -97,4 +97,22 @@
     transform: translateX(-50%);
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1024px) {
+    .content {
+      .intro {
+        span {
+          font-size: 2em;
+        }
+      }
+      .ballWrapper {
+        padding: 0;
+        .ball {
+          height: 250px;
+          width: 250px;
+          font-size: 5em;
+        }
+      }
+    }
+  }
 }

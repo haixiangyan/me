@@ -53,4 +53,11 @@
       transform: scale(2);
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

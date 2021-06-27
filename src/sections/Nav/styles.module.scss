@@ -13,6 +13,7 @@
 
   .title {
     flex: 1;
+
     span {
       padding: 2px 4px;
       font-size: 1.5em;
@@ -58,25 +59,25 @@
   }
 
   @media screen and (max-width: 1024px) {
-    & {
-      ul.horizontal {
-        li {
-          visibility: hidden;
-          &.navBtn {
-            visibility: visible;
-          }
+    ul.horizontal {
+      li {
+        visibility: hidden;
+
+        &.navBtn {
+          visibility: visible;
         }
       }
+    }
 
-      ul.vertical {
-        border-top: 1px solid #eee;
-        display: flex;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-        li {
-          text-align: center;
-          background: white;
-          letter-spacing: 2px;
-        }
+    ul.vertical {
+      border-top: 1px solid #eee;
+      display: flex;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+
+      li {
+        text-align: center;
+        background: white;
+        letter-spacing: 2px;
       }
     }
   }
