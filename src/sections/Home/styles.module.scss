@@ -123,7 +123,11 @@
     .content {
       .intro {
         padding-left: 0;
-        padding-top: 2vh;
+        padding-top: 10px;
+        span {
+          line-height: 1.4em;
+          font-size: 1.7em;
+        }
       }
     }
   }
