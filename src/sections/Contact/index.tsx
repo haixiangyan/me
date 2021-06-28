@@ -6,6 +6,8 @@ import Title from '../../components/Title';
 import styles from './styles.module.scss';
 import { contacts } from './constants';
 
+const emailStr = 'mailto:haixiang6123@gmail.com?subject=想说啥就说啥吧&body=大胆说出你的想法~';
+
 const Contact = () => (
   <Section id="contact" className={styles.contact}>
     <Title tag="h2">找到我 🙋‍♂️</Title>
@@ -25,7 +27,11 @@ const Contact = () => (
         <p className={styles.subTitle}>👍 求点赞，求关注，求转发，一键三连！</p>
       </RubberBand>
 
-      <Button className={styles.emailBtn} bg="#7d0000">
+      <Button
+        onClick={() => window.location.href = emailStr}
+        className={styles.emailBtn}
+        bg="#7d0000"
+      >
         haixiang6123@gmail.com
       </Button>
     </div>

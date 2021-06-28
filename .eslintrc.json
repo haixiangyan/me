@@ -31,6 +31,7 @@
     "react/button-has-type": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "no-use-before-define": "off",
+    "no-return-assign": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
