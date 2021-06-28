@@ -12,6 +12,8 @@ interface Props {
   node?: ReactChild;
 }
 
+const isMobile = window.innerWidth <= 786;
+
 const TimelineItem: FC<Props> = (props) => {
   const {
     direction = 'left', time, header, content, node,
@@ -22,7 +24,7 @@ const TimelineItem: FC<Props> = (props) => {
   const contents = useMemo(() => (Array.isArray(content) ? content : [content]), [content]);
 
   return (
-    <Fade left={direction === 'left'} right={direction === 'right'}>
+    <Fade bottom={isMobile} left={!isMobile && direction === 'left'} right={!isMobile && direction === 'right'}>
       <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
         <div className={styles.node}>
           {node || <div className={styles.defaultNode} />}
