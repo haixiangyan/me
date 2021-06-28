@@ -34,7 +34,6 @@
         text-align: left;
         font-size: 62px;
         font-weight: 600;
-        text-shadow: 0 1px 2px rgb(0 34 69 / 70%);
         color: #002245;
         line-height: 1.5;
         // typed.js 的光标样式
@@ -65,12 +64,6 @@
         transform: translateY(120px);
         opacity: 0;
         transition: all .3s;
-        :global {
-          & {
-            animation: goUp 1.5s;
-            animation-fill-mode: forwards;
-          }
-        }
 
         &:before{
           content: "";

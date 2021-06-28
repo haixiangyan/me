@@ -1,4 +1,5 @@
 import React, { FC, ReactChild, useMemo } from 'react';
+import Fade from 'react-reveal/Fade';
 import classNames from 'classnames';
 import styles from './styles.module.scss';
 import Paragraph from '../Paragraph';
@@ -21,29 +22,31 @@ const TimelineItem: FC<Props> = (props) => {
   const contents = useMemo(() => (Array.isArray(content) ? content : [content]), [content]);
 
   return (
-    <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
-      <div className={styles.node}>
-        {node || <div className={styles.defaultNode} />}
-      </div>
+    <Fade left={direction === 'left'} right={direction === 'right'}>
+      <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
+        <div className={styles.node}>
+          {node || <div className={styles.defaultNode} />}
+        </div>
 
-      <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
-        {times && times.map((timeItem) => (
-          <Paragraph key={timeItem ? timeItem.toString() : 0} className={styles.time}>
-            {timeItem}
-          </Paragraph>
-        ))}
-        {headers && headers.map((headerItem) => (
-          <Paragraph key={headerItem ? headerItem.toString() : 0} className={styles.header}>
-            {headerItem}
-          </Paragraph>
-        ))}
-        {contents && contents.map((contentItem) => (
-          <Paragraph key={contentItem ? contentItem.toString() : 0} className={styles.subtext}>
-            {contentItem}
-          </Paragraph>
-        ))}
+        <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
+          {times && times.map((timeItem) => (
+            <Paragraph key={timeItem ? timeItem.toString() : 0} className={styles.time}>
+              {timeItem}
+            </Paragraph>
+          ))}
+          {headers && headers.map((headerItem) => (
+            <Paragraph key={headerItem ? headerItem.toString() : 0} className={styles.header}>
+              {headerItem}
+            </Paragraph>
+          ))}
+          {contents && contents.map((contentItem) => (
+            <Paragraph key={contentItem ? contentItem.toString() : 0} className={styles.subtext}>
+              {contentItem}
+            </Paragraph>
+          ))}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 };
 

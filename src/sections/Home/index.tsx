@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Col, Row } from 'antd';
+import Fade from 'react-reveal/Fade';
 import styles from './styles.module.scss';
 import HandDown from './HandDown';
 import useTyped from '../../hooks/useTyped';
@@ -21,9 +22,11 @@ const Home: FC = () => {
         </Col>
 
         <Col span={24} md={9} className={styles.ballWrapper}>
-          <div className={styles.ball}>
-            H
-          </div>
+          <Fade bottom>
+            <div className={styles.ball}>
+              H
+            </div>
+          </Fade>
         </Col>
 
         <Col className={styles.next} span={24}>
