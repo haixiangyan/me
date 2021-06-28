@@ -1,4 +1,5 @@
 import React, { AllHTMLAttributes, createElement, FC } from 'react';
+import Fade from 'react-reveal/Fade';
 import classNames from 'classnames';
 import styles from './styles.module.scss';
 
@@ -12,9 +13,11 @@ const Title: FC<Props> = (props) => {
   } = props;
 
   return (
-    <div {...restProps} className={classNames(className, styles.title)}>
-      {createElement(`${tag}`, { children })}
-    </div>
+    <Fade bottom>
+      <div {...restProps} className={classNames(className, styles.title)}>
+        {createElement(`${tag}`, { children })}
+      </div>
+    </Fade>
   );
 };
 

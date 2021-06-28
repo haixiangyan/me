@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-css';
+import Fade from 'react-reveal/Fade';
 import { Modal, Tabs } from 'antd';
 import { useState } from 'react';
 import styles from './styles.module.scss';
@@ -27,9 +28,11 @@ const Project = () => {
         {projects.map((project) => (
           <Item {...project} key={project.logo} />
         ))}
-        <div className={styles.more}>
-          <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)}>更多</Button>
-        </div>
+        <Fade bottom>
+          <div className={styles.more}>
+            <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)}>更多</Button>
+          </div>
+        </Fade>
       </Masonry>
 
       <Title className={styles.footerTitle} tag="h3">

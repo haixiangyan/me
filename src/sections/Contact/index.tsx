@@ -1,4 +1,5 @@
 import React from 'react';
+import RubberBand from 'react-reveal/RubberBand';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
 import Title from '../../components/Title';
@@ -20,7 +21,9 @@ const Contact = () => (
         ))}
       </ul>
 
-      <Title className={styles.subTitle} tag="h3">👍 求点赞，求关注，求转发，一键三连！</Title>
+      <RubberBand top>
+        <p className={styles.subTitle}>👍 求点赞，求关注，求转发，一键三连！</p>
+      </RubberBand>
 
       <Button className={styles.emailBtn} bg="#7d0000">
         haixiang6123@gmail.com
