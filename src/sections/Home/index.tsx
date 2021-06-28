@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 import { Col, Row } from 'antd';
 import Fade from 'react-reveal/Fade';
+import lottie from 'lottie-web';
 import styles from './styles.module.scss';
 import HandDown from './HandDown';
 import useTyped from '../../hooks/useTyped';
@@ -13,6 +14,20 @@ const strings = [
 
 const Home: FC = () => {
   const el = useTyped(strings);
+  const animationRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (animationRef.current) {
+      lottie.loadAnimation({
+        container: animationRef.current, // Required
+        path: 'https://assets3.lottiefiles.com/private_files/lf30_lgesk2nm.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: 'Hello World', // Name for future reference. Optional.
+      });
+    }
+  }, []);
 
   return (
     <section className={styles.home}>
@@ -24,7 +39,7 @@ const Home: FC = () => {
         <Col span={24} md={9} className={styles.ballWrapper}>
           <Fade bottom>
             <div className={styles.ball}>
-              H
+              <div ref={animationRef} />
             </div>
           </Fade>
         </Col>
