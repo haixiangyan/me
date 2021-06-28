@@ -1,0 +1,37 @@
+.project {
+  padding: 48px 24px;
+  background-color: black;
+  background-image: url("../../assets/svgs/project.svg");
+
+  .projectList {
+    display: flex;
+    list-style-type: none !important;
+  }
+
+  .projectListColumn {
+    background-clip: padding-box;
+  }
+
+  .more {
+    padding: 24px;
+    .moreBtn {
+      font-size: 2em;
+      width: 100%;
+    }
+  }
+
+  .footerTitle {
+    margin-top: 60px;
+    i {
+      font-style: italic
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    & {
+      .more {
+        padding: 30px 0;
+      }
+    }
+  }
+}

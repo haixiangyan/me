@@ -1,32 +1,25 @@
 #!/usr/bin/env sh
 
-# 当发生错误时中止脚本
+# abort on errors
 set -e
 
-# 构建
-yarn build
+# build
+yarn run build
 
-# cd 到构建输出的目录下
-cd dist
+# navigate into the build output directory
+cd build
 
-git init
-
-# 部署到自定义域域名
+# if you are deploying to a custom domain
 echo 'yanhaixiang.com' > CNAME
 
+git init
 git add -A
 git commit -m 'deploy'
 
-# 部署到 Github
+# if you are deploying to https://<USERNAME>.github.io
 git push -f git@github.com:Haixiang6123/Haixiang6123.github.io.git master
 
-# 部署到自定义域域名
-echo 'yanhaixiang.cn' > CNAME
-
-git add -A
-git commit -m 'deploy'
-
-# 部署到 Coding
-git push -f git@e.coding.net:hai_guai/hai_guai.coding.me.git master
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
 cd -

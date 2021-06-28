@@ -1,0 +1,19 @@
+.button {
+  position: relative;
+  padding: 8px 30px 14px;
+  border: 1px solid black;
+  outline: none;
+  color: white;
+  background: black;
+  transition: all .3s;
+  font-size: 1.5em;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 50%);
+
+  &:hover {
+    background: white;
+  }
+}

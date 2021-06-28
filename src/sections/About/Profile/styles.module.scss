@@ -1,0 +1,48 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .details {
+    text-align: center;
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    img {
+      width: 130px;
+    }
+  }
+
+  .avatar {
+    padding: 50px 0;
+    img {
+      border-radius: 50%;
+      max-width: 100%;
+      box-shadow: 0 7px 17px 2px rgb(0 0 0 / 50%);
+    }
+  }
+
+  .lottie {
+    height: 200px;
+  }
+
+  .name {
+    p {
+      margin-bottom: 48px;
+      font-size: 11em;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      font-family: HongLei, SiYuanHeiTi, Helvetica, Arial, sans-serif;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .name {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

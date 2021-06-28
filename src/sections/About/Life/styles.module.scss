@@ -1,0 +1,13 @@
+.customNode {
+  font-size: 2em;
+}
+
+.position {
+  white-space: nowrap;
+  overflow: visible;
+
+  .typed {
+    font-style: italic;
+    color: #37ffe1;
+  }
+}
