@@ -1,3 +1,3 @@
 # 我的个人网站
 
-Welcome!
+Welcome！请看 [https://yanhaixiang.com](https://yanhaixiang.com) 。
