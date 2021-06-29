@@ -41,7 +41,7 @@ const Profile = () => {
 
         <Fade bottom>
           <Paragraph>
-            经常天马行空想一些沙雕 idea，然后实现出来 🌟。偶尔累了弹一下吉他 🎸，或者畅游 <HighLight>守望先锋</HighLight> 的鱼塘 🎮。
+            经常天马行空想一些沙雕 idea，然后实现出来 🌟。偶尔累了就弹一下吉他 🎸，或者畅游 <HighLight>守望先锋</HighLight> 的鱼塘 🎮。
             喜欢好看，酷炫的东西，可能这就是喜欢前端的原因吧 @_@。
             以前会折腾很多东西，比如 Vim、五笔打字、魔方...... 现在嘛，还是打打游戏，睡睡觉舒服 🤪。
           </Paragraph>
