@@ -1,4 +1,5 @@
 import React from 'react';
+import Flip from 'react-reveal/Flip';
 import RubberBand from 'react-reveal/RubberBand';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
@@ -14,13 +15,15 @@ const Contact = () => (
 
     <div className={styles.container}>
       <ul className={styles.contactList}>
-        {contacts.map((contact) => (
-          <li key={contact.image}>
-            <a href={contact.url} target="_blank" rel="noreferrer">
-              <img src={contact.image} alt="contactImage" />
-            </a>
-          </li>
-        ))}
+        <Flip cascade left>
+          {contacts.map((contact) => (
+            <li key={contact.image}>
+              <a href={contact.url} target="_blank" rel="noreferrer">
+                <img src={contact.image} alt="contactImage" />
+              </a>
+            </li>
+          ))}
+        </Flip>
       </ul>
 
       <RubberBand top>
