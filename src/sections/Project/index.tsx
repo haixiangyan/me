@@ -28,7 +28,7 @@ const Project = () => {
         {projects.map((project) => (
           <Item {...project} key={project.logo} />
         ))}
-        <Fade bottom>
+        <Fade>
           <div className={styles.more}>
             <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)}>更多</Button>
           </div>
