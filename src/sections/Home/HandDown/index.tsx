@@ -15,7 +15,6 @@ const HandDown = () => {
       <div className={styles.handDown} onClick={next}>
         <svg
           data-v-13cb14ba=""
-          aria-hidden="true"
           focusable="false"
           data-prefix="fas"
           data-icon="hand-point-down"
