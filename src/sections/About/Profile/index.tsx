@@ -1,27 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Col, Row } from 'antd';
 import Fade from 'react-reveal/Fade';
-import lottie from 'lottie-web';
 import styles from './styles.module.scss';
 import avatar from '../../../assets/images/avatar.jpg';
 import Paragraph from '../../../components/Paragraph';
 import HighLight from '../../../components/HighLight';
+import useLottie from '../../../hooks/useLottie';
+
+const cubeLottie = 'https://assets9.lottiefiles.com/private_files/lf30_ijlzmjq6.json';
 
 const Profile = () => {
-  const animationRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (animationRef.current) {
-      lottie.loadAnimation({
-        container: animationRef.current, // Required
-        path: 'https://assets9.lottiefiles.com/private_files/lf30_ijlzmjq6.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: 'Hello World', // Name for future reference. Optional.
-      });
-    }
-  }, []);
+  const cubeRef = useLottie(cubeLottie);
 
   return (
     <Row gutter={36} className={styles.profile}>
@@ -36,7 +25,7 @@ const Profile = () => {
           </Paragraph>
         </Fade>
 
-        <div className={styles.lottie} ref={animationRef} />
+        <div className={styles.lottie} ref={cubeRef} />
 
         <Fade bottom>
           <Paragraph>

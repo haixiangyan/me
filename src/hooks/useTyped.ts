@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Typed, { TypedOptions } from 'typed.js';
 
-function useTyped(strings: string[], extra?: TypedOptions) {
+const useTyped = (strings: string[], extra?: TypedOptions) => {
   const el = useRef<HTMLElement | null>(null);
   const typed = useRef<Typed | null>(null);
 
@@ -19,6 +19,6 @@ function useTyped(strings: string[], extra?: TypedOptions) {
   }, [strings]);
 
   return el;
-}
+};
 
 export default useTyped;

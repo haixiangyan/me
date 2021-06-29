@@ -1,10 +1,10 @@
-import React, { FC, useEffect, useRef } from 'react';
+import React, { FC } from 'react';
 import { Col, Row } from 'antd';
 import Fade from 'react-reveal/Fade';
-import lottie from 'lottie-web';
 import styles from './styles.module.scss';
-import HandDown from './HandDown';
 import useTyped from '../../hooks/useTyped';
+import useLottie from '../../hooks/useLottie';
+import { arrowDownLottie, sheepLottie } from './constants';
 
 const strings = [
   '哈喽，我是帅哥',
@@ -14,20 +14,15 @@ const strings = [
 
 const Home: FC = () => {
   const el = useTyped(strings);
-  const animationRef = useRef<HTMLDivElement | null>(null);
+  const arrowDownLottieRef = useLottie(arrowDownLottie);
+  const sheepLottieRef = useLottie(sheepLottie);
 
-  useEffect(() => {
-    if (animationRef.current) {
-      lottie.loadAnimation({
-        container: animationRef.current, // Required
-        path: 'https://assets3.lottiefiles.com/private_files/lf30_lgesk2nm.json', // Required
-        renderer: 'svg', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: 'Hello World', // Name for future reference. Optional.
-      });
+  const next = () => {
+    const $about = document.querySelector('#about');
+    if ($about) {
+      $about.scrollIntoView({ behavior: 'smooth' });
     }
-  }, []);
+  };
 
   return (
     <section id="home" className={styles.home}>
@@ -39,13 +34,13 @@ const Home: FC = () => {
         <Col span={24} md={9} className={styles.ballWrapper}>
           <Fade bottom>
             <div className={styles.ball}>
-              <div ref={animationRef} />
+              <div ref={sheepLottieRef} />
             </div>
           </Fade>
         </Col>
 
         <Col className={styles.next} span={24}>
-          <HandDown />
+          <div ref={arrowDownLottieRef} className={styles.handDown} onClick={next} />
         </Col>
       </Row>
     </section>
