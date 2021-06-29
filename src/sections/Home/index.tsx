@@ -30,7 +30,7 @@ const Home: FC = () => {
   }, []);
 
   return (
-    <section className={styles.home}>
+    <section id="home" className={styles.home}>
       <Row className={styles.content}>
         <Col span={24} md={15} className={styles.intro}>
           <span ref={el} />
