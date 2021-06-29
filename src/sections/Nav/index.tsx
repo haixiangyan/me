@@ -27,6 +27,7 @@ const Nav: FC = () => {
         <span>Me</span>
       </div>
 
+      {/* 横版 nav */}
       <ul className={styles.horizontal}>
         {navItems.map((nav) => (
           <li
@@ -47,13 +48,17 @@ const Nav: FC = () => {
         </li>
       </ul>
 
+      {/* 竖版 nav */}
       {verticalVisible && (
         <ul className={styles.vertical}>
           {navItems.map((nav) => (
             <li
               key={nav.toEl}
               className={classNames({ [styles.active]: nav.toEl === activeItem })}
-              onClick={() => scroll(nav.toEl)}
+              onClick={() => {
+                setVerticalVisible(false);
+                scroll(nav.toEl);
+              }}
             >
               {nav.text}
             </li>
