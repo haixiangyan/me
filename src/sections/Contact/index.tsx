@@ -1,5 +1,5 @@
 import React from 'react';
-import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 import RubberBand from 'react-reveal/RubberBand';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
@@ -14,7 +14,7 @@ const Contact = () => (
     <Title tag="h2">找到我 🙋‍♂️</Title>
 
     <div className={styles.container}>
-      <Flip cascade left>
+      <Fade cascade top>
         <ul className={styles.contactList}>
           {contacts.map((contact) => (
             <li key={contact.image}>
@@ -24,7 +24,7 @@ const Contact = () => (
             </li>
           ))}
         </ul>
-      </Flip>
+      </Fade>
 
       <RubberBand top>
         <p className={styles.subTitle}>👍 求点赞，求关注，求转发，一键三连！</p>
