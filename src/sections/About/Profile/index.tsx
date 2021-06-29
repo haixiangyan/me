@@ -28,22 +28,12 @@ const Profile = () => {
       <Col lg={{ span: 11, order: 1 }} span={24} order={3} className={styles.details}>
         <Fade bottom>
           <Paragraph>
-            一名
-            <HighLight>前端开发</HighLight>
-            ，广东佛山人，现在在
-            <HighLight>腾讯@深圳</HighLight>
-            搬砖。
-            别人都叫我
-            <HighLight>海怪</HighLight>
-            ，游戏里一般叫 Monster 👻。
+            一条 <HighLight>前端开发</HighLight> ，广东佛山 👴，现在在 <HighLight>腾讯 @ 深圳</HighLight> 搬砖
+            。别人都叫我 <HighLight>海怪</HighLight> ，游戏里一般叫 Monster 👻。
           </Paragraph>
           <Paragraph>
-            本科在
-            <HighLight>东北大学</HighLight>
-            上了4年学，又去了
-            <HighLight>加州大学（尔湾分校）</HighLight>
-            读了2年硕。
-            看了不少书、刷了不少题、去了不少地方，感叹过世界之大。
+            高考之后，飞去 <HighLight>东北大学 @ 沈阳</HighLight> 上了 4 年学，毕业之后去 <HighLight>加州大学 @ 尔湾分校</HighLight> 读了 2 年研究生。
+            刷了不少 LeetCode、掉了不少头发、去过不少地方，感叹过世界之大。
           </Paragraph>
         </Fade>
 
@@ -51,16 +41,13 @@ const Profile = () => {
 
         <Fade bottom>
           <Paragraph>
-            平常喜欢写代码 👨‍💻，偶尔会弹一下吉他 🎸，或者打打
-            <HighLight>守望先锋</HighLight>
-            的鱼塘 🎮。
-            个人喜欢好看，酷炫的东西，可能这就是喜欢前端的原因吧 @_@。
-            以前爱折腾，折腾过 Vim、五笔、魔方、...... 现在累了，还是躺着舒服。
+            经常天马行空想一些沙雕 idea，然后实现出来 🌟。偶尔累了弹一下吉他 🎸，或者畅游 <HighLight>守望先锋</HighLight> 的鱼塘 🎮。
+            喜欢好看，酷炫的东西，可能这就是喜欢前端的原因吧 @_@。
+            以前会折腾很多东西，比如 Vim、五笔打字、魔方...... 现在嘛，还是打打游戏，睡睡觉舒服 🤪。
           </Paragraph>
           <Paragraph>
-            工作之后常常会想
-            <HighLight>写代码的意义是什么</HighLight>
-            ：搞钱 💰？还是做一个优秀的项目？好像是又好像都不是，或许写代码可以做更多有意义的事情。🤩
+            工作之后常常会想 <HighLight>写代码的意义是什么</HighLight> ：搞钱 💰？
+            还是做一个优秀的项目？好像是，又好像都不是，或许写代码可以做更多有意义的事情？
           </Paragraph>
         </Fade>
       </Col>

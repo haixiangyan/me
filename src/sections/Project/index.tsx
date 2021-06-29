@@ -30,17 +30,13 @@ const Project = () => {
         ))}
         <Fade>
           <div className={styles.more}>
-            <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)}>更多</Button>
+            <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)} bg="#15a000">更多</Button>
           </div>
         </Fade>
       </Masonry>
 
       <Title className={styles.footerTitle} tag="h3">
-        😋 更多好玩，沙雕的项目（和
-        {' '}
-        <i>文章</i>
-        {' '}
-        ）正在路上 🕑
+        😋 更多好玩，有趣的项目（和 <i>文章</i> ）正在路上 🕑
       </Title>
 
       <Modal width="100%" title="更多项目" visible={moreVisible} footer={null} onCancel={() => setMoreVisible(false)}>

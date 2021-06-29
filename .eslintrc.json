@@ -32,6 +32,7 @@
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "no-use-before-define": "off",
     "no-return-assign": "off",
+    "react/jsx-one-expression-per-line": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
