@@ -14,8 +14,8 @@ const Contact = () => (
     <Title tag="h2">找到我 🙋‍♂️</Title>
 
     <div className={styles.container}>
-      <ul className={styles.contactList}>
-        <Flip cascade left>
+      <Flip cascade left>
+        <ul className={styles.contactList}>
           {contacts.map((contact) => (
             <li key={contact.image}>
               <a href={contact.url} target="_blank" rel="noreferrer">
@@ -23,8 +23,8 @@ const Contact = () => (
               </a>
             </li>
           ))}
-        </Flip>
-      </ul>
+        </ul>
+      </Flip>
 
       <RubberBand top>
         <p className={styles.subTitle}>👍 求点赞，求关注，求转发，一键三连！</p>
