@@ -13,8 +13,8 @@ const Contact = () => (
   <Section id="contact" className={styles.contact}>
     <Title tag="h2">找到我 🙋‍♂️</Title>
 
-    <div className={styles.container}>
-      <Fade cascade top>
+    <Fade bottom>
+      <div className={styles.container}>
         <ul className={styles.contactList}>
           {contacts.map((contact) => (
             <li key={contact.image}>
@@ -24,20 +24,20 @@ const Contact = () => (
             </li>
           ))}
         </ul>
-      </Fade>
 
-      <RubberBand top>
-        <p className={styles.subTitle}>👍 求点赞，求关注，求转发，一键三连！</p>
-      </RubberBand>
+        <RubberBand top>
+          <p className={styles.subTitle}>👍 求点赞，求关注，求转发，一键三连！</p>
+        </RubberBand>
 
-      <Button
-        onClick={() => window.location.href = emailStr}
-        className={styles.emailBtn}
-        bg="#7d0000"
-      >
-        haixiang6123@gmail.com
-      </Button>
-    </div>
+        <Button
+          onClick={() => window.location.href = emailStr}
+          className={styles.emailBtn}
+          bg="#7d0000"
+        >
+          haixiang6123@gmail.com
+        </Button>
+      </div>
+    </Fade>
   </Section>
 );
 

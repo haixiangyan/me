@@ -10,6 +10,30 @@
   }
 }
 
+@keyframes wobble {
+  0% {
+    transform: translateY(0%);
+  }
+  15% {
+    transform: translateY(-25%);
+  }
+  30% {
+    transform: translateY(20%);
+  }
+  45% {
+    transform: translateY(-15%);
+  }
+  60% {
+    transform: translateY(10%);
+  }
+  75% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .contact {
   height: 100vh;
   background-color: #000000;
@@ -61,6 +85,12 @@
 
         img {
           height: 100%;
+        }
+
+        &:hover {
+          img {
+            animation: wobble 1s ease-in-out;;
+          }
         }
       }
     }
