@@ -18,6 +18,8 @@ export type ProjectItem = {
   techUsed?: Image[];
 }
 
+const isMobile = window.innerWidth <= 786;
+
 const Item: FC<ProjectItem> = (props) => {
   const {
     logo, title, badges, content, description, links, techUsed,
@@ -25,7 +27,7 @@ const Item: FC<ProjectItem> = (props) => {
 
   return (
     <div className={styles.item}>
-      <Fade bottom>
+      <Fade bottom={!isMobile}>
         <div className={styles.container}>
           {logo && <img className={styles.logo} src={logo} alt="logo" />}
 
