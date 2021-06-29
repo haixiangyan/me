@@ -6,11 +6,13 @@ import Button from '../../components/Button';
 import Title from '../../components/Title';
 import styles from './styles.module.scss';
 import { contacts } from './constants';
+import { detectMobile } from '../../utils';
 
+const isMobile = detectMobile();
 const emailStr = 'mailto:haixiang6123@gmail.com?subject=想说啥就说啥吧&body=大胆说出你的想法~';
 
 const Contact = () => (
-  <Section id="contact" className={styles.contact}>
+  <Section id="contact" className={styles.contact} style={{ backgroundAttachment: isMobile ? 'initial' : 'fixed' }}>
     <Title tag="h2">找到我 🙋‍♂️</Title>
 
     <Fade bottom>

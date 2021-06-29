@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import classNames from 'classnames';
 import styles from './styles.module.scss';
 import Paragraph from '../Paragraph';
+import { detectMobile } from '../../utils';
 
 interface Props {
   direction?: 'left' | 'right';
@@ -12,7 +13,7 @@ interface Props {
   node?: ReactChild;
 }
 
-const isMobile = window.innerWidth <= 786;
+const isMobile = detectMobile();
 
 const TimelineItem: FC<Props> = (props) => {
   const {
