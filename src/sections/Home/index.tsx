@@ -40,7 +40,11 @@ const Home: FC = () => {
         </Col>
 
         <Col className={styles.next} span={24}>
-          <div ref={arrowDownLottieRef} className={styles.handDown} onClick={next} />
+          <Fade top>
+            <div className={styles.handDown}>
+              <div ref={arrowDownLottieRef} onClick={next} />
+            </div>
+          </Fade>
         </Col>
       </Row>
     </section>
