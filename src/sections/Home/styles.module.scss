@@ -29,18 +29,43 @@
       padding-left: 28px;
       padding-top: 8vh;
 
-      span {
+      .tencent {
+        color: #0052d9;
+      }
+
+      .sometime {
+        // typed.js 的光标样式
+        & + span {
+          color: #bd0000 !important;
+        }
+      }
+
+      .del {
+        position: relative;
+        &::before, &::after {
+          content: '';
+          background: #bd0000;
+          width: 120%;
+          height: 6px;
+          position: absolute;
+        }
+        &::before {
+          left: -10%;
+          top: 40%;
+        }
+        &::after {
+          left: -10%;
+          bottom: 30%;
+        }
+      }
+
+      p {
         letter-spacing: 2px;
-        font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
         text-align: left;
         font-size: 62px;
         font-weight: 600;
         color: #002245;
         line-height: 1.5;
-        // typed.js 的光标样式
-        &:last-child {
-          color: #bd0000;;
-        }
       }
     }
 

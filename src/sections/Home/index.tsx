@@ -7,16 +7,14 @@ import useLottie from '../../hooks/useLottie';
 import { arrowDownLottie, sheepLottie } from './constants';
 
 const strings = [
-  '哈喽，我是帅哥',
-  '不对不对，让我想想',
-  '我是海怪，<br>'
-    + '一条 <i>腾讯</i> 前端开发，写 <span style="color: #61dafb;">React</span> 的。<br/>'
-    + '拒绝 <del>996</del> 和 <del>内卷</del> ，<br/>'
-    + '偶尔聊聊技术和分享生活。',
+  '聊聊技术',
+  '吹吹水',
+  '打打游戏',
+  '唱唱歌',
 ];
 
 const Home: FC = () => {
-  const el = useTyped(strings, { typeSpeed: 50, backSpeed: 50 });
+  const el = useTyped(strings);
   const arrowDownLottieRef = useLottie(arrowDownLottie);
   const sheepLottieRef = useLottie(sheepLottie);
 
@@ -31,7 +29,10 @@ const Home: FC = () => {
     <section id="home" className={styles.home}>
       <Row className={styles.content}>
         <Col span={24} md={15} className={styles.intro}>
-          <span ref={el} />
+          <p>我是海怪</p>
+          <p>一条 <i className={styles.tencent}>腾讯</i> 前端开发，写 <span>React</span> 的。</p>
+          <p>拒绝 <span className={styles.del}>996</span> 和 <span className={styles.del}>内卷</span></p>
+          <p>偶尔<span className={styles.sometime} ref={el} /></p>
         </Col>
 
         <Col span={24} md={9} className={styles.ballWrapper}>
