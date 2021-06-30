@@ -57,7 +57,7 @@ const Item: FC<ProjectItem> = (props) => {
             <ul>
               {techUsed.map((tech, index) => (
                 <li key={tech.content} style={{ animationDelay: `${index * 300}ms` }}>
-                  <Tooltip placement="bottom" title={tech.content} color="black">
+                  <Tooltip placement="top" title={tech.content} color="black">
                     <img src={tech.image} alt="techUsed" />
                   </Tooltip>
                 </li>

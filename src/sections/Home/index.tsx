@@ -9,11 +9,14 @@ import { arrowDownLottie, sheepLottie } from './constants';
 const strings = [
   '哈喽，我是帅哥',
   '不对不对，让我想想',
-  '我是海怪，<br>一个热爱生活的前端开发。<br/>拒绝996和内卷，<br/>偶尔聊聊技术或分享生活。',
+  '我是海怪，<br>'
+    + '一条 <i>腾讯</i> 前端开发，写 <span style="color: #61dafb;">React</span> 的。<br/>'
+    + '拒绝 <del>996</del> 和 <del>内卷</del> ，<br/>'
+    + '偶尔聊聊技术和分享生活。',
 ];
 
 const Home: FC = () => {
-  const el = useTyped(strings);
+  const el = useTyped(strings, { typeSpeed: 50, backSpeed: 50 });
   const arrowDownLottieRef = useLottie(arrowDownLottie);
   const sheepLottieRef = useLottie(sheepLottie);
 
