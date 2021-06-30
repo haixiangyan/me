@@ -14,7 +14,7 @@ const strings = [
 ];
 
 const Home: FC = () => {
-  const el = useTyped(strings);
+  const el = useTyped(strings, { loop: true });
   const arrowDownLottieRef = useLottie(arrowDownLottie);
   const sheepLottieRef = useLottie(sheepLottie);
 
