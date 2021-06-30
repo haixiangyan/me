@@ -156,6 +156,12 @@
         p {
           font-size: 2em;
         }
+
+        .del {
+          &::before, &::after {
+            top: 50%;
+          }
+        }
       }
 
       .ballWrapper {
@@ -179,6 +185,11 @@
         p {
           line-height: 1.4em;
           font-size: 1.7em;
+        }
+        .del {
+          &::before, &::after {
+            top: 50%;
+          }
         }
       }
     }
