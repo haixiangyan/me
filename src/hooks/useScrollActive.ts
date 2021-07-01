@@ -20,9 +20,13 @@ const useScrollActive = (selectors: string[], setActiveItem: Function) => {
       }
     };
 
+    window.addEventListener('touchmove', onWheel);
     window.addEventListener('wheel', onWheel);
 
-    return () => window.removeEventListener('wheel', onWheel);
+    return () => {
+      window.removeEventListener('touchmove', onWheel);
+      window.removeEventListener('wheel', onWheel);
+    };
   }, []);
 };
 
