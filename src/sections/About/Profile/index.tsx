@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import Fade from 'react-reveal/Fade';
 import styles from './styles.module.scss';
-import avatar from '../../../assets/images/avatar.jpg';
+import avatar from '../../../assets/images/avatar.webp';
 import Paragraph from '../../../components/Paragraph';
 import HighLight from '../../../components/HighLight';
 import useLottie from '../../../hooks/useLottie';
