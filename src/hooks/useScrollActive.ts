@@ -4,7 +4,7 @@ const useScrollActive = (selectors: string[], setActiveItem: Function) => {
   useEffect(() => {
     const reversedSelectors = selectors.reverse();
 
-    const onWheel = () => {
+    const onScroll = () => {
       const $visibleSelector = reversedSelectors.find((selector) => {
         const $el = document.querySelector(selector);
 
@@ -20,13 +20,9 @@ const useScrollActive = (selectors: string[], setActiveItem: Function) => {
       }
     };
 
-    window.addEventListener('touchmove', onWheel);
-    window.addEventListener('wheel', onWheel);
+    window.addEventListener('scroll', onScroll);
 
-    return () => {
-      window.removeEventListener('touchmove', onWheel);
-      window.removeEventListener('wheel', onWheel);
-    };
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 };
 
