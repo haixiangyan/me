@@ -52,6 +52,7 @@
     cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
+    transition: color .3s;
 
     &.active, &.active a {
       color: #bd0000;
