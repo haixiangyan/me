@@ -34,7 +34,7 @@
   padding-bottom: 1.5em!important;
   font-size: 18px;
 
-  &:before {
+  &::before {
     content: "";
     background-color: #c1004f;
     display: block;
@@ -80,7 +80,7 @@
   &.right {
     text-align: left;
     align-self: flex-end;
-    &:before {
+    &::before {
       left: -1px;
     }
 
@@ -93,7 +93,7 @@
   &.left {
     text-align: right;
     align-self: flex-start;
-    &:before {
+    &::before {
       right: -1px;
     }
 

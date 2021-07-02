@@ -91,7 +91,7 @@
           overflow: hidden;
         }
 
-        &:before {
+        &::before {
           content: "";
           position: absolute;
           top: 0;
@@ -125,7 +125,7 @@
           color: #ff771e;
           cursor: pointer;
 
-          &:after {
+          &::after {
             content: "";
             position: absolute;
             left: 0;
@@ -138,7 +138,7 @@
           }
 
           &:hover {
-            &:after {
+            &::after {
               background-color: rgba(255, 0, 198, .11);
               transform: scale(1.1);
             }
