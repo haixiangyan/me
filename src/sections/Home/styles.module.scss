@@ -1,7 +1,7 @@
 @keyframes pulse {
   0% {
     transform: scale(1);
-    border-color: #e3342f;
+    border-color: red;
   }
 
   100% {
@@ -79,7 +79,7 @@
         position: relative;
         width: 340px;
         height: 340px;
-        background: #e3342f;
+        background: red;
         border-radius: 50%;
         opacity: 0;
         transition: all .3s;
@@ -101,7 +101,7 @@
           width: 100%;
           height: 100%;
           animation: pulse 2s cubic-bezier(.57, .06, .27, .84) infinite;
-          border: 4px solid #e3342f;
+          border: 4px solid red;
           border-radius: 50%;
           background: transparent;
           z-index: 1;
