@@ -3,20 +3,15 @@ import classNames from 'classnames';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import styles from './styles.module.scss';
 import { navItems } from './constants';
-import useScrollActive from '../../hooks/useScrollActive';
 
 export interface NavItem {
   text: string;
   toEl: string;
 }
 
-const selectors = navItems.map((nav) => nav.toEl);
-
 const Nav: FC = () => {
   const [activeItem, setActiveItem] = useState<string>('#home');
   const [verticalVisible, setVerticalVisible] = useState<boolean>(false);
-
-  useScrollActive(selectors, setActiveItem);
 
   const scroll = (toEl: string) => {
     const $toEl = document.querySelector(toEl);
