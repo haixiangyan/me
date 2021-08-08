@@ -44,7 +44,7 @@ const Footer = () => (
       ))}
     </div>
     <p className={styles.record}>
-      <a rel="noreferrer" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/recordQuery">
+      <a rel="noreferrer" target="_blank" href="https://beian.miit.gov.cn/">
         粤ICP备2021095802号
       </a>
     </p>
