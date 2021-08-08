@@ -31,7 +31,7 @@ const Home: FC = () => {
         <Col span={24} md={15} className={styles.intro}>
           <p>我是海怪，</p>
           <p>一条 <i className={styles.tencent}>腾讯</i> 前端开发，写 <span>React</span> 的。</p>
-          <p>拒绝 <span className={styles.del}>996</span> 和 <span className={styles.del}>内卷</span>，</p>
+          <p>喜欢设计 💅，</p>
           <p>偶尔<span className={styles.sometime} ref={el} /></p>
         </Col>
 
