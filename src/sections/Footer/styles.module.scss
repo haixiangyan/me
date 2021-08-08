@@ -15,4 +15,14 @@
       height: 40px;
     }
   }
+
+  .record {
+    text-align: center;
+    a {
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
