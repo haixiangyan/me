@@ -116,7 +116,7 @@ export const projects: ProjectItem[] = [
       </p>
     ),
     links: [
-      { content: 'https://github.yanhaixiang.cn/overwatch-ui-doc/#/', image: link },
+      { content: 'https://github.yanhaixiang.com/overwatch-ui-doc/#/', image: link },
       { content: 'https://github.com/Haixiang6123/overwatch-ui', image: github },
     ],
     techUsed: [
@@ -189,7 +189,7 @@ export const projects: ProjectItem[] = [
       </div>
     ),
     links: [
-      { content: 'https://github.yanhaixiang.cn/guitar-editor/#/', image: link },
+      { content: 'https://github.yanhaixiang.com/guitar-editor/#/', image: link },
       { content: 'https://github.com/Haixiang6123/guitar-editor', image: github },
     ],
     techUsed: [
@@ -242,7 +242,7 @@ export const projects: ProjectItem[] = [
       </div>
     ),
     links: [
-      { content: 'https://github.yanhaixiang.cn/weixin-cash/#/', image: link },
+      { content: 'https://github.yanhaixiang.com/weixin-cash/#/', image: link },
       { content: 'https://github.com/Haixiang6123/weixin-cash', image: github },
     ],
     techUsed: [
@@ -324,19 +324,19 @@ export const projects: ProjectItem[] = [
 export const moreProjects = [
   {
     title: '香蕉',
-    url: 'https://github.yanhaixiang.cn/banana/',
+    url: 'https://github.yanhaixiang.com/banana/',
   },
   {
     title: '皮卡丘',
-    url: 'https://github.yanhaixiang.cn/pikachu/',
+    url: 'https://github.yanhaixiang.com/pikachu/',
   },
   {
     title: '立方体',
-    url: 'https://github.yanhaixiang.cn/cube/',
+    url: 'https://github.yanhaixiang.com/cube/',
   },
   {
     title: '小画板',
-    url: 'https://github.yanhaixiang.cn/sketch-book/',
+    url: 'https://github.yanhaixiang.com/sketch-book/',
   },
 ];
 
