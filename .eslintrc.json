@@ -33,6 +33,7 @@
     "no-use-before-define": "off",
     "no-return-assign": "off",
     "react/jsx-one-expression-per-line": "off",
+    "react/require-default-props": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
