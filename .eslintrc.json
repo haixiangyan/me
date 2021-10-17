@@ -34,6 +34,7 @@
     "no-return-assign": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/require-default-props": "off",
+    "react/no-children-prop": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
