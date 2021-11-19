@@ -3,6 +3,12 @@ import { Image } from 'antd';
 import { ProjectItem } from './Item';
 import HighLight from '../../components/HighLight';
 
+// 企业微信
+import qywx from '../../assets/icons/qywx.png';
+import qywxGithub from '../../assets/screenshots/qywx-github.png';
+import qiankun from '../../assets/icons/qiankun.png';
+import express from '../../assets/icons/express.png';
+
 // 造轮子
 import npmWheelScreenshot from '../../assets/screenshots/npm-wheel.png';
 
@@ -64,11 +70,37 @@ import zhihu from '../../assets/svgs/zhihu.svg';
 // 可视项目
 export const projects: ProjectItem[] = [
   {
+    logo: qywx,
+    title: '企业微信侧边栏开发指南',
+    content: <Image src={qywxGithub} />,
+    description: (
+      <div>
+        <p>
+          提供开发企业微信侧边栏的一些
+          <HighLight>解决方案</HighLight>
+          和
+          <HighLight>开发模板</HighLight>
+          。
+        </p>
+      </div>
+    ),
+    links: [
+      { content: 'https://wecom-sidebar.github.io/', image: link },
+      { content: 'https://github.com/wecom-sidebar', image: github },
+    ],
+    techUsed: [
+      { content: 'TypeScript', image: ts },
+      { content: 'React', image: react },
+      { content: 'Express', image: express },
+      { content: 'Qiankun', image: qiankun },
+    ],
+  },
+  {
     logo: npm,
     badges: [
       'https://img.shields.io/github/stars/Haixiang6123/one-day-one-npm-lib?style=flat-square',
     ],
-    title: '一天学习一个 npm 轮子，十天后变成轮子哥',
+    title: '一天学一个轮子',
     content: <Image src={npmWheelScreenshot} />,
     description: (
       <div>
