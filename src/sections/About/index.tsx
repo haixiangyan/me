@@ -9,7 +9,7 @@ import Button from '../../components/Button';
 import Section from '../../components/Section';
 import HighLight from '../../components/HighLight';
 
-const resumeUrl = 'https://github.yanhaixiang.com/resume-generator/';
+const resumeUrl = 'https://github.yanhaixiang.com/resume';
 
 const About = () => (
   <Section id="about" className={styles.about}>

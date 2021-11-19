@@ -39,7 +39,7 @@ const Nav: FC = () => {
           </li>
         ))}
         <li>
-          <a href="https://github.yanhaixiang.com/resume-generator/" target="_blank" rel="noreferrer">简历</a>
+          <a href="https://github.yanhaixiang.com/resume" target="_blank" rel="noreferrer">简历</a>
         </li>
 
         {/* 缩小版菜单栏 */}
