@@ -3,6 +3,9 @@ import { Image } from 'antd';
 import { ProjectItem } from './Item';
 import HighLight from '../../components/HighLight';
 
+// linter-guide
+import linterGuideScreenshot from '../../assets/screenshots/linter-guide.png';
+
 // 企业微信
 import qywx from '../../assets/icons/qywx.png';
 import qywxGithub from '../../assets/screenshots/qywx-github.png';
@@ -65,10 +68,27 @@ import link from '../../assets/svgs/link.svg';
 import chromeExt from '../../assets/icons/chrome-ext.png';
 import github from '../../assets/svgs/github.svg';
 import juejin from '../../assets/svgs/juejin.svg';
-import zhihu from '../../assets/svgs/zhihu.svg';
 
 // 可视项目
 export const projects: ProjectItem[] = [
+  {
+    logo: eslint,
+    title: 'Linter 上手指南',
+    content: <Image src={linterGuideScreenshot} />,
+    description: (
+      <div>
+        <p>
+          前端最全
+          <HighLight isDark>解决方案</HighLight>
+          的 Linter 上手指南。
+        </p>
+      </div>
+    ),
+    links: [
+      { content: 'https://github.yanhaixiang.com/linter-guide/', image: link },
+    ],
+    techUsed: [{ content: 'VuePress', image: vue }],
+  },
   {
     logo: qywx,
     title: '企业微信侧边栏开发指南',
@@ -77,9 +97,9 @@ export const projects: ProjectItem[] = [
       <div>
         <p>
           提供开发企业微信侧边栏的一些
-          <HighLight>解决方案</HighLight>
+          <HighLight isDark>解决方案</HighLight>
           和
-          <HighLight>开发模板</HighLight>
+          <HighLight isDark>开发模板</HighLight>
           。
         </p>
       </div>
@@ -120,9 +140,8 @@ export const projects: ProjectItem[] = [
       </div>
     ),
     links: [
-      { content: 'https://www.zhihu.com/column/c_1371023921513472000', image: zhihu },
+      { content: 'https://github.com/Haixiang6123/one-day-one-npm-lib', image: link },
       { content: 'https://juejin.cn/column/6965512526624718856', image: juejin },
-      { content: 'https://github.com/Haixiang6123/one-day-one-npm-lib', image: github },
     ],
     techUsed: [
       { content: 'NPM', image: npm },
