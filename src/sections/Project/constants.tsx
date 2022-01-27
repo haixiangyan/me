@@ -74,6 +74,9 @@ export const projects: ProjectItem[] = [
   {
     logo: eslint,
     title: 'Linter 上手指南',
+    badges: [
+      'https://img.shields.io/github/stars/haixiangyan/linter-guide?style=flat-square',
+    ],
     content: <Image src={linterGuideScreenshot} />,
     description: (
       <div>
@@ -93,6 +96,9 @@ export const projects: ProjectItem[] = [
     logo: qywx,
     title: '企业微信侧边栏开发指南',
     content: <Image src={qywxGithub} />,
+    badges: [
+      'https://img.shields.io/github/stars/wecom-sidebar?style=flat-square',
+    ],
     description: (
       <div>
         <p>
