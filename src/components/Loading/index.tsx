@@ -1,9 +1,9 @@
-import React, { FC } from 'react';
-import styles from './styles.module.scss';
-import loadingIcon from '../../assets/svgs/loading.svg';
+import React, { FC } from "react";
+import styles from "./styles.module.scss";
+import loadingIcon from "../../assets/svgs/loading.svg";
 
 interface Props {
-  title?: string
+  title?: string;
 }
 
 const Loading: FC<Props> = (props) => {

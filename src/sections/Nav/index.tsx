@@ -1,8 +1,8 @@
-import React, { FC, useState } from 'react';
-import classNames from 'classnames';
-import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
-import styles from './styles.module.scss';
-import { navItems } from './constants';
+import React, { FC, useState } from "react";
+import classNames from "classnames";
+import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
+import styles from "./styles.module.scss";
+import { navItems } from "./constants";
 
 export interface NavItem {
   text: string;
@@ -10,14 +10,14 @@ export interface NavItem {
 }
 
 const Nav: FC = () => {
-  const [activeItem, setActiveItem] = useState<string>('#home');
+  const [activeItem, setActiveItem] = useState<string>("#home");
   const [verticalVisible, setVerticalVisible] = useState<boolean>(false);
 
   const scroll = (toEl: string) => {
     const $toEl = document.querySelector(toEl);
     if ($toEl) {
       setActiveItem(toEl);
-      $toEl.scrollIntoView({ behavior: 'smooth' });
+      $toEl.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -39,12 +39,21 @@ const Nav: FC = () => {
           </li>
         ))}
         <li>
-          <a href="https://github.yanhaixiang.com/resume" target="_blank" rel="noreferrer">简历</a>
+          <a
+            href="https://github.yanhaixiang.com/resume"
+            target="_blank"
+            rel="noreferrer"
+          >
+            简历
+          </a>
         </li>
 
         {/* 缩小版菜单栏 */}
-        <li className={styles.navBtn} onClick={() => setVerticalVisible(!verticalVisible)}>
-          {verticalVisible ? <CloseOutlined /> : <MenuOutlined /> }
+        <li
+          className={styles.navBtn}
+          onClick={() => setVerticalVisible(!verticalVisible)}
+        >
+          {verticalVisible ? <CloseOutlined /> : <MenuOutlined />}
         </li>
       </ul>
 
@@ -54,7 +63,9 @@ const Nav: FC = () => {
           {navItems.map((nav) => (
             <li
               key={nav.toEl}
-              className={classNames({ [styles.active]: nav.toEl === activeItem })}
+              className={classNames({
+                [styles.active]: nav.toEl === activeItem,
+              })}
               onClick={() => {
                 setVerticalVisible(false);
                 scroll(nav.toEl);

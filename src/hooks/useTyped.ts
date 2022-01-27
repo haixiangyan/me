@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import Typed, { TypedOptions } from 'typed.js';
+import { useEffect, useRef } from "react";
+import Typed, { TypedOptions } from "typed.js";
 
 const useTyped = (strings: string[], extra?: TypedOptions) => {
   const el = useRef<HTMLElement | null>(null);
@@ -13,7 +13,7 @@ const useTyped = (strings: string[], extra?: TypedOptions) => {
       ...extra,
     };
 
-    typed.current = new Typed(el.current || '', options);
+    typed.current = new Typed(el.current || "", options);
 
     return () => typed.current?.destroy();
   }, [strings]);

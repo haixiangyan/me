@@ -19,9 +19,9 @@
     font-family: SiYuanHeiTi, Helvetica, Arial, sans-serif;
     font-weight: bold;
     pointer-events: none;
-    padding: 0 .75em;;
+    padding: 0 0.75em;
     line-height: 20px;
-    background-color: #bd0000!important;
+    background-color: #bd0000 !important;
     font-size: 1rem;
     color: #fff;
     border-radius: 4px;
@@ -31,7 +31,7 @@
 .timelineItem {
   position: relative;
   width: 50%;
-  padding-bottom: 1.5em!important;
+  padding-bottom: 1.5em !important;
   font-size: 18px;
 
   &::before {
@@ -69,9 +69,11 @@
       font-size: 12px;
       margin-bottom: 5px;
     }
+
     .header {
       font-size: 1em;
     }
+
     .subtext {
       font-size: 12px;
     }
@@ -80,6 +82,7 @@
   &.right {
     text-align: left;
     align-self: flex-end;
+
     &::before {
       left: -1px;
     }
@@ -93,6 +96,7 @@
   &.left {
     text-align: right;
     align-self: flex-start;
+
     &::before {
       right: -1px;
     }

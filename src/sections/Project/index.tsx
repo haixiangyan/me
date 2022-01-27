@@ -1,14 +1,14 @@
-import * as React from 'react';
-import Masonry from 'react-masonry-css';
-import Fade from 'react-reveal/Fade';
-import { Modal, Tabs } from 'antd';
-import { useState } from 'react';
-import styles from './styles.module.scss';
-import Title from '../../components/Title';
-import Section from '../../components/Section';
-import Item from './Item';
-import Button from '../../components/Button';
-import { projects, moreProjects } from './constants';
+import * as React from "react";
+import Masonry from "react-masonry-css";
+import Fade from "react-reveal/Fade";
+import { Modal, Tabs } from "antd";
+import { useState } from "react";
+import styles from "./styles.module.scss";
+import Title from "../../components/Title";
+import Section from "../../components/Section";
+import Item from "./Item";
+import Button from "../../components/Button";
+import { projects, moreProjects } from "./constants";
 
 const { TabPane } = Tabs;
 
@@ -30,7 +30,13 @@ const Project = () => {
         ))}
         <Fade>
           <div className={styles.more}>
-            <Button className={styles.moreBtn} onClick={() => setMoreVisible(true)} bg="#15a000">更多</Button>
+            <Button
+              className={styles.moreBtn}
+              onClick={() => setMoreVisible(true)}
+              bg="#15a000"
+            >
+              更多
+            </Button>
           </div>
         </Fade>
       </Masonry>
@@ -39,11 +45,22 @@ const Project = () => {
         😋 更多好玩，有趣的项目（和 <i>文章</i> ）正在路上 🕑
       </Title>
 
-      <Modal width="100%" title="更多项目" visible={moreVisible} footer={null} onCancel={() => setMoreVisible(false)}>
+      <Modal
+        width="100%"
+        title="更多项目"
+        visible={moreVisible}
+        footer={null}
+        onCancel={() => setMoreVisible(false)}
+      >
         <Tabs>
           {moreProjects.map((project) => (
             <TabPane key={project.title} tab={project.title}>
-              <iframe title={project.title} style={{ width: '100%', height: '50vh' }} src={project.url} frameBorder="0" />
+              <iframe
+                title={project.title}
+                style={{ width: "100%", height: "50vh" }}
+                src={project.url}
+                frameBorder="0"
+              />
             </TabPane>
           ))}
         </Tabs>

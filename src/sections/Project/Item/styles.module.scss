@@ -2,12 +2,15 @@
   0% {
     transform: scale(1, 1);
   }
+
   25% {
     transform: scale(0.9, 1.1);
   }
+
   50% {
     transform: scale(1.2, 0.8);
   }
+
   75% {
     transform: scale(0.95, 1.05);
   }
@@ -51,8 +54,10 @@
       display: flex;
       justify-content: center;
       margin-bottom: 8px;
+
       img {
         margin-right: 8px;
+
         &:last-child {
           margin-right: 0;
         }
@@ -67,6 +72,7 @@
         box-shadow: 0 5px 15px 0 rgb(0 0 0 / 35%);
         cursor: zoom-in;
       }
+
       iframe {
         height: 200px;
         width: 100%;
@@ -75,7 +81,7 @@
     }
 
     .description {
-      margin: 35px 0 25px 0;
+      margin: 35px 0 25px;
       font-size: 15px;
       display: inline-block;
       color: #151515;
@@ -83,8 +89,10 @@
       text-shadow: 0 1px 1px #e0e0e0;
       line-height: 1.5;
       text-align: left;
+
       p {
         margin-bottom: 8px;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -105,7 +113,7 @@
         height: 48px;
 
         &:hover {
-          animation: energy .5s;
+          animation: energy 0.5s;
         }
 
         img {
@@ -116,6 +124,7 @@
 
     .techUsed {
       line-height: 1.5;
+
       h4 {
         font-weight: 700;
         padding-top: 16px;
@@ -131,9 +140,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
         li {
           margin: 3px 0;
           padding: 0 10px;
+
           img {
             height: 32px;
           }

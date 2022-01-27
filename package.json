@@ -24,8 +24,9 @@
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix src --ext .js,.tsx,ts,jsx",
-    "deploy": "sh deploy.sh"
+    "lint": "eslint src --fix && stylelint src/**/*.scss --fix",
+    "deploy": "sh deploy.sh",
+    "prepare": "husky install"
   },
   "config": {
     "commitizen": {
@@ -48,12 +49,17 @@
     "@types/lodash": "^4.14.170",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.29.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.2",
+    "postcss-scss": "^4.0.3",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.1.0"
   }
 }

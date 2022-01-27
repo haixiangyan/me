@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import lottie, { AnimationConfigWithData } from 'lottie-web';
+import { useEffect, useRef } from "react";
+import lottie, { AnimationConfigWithData } from "lottie-web";
 
 const useLottie = (path: string, extra?: AnimationConfigWithData) => {
   const lottieRef = useRef<HTMLDivElement | null>(null);
@@ -9,7 +9,7 @@ const useLottie = (path: string, extra?: AnimationConfigWithData) => {
       lottie.loadAnimation({
         container: lottieRef.current,
         path,
-        renderer: 'svg',
+        renderer: "svg",
         loop: true,
         autoplay: true,
         ...extra,
