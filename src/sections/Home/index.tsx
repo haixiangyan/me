@@ -30,7 +30,7 @@ const Home: FC = () => {
       <Row className={styles.content}>
         <Col span={24} md={15} className={styles.intro}>
           <p>我是海怪，</p>
-          <p>一条 <i className={styles.tencent}>腾讯</i> 前端开发，写 <span>React</span> 的。</p>
+          <p>一条 <i className={styles.tencent}>腾讯</i> 前端开发，写 <span className={styles.react}>React</span> 的。</p>
           <p>喜欢设计 💅，</p>
           <p>偶尔<span className={styles.sometime} ref={el} /></p>
         </Col>

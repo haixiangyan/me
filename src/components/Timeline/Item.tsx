@@ -25,12 +25,12 @@ const TimelineItem: FC<Props> = (props) => {
   const contents = useMemo(() => (Array.isArray(content) ? content : [content]), [content]);
 
   return (
-    <Fade bottom={isMobile} left={!isMobile && direction === 'left'} right={!isMobile && direction === 'right'}>
-      <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
-        <div className={styles.node}>
-          {node || <div className={styles.defaultNode} />}
-        </div>
+    <div className={classNames(styles.timelineItem, direction === 'left' ? styles.left : styles.right)}>
+      <div className={styles.node}>
+        {node || <div className={styles.defaultNode} />}
+      </div>
 
+      <Fade bottom={isMobile} left={!isMobile && direction === 'left'} right={!isMobile && direction === 'right'}>
         <div className={classNames(styles.content, direction === 'left' ? styles.left : styles.right)}>
           {times && times.map((timeItem) => (
             <Paragraph key={timeItem ? timeItem.toString() : 0} className={styles.time}>
@@ -48,8 +48,8 @@ const TimelineItem: FC<Props> = (props) => {
             </Paragraph>
           ))}
         </div>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   );
 };
 
