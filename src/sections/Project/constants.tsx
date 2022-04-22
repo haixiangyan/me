@@ -124,7 +124,7 @@ export const projects: ProjectItem[] = [
   {
     logo: npm,
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/make-wheels?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/make-wheels?style=flat-square",
     ],
     title: "一天学一个轮子",
     content: <Image src={npmWheelScreenshot} />,
@@ -144,7 +144,7 @@ export const projects: ProjectItem[] = [
     ),
     links: [
       {
-        content: "https://github.com/Haixiang6123/one-day-one-npm-lib",
+        content: "https://github.com/haixiangyan/make-wheels",
         image: link,
       },
       {
@@ -162,7 +162,7 @@ export const projects: ProjectItem[] = [
   {
     logo: overwatchLogo,
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/overwatch-ui?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/overwatch-ui?style=flat-square",
       "https://img.shields.io/npm/dm/overwatch-ui?style=flat-square",
     ],
     title: "Overwatch UI",
@@ -179,7 +179,7 @@ export const projects: ProjectItem[] = [
         image: link,
       },
       {
-        content: "https://github.com/Haixiang6123/overwatch-ui",
+        content: "https://github.com/haixiangyan/overwatch-ui",
         image: github,
       },
     ],
@@ -200,7 +200,7 @@ export const projects: ProjectItem[] = [
     logo: beautifierLogo,
     badges: [
       "https://img.shields.io/chrome-web-store/users/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square",
-      "https://img.shields.io/github/stars/Haixiang6123/codeblock-beautifier?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/codeblock-beautifier?style=flat-square",
       "https://img.shields.io/chrome-web-store/stars/gpcjjddhdnilcbddlonlfgdbejfboonn?style=flat-square",
     ],
     title: "代码高亮 - Chrome 插件",
@@ -227,7 +227,7 @@ export const projects: ProjectItem[] = [
         image: chromeExt,
       },
       {
-        content: "https://github.com/Haixiang6123/codeblock-beautifier",
+        content: "https://github.com/haixiangyan/codeblock-beautifier",
         image: github,
       },
     ],
@@ -240,7 +240,7 @@ export const projects: ProjectItem[] = [
     logo: guitarLogo,
     title: "吉他谱编辑器",
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/guitar-tabs-editor?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/guitar-tabs-editor?style=flat-square",
     ],
     content: <Image src={guitarEditor} />,
     description: (
@@ -263,7 +263,7 @@ export const projects: ProjectItem[] = [
         image: link,
       },
       {
-        content: "https://github.com/Haixiang6123/guitar-tabs-editor",
+        content: "https://github.com/haixiangyan/guitar-tabs-editor",
         image: github,
       },
     ],
@@ -279,7 +279,7 @@ export const projects: ProjectItem[] = [
     logo: leetcode,
     title: "LeetCode/LintCode 题解",
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/leetcode-python?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/leetcode-python?style=flat-square",
     ],
     content: <Image src={lintcodeScreenShot} />,
     description: (
@@ -293,7 +293,7 @@ export const projects: ProjectItem[] = [
       { content: "https://www.lintcode.com/user/Haixiang", image: lintcode },
       { content: "https://leetcode.com/HaixiangYan/", image: leetcode },
       {
-        content: "https://github.com/Haixiang6123/leetcode-python",
+        content: "https://github.com/haixiangyan/leetcode-python",
         image: github,
       },
     ],
@@ -303,7 +303,7 @@ export const projects: ProjectItem[] = [
     logo: weixin,
     title: "仿微信记账本",
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/weixin-cash?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/weixin-cash?style=flat-square",
     ],
     content: <Image src={weixinCash} />,
     description: (
@@ -317,7 +317,7 @@ export const projects: ProjectItem[] = [
     ),
     links: [
       { content: "https://github.yanhaixiang.com/weixin-cash/#/", image: link },
-      { content: "https://github.com/Haixiang6123/weixin-cash", image: github },
+      { content: "https://github.com/haixiangyan/weixin-cash", image: github },
     ],
     techUsed: [
       { content: "React.js", image: react },
@@ -331,7 +331,7 @@ export const projects: ProjectItem[] = [
     logo: tenet,
     title: "Tenet",
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/tenet?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/tenet?style=flat-square",
       "https://img.shields.io/visual-studio-marketplace/i/HaixiangYan.tenet?style=flat-square",
       "https://img.shields.io/visual-studio-marketplace/stars/HaixiangYan.tenet",
     ],
@@ -354,7 +354,7 @@ export const projects: ProjectItem[] = [
           "https://marketplace.visualstudio.com/items?itemName=HaixiangYan.tenet",
         image: vscode,
       },
-      { content: "https://github.com/Haixiang6123/tenet", image: github },
+      { content: "https://github.com/haixiangyan/tenet", image: github },
     ],
     techUsed: [{ content: "TypeScript", image: ts }],
   },
@@ -362,8 +362,8 @@ export const projects: ProjectItem[] = [
     logo: jest,
     title: "node-autodoc",
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/node-autodoc?style=flat-square",
-      "https://img.shields.io/coveralls/github/Haixiang6123/node-autodoc?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/node-autodoc?style=flat-square",
+      "https://img.shields.io/coveralls/github/haixiangyan/node-autodoc?style=flat-square",
       "https://img.shields.io/npm/dm/node-autodoc?style=flat-square",
     ],
     content: <Image src={nodeAutodoc} />,
@@ -380,7 +380,7 @@ export const projects: ProjectItem[] = [
     links: [
       { content: "https://www.npmjs.com/package/node-autodoc", image: npm },
       {
-        content: "https://github.com/Haixiang6123/node-autodoc",
+        content: "https://github.com/haixiangyan/node-autodoc",
         image: github,
       },
     ],
