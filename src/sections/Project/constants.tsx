@@ -240,7 +240,7 @@ export const projects: ProjectItem[] = [
     logo: guitarLogo,
     title: "吉他谱编辑器",
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/guitar-editor?style=flat-square",
+      "https://img.shields.io/github/stars/Haixiang6123/guitar-tabs-editor?style=flat-square",
     ],
     content: <Image src={guitarEditor} />,
     description: (
@@ -259,11 +259,11 @@ export const projects: ProjectItem[] = [
     ),
     links: [
       {
-        content: "https://github.yanhaixiang.com/guitar-editor/#/",
+        content: "https://github.yanhaixiang.com/guitar-tabs-editor/#/",
         image: link,
       },
       {
-        content: "https://github.com/Haixiang6123/guitar-editor",
+        content: "https://github.com/Haixiang6123/guitar-tabs-editor",
         image: github,
       },
     ],
