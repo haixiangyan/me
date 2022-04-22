@@ -75,7 +75,7 @@ export const projects: ProjectItem[] = [
     logo: eslint,
     title: "Linter 上手指南",
     badges: [
-      "https://img.shields.io/github/stars/haixiangyan/linter-guide?style=flat-square",
+      "https://img.shields.io/github/stars/haixiangyan/linter-tutorial?style=flat-square",
     ],
     content: <Image src={linterGuideScreenshot} />,
     description: (
@@ -87,7 +87,10 @@ export const projects: ProjectItem[] = [
       </div>
     ),
     links: [
-      { content: "https://github.yanhaixiang.com/linter-guide/", image: link },
+      {
+        content: "https://github.yanhaixiang.com/linter-tutorial/",
+        image: link,
+      },
     ],
     techUsed: [{ content: "VuePress", image: vue }],
   },
@@ -121,7 +124,7 @@ export const projects: ProjectItem[] = [
   {
     logo: npm,
     badges: [
-      "https://img.shields.io/github/stars/Haixiang6123/one-day-one-npm-lib?style=flat-square",
+      "https://img.shields.io/github/stars/Haixiang6123/make-wheels?style=flat-square",
     ],
     title: "一天学一个轮子",
     content: <Image src={npmWheelScreenshot} />,
