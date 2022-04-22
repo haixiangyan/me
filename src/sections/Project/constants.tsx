@@ -363,7 +363,7 @@ export const projects: ProjectItem[] = [
     title: "node-autodoc",
     badges: [
       "https://img.shields.io/github/stars/haixiangyan/node-autodoc?style=flat-square",
-      "https://img.shields.io/coveralls/github/haixiangyan/node-autodoc?style=flat-square",
+      "https://coveralls.io/repos/github/Haixiang6123/node-autodoc/badge.svg?branch=main",
       "https://img.shields.io/npm/dm/node-autodoc?style=flat-square",
     ],
     content: <Image src={nodeAutodoc} />,
