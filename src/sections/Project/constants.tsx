@@ -3,6 +3,9 @@ import { Image } from "antd";
 import { ProjectItem } from "./Item";
 import HighLight from "../../components/HighLight";
 
+// jest-tutorial
+import jestTutorialScreenshot from "../../assets/screenshots/jest-tutorial.png";
+
 // linter-guide
 import linterGuideScreenshot from "../../assets/screenshots/linter-guide.png";
 
@@ -72,6 +75,33 @@ import juejin from "../../assets/svgs/juejin.svg";
 // 可视项目
 export const projects: ProjectItem[] = [
   {
+    logo: jest,
+    title: "Jest 实践指南",
+    badges: [
+      "https://img.shields.io/github/stars/haixiangyan/jest-tutorial?style=flat-square",
+      "https://coveralls.io/repos/github/haixiangyan/jest-tutorial-example/badge.svg?branch=main",
+    ],
+    content: <Image src={jestTutorialScreenshot} />,
+    description: (
+      <div>
+        <p>
+          Jest 上手 <HighLight isDark>完全指南</HighLight>， 从 0 到 1
+          学会前端测试的技巧、思路、策略和套路。
+        </p>
+      </div>
+    ),
+    links: [
+      {
+        content: "https://github.yanhaixiang.com/linter-tutorial/",
+        image: link,
+      },
+    ],
+    techUsed: [
+      { content: "VuePress", image: vue },
+      { content: "Jest", image: jest },
+    ],
+  },
+  {
     logo: eslint,
     title: "Linter 上手指南",
     badges: [
@@ -92,7 +122,10 @@ export const projects: ProjectItem[] = [
         image: link,
       },
     ],
-    techUsed: [{ content: "VuePress", image: vue }],
+    techUsed: [
+      { content: "VuePress", image: vue },
+      { content: "Linter", image: eslint },
+    ],
   },
   {
     logo: qywx,
