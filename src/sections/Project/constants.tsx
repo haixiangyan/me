@@ -92,7 +92,7 @@ export const projects: ProjectItem[] = [
     ),
     links: [
       {
-        content: "https://github.yanhaixiang.com/linter-tutorial/",
+        content: "https://github.yanhaixiang.com/jest-tutorial/",
         image: link,
       },
     ],
