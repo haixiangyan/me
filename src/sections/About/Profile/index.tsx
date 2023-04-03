@@ -23,8 +23,17 @@ const Profile = () => {
       >
         <Fade bottom>
           <Paragraph>
-            一条 <HighLight>前端开发</HighLight> ，广东佛山 👴，现在在{" "}
-            <HighLight>腾讯 @ 深圳</HighLight> 搬砖。
+            一个 <HighLight>前端开发</HighLight> ，广东佛山 👴。 之前在{" "}
+            <HighLight>腾讯 @ 深圳</HighLight> 做在线教育的前端，现在在{" "}
+            <HighLight>字节跳动 @ 深圳</HighLight> 做{" "}
+            <a
+              href="https://www.capcut.cn/"
+              target="_blank"
+              style={{ color: "pink" }}
+            >
+              CapCut App
+            </a>{" "}
+            前端开发。
           </Paragraph>
           <Paragraph>
             高考之后，飞去 <HighLight>东北大学 @ 沈阳</HighLight> 上了 4
@@ -38,11 +47,10 @@ const Profile = () => {
 
         <Fade bottom>
           <Paragraph>
-            经常天马行空想一些沙雕 idea，然后实现出来 🌟。偶尔累了就弹一下吉他
+            经常天马行空想一些 idea，然后实现出来 🌟。偶尔累了就弹一下吉他
             🎸，或者畅游 <HighLight>守望先锋</HighLight> 的鱼塘 🎮。
             喜欢好看，酷炫的东西，可能这就是喜欢前端的原因吧 @_@。
-            以前会折腾很多东西，比如 Vim、五笔打字、魔方......
-            现在嘛，还是打打游戏，睡睡觉舒服 🤪。
+            喜欢折腾东西，比如 Vim、五笔打字、魔方......
           </Paragraph>
           <Paragraph>🐸 冲！</Paragraph>
         </Fade>

@@ -27,9 +27,9 @@ const About = () => (
 
     <Fade bottom>
       <Paragraph className={styles.goal}>
-        之所以喜欢 <HighLight>写代码</HighLight>， 并不是为了做一个 🐂 🍺 的项目
+        喜欢 <HighLight>写代码</HighLight>， 并不是为了做一个 🐂 🍺 的项目
         <br />
-        而是可以把那些沙雕、好玩的想法实现出来 👉{" "}
+        而是可以把那些好玩的想法实现出来 👉{" "}
         <span className={styles.justForFun}>Just for fun ~</span>
       </Paragraph>
     </Fade>

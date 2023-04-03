@@ -6,7 +6,7 @@ const useLottie = (path: string, extra?: AnimationConfigWithData) => {
 
   useEffect(() => {
     if (lottieRef.current) {
-      lottie.loadAnimation({
+      const item = lottie.loadAnimation({
         container: lottieRef.current,
         path,
         renderer: "svg",
@@ -14,6 +14,10 @@ const useLottie = (path: string, extra?: AnimationConfigWithData) => {
         autoplay: true,
         ...extra,
       });
+
+      return () => {
+        item.destroy();
+      };
     }
   }, []);
 

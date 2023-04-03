@@ -29,11 +29,43 @@
       padding-left: 28px;
       padding-top: 8vh;
 
+      .paragraph {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        span,
+        i {
+          white-space: nowrap;
+        }
+      }
+
       .tencent {
         color: #0052d9;
       }
 
+      // 字节
+      .zijie {
+        font-weight: bold;
+        color: #0674f0;
+      }
+
+      // 跳动
+      .tiaodong {
+        font-weight: bold;
+        color: #06cbc4;
+      }
+
+      .capcut {
+        color: #000;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       .react {
+        font-style: bold;
         color: #61dafb;
       }
 

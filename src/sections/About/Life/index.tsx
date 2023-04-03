@@ -10,6 +10,7 @@ import uci from "../../../assets/icons/uci.jpg";
 import neu from "../../../assets/icons/neu.png";
 import dji from "../../../assets/icons/dji.png";
 import tencent from "../../../assets/icons/tencent.png";
+import bytedance from "../../../assets/icons/bytedance.png";
 
 import styles from "./styles.module.scss";
 
@@ -106,8 +107,24 @@ const Life = () => {
           </span>,
         ]}
       />
+      <TimelineHeader>2022</TimelineHeader>
+      <TimelineItem
+        direction="right"
+        node={
+          <span className={styles.customNode}>
+            <img width={30} src={bytedance} alt="bytdance" />
+          </span>
+        }
+        time="10月"
+        header={[
+          <span>
+            <HighLight>字节跳动</HighLight> @ 跨端开发
+          </span>,
+        ]}
+        content={["CapCut App 🎬（海外版剪映）", "Lynx 开发"]}
+      />
       <TimelineHeader>...</TimelineHeader>
-      <TimelineItem direction="right" header={["？？？"]} />
+      <TimelineItem direction="left" header={["？？？"]} />
       <TimelineHeader>💀 ⚰️</TimelineHeader>
     </Timeline>
   );
