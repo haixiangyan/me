@@ -8,8 +8,7 @@ import Title from "../../components/Title";
 import Button from "../../components/Button";
 import Section from "../../components/Section";
 import HighLight from "../../components/HighLight";
-
-const resumeUrl = "https://github.yanhaixiang.com/resume";
+import { resumeUrl } from "../../utils";
 
 const About = () => (
   <Section id="about" className={styles.about}>

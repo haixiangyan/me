@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
 import styles from "./styles.module.scss";
 import { navItems } from "./constants";
+import { resumeUrl } from "../../utils";
 
 export interface NavItem {
   text: string;
@@ -39,11 +40,7 @@ const Nav: FC = () => {
           </li>
         ))}
         <li>
-          <a
-            href="https://github.yanhaixiang.com/resume"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={resumeUrl} target="_blank" rel="noreferrer">
             简历
           </a>
         </li>
