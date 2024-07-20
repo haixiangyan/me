@@ -27,7 +27,8 @@ const Home: FC = () => {
           <p>我是海怪，</p>
           <p>
             目前在<span className={styles.zijie}> 字节</span>
-            <span className={styles.tiaodong}>跳动</span>
+            <sup className={styles.tiaodong}>跳</sup>
+            <sub className={styles.tiaodong}>动</sub>
             ，主用 <span className={styles.react}> React </span>。
           </p>
           <p>喜欢设计 💅，</p>
