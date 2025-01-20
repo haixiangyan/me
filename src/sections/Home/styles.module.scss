@@ -10,6 +10,49 @@
   }
 }
 
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: translateY(-100px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
 .home {
   padding: 56px 24px 48px;
   position: relative;
@@ -44,16 +87,33 @@
         color: #0052d9;
       }
 
+      .workParagraph {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > p {
+          flex-shrink: 0;
+        }
+      }
+
       // 字节
       .zijie {
         font-weight: bold;
         color: #0674f0;
       }
 
-      // 跳动
-      .tiaodong {
+      // 跳
+      .tiao {
         font-weight: bold;
         color: #06cbc4;
+        animation: bounce-up 800ms infinite;
+      }
+
+      // 动
+      .dong {
+        font-weight: bold;
+        color: #06cbc4;
+        animation: flip 1600ms infinite;
       }
 
       .capcut {

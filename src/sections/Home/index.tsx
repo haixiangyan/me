@@ -25,12 +25,23 @@ const Home: FC = () => {
       <Row className={styles.content}>
         <Col span={24} md={15} className={styles.intro}>
           <p>我是海怪，</p>
-          <p>
-            目前在<span className={styles.zijie}> 字节</span>
-            <sup className={styles.tiaodong}>跳</sup>
-            <sub className={styles.tiaodong}>动</sub>
-            ，主用 <span className={styles.react}> React </span>。
-          </p>
+
+          <div className={styles.workParagraph}>
+            <p>
+              目前在<span className={styles.zijie}> 字节</span>
+            </p>
+            <p className={styles.tiao}>跳</p>
+            <p className={styles.dong}>动</p>
+            <p>，</p>
+            <p>主</p>
+            <p>要</p>
+            <p>使</p>
+            <p>用</p>
+            <p>
+              <span className={styles.react}> React.js </span>。
+            </p>
+          </div>
+
           <p>喜欢设计 💅，</p>
           <p>
             偶尔

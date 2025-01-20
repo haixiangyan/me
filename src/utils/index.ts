@@ -13,4 +13,4 @@ export const detectMobile = () => {
 };
 
 export const resumeUrl =
-  "https://yanhaixiang.notion.site/809d675e382f423bada0e7f65f543c85";
+  "https://eqnps5p81sh.feishu.cn/wiki/I8Onw9IRMiY11uk6qpbcKZBlnvh";
