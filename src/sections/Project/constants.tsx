@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import { Image } from "antd";
 import { ProjectItem } from "./Item";
@@ -240,7 +241,7 @@ export const projects: ProjectItem[] = [
     content: (
       <iframe
         title="codeblock-beautifier"
-        src="//player.bilibili.com/player.html?aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&page=1"
+        src="//player.bilibili.com/player.html?isOutside=true&aid=40197852&bvid=BV1Nt411s7Gy&cid=70598189&p=1"
         scrolling="no"
         frameBorder="no"
         allowFullScreen

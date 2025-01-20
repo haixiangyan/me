@@ -5,9 +5,9 @@ import jianshu from "../../assets/svgs/jianshu.svg";
 import overwatch from "../../assets/svgs/overwatch.svg";
 
 export const contacts = [
-  { image: github, url: "https://github.com/Haixiang6123" },
+  { image: github, url: "https://github.com/haixiangyan" },
   { image: juejin, url: "https://juejin.cn/user/272334614432887" },
-  { image: zhihu, url: "https://www.zhihu.com/people/yan-hai-87-22" },
+  { image: zhihu, url: "https://www.zhihu.com/people/haixiangyan" },
   { image: jianshu, url: "https://www.jianshu.com/u/0340be4082b5" },
   {
     image: overwatch,
