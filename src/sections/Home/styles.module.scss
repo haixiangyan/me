@@ -10,6 +10,25 @@
   }
 }
 
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
 @keyframes bounce-up {
   0% {
     transform: translateY(0);
@@ -113,7 +132,7 @@
       .dong {
         font-weight: bold;
         color: #06cbc4;
-        animation: flip 1600ms infinite;
+        animation: gelatine 800ms infinite;
       }
 
       .capcut {
