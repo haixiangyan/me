@@ -7,8 +7,8 @@ WORKDIR /app
 # 复制 package.json 和 package-lock.json
 COPY package*.json ./
 
-# 安装依赖
-RUN npm ci --only=production=false
+# 安装依赖（使用 legacy-peer-deps 解决版本冲突）
+RUN npm install --legacy-peer-deps
 
 # 复制项目文件
 COPY . .
